@@ -1,0 +1,170 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.jetbrains.kotlin.android'
+apply plugin:  'com.google.dagger.hilt.android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'androidx.navigation.safeargs'
+repositories {
+    maven { url 'https://repo1.maven.org/maven2' }
+}
+
+android {
+    compileSdkVersion 33
+    buildToolsVersion '33.0.0'
+
+    packagingOptions {
+        jniLibs {
+            excludes += ['**/x86_64/libjingle_peerconnection_so.so', '**/x86/libjingle_peerconnection_so.so']
+        }
+        resources {
+            excludes += ['META-INF/DEPENDENCIES', 'META-INF/LICENSE', 'META-INF/LICENSE.txt', 'META-INF/license.txt', 'META-INF/NOTICE', 'META-INF/NOTICE.txt', 'META-INF/notice.txt', 'META-INF/ASL2.0']
+        }
+    }
+
+    defaultConfig {
+        versionCode rootProject.version_number
+        versionName rootProject.version_string
+        minSdkVersion 26
+        targetSdkVersion 33
+
+        // These take the properties defined in gradle.properties and copy them into BuildConfig.java
+        buildConfigField "String", "buildMachineName", computerName
+        // If not specified, default test server to muffin
+        def test_server_name = project.hasProperty('testServerName') ? testServerName : '"Muffin"'
+        buildConfigField "String", "testServerName", test_server_name
+
+        def test_run_id = project.hasProperty('testRunId') ? testRunId : '-1'
+        buildConfigField "Integer", "testRunId", test_run_id
+
+        def tablet_serial_number = project.hasProperty('tabletSerialNumber') ? tabletSerialNumber : "null"
+        buildConfigField "String", "tabletSerialNumber", tablet_serial_number
+
+        def android_version = project.hasProperty('androidVersion') ? androidVersion : '8'
+        buildConfigField "Integer", "androidVersion", android_version
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("user_interface_keystore")
+            storePassword "L1feC4r3!"
+            keyAlias "user interface keystore"
+            keyPassword "L1feC4r3!"
+        }
+    }
+
+    def output_path = project.buildDir.getAbsolutePath()
+    output_path = output_path.replace('\\', "\\\\")
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+        }
+
+        // Location of the UI apk, used by Appium to extract the strings resource
+        debug {
+            buildConfigField "String", "apk_path", $/"${output_path}\\outputs\\apk\\debug\\User_Interface-debug.apk"/$
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+    sourceSets {
+        if (!project.hasProperty("appiumTests")) {
+            test {
+                java {
+                    exclude '**/com/isansys/appiumtests/**'
+                }
+            }
+
+            androidTest {
+                java {
+                    exclude '**/com/isansys/appiumtests/**'
+                }
+            }
+        }
+    }
+
+    lint {
+        abortOnError false
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+}
+
+dependencies {
+    implementation project(':GraphView')
+    implementation project(':CustomActivityOnCrash')
+    implementation project(':DayNightToggleButton')
+    implementation project(':RoundCornerProgressBar')
+    implementation project(':barcodefraglibv2_ikermendimaster')
+    implementation project(':Common')
+
+
+    implementation 'me.bendik.simplerangeview:simplerangeview:0.2.0'
+    implementation fileTree(include: '*.jar', dir: './src/main/libs')
+    implementation 'androidx.annotation:annotation:1.5.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation "androidx.legacy:legacy-support-v4:1.0.0"
+
+// Start OpenVidu specific
+    // https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp
+    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.2'
+    // https://mvnrepository.com/artifact/com.neovisionaries/nv-websocket-client/2.14
+    implementation 'com.neovisionaries:nv-websocket-client:2.14'
+//TODO this JAR isnt being updated anymore. Need to compile from source
+    implementation 'org.webrtc:google-webrtc:1.0.32006'
+// End OpenVidu specific
+
+    // https://mvnrepository.com/artifact/com.github.tony19/logback-android
+    implementation 'com.github.tony19:logback-android:2.0.0'
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+    implementation 'org.slf4j:slf4j-api:1.7.36'
+
+    // https://mvnrepository.com/artifact/joda-time/joda-time
+    implementation 'joda-time:joda-time:2.10.14'
+    implementation 'androidx.core:core-ktx:1.9.0'
+
+    // HILT- Android
+    implementation "com.google.dagger:hilt-android:2.44"
+    kapt "com.google.dagger:hilt-compiler:2.44"
+
+    // Navigation Component
+    def nav_version = "2.5.3"
+    // Kotlin
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
+    //Life-cycle
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.5.1'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
+
+
+    testImplementation project(':TestRailApi')
+    testImplementation 'junit:junit:4.13.2'
+
+    androidTestImplementation 'androidx.annotation:annotation:1.5.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    androidTestImplementation 'androidx.test:rules:1.5.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-intents:3.5.0'
+    androidTestImplementation 'org.mockito:mockito-android:2.23.0'
+
+    testImplementation 'io.appium:java-client:7.5.1'
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    testImplementation 'commons-io:commons-io:2.11.0'
+    testImplementation 'com.googlecode.json-simple:json-simple:1.1.1'
+}

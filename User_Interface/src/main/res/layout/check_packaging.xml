@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/barCodeActivity"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false" >
+    
+	<LinearLayout
+		android:id="@+id/check_packaging_qr_bar_code"
+		android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+	    android:layout_margin="10dp"
+		android:layout_weight="1"
+		android:gravity="center"
+		>
+	</LinearLayout>
+ 
+	<LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+	    
+	    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+            
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:shrinkColumns="*"
+                android:stretchColumns="*" >
+    
+                <TableRow>
+                    <TextView
+						android:id="@+id/textViewScanBarcode"
+                        android:gravity="center"
+                        android:text="@string/scan_sensor_barcode"
+                        android:textSize="36sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/textViewHelp"
+                        android:gravity="center"
+                        android:text="@string/hold_qr_code_so_it_fits_in_the_smaller_lighter_square_on_the_left"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+            </TableLayout>
+	        	        
+        </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:orientation="vertical"
+			android:layout_marginStart="40dp"
+			android:layout_marginEnd="40dp"
+	        >
+	 
+	        <TableLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+				>
+
+				<TableRow>
+					<TextView
+						android:id="@+id/textViewBarcodeOne"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/sensor_barcode"
+						android:textSize="24sp"
+						android:textStyle="bold"
+						/>
+				</TableRow>
+
+				<TableRow>
+	                <TextView
+	                    android:id="@+id/textViewSensorBarcodeDeviceTypeLabel"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/device_type"
+	                    android:textSize="24sp"
+	                    />
+					<TextView
+						android:id="@+id/textViewSensorBarcodeDeviceType"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/six_dashes"
+						android:textSize="24sp"
+						android:textStyle="normal"
+						/>
+	            </TableRow>
+	
+	            <TableRow>
+					<TextView
+						android:id="@+id/textViewBarcodeOneHumanReadableSerialNumberLabel"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/serial_number"
+						android:textSize="24sp"
+						/>
+	                <TextView
+	                    android:id="@+id/textViewSensorBarcodeHumanReadableSerialNumber"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/six_dashes"
+	                    android:textSize="24sp" 
+	                    />
+	            </TableRow>
+	            
+	            <TableRow>
+	                <TextView
+	                    android:id="@+id/textViewBarcodeOneMacAddressLabel"
+	                    android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mac_address"
+                        android:textSize="24sp"
+	                    />
+	
+	                <TextView
+	                    android:id="@+id/textViewSensorBarcodeMacAddress"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/six_dashes"
+	                    android:textSize="24sp" 
+	                    />
+	            </TableRow>
+
+				<TableRow>
+					<View
+						android:layout_width="fill_parent"
+						android:layout_height="30dp"
+						/>
+				</TableRow>
+
+				<TableRow>
+					<TextView
+						android:id="@+id/textViewBarcodeTwo"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/packaging_barcode"
+						android:textSize="24sp"
+						android:textStyle="bold"
+						/>
+				</TableRow>
+
+				<TableRow>
+					<TextView
+						android:id="@+id/textViewPackagingBarcodeDeviceTypeLabel"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/device_type"
+						android:textSize="24sp"
+						/>
+					<TextView
+						android:id="@+id/textViewPackagingBarcodeDeviceType"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/six_dashes"
+						android:textSize="24sp"
+						android:textStyle="normal"
+						/>
+				</TableRow>
+
+				<TableRow>
+					<TextView
+						android:id="@+id/textViewPackagingBarcodeHumanReadableSerialNumberLabel"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/serial_number"
+						android:textSize="24sp"
+						/>
+					<TextView
+						android:id="@+id/textViewPackagingBarcodeHumanReadableSerialNumber"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/six_dashes"
+						android:textSize="24sp"
+						/>
+				</TableRow>
+
+				<TableRow>
+					<TextView
+						android:id="@+id/textViewBarcodeTwoMacAddressLabel"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/mac_address"
+						android:textSize="24sp"
+						/>
+
+					<TextView
+						android:id="@+id/textViewPackagingBarcodeMacAddress"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/six_dashes"
+						android:textSize="24sp"
+						/>
+				</TableRow>
+
+	        </TableLayout>
+
+			<TextView
+				android:id="@+id/textViewBarcodesMatch"
+				android:layout_width="fill_parent"
+				android:layout_height="140dp"
+				android:layout_marginTop="20dp"
+				android:gravity="center"
+				android:background="@color/early_warning_color_score__orange"
+				android:text="@string/barcodes_match"
+				android:textSize="50sp"
+				android:textStyle="bold"
+				/>
+
+		</LinearLayout>
+	    
+	</LinearLayout>
+	
+</LinearLayout>

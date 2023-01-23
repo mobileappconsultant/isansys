@@ -1,0 +1,19 @@
+org.gradle.jvmargs=-Xmx4096m
+
+org.gradle.daemon=true
+
+computerName = System.getenv("COMPUTERNAME")
+android.useAndroidX=true
+android.enableJetifier=true
+
+#android.enableBuildCache=false
+
+# uncomment the following to run Appium tests locally - DO NOT COMMIT THIS
+# appiumTests
+# testServerName="Muffin"
+# testRunId=64
+
+# Used to specify the test tablet when multiple tablets connected to once PC.
+# To use, uncomment and replace 123456 with the tablet serial no, which is the
+# alphanumeric code returned by the comand "adb devices" on the command line.
+#tabletSerialNumber="123456"

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Patient Gateway</string>
+    <string name="service_name">Mats Service Name</string>
+    <string name="not_set_yet">NOT SET YET</string>
+
+    <string name="local_database_reset_not_including_ews_thresholds">Local Database Reset (NOT including EWS thresholds)</string>
+    <string name="local_database_reset_including_ews_thresholds">Local Database Reset (including EWS thresholds)</string>
+
+    <string name="starting_database_export_this_might_take_a_few_seconds">Starting database export. This might take a few seconds!</string>
+    <string name="database_exported_to">Database exported to </string>
+    <string name="cannot_find_database_not_exported_to">Cannot find DB - not exported : </string>
+
+    <string name="starting_database_import_this_might_take_a_few_seconds">Starting database import. This might take a few seconds!</string>
+    <string name="database_imported">Database imported</string>
+
+    <string name="problem_found_please_make_a_note_of_the_time_and_tell_isansys">Problem found. Please make note of the time and tell Isansys</string>
+
+    <string name="custom_error_activity_message_line_one">Sorry about this!</string>
+    <string name="custom_error_activity_message_line_two">An error has occurred which has caused the Patient Gateway (PG) to stop working.</string>
+    <string name="custom_error_activity_message_line_send_to_isansys">Please take a photo of this screen and email to support@isansys.com</string>
+
+    <string name="custom_error_activity_dummy_timestamp">21 Dec 2016 18:24:32</string>
+    <string name="restart">Restart</string>
+    <string name="build_version">Build Version</string>
+    <string name="android_permissions">Android Permissions</string>
+    <string name="xx">xx</string>
+    <string name="fine_location">Fine Location</string>
+    <string name="background_location">Background Location</string>
+    <string name="write_external_storage">Write External Storage</string>
+    <string name="nearby_permission_text">Connect to Nearby Devices</string>
+    <string name="android_version">Android Version</string>
+</resources>

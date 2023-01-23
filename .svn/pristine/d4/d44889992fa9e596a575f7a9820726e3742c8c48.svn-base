@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="11" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Components/AutobahnAndroid/Autobahn" />
+            <option value="$PROJECT_DIR$/Components/Common" />
+            <option value="$PROJECT_DIR$/Components/CustomActivityOnCrash/library" />
+            <option value="$PROJECT_DIR$/Components/DayNightToggleButton/library" />
+            <option value="$PROJECT_DIR$/Components/RoundCornerProgressBar" />
+            <option value="$PROJECT_DIR$/Components/TestRailApi" />
+            <option value="$PROJECT_DIR$/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster" />
+            <option value="$PROJECT_DIR$/Gateway" />
+            <option value="$PROJECT_DIR$/GraphView" />
+            <option value="$PROJECT_DIR$/User_Interface" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

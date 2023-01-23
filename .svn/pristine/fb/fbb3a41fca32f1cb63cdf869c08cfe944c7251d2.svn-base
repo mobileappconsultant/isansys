@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <com.isansys.pse_isansysportal.AutoResizeTextView
+        android:id="@+id/buttonVitalSignName"
+        android:layout_width="0dp"
+        android:layout_weight="7"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/button_blue"
+        android:textSize="32sp"
+        android:text="@string/back"
+        android:textColor="@color/white"
+        android:ellipsize="none"
+        android:maxLines="3"
+        />
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="MOO"
+        android:layout_marginStart="20dp"
+        />
+
+</LinearLayout>

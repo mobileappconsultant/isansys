@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal">
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/patient_gateway_setup_wizard"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageWizard"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:contentDescription="@null"
+                android:src="@drawable/wizard" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowServerAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/textViewServerAddressDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/lifeguard_server_address"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textViewServerAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/textThreeDashes"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowServerPort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/lifeguard_server_port"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textViewServerPort"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/textThreeDashes"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowRealTimePort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/textViewRealTimePortLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/lifeguard_server_wamp_port"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textViewRealTimePort"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/textThreeDashes"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowNtpTimeSync"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/textViewNtpTimeSync"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/synchronizing_time"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/progressBarNtpTimeSync"
+                    android:layout_width="@dimen/installation_wizard_progress_bar_width"
+                    android:layout_height="@dimen/installation_wizard_progress_bar_height"
+                    android:layout_gravity="center"
+                    android:visibility="visible" />
+
+                <View
+                    android:id="@+id/viewNtpTimeSync"
+                    android:layout_width="@dimen/installation_wizard_view_indicator_width"
+                    android:layout_height="@dimen/installation_wizard_view_indicator_height"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_yellow"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowServerLinkTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/textViewServerLinkTest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/lifeguard_server_link_test"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/progressBarServerLinkStatus"
+                    android:layout_width="@dimen/installation_wizard_progress_bar_width"
+                    android:layout_height="@dimen/installation_wizard_progress_bar_height"
+                    android:layout_gravity="center"
+                    android:visibility="visible" />
+
+                <View
+                    android:id="@+id/viewServerLinkStatus"
+                    android:layout_width="@dimen/installation_wizard_view_indicator_width"
+                    android:layout_height="@dimen/installation_wizard_view_indicator_height"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_yellow"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowGettingWardsAndBeds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/textViewGetWardsAndBeds"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/getting_wards_and_beds"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/progressBarGettingWardsAndBeds"
+                    android:layout_width="@dimen/installation_wizard_progress_bar_width"
+                    android:layout_height="@dimen/installation_wizard_progress_bar_height"
+                    android:layout_gravity="center"
+                    android:visibility="visible" />
+
+                <View
+                    android:id="@+id/viewGettingWardsAndBeds"
+                    android:layout_width="@dimen/installation_wizard_view_indicator_width"
+                    android:layout_height="@dimen/installation_wizard_view_indicator_height"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_yellow"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowSelectedWardAndBed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/selected_ward_and_bed"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewSelectedWard"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/textThreeDashes"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewSelectedBed"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/textThreeDashes"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRowSelectWard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/textViewSelectWard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/select_a_ward_and_bed"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinnerWardList"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowSelectBed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/textViewSelectBed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_vertical|center_horizontal"
+                android:text=""
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinnerBedList"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowConfirmWardAndBed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/textViewSetBedId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/press_to_confirm"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonSetBedDetails"
+                    android:layout_width="300dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/button_blue"
+                    android:gravity="center|center_vertical"
+                    android:text="@string/set_bed_details"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowRealTimeLinkTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/textViewRealTimeLinkTest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/wamp_link_test"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/progressBarRealTimeLinkStatus"
+                    android:layout_width="@dimen/installation_wizard_progress_bar_width"
+                    android:layout_height="@dimen/installation_wizard_progress_bar_height"
+                    android:layout_gravity="center"
+                    android:visibility="visible" />
+
+                <View
+                    android:id="@+id/viewRealTimeLinkStatus"
+                    android:layout_width="@dimen/installation_wizard_view_indicator_width"
+                    android:layout_height="@dimen/installation_wizard_view_indicator_height"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_yellow"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowGetGatewayConfig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/textViewGetGatewayConfig"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/getting_gateway_configuration"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/progressBarGetGatewayConfig"
+                    android:layout_width="@dimen/installation_wizard_progress_bar_width"
+                    android:layout_height="@dimen/installation_wizard_progress_bar_height"
+                    android:layout_gravity="center"
+                    android:visibility="visible" />
+
+                <View
+                    android:id="@+id/viewGetGatewayConfig"
+                    android:layout_width="@dimen/installation_wizard_view_indicator_width"
+                    android:layout_height="@dimen/installation_wizard_view_indicator_height"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_yellow"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRowThresholds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/textViewGetThresholds"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/getting_ews_thresholds"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/progressBarGetThresholds"
+                    android:layout_width="@dimen/installation_wizard_progress_bar_width"
+                    android:layout_height="@dimen/installation_wizard_progress_bar_height"
+                    android:layout_gravity="center"
+                    android:visibility="visible" />
+
+                <View
+                    android:id="@+id/viewGetThresholds"
+                    android:layout_width="@dimen/installation_wizard_view_indicator_width"
+                    android:layout_height="@dimen/installation_wizard_view_indicator_height"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_yellow"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowServerConfigurableText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/textViewGetServerConfigurableText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/getting_server_configurable_text"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/progressBarGetServerConfigurableText"
+                    android:layout_width="@dimen/installation_wizard_progress_bar_width"
+                    android:layout_height="@dimen/installation_wizard_progress_bar_height"
+                    android:layout_gravity="center"
+                    android:visibility="visible" />
+
+                <View
+                    android:id="@+id/viewGetServerConfigurableText"
+                    android:layout_width="@dimen/installation_wizard_view_indicator_width"
+                    android:layout_height="@dimen/installation_wizard_view_indicator_height"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_yellow"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowUpdatedFirmwareCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/textViewGetUpdatedDeviceFirmware"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/checking_for_updated_firmware"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/progressBarGetUpdatedDeviceFirmware"
+                    android:layout_width="@dimen/installation_wizard_progress_bar_width"
+                    android:layout_height="@dimen/installation_wizard_progress_bar_height"
+                    android:layout_gravity="center"
+                    android:visibility="visible" />
+
+                <View
+                    android:id="@+id/viewGetUpdatedFirmware"
+                    android:layout_width="@dimen/installation_wizard_view_indicator_width"
+                    android:layout_height="@dimen/installation_wizard_view_indicator_height"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_yellow"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowGetWebPages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/textViewGetWebPages"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/getting_web_pages"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/progressBarGetWebPages"
+                    android:layout_width="@dimen/installation_wizard_progress_bar_width"
+                    android:layout_height="@dimen/installation_wizard_progress_bar_height"
+                    android:layout_gravity="center"
+                    android:visibility="visible" />
+
+                <View
+                    android:id="@+id/viewGetWebPages"
+                    android:layout_width="@dimen/installation_wizard_view_indicator_width"
+                    android:layout_height="@dimen/installation_wizard_view_indicator_height"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_yellow"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowSetupComplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/textViewSetupComplete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/setup_complete"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonSetupComplete"
+                    android:layout_width="300dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/button_blue"
+                    android:gravity="center|center_vertical"
+                    android:text="@string/start_using_patient_gateway"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutErrorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/textViewErrorMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

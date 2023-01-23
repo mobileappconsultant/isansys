@@ -1,0 +1,18 @@
+include ':GraphView'
+include ':barcodefraglibv2_ikermendimaster'
+include ':CustomActivityOnCrash'
+include ':DayNightToggleButton'             /* Code from https://github.com/SilenceDut/DayNightToggleButton */
+include ':RoundCornerProgressBar'           /* Code from https://github.com/akexorcist/Android-RoundCornerProgressBar */
+include ':User_Interface'
+include ':Gateway'
+include ':AutobahnAndroid'
+include ':Common'
+include ':TestRailApi'
+project(':barcodefraglibv2_ikermendimaster').projectDir = new File('Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster')
+project(':CustomActivityOnCrash').projectDir = new File('Components/CustomActivityOnCrash/library')
+project(':RoundCornerProgressBar').projectDir = new File('Components/RoundCornerProgressBar/')
+project(':DayNightToggleButton').projectDir = new File('Components/DayNightToggleButton/library')
+project(':AutobahnAndroid').projectDir = new File('Components/AutobahnAndroid/Autobahn/')
+project(':Common').projectDir = new File('Components/Common/')
+project(':TestRailApi').projectDir = new File('Components/TestRailApi')
+include ':org.eclipse.paho.android.service'

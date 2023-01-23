@@ -1,0 +1,2754 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.isansys.pse_isansysportal.CustomScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/patient_vitals_display_scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:fillViewport="false">
+
+    <LinearLayout
+        android:id="@+id/patient_vitals_display"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        >
+
+        <!-- Lifetouch -->
+        <LinearLayout
+            android:id="@+id/linear_layout__patient_vitals_display__lifetouch"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutDeviceInfoLifetouch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/green"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:id="@+id/textLifetouchHumanReadableDeviceId"
+                            android:text="@string/textLifetouch"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout_lifetouchBatteryAndControls"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            >
+
+                            <ImageView
+                                android:id="@+id/imageBatteryLifetouch"
+                                android:layout_width="35dp"
+                                android:layout_height="30dp"
+                                android:background="@null"
+                                android:src="@drawable/battery_50_percent"
+                                android:contentDescription="@null"
+                                android:layout_marginTop="-5dp"
+                                android:layout_marginBottom="-5dp"
+                                android:layout_marginEnd="5dp"
+                                android:visibility = "invisible"
+                                />
+
+                            <TextView
+                                android:id="@+id/textLifetouchBatteryPercentage"
+                                android:text="@string/textZeroPercent"
+                                android:textStyle="normal"
+                                android:textSize="12sp"
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/textNumberOfHeartBeatsPending"
+                                android:text="@string/dummy_number_of_heart_beats_pending"
+                                android:textStyle="normal"
+                                android:textSize="12sp"
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+
+                            <ImageView
+                                android:id="@+id/heartbeat"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@null"
+                                android:src="@drawable/heart_current_data"
+                                android:contentDescription="@null"
+                                />
+
+                            <ImageView
+                                android:id="@+id/imagePatientOrientation"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@null"
+                                android:maxHeight="50dp"
+                                android:maxWidth ="50dp"
+                                android:src="@drawable/orientation_unknown_t"
+                                android:contentDescription="@null"
+                                />
+
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/checkBoxLifetouchConfigurable"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/textSetupMode"
+                            android:button="@drawable/button_radio"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="3dp"
+                            android:gravity="center"
+                            />
+
+                        <CheckBox
+                            android:id="@+id/checkBoxPatientVitalsDisplayLifetouchOptions"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/options"
+                            android:button="@drawable/button_radio"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginStart="3dp"
+                            android:gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imagePatientVitalsDisplayLifetouchOutOfRange"
+                            android:layout_width="@dimen/patient_vitals_display_out_of_range_image_width"
+                            android:layout_height="@dimen/patient_vitals_display_out_of_range_image_height"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:src="@drawable/out_of_range_white"
+                            android:contentDescription="@null"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="80"
+                >
+
+                <FrameLayout
+                    android:id="@+id/fragment_graph_lifetouch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutHeartAndRespiration"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:background="@color/black"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="2" >
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutHeartRateMeasurementGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/orange"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textHeartRateBeatsPerMinLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/textHeartRate"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/textHeartRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/textDefaultDummyHeartRate"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="-5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/textHeartRateTimestamp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/textDefaultDummyTimestamp"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="normal"
+                        android:layout_marginTop="-5dp"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progressBarLifetouchHeartRateMeasurementValidity"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp"
+                        android:layout_margin="4dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progressbar_normal"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutRespirationRateMeasurementGroup"
+                    android:background="@color/green"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    >
+
+                    <com.isansys.pse_isansysportal.AutoResizeTextView
+                        android:id="@+id/textRespirationRateDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/respiration_rate"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        />
+                        
+                    <TextView
+                        android:id="@+id/textRespirationRateBreathMinLabel"
+                        android:text="@string/textRespirationRateBreathMin"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <TextView
+                        android:id="@+id/textRespirationRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/textDefaultDummyRespirationRate"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="-5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/textRespirationRateTimestamp"
+                        android:text="@string/textDefaultDummyTimestamp"
+                        android:textStyle="normal"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progressBarLifetouchRespirationRateMeasurementValidity"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp"
+                        android:layout_margin="4dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progressbar_normal"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Manually Entered Heart Rate -->
+        <LinearLayout
+            android:id="@+id/linear_layout__patient_vitals_display__manually_entered_heart_rate"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/manually_entered_graph_background_colour"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:text="@string/multiline_manually_entered_heart_rate"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="80"
+                android:baselineAligned="false">
+
+                <FrameLayout
+                    android:id="@+id/fragment_graph_manually_entered_heart_rate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutManuallyEnteredHeartRateMeasurementGroup"
+                    android:background="@color/manually_entered_graph_background_colour"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:id="@+id/textManuallyEnteredHeartRateUnits"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/textHeartRate"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textManuallyEnteredHeartRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/textDefaultDummyHeartRate"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="-5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/textManuallyEnteredHeartRateTimestamp"
+                        android:text="@string/textDefaultDummyTimestamp"
+                        android:textStyle="normal"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progressBarManuallyEnteredHeartRateMeasurementValidity"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp"
+                        android:layout_margin="4dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progressbar_normal"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Manually Entered Respiration Rate -->
+        <LinearLayout
+            android:id="@+id/linear_layout__patient_vitals_display__manually_entered_respiration_rate"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/manually_entered_graph_background_colour"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:text="@string/multiline_manually_entered_respiration_rate"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="80"
+                android:baselineAligned="false">
+
+                <FrameLayout
+                    android:id="@+id/fragment_graph_manually_entered_respiration_rate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutManuallyEnteredRespirationRateMeasurementGroup"
+                    android:background="@color/manually_entered_graph_background_colour"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    >
+
+                    <com.isansys.pse_isansysportal.AutoResizeTextView
+                        android:id="@+id/textManuallyEnteredRespirationRateDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/respiration_rate"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/textManuallyEnteredRespirationRateUnits"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/textRespirationRateBreathMin"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/textManuallyEnteredRespirationRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/textDefaultDummyRespirationRate"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="-5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/textManuallyEnteredRespirationRateTimestamp"
+                        android:text="@string/textDefaultDummyTimestamp"
+                        android:textStyle="normal"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progressBarManuallyEnteredRespirationRateMeasurementValidity"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp"
+                        android:layout_margin="4dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progressbar_normal"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Lifetemp -->
+        <LinearLayout
+            android:id="@+id/linear_layout__patient_vitals_display__temperature"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutDeviceInfoLifetemp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/green"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textLifetempHumanReadableDeviceId"
+                        android:text="@string/textThermometer"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout_thermometerBatteryAndControls"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            >
+
+                            <ImageView
+                                android:id="@+id/imageBatteryLifetemp"
+                                android:layout_width="35dp"
+                                android:layout_height="30dp"
+                                android:background="@null"
+                                android:src="@drawable/battery_50_percent"
+                                android:contentDescription="@null"
+                                android:layout_marginTop="-5dp"
+                                android:layout_marginBottom="-5dp"
+                                android:layout_marginEnd="5dp"
+                                />
+
+                            <TextView
+                                android:id="@+id/textLifetempBatteryPercentage"
+                                android:text="@string/textZeroPercent"
+                                android:textStyle="normal"
+                                android:textSize="12sp"
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/textLifetempNumberOfMeasurementsPending"
+                                android:text="@string/dummy_number_of_heart_beats_pending"
+                                android:textStyle="normal"
+                                android:textSize="12sp"
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+
+                            <ImageView
+                                android:id="@+id/imageLifetempMeasurement"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@null"
+                                android:src="@drawable/heart_current_data"
+                                android:contentDescription="@null"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imagePatientVitalsDisplayThermometerOutOfRange"
+                            android:layout_width="@dimen/patient_vitals_display_out_of_range_image_width"
+                            android:layout_height="@dimen/patient_vitals_display_out_of_range_image_height"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:src="@drawable/out_of_range_white"
+                            android:contentDescription="@null"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="80"
+                android:baselineAligned="false">
+
+                <FrameLayout
+                    android:id="@+id/fragment_graph_temperature"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutTemperatureMeasurementGroupBackground"
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                android:layout_width="0px"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutTemperatureMeasurementGroup"
+                    android:background="@color/green"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/textTemperatureLabel"
+                        android:text="@string/textTempDegreesC"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <TextView
+                        android:id="@+id/textTemperatureReading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/textDummyTemperatureReading"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/textTemperatureTimestamp"
+                        android:text="@string/textDefaultDummyTimestamp"
+                        android:textStyle="normal"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progressBarLifetempTemperatureMeasurementValidity"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp"
+                        android:layout_margin="4dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progressbar_normal"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Manually Entered Temperature -->
+        <LinearLayout
+            android:id="@+id/linear_layout__patient_vitals_display__manually_entered_temperature"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/manually_entered_graph_background_colour"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:text="@string/multiline_manually_entered_temperatures"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="80"
+                android:baselineAligned="false">
+
+                <FrameLayout
+                    android:id="@+id/fragment_graph_manually_entered_temperature"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutManuallyEnteredTemperatureMeasurementGroup"
+                    android:background="@color/manually_entered_graph_background_colour"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:id="@+id/textManuallyEnteredTemperatureUnits"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/textTempDegreesC"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/textManuallyEnteredTemperature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/textDummyTemperatureReading"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="-5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/textManuallyEnteredTemperatureTimestamp"
+                        android:text="@string/textDefaultDummyTimestamp"
+                        android:textStyle="normal"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progressBarManuallyEnteredTemperatureMeasurementValidity"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp"
+                        android:layout_margin="4dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progressbar_normal"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Pulse Ox -->
+        <LinearLayout
+            android:id="@+id/linear_layout__patient_vitals_display__pulse_ox"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutDeviceInfoPulseOx"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/green"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:id="@+id/textPulseOxHumanReadableDeviceId"
+                            android:text="@string/textPulseOximeter"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="-3dp"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout_pulseOxBatteryAndControls"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            >
+
+                            <ImageView
+                                android:id="@+id/imageBatteryPulseOx"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_weight="3"
+                                android:background="@null"
+                                android:src="@drawable/battery_50_percent"
+                                android:contentDescription="@null"
+                                android:layout_marginTop="-6dp"
+                                android:layout_marginBottom="-6dp"
+                                />
+
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/checkBoxPulseOxSetupMode"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/textSetupMode"
+                            android:button="@drawable/button_radio"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="-5dp"
+                            android:layout_marginStart="3dp"
+                            android:gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imagePatientVitalsDisplayPulseOxOutOfRange"
+                            android:layout_width="@dimen/patient_vitals_display_out_of_range_image_width"
+                            android:layout_height="@dimen/patient_vitals_display_out_of_range_image_height"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:src="@drawable/out_of_range_white"
+                            android:contentDescription="@null"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="80"
+                android:baselineAligned="false">
+
+                <FrameLayout
+                    android:id="@+id/fragment_graph_pulse_ox"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutPulseOxMeasurementBackground"
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                android:layout_width="0px"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutPulseOxMeasurementGroup"
+                    android:background="@color/green"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/textSpO2PercentLabel"
+                        android:text="@string/textSpO2Percent"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <TextView
+                        android:id="@+id/textSpO2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/textDummyPulseOxReading"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/textPulseOximeterTimestamp"
+                        android:text="@string/textDefaultDummyTimestamp"
+                        android:textStyle="normal"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progressBarPulseOxMeasurementValidity"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp"
+                        android:layout_margin="4dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progressbar_normal"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Manually Entered SpO2 -->
+        <LinearLayout
+            android:id="@+id/linear_layout__patient_vitals_display__manually_entered_spo2"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/manually_entered_graph_background_colour"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:text="@string/multiline_manually_entered_spo2_measurements"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="80"
+                android:baselineAligned="false">
+
+                <FrameLayout
+                    android:id="@+id/fragment_graph_manually_entered_spo2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutManuallyEnteredSpO2MeasurementGroup"
+                    android:background="@color/manually_entered_graph_background_colour"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:id="@+id/textManuallyEnteredSpO2Units"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/textSpO2Percent"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/textManuallyEnteredSpO2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/textDummyPulseOxReading"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="-5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/textManuallyEnteredSpO2Timestamp"
+                        android:text="@string/textDefaultDummyTimestamp"
+                        android:textStyle="normal"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progressBarManuallyEnteredSpO2MeasurementValidity"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp"
+                        android:layout_margin="4dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progressbar_normal"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout__patient_vitals_display__blood_pressure"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutDeviceInfoBloodPressure"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/green"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/textBloodPressureHumanReadableDeviceId"
+                        android:text="@string/textBloodPressure"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout_bloodPressureBatteryAndControls"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            >
+
+                            <ImageView
+                                android:id="@+id/imageBatteryBloodPressure"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_weight="3"
+                                android:background="@null"
+                                android:src="@drawable/battery_50_percent"
+                                android:contentDescription="@null"
+                                android:layout_marginTop="-5dp"
+                                android:layout_marginBottom="-6dp"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imagePatientVitalsDisplayBloodPressureOutOfRange"
+                            android:layout_width="@dimen/patient_vitals_display_out_of_range_image_width"
+                            android:layout_height="@dimen/patient_vitals_display_out_of_range_image_height"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:src="@drawable/out_of_range_white"
+                            android:contentDescription="@null"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="80"
+                android:baselineAligned="false">
+
+                <FrameLayout
+                    android:id="@+id/fragment_graph_blood_pressure"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutBloodPressureMeasurementBackground"
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                android:layout_width="0px"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutBloodPressureMeasurementGroup"
+                    android:background="@color/orange"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/textBloodPressureLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="@string/textBloodPressureLabel"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/textBloodPressureMeasurementSystolic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/textSystolic"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            />
+
+                        <TextView
+                            android:id="@+id/textBloodPressureMeasurementSlash"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/slash"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            />
+
+                        <TextView
+                            android:id="@+id/textBloodPressureMeasurementDiastolic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/textDiastolic"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textBloodPressureMeasurementTimestamp"
+                        android:text="@string/textDefaultDummyTimestamp"
+                        android:textStyle="normal"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progressBarBloodPressureMeasurementValidity"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp"
+                        android:layout_margin="4dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progressbar_normal"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Manually Entered Blood Pressure -->
+        <LinearLayout
+            android:id="@+id/linear_layout__patient_vitals_display__manually_entered_blood_pressure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:background="@color/black"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/manually_entered_graph_background_colour"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/multiline_manually_entered_blood_pressures"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="80"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/fragment_graph_manually_entered_blood_pressure"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:background="@color/black"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutManuallyEnteredBloodPressureMeasurementGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/manually_entered_graph_background_colour"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textManuallyEnteredBloodPressureUnits"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/textBloodPressure"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textManuallyEnteredBloodPressureMeasurementSystolic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/textSystolic"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textManuallyEnteredBloodPressureMeasurementSlash"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/slash"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textManuallyEnteredBloodPressureMeasurementDiastolic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/textDiastolic"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textManuallyEnteredBloodPressureTimestamp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:gravity="center"
+                        android:text="@string/textDefaultDummyTimestamp"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBarManuallyEnteredBloodPressureMeasurementValidity"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp"
+                        android:layout_margin="4dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progressbar_normal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- EWS -->
+        <LinearLayout
+            android:id="@+id/linear_layout__patient_vitals_display__early_warning_scores"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutEarlyWarningScoreType"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/green"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textEarlyWarningScoreDescription"
+                        android:text="@string/stringEarlyWarningScoreType"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <TextView
+                        android:id="@+id/textEarlyWarningScoreType"
+                        android:text="@string/textThreeDashes"
+                        android:textStyle="normal"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="80"
+                android:baselineAligned="false">
+
+                <FrameLayout
+                    android:id="@+id/fragment_graph_early_warning_scores"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutEarlyWarningScoreMeasurementGroupBackground"
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                android:layout_width="0px"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutEarlyWarningScoreMeasurementGroup"
+                    android:background="@color/green"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp"
+                    >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/textEarlyWarningScoreMeasurement"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/dummyEwsReading"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textEarlyWarningScoreMeasurementSlash"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/stringEarlyWarningScoreMeasurementSlash"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            />
+
+                        <TextView
+                            android:id="@+id/textEarlyWarningScoreMaxPossible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/dummyEwsReading"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textEarlyWarningScoreTimestamp"
+                        android:text="@string/textDefaultDummyTimestamp"
+                        android:textStyle="normal"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progressBarEarlyWarningScoreMeasurementValidity"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp"
+                        android:layout_margin="4dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progressbar_normal"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Weight Scales -->
+        <LinearLayout
+            android:id="@+id/linear_layout__patient_vitals_display__weight_scale"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutDeviceInfoWeightScale"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/green"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/textWeightScaleHumanReadableDeviceId"
+                        android:text="@string/weightScale"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout_weightScaleBatteryAndControls"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            >
+
+                            <ImageView
+                                android:id="@+id/imageBatteryWeightScale"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_weight="3"
+                                android:background="@null"
+                                android:src="@drawable/battery_50_percent"
+                                android:contentDescription="@null"
+                                android:layout_marginTop="-5dp"
+                                android:layout_marginBottom="-6dp"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imagePatientVitalsDisplayWeightScaleOutOfRange"
+                            android:layout_width="@dimen/patient_vitals_display_out_of_range_image_width"
+                            android:layout_height="@dimen/patient_vitals_display_out_of_range_image_height"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:src="@drawable/out_of_range_white"
+                            android:contentDescription="@null"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="80"
+                android:baselineAligned="false">
+
+                <FrameLayout
+                    android:id="@+id/fragment_graph_weight_scale"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutWeightScaleMeasurementBackground"
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                android:layout_width="0px"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutWeightScaleMeasurementGroup"
+                    android:background="@color/orange"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/textWeightScaleLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="@string/weight"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/textWeightScaleMeasurement"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/four_dashes"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textWeightScaleMeasurementTimestamp"
+                        android:text="@string/textDefaultDummyTimestamp"
+                        android:textStyle="normal"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progressBarWeightScaleMeasurementValidity"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp"
+                        android:layout_margin="4dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progressbar_normal"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Manually Entered Weight -->
+        <LinearLayout
+            android:id="@+id/linear_layout__patient_vitals_display__manually_entered_weight"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/manually_entered_graph_background_colour"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:text="@string/multiline_manually_entered_weight"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="80"
+                android:baselineAligned="false">
+
+                <FrameLayout
+                    android:id="@+id/fragment_graph_manually_entered_weight"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutManuallyEnteredWeightMeasurementGroup"
+                    android:background="@color/manually_entered_graph_background_colour"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:id="@+id/textManuallyEnteredWeightUnits"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/weight"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/textManuallyEnteredWeightMeasurement"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/four_dashes"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textManuallyEnteredWeightTimestamp"
+                        android:text="@string/textDefaultDummyTimestamp"
+                        android:textStyle="normal"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progressBarManuallyEnteredWeightMeasurementValidity"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp"
+                        android:layout_margin="4dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progressbar_normal"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <!-- Manually Entered Supplemental Oxygen -->
+        <LinearLayout
+            android:id="@+id/linear_layout__patient_vitals_display__manually_entered_supplemental_oxygen"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/manually_entered_graph_background_colour"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:text="@string/multiline_manually_entered_supplemental_oxygen_levels"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_graph_manually_entered_supplemental_oxygen"
+                android:orientation="horizontal"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="80"
+                android:baselineAligned="false">
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutManuallyEnteredSupplementalOxygenLevelMeasurementGroup"
+                    android:background="@color/manually_entered_graph_background_colour"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    >
+
+                    <com.isansys.pse_isansysportal.AutoResizeTextView
+                        android:id="@+id/textManuallyEnteredSupplementalOxygenLevel"
+                        android:maxLines="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/dummy_measurement_for_patient_vitals_display"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/textManuallyEnteredSupplementalOxygenLevelTimestamp"
+                        android:text="@string/textDefaultDummyTimestamp"
+                        android:textStyle="normal"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progressBarManuallyEnteredSupplementalOxygenLevelMeasurementValidity"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp"
+                        android:layout_margin="4dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progressbar_normal"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Manually Entered Consciousness Level -->
+        <LinearLayout
+            android:id="@+id/linear_layout__patient_vitals_display__manually_entered_consciousness_level"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/manually_entered_graph_background_colour"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:text="@string/multiline_manually_entered_consciousness_levels"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_graph_manually_entered_consciousness_level"
+                android:orientation="horizontal"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="80"
+                android:baselineAligned="false">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutManuallyEnteredConsciousnessLevelMeasurementGroup"
+                    android:background="@color/manually_entered_graph_background_colour"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    >
+
+                    <com.isansys.pse_isansysportal.AutoResizeTextView
+                        android:id="@+id/textManuallyEnteredConsciousnessLevel"
+                        android:maxLines="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/dummy_measurement_for_patient_vitals_display"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/textManuallyEnteredConsciousnessLevelTimestamp"
+                        android:text="@string/textDefaultDummyTimestamp"
+                        android:textStyle="normal"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progressBarManuallyEnteredConsciousnessLevelMeasurementValidity"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp"
+                        android:layout_margin="4dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progressbar_normal"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Manually Entered Capillary Refill Time -->
+        <LinearLayout
+            android:id="@+id/linear_layout__patient_vitals_display__manually_entered_capillary_refill_time"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/manually_entered_graph_background_colour"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:text="@string/multiline_manually_entered_capillary_refill_time"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_graph_manually_entered_capillary_refill_time"
+                android:orientation="horizontal"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="80"
+                android:baselineAligned="false">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutManuallyEnteredCapillaryRefillTimeMeasurementGroup"
+                    android:background="@color/manually_entered_graph_background_colour"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    >
+
+                    <com.isansys.pse_isansysportal.AutoResizeTextView
+                        android:id="@+id/textManuallyEnteredCapillaryRefillTime"
+                        android:maxLines="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/dummy_measurement_for_patient_vitals_display"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/textManuallyEnteredCapillaryRefillTimeTimestamp"
+                        android:text="@string/textDefaultDummyTimestamp"
+                        android:textStyle="normal"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progressBarManuallyEnteredCapillaryRefillTimeMeasurementValidity"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp"
+                        android:layout_margin="4dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progressbar_normal"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Manually Entered Respiration Distress -->
+        <LinearLayout
+            android:id="@+id/linear_layout__patient_vitals_display__manually_entered_respiration_distress"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/manually_entered_graph_background_colour"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:text="@string/multiline_manually_entered_respiration_distress"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_graph_manually_entered_respiration_distress"
+                android:orientation="horizontal"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="80"
+                android:baselineAligned="false">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutManuallyEnteredRespirationDistressMeasurementGroup"
+                    android:background="@color/manually_entered_graph_background_colour"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    >
+
+                    <com.isansys.pse_isansysportal.AutoResizeTextView
+                        android:id="@+id/textManuallyEnteredRespirationDistress"
+                        android:maxLines="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/dummy_measurement_for_patient_vitals_display"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/textManuallyEnteredRespirationDistressTimestamp"
+                        android:text="@string/textDefaultDummyTimestamp"
+                        android:textStyle="normal"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progressBarManuallyEnteredRespirationDistressMeasurementValidity"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp"
+                        android:layout_margin="4dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progressbar_normal"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Manually Entered Family Or Nurse Concern -->
+        <LinearLayout
+            android:id="@+id/linear_layout__patient_vitals_display__manually_entered_family_or_nurse_concern"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/manually_entered_graph_background_colour"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:text="@string/multiline_manually_entered_family_or_nurse_concern"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_graph_manually_entered_family_or_nurse_concern"
+                android:orientation="horizontal"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="80"
+                android:baselineAligned="false">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutManuallyEnteredFamilyOrNurseConcernMeasurementGroup"
+                    android:background="@color/manually_entered_graph_background_colour"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    >
+
+                    <com.isansys.pse_isansysportal.AutoResizeTextView
+                        android:id="@+id/textManuallyEnteredFamilyOrNurseConcern"
+                        android:maxLines="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/dummy_measurement_for_patient_vitals_display"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/textManuallyEnteredFamilyOrNurseConcernTimestamp"
+                        android:text="@string/textDefaultDummyTimestamp"
+                        android:textStyle="normal"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progressBarManuallyEnteredFamilyOrNurseConcernMeasurementValidity"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp"
+                        android:layout_margin="4dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progressbar_normal"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Manually Entered Urine Output -->
+        <LinearLayout
+            android:id="@+id/linear_layout__patient_vitals_display__manually_entered_urine_output"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/manually_entered_graph_background_colour"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:text="@string/multiline_manually_entered_urine_output"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_graph_manually_entered_urine_output"
+                android:orientation="horizontal"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="80"
+                android:baselineAligned="false">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutManuallyEnteredUrineOutputMeasurementGroup"
+                    android:background="@color/manually_entered_graph_background_colour"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:id="@+id/textManuallyEnteredUrineOutputUnits"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/urine_output_with_units"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textManuallyEnteredUrineOutput"
+                        android:maxLines="2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/dummy_measurement_for_patient_vitals_display"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="-5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/textManuallyEnteredUrineOutputTimestamp"
+                        android:text="@string/textDefaultDummyTimestamp"
+                        android:textStyle="normal"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progressBarManuallyEnteredUrineOutputMeasurementValidity"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp"
+                        android:layout_margin="4dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progressbar_normal"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.isansys.pse_isansysportal.CustomScrollView>

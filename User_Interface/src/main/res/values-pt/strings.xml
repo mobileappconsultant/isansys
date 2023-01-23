@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PSE Isansys Portal</string>
+    <string name="action_settings">Einstellungen</string>
+
+    <string name="textSetupMode">Setup\nModus</string>
+    <string name="textServerControl">Server\nKontrolle</string>
+    <string name="textPeriodicSetupMode">Periodischer\nSetup\nModus</string>
+
+    <string name="textTimeDummyString">12:00:00</string>
+
+    <string name="textPatient">Patient</string>
+    <string name="text0to1Years">0&#8211;1 Jahre</string>
+    <string name="text1to5Years">1&#8211;5 Jahre</string>
+    <string name="text5to12Years">5&#8211;12 Jahre</string>
+    <string name="textGreater12Years">>12 Jahre</string>
+    <string name="textAdult">Erwachsener</string>
+
+    <string name="textConnect">Verbinden</string>
+
+    <string name="textDefaultHumanReadableDeviceId">---</string>
+    <string name="textThreeDashes">---</string>
+
+    <string name="textLifetouch">Lifetouch</string>
+    <string name="textLifetemp">Lifetemp</string>
+    <string name="textNonin">Nonin</string>
+    <string name="textNoninWristOx">Nonin\nWristOx</string>
+    <string name="textNoninWristOxSingleLine">Nonin Wrist Ox</string>
+
+    <string name="textUA767">UA767</string>
+    <string name="textBloodPressure">Blutdruck</string>
+    <string name="textBloodPressureSingleLine">Blutdruck</string>
+
+    <string name="textDefaultDummyTimestamp">hh:mm:ss dd-mon-year</string>
+
+    <string name="textWaitingForData">Warten auf Daten</string>
+    <string name="textDeviceRemoved">Gerät entfernt</string>
+    <string name="textDownloadingPreviousData">Daten-Download</string>
+    <string name="textHeartRate">Herzfrequenz\n(bpm)</string>
+    <string name="textDefaultDummyHeartRate">---</string>
+
+    <string name="textRespirationRateBreathMin">(Atemzüge/min)</string>
+    <string name="textDefaultDummyRespirationRate">--</string>
+
+    <string name="textDummyPulseOxReading">--</string>
+
+    <string name="textTempDegreesC">Temperatur</string>
+    <string name="textDummyTemperatureReading">--</string>
+
+    <string name="textBloodPressureLabel">Blutdruck</string>
+    <string name="textSystolic">Systole</string>
+    <string name="textDiastolic">Diastole</string>
+
+    <string name="textSpO2Percent">SpO2</string>
+
+    <string name="textUnlockScreen">Bildschirm entsperren</string>
+    <string name="textLockScreen">Sperrbild schirm</string>
+    <string name="textCheckDeviceStatus">Gerätestatus prüfen</string>
+    <string name="textChangeSessionSettings">Einstellungen der Sitzung ändern</string>
+    <string name="textChangeSessionSettingsMultiLine">Einstellungen der\nSitzung ändern</string>
+
+    <string name="textStartMonitoring">Über-wachung\nbeginnen</string>
+
+    <string name="textNext">Weiter</string>
+    <string name="textStartMonitoringAPatient">Überwachung eines Patienten beginnen</string>
+    <string name="textStopMonitoringCurrentPatient">Überwachung\ndes aktuellen Patienten beenden</string>
+    <string name="textPatientVitalsDisplay">Anzeige der Vitalparameter des Patienten</string>
+
+    <string name="textAreYouSure">Sicher?</string>
+    <string name="textEndSession">Sitzung beenden</string>
+    <string name="textTransferSession">Sitzungstransfer</string>
+    <string name="textTransferSessionDisabled">Sitzungstransfer\n(deaktiviert)"</string>
+
+    <string name="textPleaseTypeHere">Bitte hier eingeben</string>
+
+    <string name="textWaitingForOtherDeviceToFinishConnection">Warten auf Beendigung des Verbindungsvorgangs anderer Geräte</string>
+
+    <string name="textSearchingForLifetouch">Suche nach Lifetouch</string>
+    <string name="textSearchingForBloodPressure">Suche nach Blutdruckmessgerät</string>
+
+    <string name="textBloodPressureFound">Blutdruckmessgerät gefunden</string>
+
+    <string name="textBloodPressurePairing">Blutdruckmessgerät Kopplung</string>
+
+    <string name="textBloodPressurePairingFailed">Kopplung mit Blutdruckmessgerät FEHLGESCHLAGEN</string>
+
+    <string name="textLifetouchNotFound">Lifetouch NICHT gefunden</string>
+    <string name="textBloodPressureNotFound">Blutdruckmessgerät NICHT gefunden</string>
+
+    <string name="textLifetouchFoundWaitingForGatt">Lifetouch gefunden, warten auf GATT Verbindung.......</string>
+    <string name="textLifetempFoundWaitingForGatt">Lifetemp gefunden, warten auf GATT Verbindung.......</string>
+
+    <string name="textLifetouchConnected">Lifetouch verbunden</string>
+    <string name="textBloodPressureConnected">Blutdruckmessgerät angeschlossen</string>
+
+    <string name="textSetBedID">Betten-ID\nfestlegen</string>
+    <string name="textSetServerAddress">Serveradresse\neinstellen</string>
+    <string name="textEnterServerAddress">Serveradresse eingeben</string>
+    <string name="textPatientGatewaySoftwareVersion">Gateway Version : </string>
+    <string name="textUserInterfaceSoftwareVersion">UI Version : </string>
+    <string name="textLoggerSoftwareVersion">Logger Version : </string>
+    <string name="textGatewayName">Gateway Name : </string>
+
+
+    <string name="adjust_ews_thresholds">EWS-Schwellenwerte einstellen</string>
+
+    <string name="change_lifetemp_settings">Lifetemp-Einstellungen ändern</string>
+    <string name="change_nonin_wrist_ox_settings">Nonin Wrist Ox Einstellungen ändern</string>
+    <string name="change_blood_pressure_monitor_settings">Blutdruckmonitor-Einstellungen ändern</string>
+
+    <string name="remove_lifetouch">Lifetouch entfernen</string>
+    <string name="remove_lifetemp">Lifetemp entfernen</string>
+    <string name="remove_pulse_oximeter">Puls-Oximeter entfernen</string>
+    <string name="remove_blood_pressure_monitor">Blutdruckmonitor entfernen</string>
+    <string name="remove_early_warning_scores">Early Warning Scores entfernen</string>
+
+    <string name="add_lifetouch">Lifetouch hinzufügen</string>
+    <string name="add_lifetemp">Lifetemp hinzufügen</string>
+    <string name="add_pulse_oximeter">Puls-Oximeter hinzufügen</string>
+    <string name="add_blood_pressure">Blutdruckmonitor hinzufügen</string>
+    <string name="add_early_warning_scores">Early Warning Scores hinzufügen</string>
+
+    <string name="textRawAccelerometerMode">Beschleunigungsmesser Modus</string>
+
+    <string name="textSoftwareUpdateAvailable">Software-Update verfügbar</string>
+    <string name="textInstallSoftwareUpdateNow">Jetzt installieren</string>
+    <string name="textInstallSoftwareUpdateLater">Später installieren</string>
+
+    <string name="textSearchAgain">Erneute\nSuche</string>
+
+    <string name="textContentDescriptionLogoPulseOx">textContentDescriptionLogoPulseOx</string>
+    <string name="scan_device_qr_codes">QR-Code am Gerät scannen</string>
+    <string name="lifetouch">Lifetouch</string>
+    <string name="remove">Entfernen</string>
+    <string name="lifetemp">Lifetemp</string>
+    <string name="nonin_wrist_ox">Nonin Wrist Ox</string>
+    <string name="blood_pressure">Blutdruck</string>
+    <string name="six_dashes">------</string>
+    <string name="scan_server_address_qr_code">QR-Code für Server-Adresse scannen</string>
+    <string name="server_link">Server Link</string>
+    <string name="heart_rate">Herzfrequenz</string>
+    <string name="respiration_rate">Atemfrequenz</string>
+    <string name="respiratory_rate">Atemfrequenz</string>
+    <string name="temperature">Temperatur</string>
+    <string name="spo2">SpO2</string>
+    <string name="systolic_blood_pressure">Systolischer\nBlutdruck</string>
+    <string name="consciousness_level">Wachheitsgrad</string>
+    <string name="supplemental_oxygen">Sauerstoffgabe</string>
+
+    <string name="please_type_in_a_unique_patient_identifier">Bitte geben Sie eine eindeutige Patientenidentifikation ein</string>
+    <string name="dummy_bed_id_to_check_layout_size">BED ID</string>
+    <string name="dummy_bed_name_to_check_layout_size">Test Bettenname zur Überprüfung der Größe</string>
+    <string name="dummy_ward_name_to_check_layout_size">Test Stationsname zur Überprüfung der Größe</string>
+    <string name="dummy_patient_id_to_check_layout_size">Patient :   -----</string>
+    <string name="please_select_the_threshold_category">Bitte wählen Sie die Grenzwert Kategorie</string>
+    <string name="selected_early_warning_score_thresholds_below">Ausgewählte Early Warning Score (EWS) Werte:</string>
+    <string name="early_warning_score_thresholds_below">Early Warning Score (EWS) Werte:</string>
+
+    <string name="age_range_0_to_1_years_early_warning_score_thresholds_below">Early Warning Scores 0-1 Jahre</string>
+    <string name="age_range_1_to_5_years_early_warning_score_thresholds_below">Early Warning Scores 1-5 Jahre</string>
+    <string name="age_range_5_to_12_years_early_warning_score_thresholds_below">Early Warning Scores 5-12 Jahre</string>
+    <string name="age_range_12_plus_years_early_warning_score_thresholds_below">Early Warning Scores 12+ Jahre</string>
+    <string name="age_range_adult_early_warning_score_thresholds_below">Early Warning Scores Erwachsene</string>
+    <string name="please_scan_general_user_qr_code_to_access_patient_gateway">Bitte scannen Sie den QR-Code, um Zugang zum Patient Gateway zu bekommen</string>
+    <string name="press_button_to_scan_qr_code">Drücken Sie die Taste, um QR-Code zu scannen</string>
+    <string name="hold_qr_code_so_it_fits_in_the_smaller_lighter_square_on_the_left">Halten Sie den QR-Code so, dass er in das\nkleine hellere Quadrat links passt</string>
+    <string name="gateway_not_configured_yet_please_scan_admin_qr_code_to_access_setup_page">Gateway noch nicht konfiguriert.\nBitte scannen Admin QR-Code-Setup-Seite zuzugreifen</string>
+    <string name="thresholds_not_received_yet_please_scan_admin_qr_code_to_access_setup_page">Noch keine Early Warning Score (EWS) eingegangen.\nBitte scannen Sie den Administrator-QR-Code,\num zur Setup-Seite zu gelangen</string>
+    <string name="back_to_unlock_screen">Zurück zu Bildschirm entsperren</string>
+    <string name="lifetouch_test_mode">Lifetouch\nTestmodus</string>
+    <string name="new_respiration_rate">Neuen Atemalgorithmus\nverwenden</string>
+    <string name="test_server_link">Testlink</string>
+    <string name="back">Zurück</string>
+    <string name="next">Weiter</string>
+    <string name="lock">Sperren</string>
+    <string name="once_finished_adding_devices_press_connect">Wenn alle Geräte hinzugefügt sind,\ngehen Sie auf Verbinden</string>
+    <string name="once_finished_adding_devices_press_device_settings">Wenn alle Geräte hinzugefügt sind,\ngehen Sie auf Geräteeinstellungen</string>
+    <string name="scan_server_ip_address_qr_code_or_press_back_to_return_to_previous_page">Scannen Sie den QR-Code für die Server-IP-Adresse oder gehen Sie auf Zurück, um zur vorherigen Seite zurückzukehren</string>
+    <string name="set_screen_brightness">Bildschirmhelligkeit</string>
+    <string name="enable_night_mode">Nachtmodus\naktivieren</string>
+    <string name="empty_local_database">Lokale Datenbank leeren</string>
+    <string name="empty_local_database_including_ews_types">Lokale Datenbank leeren,\nEINSCHLIESSLICH\nEWS-Typen</string>
+    <string name="get_wards_and_beds_from_server">Stationen und Betten\nvom Server beziehen</string>
+    <string name="set_bed_details">Bettendetails\nfestlegen</string>
+    <string name="lifetouch_not_attached_to_patient">Lifetouch nicht mit dem Patienten verbunden</string>
+    <string name="bed_name">Bettenname</string>
+    <string name="device_type">Gerätetyp</string>
+    <string name="serial_number">Seriennummer</string>
+    <string name="ward_name">Stationsname</string>
+    <string name="check_device_status">Gerätestatus prüfen</string>
+    <string name="checking_with_server">Mit Server abgleichen</string>
+    <string name="set_server_address">Serveradresse\neinstellen</string>
+    <string name="set_dummy_server">Set dummy\nServer details</string>
+    <string name="textZeroPercent">0%</string>
+    <string name="buttonUnitRadioOff">Einheit aus</string>
+    <string name="fake_free_disk_space">100% frei</string>
+    <string name="enter_wamp_server_port">WAMP-Port eingeben</string>
+    <string name="set_wamp_server_port">WAMP-Port\neinstellen</string>
+    <string name="wamp_streaming">WAMP\nStreaming</string>
+    <string name="export_database_to_tablet_root">Datenbank auf\nTablet-Root\nexportieren</string>
+    <string name="poincare">Herzrhythmus</string>
+    <string name="textLeadsOff">Verbindung getrennt</string>
+    <string name="use_https">HTTPS</string>
+
+    <string name="patient_id_exist">Patienten-ID bereits in Gebrauch!\nBitte andere ID verwenden</string>
+    <string name="textPatientIdVerificationString">Bitte warten, Patienten-ID wird geprüft</string>
+    <string name="textServerLinkTimeOut">Problem mit dem Server-Link</string>
+    <string name="appendDateTime">Datum, Uhrzeit anhängen</string>
+
+    <string name="PatientIdAddDateTime">Taste für Datum, Uhrzeit,\nPatienten-ID aktivieren</string>
+    <string name="start_patient_session">Patientensitzung starten</string>
+    <string name="stop_patient_session">Patientensitzung beenden</string>
+    <string name="create_new_patient">Neue Patienten erstellen</string>
+
+    <string name="textTimeDummyStringSmall">12:00</string>
+
+    <string name="device_periodic_setup_mode">Periodischer\nSetup-Modus</string>
+    <string name="textFingerOff">Finger Getrennt</string>
+
+    <string name="textViewLifetouchChangeSessionDisconnect">Bitte warten...\nLifetouch wird getrennt</string>
+
+    <string name="NtpTimeSync">Manuelle\nZeitsynchronisation</string>
+
+    <string name="time_drift_initial">XX.xxx</string>
+
+    <string name="mac_address">MAC-Adresse</string>
+
+    <string name="showMacAddressOnDeviceStatusScreen">MAC im\nGerätestatus anzeigen</string>
+
+    <string name="enableSetupMode">Setup-Modus aktivieren</string>
+
+    <string name="dummy_measurement_unknown">\?\?\?</string>
+    <string name="dummy_measurement_timestamp_unknown">\?\?\?\?\?\?\?\?</string>
+
+    <string name="server_initiated">Server gestartet</string>
+
+    <string name="buttonTextQrCodeUnlockScreen">Berühren, um QR-Code zu scannen</string>
+
+    <string name="textEmptyDeviceListConnectedToPatientVitalsDisplay">Keine Geräte angeschlossen\nBitte Gerät(e) hinzufügen</string>
+
+    <string name="radioButton1minute">1 Min. Diagramm</string>
+    <string name="radioButton2minutes">2 Min. Diagramm</string>
+    <string name="radioButton3minutes">3 Min. Diagramm</string>
+    <string name="radioButton5minutes">5 Min. Diagramm</string>
+    <string name="radioButton10minutes">10 Min. Diagramm</string>
+    <string name="radioButton15minutes">15 Min. Diagramm</string>
+
+    <string name="textDummyMinuteSecondTime">00:00</string>
+    <string name="String_Now">Aktuelle Messung</string>
+
+
+    <string name="stringExit">Verlassen</string>
+    <string name="stringExitDialog">Wollen Sie die Seite wirklich verlassen?</string>
+    <string name="stringYes">Ja</string>
+    <string name="stringNo">Nein</string>
+    <string name="string_ok">OK</string>
+
+    <string name="stringLogCat">Log Cat</string>
+    <string name="StringScrollLock">Scroll Lock</string>
+
+    <string name="StringTouchHere">Hier berühren</string>
+    <string name="StringPressDoneWhenFinished">Nach Beendigung Fertig klicken</string>
+    <string name="StringEnableAnimation">Animation\naktivieren</string>
+
+    <string name="lifetemp_not_attached_to_patient">Lifetemp nicht mit dem Patienten verbunden</string>
+
+    <string name="String_Press_next_to_continue">Zum Fortfahren auf „Weiter“ klicken</string>
+
+    <string name="enable_csv_output">Enable\nCSV Output</string>
+
+    <string name="text_connecting">Verbinden...</string>
+    <string name="text_stop_this_session">Sitzung neu starten</string>
+    <string name="string_restart_session_dialog">Möchten Sie die Sitzung wirklich neu starten?\nAlle verbundenen Geräte wurden entfernt !!!</string>
+    <string name="string_connecting_wait_dialog">Geräte werden verbunden, bitte warten...</string>
+
+
+    <string name="stringJsonArraySize">JSON\nGröße</string>
+
+    <string name="connection_event_disconnected">Verbindungsereignis\nGetrennt</string>
+    <string name="lifetemp_leads_off">Verbindung getrennt</string>
+    <string name="lifetouch_leads_off">Lifetouch\nVerbindung getrennt</string>
+    <string name="pulse_ox_off_finger">Pulse Ox\nAUS Finger</string>
+    <string name="spoof_early_warning_scores">Test EWS</string>
+
+    <string name="number_of_measurements_per_tick">Messung per Tick</string>
+
+    <string name="text_device_disconnected">Versuch einer neuen\nVerbindung</string>
+
+    <string name="fake_battery_voltage">----mV</string>
+
+    <string name="textView_EndNowGettingPendingData">Jetzt\nbeenden</string>
+    <string name="string_remove_disconnected_devices_dialog">Geräte außerhalb der Reichweite des Gateway. Eine sofortige Trennung bedeutet, dass alle gespeicherten Daten auf dem Lifetouch/Lifetemp verloren gehen.\nSicher?</string>
+    <string name="string_waitForLifetouchPendingHeartBeat">Bitte warten. Gespeicherte Herzschläge werden heruntergeladen</string>
+    <string name="string_waitForLifetempDisconnection">Bitte warten. Trennung des Lifetemp</string>
+    <string name="string_WarningPendingHeartBeatButRemoveLifetouchDialog">Herzschläge für download verfügbar. Bei sofortiger Trennung gehen die gespeicherten Herzschläge verloren. Sicher?</string>
+    <string name="string_WarningPendingHeartBeatButRemoveLifetouchTextView">Lifetouch nicht mit Gateway verbunden. Die gespeicherten Herzschläge gehen bei sofortiger Trennung verloren</string>
+
+    <string name="setup_mode_length">Setup-Modus\nDauer</string>
+
+    <string name="string_lifetemp_disconnecting">Trennung von Lifetemp\nBitte warten...</string>
+
+    <string name="string_waitForLifetempPendingMeasurement">Bitte warten. Gespeicherte Temperaturmessungen herunterladen</string>
+
+    <string name="string_WarningPendingDataDownloading">Das Gerät hat Daten, die auf einen Download warten. Eine sofortige Trennung bedeutet, dass diese gespeicherten Daten verloren gehen.\nSind Sie sicher?</string>
+    <string name="string_WarningPendingTemperatureButRemoveLifetempTextView">Lifetemp nicht mit Gateway verbunden.\nEine sofortige Trennung bedeutet, dass diese gespeicherten Temperaturen verloren gehen.</string>
+    <string name="string_WarningPendingMeasurementButRemoveDevicesTextView">Gerät nicht mit Gateway verbunden.\nEine sofortige Trennung bedeutet, dass diese gespeicherten Messungen verloren gehen.</string>
+
+    <string name="continuous_setup_mode">Kontinuierlich Setup-Modus</string>
+
+    <string name="filler_text_one">---%</string>
+    <string name="filler_text_two">----</string>
+
+    <string name="number_of_invalid_intermediate_measurements_before_marking_as_invalid">Anzahl ungültiger SpO2\nZwischenmessungen,\nehe als gültig markiert</string>
+
+    <string name="use_webservice_authentication">Authentifizierung\nverwenden</string>
+
+    <string name="textViewLifetempChangeSessionDisconnect">Bitte warten...\nLifetemp wird getrennt</string>
+
+    <string name="textManualVitalSignEntry">Manuelle\nEingabe von Vitalparametern</string>
+
+    <string name="select_the_vital_sign_to_enter">Einzugebenden Vitalparameter auswählen</string>
+
+    <string name="decimal_point">.</string>
+
+    <string name="number_zero">0</string>
+
+    <string name="number_one">1</string>
+
+    <string name="number_two">2</string>
+
+    <string name="number_three">3</string>
+
+    <string name="number_four">4</string>
+
+    <string name="number_five">5</string>
+
+    <string name="number_six">6</string>
+
+    <string name="number_seven">7</string>
+
+    <string name="number_eight">8</string>
+
+    <string name="number_nine">9</string>
+
+    <string name="delete">LÖSCHEN</string>
+    
+    <string name="enter">Enter</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="confirm">Bestätigen</string>
+    <string name="last_measurement">Letzte Messung</string>
+    <string name="manually_entered_vital_signs">Manuell eingegebene Vitalparameter</string>
+    <string name="view_manually_entered_vital_signs">Manuell eingegebene Vitalparameter anzeigen</string>
+    <string name="enable_manually_entered_vital_signs">Enable Manually\nEntered Vital Signs</string>
+    <string name="please_wait">Bitte warten...</string>
+    <string name="device_already_in_use_according_to_server">Gerät laut Server bereits in Gebrauch</string>
+    <string name="problem_checking_server__please_try_again_later">Probleme bei der Prüfung des Servers. Bitte versuchen Sie es später noch einmal</string>
+    <string name="fw_equals">FW = </string>
+    <string name="percent_symbol_free">% frei</string>
+    <string name="mv">mV</string>
+    <string name="percent_symbol">%</string>
+    <string name="enable_early_warning_scores">Enable Early Warning Scores</string>
+
+    <string name="PTT_string">PTT</string>
+    <string name="Dummy_PTT_time">XXXX ms</string>
+    <string name="Dummy_PTT_timeStamp">XX:XX:XX</string>
+    <string name="pulse_transit_time">Pulstransitzeit</string>
+    <string name="ppt">PTT</string>
+    <string name="pulse_transmit_time">Pulsübertragungszeit</string>
+    <string name="enable_pulse_transmit_time">Enable Pulse Transmit Time</string>
+    <string name="alert">Patient ist wach</string>
+    <string name="responds_to_voice">Reagiert auf Ansprache</string>
+    <string name="responds_to_pain">Reagiert auf Schmerzreize</string>
+    <string name="unresponsive">Reagiert nicht</string>
+
+    <string name="dummyEwsReading">--</string>
+    <string name="stringEarlyWarningScoreMeasurementSlash"> / </string>
+    <string name="stringEarlyWarningScoreType">Early Warning Score Typ</string>
+    <string name="stringEarlyWarningScoreTypeNotReceived">Schwellenwerte nicht eingegangen</string>
+    <string name="stringEarlyWarningScore">EWS</string>
+    <string name="addEarlyWarningScoreDevice">Hinzufügen</string>
+    <string name="use_webservice_encryption">Verschlüsselung\nverwenden</string>
+
+    <string name="supplemental_oxygen_none">Keine</string>
+    <string name="supplemental_oxygen_low">Niedrig</string>
+    <string name="supplemental_oxygen_high">Hoch</string>
+
+    <string name="supplemental_oxygen_less_four_litres__less_50_percent">&lt;4/l min, &lt;50%</string>
+    <string name="supplemental_oxygen_greater_equal_four_litres__greater_equal_50_percent">&#8805;4/l min, &#8805;50%</string>
+
+    <string name="supplemental_oxygen_less_four_litres__less_50_percent_cr">&lt;4/l min,\n&lt;50%</string>
+    <string name="supplemental_oxygen_greater_equal_four_litres__greater_equal_50_percent_cr">&#8805;4/l min,\n&#8805;50%</string>
+
+    <string name="no">Nein</string>
+    <string name="yes">Ja</string>
+
+    <string name="measurement_no_longer_valid">Time-out</string>
+
+    <string name="gateway_not_responding_for_over_thirty_seconds">Gateway reagiert seit über 30 Sekunden nicht.\nMöchten Sie den Gateway neu starten?</string>
+    <string name="restart_gateway_app">Neustart</string>
+    <string name="last_gateway_ping_was_received_at">Letztes Signal vom Gateway erhalten:</string>
+    
+    <string name="display_patient_orientation">Enable\nPatient Orientation</string>
+    <string name="show_numbers_on_battery_indicator">Show numbers on\nbattery indicator</string>
+    <string name="run_devices_in_test_mode">Run devices in test mode</string>
+
+    <string name="get_types_from_server">Typen vom\nServer beziehen</string>
+
+    <string name="early_warning_scoring_types">Early Warning\nScores Typen</string>
+    <string name="device_info">Geräteinformation</string>
+    <string name="end_patient_session">Patientensitzung beenden</string>
+    <string name="dismiss">Schließen</string>
+    <string name="four_dashes">----</string>
+    <string name="dummy_measurement">Dummy-Messung</string>
+    <string name="space_dash_space"> - </string>
+    <string name="session_status">Sitzungsstatus</string>
+    <string name="patient_details">Patienteninformationen</string>
+    <string name="start_device_session">Gerätesitzung starten</string>
+    <string name="end_device_session">Gerätesitzung beenden</string>
+    <string name="connection_events">Verbindungsereignisse</string>
+    <string name="active_session">Aktive Sitzung</string>
+    <string name="historical_session">Historische Sitzung</string>
+    <string name="heart_rates">Herzfrequenzen</string>
+    <string name="heart_beats">Herzschläge</string>
+    <string name="respiration_rates">Atemfrequenzen</string>
+    <string name="setup_mode_samples">Setup-Modus Muster</string>
+    <string name="raw_accelerometer_mode_samples">Raw Beschleunigungsmesser Modus Proben</string>
+    <string name="battery_measurements">Batteriemessungen</string>
+    <string name="patient_orientation">Patientenausrichtung</string>
+    <string name="temperature_measurements">Temperaturmessung</string>
+    <string name="nonin_wrist_ox_spo2_measurements">SpO2 Messungen</string>
+    <string name="nonin_wrist_ox_intermediate_measurements">Zwischenmessungen</string>
+    <string name="blood_pressure_measurements">Blutdruckmessungen</string>
+
+    <string name="manually_entered_heart_rate">Herzfrequenz</string>
+    <string name="multiline_manually_entered_heart_rate">Manuell\neingegebene\nHerzfrequenz</string>
+
+    <string name="manually_entered_respiration_rate">Atemfrequenz</string>
+    <string name="multiline_manually_entered_respiration_rate">Manuell\neingegebene\nAtemfrequenz</string>
+
+    <string name="manually_entered_temperatures">Temperaturen</string>
+    <string name="multiline_manually_entered_temperatures">Manuell\neingegebene\nTemperaturen</string>
+
+    <string name="manually_entered_spo2_measurements">SpO2</string>
+    <string name="multiline_manually_entered_spo2_measurements">Manuell\neingegebene\nSpO2</string>
+
+    <string name="manually_entered_blood_pressures">Blutdruck</string>
+    <string name="multiline_manually_entered_blood_pressures">Manuell\neingegebene\nBlutdruck</string>
+
+    <string name="manually_entered_consciousness_levels">Wachheitsgrade</string>
+    <string name="multiline_manually_entered_consciousness_levels">Manuell\neingegebene\nWachheitsgrade</string>
+
+    <string name="manually_entered_supplemental_oxygen_levels">Grade der Sauerstoffunterstützung</string>
+    <string name="multiline_manually_entered_supplemental_oxygen_levels">Manuell\neingegebene\nGrade der\nSauerstoffunterstützung</string>
+
+    <string name="manually_entered_capillary_refill_time">Kapillaren-Nachfüllzeit</string>
+    <string name="multiline_manually_entered_capillary_refill_time">Manuell\neingegebene\nKapillaren-Nachfüllzeit</string>
+
+    <string name="manually_entered_respiration_distress">Atemnot</string>
+    <string name="multiline_manually_entered_respiration_distress">Manuell eingegebene Atemnot</string>
+
+    <string name="manually_entered_family_or_nurse_concern">Bedenken der Familie oder der Krankenschwester</string>
+    <string name="multiline_manually_entered_family_or_nurse_concern">Manuell eingegebene Bedenken der Familie oder der Krankenschwester</string>
+
+    <string name="early_warning_scores">Early Warning Scores</string>
+    <string name="dummy_id">Dummy ID : </string>
+    <string name="real_id">Echte ID : </string>
+    <string name="slash">/</string>
+    <string name="early_warning_score_types_placeholder">asdf</string>
+    <string name="dummy_footer_measurement_timestamp">Fri 12:00</string>
+    <string name="dummy_number_of_heart_beats_pending">10000</string>
+    <string name="dummy_keypad_measurement">123.4</string>
+    <string name="set_server_port">Server-Port\neinstellen</string>
+    <string name="enter_server_port">Server-Port eingeben</string>
+
+    <string name="seconds">sekunden</string>
+    <string name="minute">minute</string>
+    <string name="minutes">minuten</string>
+
+    <string name="blood_pressure_as_systolic_slash_diastolic">Blutdruck als \'Systole/Diastole\‘</string>
+    <string name="bpm">bpm</string>
+    <string name="breath_per_min">Atemzüge/min</string>
+
+    <string name="nonin_disconnected">Nonin nicht verbunden</string>
+    <string name="leads_off_detetect_for_more_than_ten_minutes">Verbindung seit über zehn Minuten unterbrochen</string>
+
+    <string name="wifi_enabled_status">Wifi aktiviert</string>
+    <string name="wifi_connected_to_ssid">Mit SSID verbunden</string>
+    <string name="wifi_SSID">Wifi SSID</string>
+    <string name="wifi_IP_address">IP-Addresse</string>
+    <string name="wifi_signal_level">Signalstärke</string>
+    <string name="wifi_connection_status">Verbindungsstatus</string>
+    <string name="wifi_BSSID">Wifi BSSID</string>
+    <string name="wifi_failure_reason">Verbindungsproblem</string>
+
+    <string name="button_wifi_reconnect_string">Verbinden</string>
+    <string name="button_wifi_dismiss_string">Zurück</string>
+
+    <string name="string_total_wifi_level">/5 </string>
+
+    <string name="not_set_yet">NOCH NICHT EINGESTELLT</string>
+    <string name="wifi_failure_reason_none">Kein Problem erkannt</string>
+    <string name="wifi_failure_reason_NotConfigured">Wifi nicht konfiguriert</string>
+    <string name="wifi_failure_reason_AuthenticationError">Authentifizierungsfehler</string>
+    <string name="wifi_failure_reason_UnknownSSID">Keine Verbindung zu SSID möglich</string>
+    <string name="wifi_failure_reason_Unknown">Unbekannt</string>
+    <string name="wifi_disabled_in_admin_page">Wifi von Gateway Admin deaktiviert</string>
+
+    <string name="stringWifiDisableCheckbox">Wifi Auto\nReconnect aktivieren</string>
+
+    <string name="please_enter_the_heart_rate">Herzfrequenz eingeben</string>
+    <string name="please_enter_the_respiration_rate">Atemfrequenz eingeben</string>
+    <string name="please_enter_the_temperature">Temperatur eingeben</string>
+    <string name="please_enter_the_spo2">SpO2 Please eingeben</string>
+    <string name="please_enter_the_blood_pressure">Systole/Diastole Blutdruck eingeben</string>
+    <string name="please_enter_the_consciousness_level">Wachheitsgrad eingeben</string>
+    <string name="please_enter_the_supplemental_oxygen">Sauerstoffgabe eingeben</string>
+
+    <string name="enter_the_measurement_time_by_moving_the_green_dot">Grünen Kreis bewegen um die Messzeit anzupassen</string>
+
+    <string name="are_you_sure_set_server_address">Serveradresse ändern. Sicher?\ Wenn Sie “Ja” wählen wird die lokale Datenbank gelöscht</string>
+    <string name="are_you_sure_set_server_port">Server Port ändern. Sicher?\ Wenn Sie “Ja” wählen wird die lokale Datenbank gelöscht</string>
+
+    <string name="today">Heutige Messung</string>
+    <string name="multi_day">Mehrere Tage</string>
+
+    <string name="setup_mode">Setup\nModus</string>
+    <string name="detached">Getrennt</string>
+
+    <string name="stringLongTermMeasurementTimeoutLength">Langzeitmessung\nTimeout</string>
+
+    <string name="enabledUnpluggedOverlay">Netzkabel-Einblendung aktiviert</string>
+
+    <string name="resetZoom">Zoom zurücksetzen</string>
+    <string name="backfill_session">Daten in Sitzung laden</string>
+    <string name="number_of_hours_to_backfill">Anzahl von Stunden zur Rücksicherung</string>
+
+    <string name="stringDataNonSyncable">Nicht\nSynchronisierbar</string>
+    <string name="stringDataFailedToSend">Fehlgeschlagen</string>
+    <string name="stringDataPending">Dateien\nAustehend</string>
+
+    <string name="delete_old_exported_databases">Exportierte\nDatenbanken\nLöschen</string>
+
+    <string name="manufacturing_mode">Manufacturing Mode</string>
+    <string name="back_camera">Back Camera</string>
+    <string name="simulate_user_qr_code">Simulate\nQR Code</string>
+    <string name="lifetemp_measurement_interval">Lifetemp\nMeasurement\nInterval</string>
+    <string name="patient_orientation_measurement_interval">Patient Orientation\nMeasurement\nInterval</string>
+
+    <string name="manual_vitals_only">Nur manuell eingebene Vitaldaten</string>
+    <string name="or_press_manual_vitals_only">Für die manuelle Eingabe von Vitaldaten klicken Sie hier</string>
+
+    <string name="get_patient_name_from_server">Patientenname vom Server erfragen</string>
+
+    <string name="starting_patient_name_lookup">Suche nach Patientennamen starten</string>
+    <string name="request_sent_to_hospital_server">Anfrage zum Krankenhaus-Server gesendet</string>
+    <string name="server_returned_an_error">Server hat einen Fehler zurückgegeben</string>
+    <string name="retry_or_press_next_to_skip_patient_name_lookup">Erneut versuchen oder  auf \"Weiter\" tippen um Suche nach Patientennamen zu überspringen</string>
+    <string name="server_timed_out">Zeitüberschreitung des Servers</string>
+    <string name="patient_id_not_found">Patienten-ID nicht gefunden</string>
+    <string name="first_name">Vorname</string>
+    <string name="last_name">Nachname</string>
+    <string name="date_of_birth">Geburtsdatum</string>
+    <string name="gender">Geschlecht</string>
+
+    <string name="male">Männlich</string>
+    <string name="female">Weiblich</string>
+
+    <string name="lot_number">Chargennummer</string>
+    <string name="manufacture_date">Herstellungsdatum</string>
+    <string name="expiration_date">Ablaufdatum</string>
+
+    <string name="text_end_session_time_picker">Grünen Punkt bewegen um Endzeit der Sitzung einzugeben</string>
+
+    <string name="simple_heart_rate">Simple Heart Rate</string>
+
+    <string name="custom_error_activity_message_line_one">Es tut uns leid!</string>
+    <string name="custom_error_activity_message_line_two">Es ist ein Fehler aufgetreten, der dafür gesorgt hat, dass der Patienten-Gateway (UI) nicht mehr funktioniert.</string>
+
+    <string name="custom_error_activity_dummy_timestamp">21 Dec 2016 18:24:32</string>
+    <string name="restart">Neustart</string>
+
+    <string name="gsm_mode_only">GSM Mode Only</string>
+
+    <string name="enable_developer_popup">Enable \nDeveloper\nPopup</string>
+    <string name="show_ip_address_on_wifi_popup">Show IP\nAddress on\nWifi popup</string>
+
+    <string name="poor_signal">Schlechtes Signal</string>
+    <string name="unable_to_detect_heartbeats">Herztöne können nicht erkannt werden</string>
+    <string name="check_electrodes">Elektroden prüfen</string>
+
+    <string name="percentage_of_poor_signal_heart_beats_before_marking_as_invalid">Prozentsatz Herzschläge mit\nschlechtem Signal, vor der\nKennzeichnung als ungültig</string>
+
+    <string name="options">Optionen</string>
+    <string name="motion_mode">Bewegungs\nModus</string>
+
+    <string name="usa_mode">USA Mode</string>
+    <string name="lifetouch_activity_level">Lifetouch Activity Level</string>
+
+    <string name="measurements_every">Messungen alle</string>
+    <string name="no_measurements">Keine Messungen</string>
+    <string name="get_data">Daten abrufen</string>
+    <string name="program_plan">Programmplan</string>
+    <string name="connecting">Verbinden</string>
+    <string name="syncing">Synchronisieren</string>
+    <string name="getting_system_data">Systemdaten abrufen</string>
+    <string name="getting_user_data">Benutzerdaten abrufen</string>
+    <string name="disconnecting">Trennen</string>
+    <string name="programming_plan">Programmierplan</string>
+    <string name="press_the_top_two_buttons_until_pc_appears">Drücken Sie die beiden oberen Tasten, bis \'PC --\‘ erscheint</string>
+    <string name="measurements_will_be_uploaded_automatically">Messungen werden automatisch hochgeladen</string>
+    <string name="welcome_to_the_isansys_patient_gateway">Willkommen beim Isansys Patienten-Gateway</string>
+    <string name="exit_patient_gateway_to_setup_wifi">Patienten-Gateway beenden,\num WiFi einzurichten</string>
+    <string name="start_installation_wizard">Start\nInstallationsassistent</string>
+    <string name="patient_gateway_setup_wizard">Einrichtungsassistent Patienten-Gateway</string>
+    <string name="restart_installation_wizard">Neustart\nInstallationsassistent</string>
+    <string name="force_installation_complete">Erzwingen\nInstallation\nAbgeschlossen</string>
+    <string name="scan_installation_qr_code">Scannen Installation QR-Code</string>
+    <string name="lifeguard_server_address">Lifeguard Server Adresse</string>
+    <string name="lifeguard_server_port">Lifeguard Server Anschluss</string>
+    <string name="lifeguard_server_wamp_port">Lifeguard Server WAMP-Anschluss</string>
+    <string name="lifeguard_server_link_test">Lifeguard Server Verbindungstest</string>
+    <string name="getting_wards_and_beds">Stationen und Bett abrufen</string>
+    <string name="select_a_ward_and_bed">Station und Bett auswählen</string>
+    <string name="selected_ward_and_bed">Ausgewählte/-s Station und Bett</string>
+    <string name="press_to_confirm">Zum Bestätigen drücken</string>
+    <string name="wamp_link_test">WAMP-Verbindungstest</string>
+    <string name="synchronizing_time">Synchronisieren der Zeit</string>
+    <string name="getting_ews_thresholds">EWS-Schwellenwerte abrufen</string>
+    <string name="getting_gateway_configuration">Gateway-Konfiguration abrufen</string>
+    <string name="setup_complete">Einrichtung abgeschlossen</string>
+    <string name="start_using_patient_gateway">Start Verwendung Patienten-Gateway</string>
+    <string name="no_response_from_lifeguard_server_please_check_address_and_port_correct">" Keine Antwort vom Lifeguard Server.Bitte prüfen, ob Adresse und Anschluss korrekt sind."</string>
+    <string name="cannot_connect_to_wamp_server_please_check_port_accessible">Verbindung zu WAMP-Server kann nicht hergestellt werden.Bitte sicherstellen, dass Anschluss verfügbar ist.</string>
+    <string name="cannot_connect_to_ntp_server_please_check_port_accessible">Verbindung zu NTP-Server kann nicht hergestellt werden.Bitte sicherstellen, dass Anschluss verfügbar ist.</string>
+    <string name="cannot_connect_to_ntp_server_ntp_sync_failed">Verbindung zu NTP-Server kann nicht hergestellt werden.Uhrzeitsynchronisation fehlgeschlagen</string>
+    <string name="authentication_failure">Authentifizierungsfehler</string>
+    <string name="device_settings">Geräteeinstellungen</string>
+    <string name="firmware_updating">Firmware-Aktualisierung</string>
+    <string name="check_for_updated_firmware">Prüfen auf\naktualisierte\nFirmware</string>
+    <string name="checking_for_updated_firmware">Checking for Updated Firmware</string>
+    <string name="setup_mode_log">Einrichtung Modus Protokoll</string>
+    <string name="audit_trail">Audit Trail</string>
+    <string name="annotation">Anmerkung</string>
+    <string name="enter_the_annotation_time_by_moving_the_green_dot">Eingabe der Anmerkungszeit durch Bewegen des grünen Punktes</string>
+    <string name="please_type_annotation_here">Bitte geben Sie die Anmerkung hier ein</string> <string name="annotations">Anmerkungen</string>
+    <string name="location_services_off">Positionsdienste sind ausgeschaltet, BLE funktioniert nicht.\nBitte Positionsdienste einschalten.</string>
+    <string name="manually_entered_annotations">Anmerkungen</string>
+    <string name="please_enter_the_annotation">Bitte geben Sie die Anmerkung ein</string>
+    <string name="you_must_end_the_session_first">Sie müssen die aktuelle Sitzung beenden</string>
+    <string name="please_press_get_data">Bitte drücken Sie \"Daten abrufen\"</string>
+    <string name="please_press_program_plan">Bitte drücken Sie \"Programmplan\"</string>
+    <string name="confusion">Konfusion</string>
+    <string name="please_select_the_capillary_refill_time">Bitte die Kapillaren-Nachfüllzeit auswählen</string>
+
+    <string name="please_select_the_respiration_distress_level">Bitte den Atemnot-Level eingeben</string>
+
+    <string name="please_select_if_there_is_family_or_nurse_concern">Bitte auswählen, ob Bedenken der Familie/Krankenschwester existieren</string>
+    <string name="enter_the_observation_set_time_by_moving_the_green_dot">Die Beobachtungszeit durch Verschieben des grünen Punktes eingeben</string>
+    <string name="enable_auto_log_file_upload">Automatischen Log-Datei-Upload aktivieren</string>
+    <string name="every">alle</string>
+    <string name="capillary_refill_time">Kapillaren-Nachfüllzeit</string>
+
+    <string name="less_or_equal_two_seconds">&#8804;2 Sekunden</string>
+    <string name="more_than_or_equal_three_seconds">&#8805;3 Sekunden</string>
+
+    <string name="respiration_distress">Atemnot</string>
+
+    <string name="none">Keine</string>
+
+    <string name="mild">Mild</string>
+
+    <string name="moderate">Moderat</string>
+
+    <string name="severe">Schwer</string>
+
+
+    <string name="nasal_flaring">Nasenflügeln</string>
+
+    <string name="intercostal_recession">Interkostale Einziehung</string>
+
+
+    <string name="head_bobbing">Kopftremor</string>
+
+    <string name="subcostal_recession">Subkostale Einziehung</string>
+
+    <string name="inspiratory_or_expiratory_noises">Inspirations- oder Exspirationsgeräusche</string>
+
+    <string name="tracheal_tug">Oliver-Cardarelli-Zeichen</string>
+
+
+
+    <string name="sternal_recession">Sternale Einziehung</string>
+
+    <string name="exhaustion">Erschöpfung</string>
+
+    <string name="impending_respiratory_arrest">Drohender Atemstillstand</string>
+
+
+    <string name="family_or_nurse_concern">Bedenken der Familie oder Krankenschwester</string>
+
+    <string name="enter_the_family_or_nurse_concern_time_by_moving_the_green_dot">Die Zeit des Bedenkens der Familie/Krankenschwestern durch Verschieben des grünen Punktes eingeben</string>
+
+    <string name="please_type_the_concern_here">Bitte die Bedenken hier eingeben</string>
+
+    <string name="concern">Bedenken</string>
+
+    <string name="select_how_long_to_use_this_measurement_in_the_early_warning_score">Auswählen, wie lange diese Messung für EWS genutzt werden soll</string>
+
+    <string name="three_seconds">3 sekunden</string>
+    <string name="five_seconds">5 sekunden</string>
+    <string name="ten_seconds">10 sekunden</string>
+    <string name="twenty_seconds">20 sekunden</string>
+    <string name="thirty_seconds">30 sekunden</string>
+    <string name="one_minute">1 minute</string>
+    <string name="two_minutes">2 minuten</string>
+    <string name="three_minutes">3 minuten</string>
+    <string name="five_minutes">5 minuten</string>
+    <string name="six_minutes">6 minuten</string>
+    <string name="ten_minutes">10 minuten</string>
+    <string name="twelve_minutes">12 minuten</string>
+    <string name="fifteen_minutes">15 minuten</string>
+    <string name="twenty_minutes">20 minuten</string>
+    <string name="thirty_minutes">30 minuten</string>
+    <string name="sixty_minutes">60 minuten</string>
+    <string name="ninty_minutes">90 minuten</string>
+    <string name="one_hundred_twenty_minutes">120 minuten</string>
+
+    <string name="text1Hour">1 stunde</string>
+    <string name="text2Hours">2 stunden</string>
+    <string name="text3Hours">3 stunden</string>
+    <string name="text4Hours">4 stunden</string>
+    <string name="text6Hours">6 stunden</string>
+    <string name="text8Hours">8 stunden</string>
+    <string name="text12Hours">12 stunden</string>
+    <string name="text24Hours">24 stunden</string>
+
+    <string name="one_hour">Eine stunde</string>
+    <string name="two_hours">Zwei stunden</string>
+    <string name="four_hours">Vier stunden</string>
+    <string name="eight_hours">Acht stunden</string>
+    <string name="twelve_hours">Zwölf stunden</string>
+
+    <string name="select_annotation_entry_mode">Kommentar-Eingabemodus auswählen</string>
+
+    <string name="select_the_annotation_conditions">Bedingung(en) auswählen</string>
+
+    <string name="select_the_annotation_actions">Maßnahme(n) auswählen</string>
+    <string name="select_the_annotation_outcomes">Ergebnis(se) auswählen</string>
+    <string name="autoAddEarlyWarningScores">EWS automatisch hinzufügen</string>
+    <string name="confirm_vital_sign_details">Details der Vitalparameter bestätigen</string>
+    <string name="confirm_annotation_details">Details der Kommentare bestätigen</string>
+    <string name="keyboard">Tastatur</string>
+    <string name="predefined">Vordefiniert</string>
+    <string name="hide_keyboard">Tastatur ausblenden</string>
+    <string name="conditions">Bedingung(en)</string>
+    <string name="actions">Maßnahme(n)</string>
+    <string name="outcomes">Ergebnis(se)</string>
+    <string name="hold_qr_code_so_it_fits_in_the_smaller_lighter_square_above">Den QR-Code so halten, dass er in das kleine, hellere Quadrat oben passt</string>
+    <string name="press_manual_vitals_only">Oder drücken Sie auf die Taste unten, um eine Sitzung „Nur manuell eingegebene Vitalparameter“ zu erstellen.. Sensoren können später über „Sitzungsparameter ändern“ hinzugefügt werden</string>
+    <string name="observation_time">Beobachtungszeit</string>
+    <string name="validity_time">Gültigkeitsdauer</string>
+    <string name="get_config_from_server">Konfiguration\nvom Server\nabrufen</string>
+    <string name="get_server_configurable_text">Konfigurierbaren\nText des\nServers abrufen</string>
+    <string name="getting_server_configurable_text">Konfigurierbarer Text des Servers wird abgerufen</string>
+    <string name="predefined_annotations">Vordefinierte Anmerkungen</string>
+    <string name="invalid_number">Ungültige Nummer</string>
+
+    <string name="system">System</string>
+
+    <string name="recycling_popup_text">Bitte legen Sie die Lifetouch / Lifetemp-Sensoren in die Isansys-Recyclingbox</string>
+    <string name="recycling_popup_button">Erledigt</string>
+    <string name="update_must_be_installed">Das Update muss vor dem Beginn einer Patientensitzung installiert werden</string>
+    <string name="enter_update_mode">Update Modus beginnen</string>
+    <string name="software_updates_complete">Software Updates</string>
+    <string name="software_updates_in_progress">Software Updates abgeschlossen</string>
+    <string name="user_interface">Benutzeroberfläche</string>
+    <string name="logger_app">Protokollierungsanwendung</string>
+    <string name="patient_gateway">Patient Gateway</string>
+    <string name="stringDisplayTimeoutLength">Displaysperre</string>
+    <string name="use_display_timeout_on_chart_page">Displaysperre für Vitaldatenansicht verwenden</string>
+    <string name="no_timeout">Keine Auszeit</string>
+    <string name="textForaIr20">Fora</string>
+    <string name="textThermometer">Thermometer</string>
+    <string name="textSearchingForThermometer">Suche nach Thermometer</string>
+    <string name="remove_thermometer">Thermometer entfernen</string>
+    <string name="add_thermometer">Thermometer hinzufügen</string>
+    <string name="textPulseOximeter">Puls-Oximeter</string>
+    <string name="textSearchingForPulseOximeter">Suche nach Puls-Oximeter</string>
+    <string name="textThermometerFound">Thermometer gefunden</string>
+    <string name="textPulseOximeterFound">Puls-Oximeter gefunden</string>
+    <string name="textTherometerPairing">Thermometer Kopplung</string>
+    <string name="textPulseOximeterPairing">Puls-Oximeter Kopplung</string>
+    <string name="textThermometerPairingFailed">Kopplung mit Thermometer FEHLGESCHLAGEN</string>
+    <string name="textPulseOximeterPairingFailed">Kopplung mit Puls-Oximeter FEHLGESCHLAGEN</string>
+    <string name="textThermometerNotFound">Thermometer NICHT gefunden</string>
+    <string name="textPulseOximeterNotFound">Puls-Oximeter NICHT gefunden</string>
+    <string name="textPulseOximeterPairedNowConnecting">Puls-Oximeter angeschlossen. Verbunden.</string>
+    <string name="textThermometerConnected">Thermometer angeschlossen</string>
+    <string name="textPulseOximeterConnected">Puls-Oximeter angeschlossen</string>
+    <string name="pulse_oximeter_not_attached_to_patient">Puls-Oximeter nicht dem Patienten zugeordnet</string>
+    <string name="access_notification_policy_permission">Zugangsbestimmungen</string>
+    <string name="overlay_permission">Overlay Erlaubnis</string>
+    <string name="install_packages_permission">Pakete installieren</string>
+    <string name="needed_for_video_conferencing">Für Videokonferenzen unbedingt erforderlich</string>
+    <string name="audio">Audio</string>
+    <string name="video">Video</string>
+    <string name="incoming_call_from_hospital">Krankenhaus ruft an</string>
+    <string name="press_to_end_call">Um den Anruf zu beenden drücken</string>
+    <string name="missed_call">Verpasster Anruf</string>
+    <string name="failed_call">Während des Anrufs trat eine Fehlfunktion auf</string>
+    <string name="please_wait_connecting">Bitte warten. Verbinden...</string>
+    <string name="bluetooth_error_text">Bluetooth Fehler. Erneuter Scan der Geräte erforderlich</string>
+    <string name="show_temperature_in_fahrenheit">Temperatur in Fahrenheit anzeigen</string>
+    <string name="video_call">Videoanruf</string>
+    <string name="schedule_video_call">Videoanruf terminieren</string>
+    <string name="call_contacts">Kontaktperson(en) anrufen</string>
+    <string name="select_contact_to_start_video_call">Kontakt(e) zum Starten eines Videoanrufs auswählen</string>
+    <string name="calling_hospital">Das Krankenhaus ruft an</string>
+    <string name="no_answer_try_again_later">Keine Antwort. Bitte versuchen Sie es später noch einmal</string>
+    <string name="start_video_call">Videoanruf starten</string>
+    <string name="press_for_two_seconds">2 Sekunden lang drücken</string>
+    <string name="device_not_in_use">Gerät NICHT in Gebrauch</string>
+    <string name="device_is_in_use">Gerät IM Gebrauch</string>
+    <string name="mqtt_link_test">MQTT-Link-Test</string>
+    <string name="lifeguard_server_mqtt_port">Lifeguard Server MQTT-Anschluss</string>
+    <string name="cannot_connect_to_mqtt_server_please_check_port_accessible">Verbindung zum MQTT-Server nicht möglich. Bitte stellen Sie sicher, dass der Anschluss zugänglich ist</string>
+    <string name="enter_mqtt_server_port">MQTT-Port eingeben</string>
+    <string name="set_mqtt_server_port">MQTT-Port einstellen</string>
+    <string name="update_install_failed_onscreen_text">Während der Aktualisierung trat ein Fehler auf. Bitte versuchen Sie es später noch einmal</string>
+    <string name="no_contacts_have_been_setup">Es wurden noch keine Kontakte eingerichtet</string>
+    <string name="answer_call">Anruf beantworten</string>
+    <string name="android_permissions">Android Berechtigungen</string>
+    <string name="in_waiting_room">Verbinden...</string>
+    <string name="decline_call">Anruf ablehnen</string>
+    <string name="end_call">Anruf beenden</string>
+    <string name="custom_error_activity_message_line_send_to_isansys">Bitte erstellen Sie ein Foto von diesem Bildschirm und senden Sie es per E-Mail an support@isansys.com</string>
+    <string name="write_external_storage_permission">Externer Speicher schreiben</string>
+    <string name="enable_video_calls">Videoanrufe aktiviert</string>
+    <string name="enable">Aktivieren</string>
+
+    <string name="correct">Richtig</string>
+    <string name="needed_for_general_system_usage">Erforderlich für die allgemeine Systemnutzung</string>
+    <string name="needed_to_scan_qr_codes">Erforderlich zum Scannen des QR-Code</string>
+    <string name="please_enter_the_patients_case_id">Bitte geben Sie die Fall-ID des Patienten ein</string>string>
+    <string name="real_time_server_link">Verbindung zum\nEchtzeit-Server</string>
+    <string name="record_audio_permission">Erlaubnis zur Tonaufnahme</string>
+    <string name="camera_permission">Kamera-Erlaubnis</string>
+    <string name="spo2_spot_measurements">SpO2-Spot-Messungen</string>
+    <string name="sync_data_to_server">Daten mit dem Server\nsynchronisieren</string>
+    <string name="use_case_id">Fall-ID benutzen</string>
+    <string name="write_system_settings">Systemeinstellungen schreiben</string>
+    <string name="wrong">Falsch</string>
+    <string name="caution_exclusively_for_clinical_investigation">ACHTUNG: Ausschließlich für medizinische Prüfungen bestimmt</string>
+
+</resources>

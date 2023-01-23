@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/barCodeActivity"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    >
+    
+    <LinearLayout
+        android:id="@+id/qr_bar_code"
+        android:orientation="vertical"
+        android:layout_width="650dp"
+        android:layout_height="650dp"
+        android:gravity="center">
+    </LinearLayout>
+    
+    <TableLayout
+		android:layout_width="match_parent"  
+		android:layout_height="match_parent"
+		android:stretchColumns="*"
+		android:shrinkColumns="*"
+		android:gravity="center"
+		>
+		
+        <TableRow>
+	        
+			<TextView 
+			    android:id="@+id/textPleaseScanIdQrCode"
+		        android:text="@string/scan_installation_qr_code"
+		        android:gravity="center"
+		        android:textStyle="bold"
+		        android:textSize="36sp"
+		        android:layout_weight="3"
+				/>
+			
+		</TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textQrCodeUnlockPageHelp"
+                android:text="@string/hold_qr_code_so_it_fits_in_the_smaller_lighter_square_on_the_left"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_weight="3"
+                />
+        </TableRow>
+
+	</TableLayout>
+	
+</LinearLayout>

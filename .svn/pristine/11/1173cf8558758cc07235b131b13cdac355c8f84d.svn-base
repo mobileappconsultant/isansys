@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Patient Gateway</string>
+    <string name="service_name">Mats Service Name</string>
+    <string name="xx">xx</string>
+    <string name="custom_error_activity_dummy_timestamp">21 Dec 2016 18:24:32</string>
+    <string name="custom_error_activity_message_line_send_to_isansys">Tag et foto af denne skærm og send det til support@isansys.com</string>
+    <string name="build_version">Byggeversion</string>
+    <string name="android_permissions">Android-tilladelser</string>
+    <string name="fine_location">Fin beliggenhed</string>
+    <string name="background_location">Baggrund placering</string>
+    <string name="write_external_storage">Skriv ekstern lagring</string>
+    <string name="nearby_permission_text">Opret forbindelse til enheder i nærheden</string>
+    <string name="android_version">Android-version</string>
+    <string name="custom_error_activity_message_line_one">Beklager!</string>
+    <string name="custom_error_activity_message_line_two">Der er opstået en fejl og Patient Gateway (PG) er holdt op med at fungere.</string>
+    <string name="not_set_yet">ENDNU IKKE INDSTILLET</string>
+
+    <string name="local_database_reset_not_including_ews_thresholds">Nulstilling af lokal database (omfatter IKKE EWS-tærskelværdier)</string>
+    <string name="local_database_reset_including_ews_thresholds">Nulstilling af lokal database (omfatter EWS-tærskelværdier)</string>
+
+    <string name="starting_database_export_this_might_take_a_few_seconds">Starter eksport af database. Det kan tage et par sekunder!</string>
+    <string name="database_exported_to">Database blev eksporteret til </string>
+    <string name="cannot_find_database_not_exported_to">Kan ikke finde DB – ikke eksporteret: </string>
+
+    <string name="starting_database_import_this_might_take_a_few_seconds">Starter import af database. Det kan tage et par sekunder!</string>
+    <string name="database_imported">Database blev importeret</string>
+
+    <string name="problem_found_please_make_a_note_of_the_time_and_tell_isansys">Problemet blev fundet. Notér tidspunktet, og oplys det til Isansys</string>
+
+    <string name="restart">Genstart</string>
+</resources>

@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:baselineAligned="false"
+	android:gravity="center"
+	android:orientation="vertical">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical|center_horizontal"
+		android:text="@string/android_permissions"
+		android:textSize="36sp"
+		android:textStyle="bold" />
+
+	<TableLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:paddingStart="200dp"
+		android:paddingEnd="0dp"
+		android:gravity="center"
+		android:layout_weight="1">
+
+		<TableRow
+			android:id="@+id/tableRowOverlayPermissions"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1">
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="4"
+				android:gravity="center_vertical"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/textViewOverlayPermission"
+					android:text="@string/overlay_permission"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+					android:textSize="@dimen/permissions_page_permission_name" />
+
+				<TextView
+					android:id="@+id/textViewOverlayPermissionDescription"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:gravity="center_vertical"
+					android:text="@string/needed_for_general_system_usage"
+					android:textSize="@dimen/permissions_page_permission_reason" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="2"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+
+				<View
+					android:id="@+id/viewOverlayPermission"
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:layout_gravity="center"
+					android:background="@drawable/circle_yellow"
+					android:visibility="visible" />
+
+				<Button
+					android:id="@+id/buttonEnableOverlayPermissions"
+					android:text="@string/enable"
+					android:layout_width="200dp"
+					android:layout_height="75dp"
+					android:layout_marginStart="30dp"
+					android:background="@drawable/button_blue"
+					android:gravity="center|center_vertical"
+					android:textColor="@color/white" />
+
+			</LinearLayout>
+
+		</TableRow>
+
+		<TableRow
+			android:id="@+id/tableRowWriteSettingPermissions"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1">
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="4"
+				android:gravity="center_vertical"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/textViewWriteSettingsPermission"
+					android:text="@string/write_system_settings"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+					android:textSize="@dimen/permissions_page_permission_name" />
+
+				<TextView
+					android:id="@+id/textViewWriteSettingsPermissionDescription"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:gravity="center_vertical"
+					android:text="@string/needed_for_general_system_usage"
+					android:textSize="@dimen/permissions_page_permission_reason" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="2"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+
+				<View
+					android:id="@+id/viewWriteSettingsPermission"
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:layout_gravity="center"
+					android:background="@drawable/circle_yellow"
+					android:visibility="visible" />
+
+				<Button
+					android:id="@+id/buttonEnableWriteSettingsPermissions"
+					android:text="@string/enable"
+					android:layout_width="200dp"
+					android:layout_height="75dp"
+					android:layout_marginStart="30dp"
+					android:background="@drawable/button_blue"
+					android:gravity="center|center_vertical"
+					android:textColor="@color/white" />
+
+			</LinearLayout>
+
+		</TableRow>
+
+		<TableRow
+			android:id="@+id/tableRowCameraPermission"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1">
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="4"
+				android:gravity="center_vertical"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/textViewCameraPermission"
+					android:text="@string/camera_permission"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+					android:textSize="@dimen/permissions_page_permission_name" />
+
+				<TextView
+					android:id="@+id/textViewEnableCameraDescription"
+					android:text="@string/needed_to_scan_qr_codes"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+					android:textSize="@dimen/permissions_page_permission_reason" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="2"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+
+				<View
+					android:id="@+id/viewCameraPermission"
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:layout_gravity="center"
+					android:background="@drawable/circle_yellow"
+					android:visibility="visible" />
+
+				<Button
+					android:id="@+id/buttonEnableCameraPermissions"
+					android:text="@string/enable"
+					android:layout_width="200dp"
+					android:layout_height="75dp"
+					android:layout_marginStart="30dp"
+					android:background="@drawable/button_blue"
+					android:gravity="center|center_vertical"
+					android:textColor="@color/white" />
+
+			</LinearLayout>
+
+		</TableRow>
+
+		<TableRow
+			android:id="@+id/tableRecordAudioPermission"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1">
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="4"
+				android:gravity="center_vertical"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/textViewRecordAudioPermission"
+					android:text="@string/record_audio_permission"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+					android:textSize="@dimen/permissions_page_permission_name" />
+
+				<TextView
+					android:id="@+id/textViewEnableRecordAudioDescription"
+					android:text="@string/needed_for_video_conferencing"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+					android:textSize="@dimen/permissions_page_permission_reason" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="2"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+
+				<View
+					android:id="@+id/viewRecordAudioPermission"
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:layout_gravity="center"
+					android:background="@drawable/circle_yellow"
+					android:visibility="visible" />
+
+				<Button
+					android:id="@+id/buttonEnableRecordAudioPermissions"
+					android:text="@string/enable"
+					android:layout_width="200dp"
+					android:layout_height="75dp"
+					android:layout_marginStart="30dp"
+					android:background="@drawable/button_blue"
+					android:gravity="center|center_vertical"
+					android:textColor="@color/white" />
+
+			</LinearLayout>
+
+		</TableRow>
+
+		<TableRow
+			android:id="@+id/tableAccessNotificationPolicyPermission"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1">
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="4"
+				android:gravity="center_vertical"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/textViewAccessNotificationPolicyPermission"
+					android:text="@string/access_notification_policy_permission"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+					android:textSize="@dimen/permissions_page_permission_name" />
+
+				<TextView
+					android:id="@+id/textViewEnableAccessNotificationPolicyDescription"
+					android:text="@string/needed_for_general_system_usage"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+					android:textSize="@dimen/permissions_page_permission_reason" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="2"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+
+				<View
+					android:id="@+id/viewAccessNotificationPolicyPermission"
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:layout_gravity="center"
+					android:background="@drawable/circle_yellow"
+					android:visibility="visible" />
+
+				<Button
+					android:id="@+id/buttonEnableAccessNotificationPolicyPermissions"
+					android:text="@string/enable"
+					android:layout_width="200dp"
+					android:layout_height="75dp"
+					android:layout_marginStart="30dp"
+					android:background="@drawable/button_blue"
+					android:gravity="center|center_vertical"
+					android:textColor="@color/white" />
+
+			</LinearLayout>
+
+		</TableRow>
+
+		<TableRow
+			android:id="@+id/tableWriteExternalStoragePermission"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1">
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="4"
+				android:gravity="center_vertical"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/textViewWriteExternalStoragePermission"
+					android:text="@string/write_external_storage_permission"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+					android:textSize="@dimen/permissions_page_permission_name" />
+
+				<TextView
+					android:id="@+id/textViewEnableWriteExternalStorageDescription"
+					android:text="@string/needed_for_general_system_usage"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+					android:textSize="@dimen/permissions_page_permission_reason" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="2"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+
+				<View
+					android:id="@+id/viewWriteExternalStoragePermission"
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:layout_gravity="center"
+					android:background="@drawable/circle_yellow"
+					android:visibility="visible" />
+
+				<Button
+					android:id="@+id/buttonEnableWriteExternalStoragePermissions"
+					android:text="@string/enable"
+					android:layout_width="200dp"
+					android:layout_height="75dp"
+					android:layout_marginStart="30dp"
+					android:background="@drawable/button_blue"
+					android:gravity="center|center_vertical"
+					android:textColor="@color/white" />
+
+			</LinearLayout>
+
+		</TableRow>
+
+		<TableRow
+			android:id="@+id/tableInstallPackagesPermission"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1">
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="4"
+				android:gravity="center_vertical"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/textViewInstallPackagesPermission"
+					android:text="@string/install_packages_permission"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+					android:textSize="@dimen/permissions_page_permission_name" />
+
+				<TextView
+					android:id="@+id/textViewEnableInstallPackagesDescription"
+					android:text="@string/needed_for_general_system_usage"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+					android:textSize="@dimen/permissions_page_permission_reason" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="2"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+
+				<View
+					android:id="@+id/viewInstallPackagesPermission"
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:layout_gravity="center"
+					android:background="@drawable/circle_yellow"
+					android:visibility="visible" />
+
+				<Button
+					android:id="@+id/buttonEnableInstallPackagesPermissions"
+					android:text="@string/enable"
+					android:layout_width="200dp"
+					android:layout_height="75dp"
+					android:layout_marginStart="30dp"
+					android:background="@drawable/button_blue"
+					android:gravity="center|center_vertical"
+					android:textColor="@color/white" />
+
+			</LinearLayout>
+
+		</TableRow>
+
+	</TableLayout>
+
+</LinearLayout>

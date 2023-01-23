@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+
+    <TableRow
+        android:layout_weight="1"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/textSoftwareUpdatesInProgress"
+            android:text="@string/software_updates_in_progress"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/labelPatientGateway"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="@string/patient_gateway"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textCurrentPatientGatewaySoftwareVersion"
+                android:layout_height="fill_parent"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical|right"
+                android:text="@string/textThreeDashes"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/gatewayArrow"
+                android:layout_height="fill_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/right_arrow"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textAvailablePatientGatewayVersion"
+                android:layout_height="fill_parent"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical|left"
+                android:text="@string/textThreeDashes"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonInstallGatewayApk"
+                android:layout_width="250dp"
+                android:layout_height="120dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_blue"
+                android:gravity="center|center_vertical"
+                android:text="@string/textInstallSoftwareUpdateNow"
+                android:textColor="@color/white"
+                android:textSize="28sp"/>
+
+            <View
+                android:id="@+id/viewGatewayInstallDone"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="110dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_green"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/labelUserInterface"
+                android:text="@string/user_interface"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textCurrentUserInterfaceSoftwareVersion"
+                android:layout_height="fill_parent"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical|right"
+                android:text="@string/textThreeDashes"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/uiArrow"
+                android:layout_height="fill_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/right_arrow"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textAvailableUserInterfaceVersion"
+                android:layout_height="fill_parent"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical|left"
+                android:text="@string/textThreeDashes"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/buttonInstallUserInterfaceApk"
+                android:layout_width="250dp"
+                android:layout_height="120dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_blue"
+                android:gravity="center|center_vertical"
+                android:text="@string/textInstallSoftwareUpdateNow"
+                android:textColor="@color/white"
+                android:textSize="28sp"/>
+
+            <View
+                android:id="@+id/viewUserInterfaceInstallDone"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="110dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_green"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_weight="2"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/buttonUpdatesComplete"
+                android:layout_width="500dp"
+                android:layout_height="200dp"
+                android:background="@drawable/button_blue"
+                android:gravity="center|center_vertical"
+                android:text="@string/software_updates_complete"
+                android:textColor="@color/white"
+                android:textSize="36sp"
+                />
+        </LinearLayout>
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,3520 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_white_round">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <TableLayout
+            android:layout_height="match_parent"
+            android:layout_width="600dp">
+
+            <!-- Session Status -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textViewSessionStatusHeader"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="start"
+                    android:text="@string/session_status"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewLeftSideNonSyncableData"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/stringDataNonSyncable"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewLeftSideFailedToSendData"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/stringDataFailedToSend"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewLeftSideSyncableData"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/stringDataPending"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:textSize="12sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="start"
+                    android:text="@string/patient_details"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp"/>
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusPatientDetailsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusPatientDetailsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/start_patient_session"
+                    android:textColor="@color/black"
+                    android:gravity="start"
+                    android:layout_weight="3"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableStartPatientSessionPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusStartPatientSessionPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableStartPatientSessionPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/start_device_session"
+                    android:textColor="@color/black"
+                    android:gravity="start"
+                    android:layout_weight="3"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableStartDeviceSessionPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusStartDeviceSessionPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableStartDeviceSessionPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="3"
+                    android:gravity="start"
+                    android:text="@string/audit_trail"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp"/>
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionAuditTrailPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionAuditTrailPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionAuditTrailPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <!-- Small vertical spacer -->
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <Space
+                    android:layout_width="fill_parent"
+                    android:layout_height="7dp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="3"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/historical_session"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="3"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/active_session"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow android:layout_width="wrap_content">
+                <!-- Blank "indent" column -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="start"
+                    android:layout_weight="4"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewRightSideNonSyncableDataHistorical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/stringDataNonSyncable"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewRightSideFailedToSendDataHistorical"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/stringDataFailedToSend"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewRightSideSyncableDataHistorical"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/stringDataPending"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewRightSideNonSyncableDataActive"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/stringDataNonSyncable"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewRightSideFailedToSendDataActive"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/stringDataFailedToSend"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewRightSideSyncableDataActive"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/stringDataPending"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    />
+
+            </TableRow>
+
+            <!-- Lifetouch section header -->
+            <TableRow
+                android:layout_width="0dp"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:background="@color/pop_up_server_sync_headers_background_colour"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/lifetouch"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <!-- Lifetouch Heart Rates -->
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/heart_rates"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionLifetouchHeartRatesPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionLifetouchHeartRatesPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionLifetouchHeartRatesPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionLifetouchHeartRatesPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionLifetouchHeartRatesPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionLifetouchHeartRatesPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <!-- Lifetouch Heart Beats -->
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/heart_beats"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionLifetouchHeartBeatsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionLifetouchHeartBeatsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionLifetouchHeartBeatsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionLifetouchHeartBeatsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionLifetouchHeartBeatsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionLifetouchHeartBeatsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/respiration_rates"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionLifetouchRespirationMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionLifetouchRespirationMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionLifetouchRespirationMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionLifetouchRespirationMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionLifetouchRespirationMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionLifetouchRespirationMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/setup_mode_samples"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionLifetouchSetupModeSamplesPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionLifetouchSetupModeSamplesPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionLifetouchSetupModeSamplesPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionLifetouchSetupModeSamplesPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionLifetouchSetupModeSamplesPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionLifetouchSetupModeSamplesPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/raw_accelerometer_mode_samples"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionLifetouchRawAccelerometerModeSamplesPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionLifetouchRawAccelerometerModeSamplesPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionLifetouchRawAccelerometerModeSamplesPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionLifetouchRawAccelerometerModeSamplesPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionLifetouchRawAccelerometerModeSamplesPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionLifetouchRawAccelerometerModeSamplesPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/battery_measurements"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionLifetouchBatteryMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionLifetouchBatteryMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionLifetouchBatteryMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionLifetouchBatteryMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionLifetouchBatteryMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionLifetouchBatteryMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/patient_orientation"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionPatientOrientationPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionPatientOrientationPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionPatientOrientationPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionPatientOrientationPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionPatientOrientationPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionPatientOrientationPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <!-- Small vertical spacer -->
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_height="7dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="4" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="7dp"
+                    android:layout_weight="3"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="7dp"
+                    android:layout_weight="3"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour" />
+            </TableRow>
+
+            <!-- Thermometer section header -->
+            <TableRow
+                android:layout_width="0dp"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_headers_background_colour"
+                    android:gravity="start"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/textThermometer"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/temperature_measurements"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionLifetempTemperatureMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionLifetempTemperatureMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionLifetempTemperatureMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionLifetempTemperatureMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionLifetempTemperatureMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionLifetempTemperatureMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/battery_measurements"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionLifetempBatteryMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionLifetempBatteryMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionLifetempBatteryMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionLifetempBatteryMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionLifetempBatteryMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionLifetempBatteryMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <!-- Small vertical spacer -->
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_height="7dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="4" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="7dp"
+                    android:layout_weight="3"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="7dp"
+                    android:layout_weight="3"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour" />
+            </TableRow>
+
+            <!-- Nonin section header -->
+            <TableRow
+                android:layout_width="0dp"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:background="@color/pop_up_server_sync_headers_background_colour"
+                    android:text="@string/nonin_wrist_ox"
+                    android:layout_width="0dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="0dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:gravity="start"
+                    android:layout_weight="9"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/nonin_wrist_ox_spo2_measurements"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionNoninWristOxMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionNoninWristOxMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionNoninWristOxMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionNoninWristOxMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionNoninWristOxMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionNoninWristOxMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/nonin_wrist_ox_intermediate_measurements"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionNoninWristOxIntermediateMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionNoninWristOxIntermediateMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionNoninWristOxIntermediateMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionNoninWristOxIntermediateMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionNoninWristOxIntermediateMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionNoninWristOxIntermediateMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/setup_mode_samples"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionNoninWristOxSetupModeSamplesPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionNoninWristOxSetupModeSamplesPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionNoninWristOxSetupModeSamplesPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionNoninWristOxSetupModeSamplesPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionNoninWristOxSetupModeSamplesPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionNoninWristOxSetupModeSamplesPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/battery_measurements"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionNoninWristOxBatteryMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionNoninWristOxBatteryMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionNoninWristOxBatteryMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionNoninWristOxBatteryMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionNoninWristOxBatteryMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionNoninWristOxBatteryMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <!-- Small vertical spacer -->
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_height="7dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="4" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="7dp"
+                    android:layout_weight="3"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="7dp"
+                    android:layout_weight="3"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour" />
+            </TableRow>
+
+            <!-- Blood pressure section header -->
+            <TableRow
+                android:layout_width="0dp"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="@dimen/server_sync_popup_blank_weight"
+                    android:background="@color/pop_up_server_sync_headers_background_colour"
+                    android:gravity="start"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/textBloodPressureSingleLine"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/blood_pressure_measurements"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionBloodPressureMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionBloodPressureMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionBloodPressureMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionBloodPressureMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionBloodPressureMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionBloodPressureMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/battery_measurements"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionBloodPressureBatteryMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionBloodPressureBatteryMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionBloodPressureBatteryMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionBloodPressureBatteryMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionBloodPressureBatteryMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionBloodPressureBatteryMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+
+            <!-- Small vertical spacer -->
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_height="7dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="4" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="7dp"
+                    android:layout_weight="3"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="7dp"
+                    android:layout_weight="3"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour" />
+            </TableRow>
+
+            <!-- Weight Scale section header -->
+            <TableRow
+                android:layout_width="0dp"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="@dimen/server_sync_popup_blank_weight"
+                    android:background="@color/pop_up_server_sync_headers_background_colour"
+                    android:gravity="start"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/weightScaleSingleLine"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/weight_scale_measurements"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionWeightScaleMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionWeightScaleMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionWeightScaleMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionWeightScaleMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionWeightScaleMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionWeightScaleMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/battery_measurements"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionWeightScaleBatteryMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionWeightScaleBatteryMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionWeightScaleBatteryMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionWeightScaleBatteryMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionWeightScaleBatteryMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionWeightScaleBatteryMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_height="match_parent"
+            android:layout_width="20dp">
+        </TableLayout>
+
+        <TableLayout
+            android:layout_height="match_parent"
+            android:layout_width="600dp">
+
+            <!-- Session Status -->
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewRightSideNonSyncableData"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/stringDataNonSyncable"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewRightSideFailedToSendData"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/stringDataFailedToSend"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewRightSideSyncableData"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/stringDataPending"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:textSize="12sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="4"
+                    android:gravity="start"
+                    android:text="@string/device_info"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp"/>
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusDeviceInfoPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusDeviceInfoPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/end_patient_session"
+                    android:textColor="@color/black"
+                    android:gravity="start"
+                    android:layout_weight="3"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableEndPatientSessionPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusEndPatientSessionPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableEndPatientSessionPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/end_device_session"
+                    android:textColor="@color/black"
+                    android:gravity="start"
+                    android:layout_weight="3"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableEndDeviceSessionPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusEndDeviceSessionPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableEndDeviceSessionPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <!-- Small vertical spacer -->
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <Space
+                    android:layout_width="fill_parent"
+                    android:layout_height="7dp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="3"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/historical_session"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="3"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/active_session"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <!-- Blank "indent" column -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="start"
+                    android:layout_weight="4"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewRightSideNonSyncableDataHistoricalRhs"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/stringDataNonSyncable"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewRightSideFailedToSendDataHistoricalRhs"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/stringDataFailedToSend"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewRightSideSyncableDataHistoricalRhs"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/stringDataPending"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewRightSideNonSyncableDataActiveRhs"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/stringDataNonSyncable"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewRightSideFailedToSendDataActiveRhs"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/stringDataFailedToSend"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewRightSideSyncableDataActiveRhs"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/stringDataPending"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+            </TableRow>
+
+            <!-- Manual Vitals section header -->
+            <TableRow
+                android:layout_width="0dp"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_headers_background_colour"
+                    android:gravity="start"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/manually_entered_vital_signs"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <!-- Manually Entered HR -->
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/manually_entered_heart_rate"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionManuallyEnteredHeartRateMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionManuallyEnteredHeartRateMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionManuallyEnteredHeartRateMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionManuallyEnteredHeartRateMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionManuallyEnteredHeartRateMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionManuallyEnteredHeartRateMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <!-- Manually Entered RR -->
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/manually_entered_respiration_rate"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionManuallyEnteredRespirationRateMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionManuallyEnteredRespirationRateMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionManuallyEnteredRespirationRateMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionManuallyEnteredRespirationRateMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionManuallyEnteredRespirationRateMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionManuallyEnteredRespirationRateMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <!-- Manually Entered Temp -->
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/manually_entered_temperatures"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionManuallyEnteredTemperatureMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionManuallyEnteredTemperatureMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionManuallyEnteredTemperatureMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionManuallyEnteredTemperatureMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionManuallyEnteredTemperatureMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionManuallyEnteredTemperatureMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <!-- Manually Entered SpO2 -->
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/manually_entered_spo2_measurements"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionManuallyEnteredSpo2MeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionManuallyEnteredSpo2MeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionManuallyEnteredSpo2MeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionManuallyEnteredSpo2MeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionManuallyEnteredSpo2MeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionManuallyEnteredSpo2MeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <!-- Manually Entered BP -->
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/manually_entered_blood_pressures"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionManuallyEnteredBloodPressureMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionManuallyEnteredBloodPressureMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionManuallyEnteredBloodPressureMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionManuallyEnteredBloodPressureMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionManuallyEnteredBloodPressureMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionManuallyEnteredBloodPressureMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <!-- Manually Entered Weight -->
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/manually_entered_weight"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionManuallyEnteredWeightMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionManuallyEnteredWeightMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionManuallyEnteredWeightMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionManuallyEnteredWeightMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionManuallyEnteredWeightMeasurementsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionManuallyEnteredWeightMeasurementsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/manually_entered_consciousness_levels"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionManuallyEnteredConsciousnessLevelsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionManuallyEnteredConsciousnessLevelsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionManuallyEnteredConsciousnessLevelsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionManuallyEnteredConsciousnessLevelsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionManuallyEnteredConsciousnessLevelsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionManuallyEnteredConsciousnessLevelsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/supplemental_oxygen"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionManuallyEnteredSupplementalOxygenLevelsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionManuallyEnteredSupplementalOxygenLevelsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionManuallyEnteredSupplementalOxygenLevelsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionManuallyEnteredSupplementalOxygenLevelsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionManuallyEnteredSupplementalOxygenLevelsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionManuallyEnteredSupplementalOxygenLevelsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="0dp"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/manually_entered_annotations"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionManuallyEnteredAnnotationsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionManuallyEnteredAnnotationsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionManuallyEnteredAnnotationsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionManuallyEnteredAnnotationsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionManuallyEnteredAnnotationsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionManuallyEnteredAnnotationsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/manually_entered_capillary_refill_time"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionManuallyEnteredCapillaryRefillTimePending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionManuallyEnteredCapillaryRefillTimePendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionManuallyEnteredCapillaryRefillTimePending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionManuallyEnteredCapillaryRefillTimePending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionManuallyEnteredCapillaryRefillTimePendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionManuallyEnteredCapillaryRefillTimePending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/manually_entered_respiration_distress"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionManuallyEnteredRespirationDistressPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionManuallyEnteredRespirationDistressPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionManuallyEnteredRespirationDistressPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionManuallyEnteredRespirationDistressPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionManuallyEnteredRespirationDistressPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionManuallyEnteredRespirationDistressPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="0dp"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/manually_entered_family_or_nurse_concern"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionManuallyEnteredFamilyOrNurseConcernPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionManuallyEnteredFamilyOrNurseConcernPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionManuallyEnteredFamilyOrNurseConcernPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionManuallyEnteredFamilyOrNurseConcernPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionManuallyEnteredFamilyOrNurseConcernPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionManuallyEnteredFamilyOrNurseConcernPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="0dp"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/urine_output"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionManuallyEnteredUrineOutputPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionManuallyEnteredUrineOutputPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionManuallyEnteredUrineOutputPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionManuallyEnteredUrineOutputPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionManuallyEnteredUrineOutputPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionManuallyEnteredUrineOutputPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+
+            <!-- Small vertical spacer -->
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_height="7dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="4" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="7dp"
+                    android:layout_weight="3"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="7dp"
+                    android:layout_weight="3"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="9"
+                    android:background="@color/pop_up_server_sync_headers_background_colour"
+                    android:gravity="start"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="0dp"
+                    android:text="System"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/early_warning_scores"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionEarlyWarningScoresPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionEarlyWarningScoresPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionEarlyWarningScoresPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionEarlyWarningScoresPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionEarlyWarningScoresPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionEarlyWarningScoresPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/setup_mode_log"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionSetupModeLogsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionSetupModeLogsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionSetupModeLogsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionSetupModeLogsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionSetupModeLogsPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionSetupModeLogsPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_active_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:text="@string/connection_events"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/server_sync_popup_measurement_padding_start"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableOldSessionConnectionEventPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusOldSessionConnectionEventPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableOldSessionConnectionEventPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pop_up_server_sync_historical_session_background_colour"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusNonSyncableActiveSessionConnectionEventPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusActiveSessionConnectionEventPendingButFailed"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textViewPopupServerSyncStatusSyncableActiveSessionConnectionEventPending"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+
+        <Button
+            android:id="@+id/dismiss"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_blue"
+            android:text="@string/dismiss"
+            />
+
+        <ImageView
+            android:id="@+id/retry"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:padding="7dp"
+            android:contentDescription="@null"
+            android:background="@drawable/button_blue"
+            android:src="@drawable/retry" />
+
+    </LinearLayout>
+
+    <!-- A little whitespace beneath the Dismiss button -->
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:text=""
+        android:textSize="15sp" />
+
+</LinearLayout>

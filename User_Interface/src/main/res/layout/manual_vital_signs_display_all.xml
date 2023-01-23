@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/startSessionSettingsActivity"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="start"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayoutManualVitalsSignSelectionText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="-5dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/manually_entered_vital_signs"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutManualVitalSignSelectionRowOne"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:baselineAligned="false"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayoutManualVitalSignSelectionHeartRate"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:orientation="vertical" >
+	    
+	        <TextView
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/heart_rate"
+	            android:textSize="24sp"
+	            android:textStyle="bold"
+	            />
+	            
+	        <FrameLayout
+		        android:id="@+id/frameLayoutManualVitalSignSelectionHeartRate"
+		        android:layout_width="match_parent"
+		        android:layout_height="fill_parent"
+		        >
+		    </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutManualVitalSignSelectionRespirationRate"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/respiration_rate"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+            
+            <FrameLayout
+                android:id="@+id/frameLayoutManualVitalSignSelectionRespirationRate"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" 
+                >
+            </FrameLayout>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutManualVitalSignSelectionTemperature"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/temperature"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+
+            <FrameLayout
+                android:id="@+id/frameLayoutManualVitalSignSelectionTemperature"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" 
+                >
+            </FrameLayout>                
+                
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutManualVitalSignSelectionRowTwo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayoutManualVitalSignSelectionSpO2"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/spo2"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+            
+            <FrameLayout
+                android:id="@+id/frameLayoutManualVitalSignSelectionSpO2"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                >
+            </FrameLayout>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutManualVitalSignSelectionBloodPressure"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:orientation="vertical" >
+        
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/blood_pressure"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+            
+            <FrameLayout
+                android:id="@+id/frameLayoutManualVitalSignSelectionBloodPressure"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" 
+                >
+            </FrameLayout>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutManualVitalSignSelectionConsciousnessLevel"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/consciousness_level"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+
+            <FrameLayout
+                android:id="@+id/frameLayoutManualVitalSignSelectionConsciousnessLevel"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                >
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutManualVitalSignSelectionRowThree"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayoutManualVitalSignSelectionSupplementalOxygen"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/supplemental_oxygen"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+
+            <FrameLayout
+                android:id="@+id/frameLayoutManualVitalSignSelectionSupplementalOxygen"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                >
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutManualVitalSignSelectionCapillaryRefillTime"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/capillary_refill_time"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+
+            <FrameLayout
+                android:id="@+id/frameLayoutManualVitalSignSelectionCapillaryRefillTime"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                >
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayoutManualVitalSignSelectionFamilyOrNurseConcern"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/family_or_nurse_concern"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+
+            <FrameLayout
+                android:id="@+id/frameLayoutManualVitalSignSelectionFamilyOrNurseConcern"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                >
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutManualVitalSignSelectionRowFour"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayoutManualVitalSignSelectionRespirationDistress"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/respiration_distress"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+
+            <FrameLayout
+                android:id="@+id/frameLayoutManualVitalSignSelectionRespirationDistress"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                >
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutManualVitalSignSelectionAnnotation"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:layout_margin="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/annotations"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+
+            <FrameLayout
+                android:id="@+id/frameLayoutManualVitalSignSelectionAnnotations"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                >
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutManualVitalSignSelectionRowFive"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayoutManualVitalSignSelectionWeight"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/respiration_distress"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+
+            <FrameLayout
+                android:id="@+id/frameLayoutManualVitalSignSelectionWeight"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                >
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+	

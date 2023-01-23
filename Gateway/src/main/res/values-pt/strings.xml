@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Patient Gateway</string>
+    <string name="service_name">Mats Service Name</string>
+    <string name="not_set_yet">NOCH NICHT EINGESTELLT</string>
+
+    <string name="local_database_reset_not_including_ews_thresholds">Lokale Datenbank zurücksetzen (OHNE EWS-Schwellenwerte)</string>
+    <string name="local_database_reset_including_ews_thresholds">Lokale Datenbank zurücksetzen (einschließlich EWS-Schwellenwerte)</string>
+
+    <string name="starting_database_import_this_might_take_a_few_seconds">Start Datenbankimport. Dies könnte einige Sekunden dauern!</string>
+    <string name="database_exported_to">Datenbank exportiert nach </string>
+    <string name="cannot_find_database_not_exported_to">DB nicht auffindbar – nicht exportiert : </string>
+
+    <string name="database_imported">Datenbank importiert</string>
+
+    <string name="problem_found_please_make_a_note_of_the_time_and_tell_isansys">Problem gefunden. Bitte notieren Sie die Zeit und informieren Sie Isansys</string>
+
+    <string name="custom_error_activity_message_line_one">Es tut uns leid!</string>
+    <string name="custom_error_activity_message_line_two">Es ist ein Fehler aufgetreten, der dafür gesorgt hat, dass der Patienten-Gateway (PG) nicht mehr funktioniert.</string>
+
+    <string name="custom_error_activity_dummy_timestamp">21 Dec 2016 18:24:32</string>
+    <string name="restart">Neustart</string>
+    <string name="starting_database_export_this_might_take_a_few_seconds">Datenbankexport wird gestartet. Dies kann einige Sekunden dauern!</string>
+    <string name="custom_error_activity_message_line_send_to_isansys">Bitte erstellen Sie ein Foto von diesem Bildschirm und senden Sie es per E-Mail an support@isansys.com</string>
+    <string name="build_version">Version erstellen</string>
+    <string name="android_permissions">Android Berechtigungen</string>
+    <string name="fine_location">Genauer Standort</string>
+    <string name="background_location">Hintergrund Standort</string>
+    <string name="write_external_storage">Externer Speicher schreiben</string>
+    <string name="nearby_permission_text">Conectar-se a dispositivos próximos</string>
+    <string name="android_version">Android Version</string>
+    <string name="xx">xx</string>
+</resources>

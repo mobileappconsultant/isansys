@@ -1,0 +1,2 @@
+When building on the buildserver, compiler options are specified in <android develpment tools>/sdk/tools/ant/build.xml
+Ensure that java.target and java.source are both = 1.7 as this is reqired to use the diamond operator <> when declaring concurrent linked queues etc.

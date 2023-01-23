@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PSE Isansys Portal</string>
+    <string name="action_settings">Innstillinger</string>
+
+    <string name="textSetupMode">Oppsett\nModus</string>
+    <string name="textServerControl">Server\nKontroll</string>
+    <string name="textPeriodicSetupMode">Periodisk\nOppsett\nModus</string>
+
+    <string name="textTimeDummyString">12:00:00</string>
+
+    <string name="textPatient">Pasient</string>
+    <string name="text0to1Years">0–1 år</string>
+    <string name="text1to5Years">1–5 år</string>
+    <string name="text5to12Years">5–12 år</string>
+    <string name="textGreater12Years">>12 år</string>
+    <string name="textAdult">Voksen</string>
+
+    <string name="textConnect">Koble til</string>
+
+    <string name="textDefaultHumanReadableDeviceId">---</string>
+    <string name="textThreeDashes">---</string>
+
+    <string name="textLifetouch">Lifetouch</string>
+    <string name="textLifetemp">Lifetemp</string>
+    <string name="textNonin">Nonin</string>
+    <string name="textNoninWristOx">Nonin\nWristOx</string>
+    <string name="textNoninWristOxSingleLine">Nonin Wrist Ox</string>
+
+    <string name="textUA767">UA767</string>
+    <string name="textBloodPressure">Blodtrykk</string>
+    <string name="textBloodPressureSingleLine">Blodtrykk</string>
+
+    <string name="textDefaultDummyTimestamp">hh:mm:ss dd-mon-year</string>
+
+    <string name="textWaitingForData">Venter på data</string>
+    <string name="textDeviceRemoved">Apparat fjernet</string>
+    <string name="textDownloadingPreviousData">Laster ned data</string>
+    <string name="textHeartRate">Puls \n(s/m)</string>
+    <string name="textDefaultDummyHeartRate">---</string>
+
+    <string name="textRespirationRateBreathMin">(åndedrag/min)</string>
+    <string name="textDefaultDummyRespirationRate">--</string>
+
+    <string name="textDummyPulseOxReading">--</string>
+
+    <string name="textTempDegreesC">Temperatur</string>
+    <string name="textDummyTemperatureReading">--</string>
+
+    <string name="textBloodPressureLabel">Blodtrykk</string>
+    <string name="textSystolic">Systolisk</string>
+    <string name="textDiastolic">Diastolisk</string>
+
+    <string name="textSpO2Percent">SpO2</string>
+
+    <string name="textUnlockScreen">Lås opp\nskjerm</string>
+    <string name="textLockScreen">Lås\nskjerm</string>
+    <string name="textCheckDeviceStatus">Sjekk apparatstatus</string>
+    <string name="textChangeSessionSettings">Endre øktinnstillinger</string>
+    <string name="textChangeSessionSettingsMultiLine">Endre\nØkt\nInnstillinger</string>
+
+    <string name="textStartMonitoring">Start overvåking</string>
+
+    <string name="textNext">Neste</string>
+    <string name="textStartMonitoringAPatient">Start overvåking av en pasient</string>
+    <string name="textStopMonitoringCurrentPatient">Stopp overvåking av gjeldende pasient</string>
+    <string name="textPatientVitalsDisplay">Skjerm for vital pasientinfo</string>
+
+    <string name="textAreYouSure">Er du sikker?</string>
+    <string name="textEndSession">Avslutt økt</string>
+    <string name="textTransferSession">Overfør økt</string>
+    <string name="textTransferSessionDisabled">Overfør økt \n(deaktivert)</string>
+
+    <string name="textWaitingForOtherDeviceToFinishConnection">Venter på at andre apparater fullfører tilkobling</string>
+
+    <string name="textSearchingForLifetouch">Søker etter Lifetouch</string>
+    <string name="textSearchingForBloodPressure">Søker etter Blodtrykksapparat</string>
+
+    <string name="textBloodPressureFound">Blodtrykksapparat funnet</string>
+
+    <string name="textBloodPressurePairing">Blodtrykksapparat pares</string>
+
+    <string name="textBloodPressurePairingFailed">Blodtrykksapparat MISLYKTES paring</string>
+
+    <string name="textLifetouchNotFound">Lifetouch IKKE funnet</string>
+    <string name="textBloodPressureNotFound">Blodtrykksapparat IKKE funnet</string>
+
+    <string name="textLifetouchFoundWaitingForGatt">Lifetouch funnet, venter på GATT-forbindelse…</string>
+    <string name="textLifetempFoundWaitingForGatt">Lifetemp funnet, venter på GATT-forbindelse…</string>
+
+    <string name="textLifetouchConnected">Lifetouch tilkoblet</string>
+    <string name="textBloodPressureConnected">Blodtrykksapparat tilkoblet</string>
+
+    <string name="textSetBedID">Sett Seng-ID</string>
+    <string name="textSetServerAddress">Sett Serveradresse</string>
+    <string name="textEnterServerAddress">Oppgi Serveradresse</string>
+    <string name="textPatientGatewaySoftwareVersion">Gateway versjon : </string>
+    <string name="textUserInterfaceSoftwareVersion">UI versjon : </string>
+    <string name="textLoggerSoftwareVersion">Logger versjon : </string>
+    <string name="textGatewayName">Gateway-navn : </string>
+
+
+    <string name="adjust_ews_thresholds">Juster EWS-terskler</string>
+
+    <string name="change_lifetemp_settings">Endre Lifetemp-innstillinger</string>
+    <string name="change_nonin_wrist_ox_settings">Endre Nonin WristOx-innstillinger</string>
+    <string name="change_blood_pressure_monitor_settings">Endre Blodtrykksmonitorinnstillinger</string>
+
+    <string name="remove_lifetouch">Fjern Lifetouch</string>
+    <string name="remove_lifetemp">Fjern Lifetemp</string>
+    <string name="remove_pulse_oximeter">Fjern pulsoksimeter</string>
+    <string name="remove_blood_pressure_monitor">Fjern Blodtrykksmonitor</string>
+    <string name="remove_early_warning_scores">Fjern EWS</string>
+
+    <string name="add_lifetouch">Legg til Lifetouch</string>
+    <string name="add_lifetemp">Legg til Lifetemp</string>
+    <string name="add_pulse_oximeter">Legg til pulsoksimeter</string>
+    <string name="add_blood_pressure">Legg til Blodtrykksmonitor</string>
+    <string name="add_early_warning_scores">Legg til Early Warning Scores</string>
+
+    <string name="textRawAccelerometerMode">Akselerometer Modus</string>
+
+    <string name="textSoftwareUpdateAvailable">Programvareoppdatering tilgjengelig</string>
+    <string name="textInstallSoftwareUpdateNow">Installer nå</string>
+    <string name="textInstallSoftwareUpdateLater">Installer senere</string>
+
+    <string name="textSearchAgain">Søk\nIgjen</string>
+
+    <string name="textContentDescriptionLogoPulseOx">textContentDescriptionLogoPulseOx</string>
+    <string name="scan_device_qr_codes">Skann apparatets QR-kode</string>
+    <string name="lifetouch">Lifetouch</string>
+    <string name="remove">Fjern</string>
+    <string name="lifetemp">Lifetemp</string>
+    <string name="nonin_wrist_ox">Nonin WristOx</string>
+    <string name="blood_pressure">Blodtrykk</string>
+    <string name="six_dashes">------</string>
+    <string name="scan_server_address_qr_code">Skann QR-kode for \nServeradresse</string>
+    <string name="server_link">Server-Lenke</string>
+    <string name="heart_rate">Puls</string>
+    <string name="respiration_rate">Respirasjonsfrekvens</string>
+    <string name="respiratory_rate">Respirasjonsfrekvens</string>
+    <string name="temperature">Temperatur</string>
+    <string name="spo2">SpO2</string>
+    <string name="systolic_blood_pressure">Systolisk\nBlodtrykk</string>
+    <string name="consciousness_level">Bevissthetsnivå</string>
+    <string name="supplemental_oxygen">Tilleggsoksygen</string>
+
+    <string name="dummy_bed_id_to_check_layout_size">BED ID</string>
+    <string name="dummy_bed_name_to_check_layout_size">Test Bed Name to check size</string>
+    <string name="dummy_ward_name_to_check_layout_size">Test Ward Name To check size</string>
+    <string name="dummy_patient_id_to_check_layout_size">Pasient :   -----</string>
+    <string name="selected_early_warning_score_thresholds_below">Valgte terskler for tidlig varsling-score nedenfor</string>
+    <string name="early_warning_score_thresholds_below">terskler for tidlig varsling-score nedenfor</string>
+
+    <string name="age_range_0_to_1_years_early_warning_score_thresholds_below">0–1 år-terskler for tidlig varsling-skår nedenfor</string>
+    <string name="age_range_1_to_5_years_early_warning_score_thresholds_below">1–5 år-terskler for tidlig varsling-skår nedenfor</string>
+    <string name="age_range_5_to_12_years_early_warning_score_thresholds_below">5–12 år-terskler for tidlig varsling-skår nedenfor</string>
+    <string name="age_range_12_plus_years_early_warning_score_thresholds_below">12+ år-terskler for tidlig varsling-score nedenfor</string>
+    <string name="age_range_adult_early_warning_score_thresholds_below">Voksen-terskler for tidlig varsling-skår nedenfor</string>
+    <!--<string name="please_scan_id_code_to_access_patient_gateway">Skann ID-kode for å få tilgang til \nPatient Gateway</string>-->
+    <string name="please_scan_general_user_qr_code_to_access_patient_gateway">Skann QR-kode for generell bruker for å få tilgang til Patient Gateway</string>
+    <string name="press_button_to_scan_qr_code">Trykk knappen for å skanne QR-kode</string>
+    <string name="hold_qr_code_so_it_fits_in_the_smaller_lighter_square_on_the_left">Hold QR-koden slik at den passer inn i den\nlille lyse firkanten til venstre\n</string>
+    <string name="gateway_not_configured_yet_please_scan_admin_qr_code_to_access_setup_page">Gateway ikke konfigurert ennå.\nSkann admin-QR-kode for å få tilgang til oppsettsiden</string>
+    <string name="thresholds_not_received_yet_please_scan_admin_qr_code_to_access_setup_page">Terskler for tidlig varsling-skår ikke mottatt ennå.\nSkann admin-QR-kode for å få tilgang til oppsettsiden</string>
+    <string name="back_to_unlock_screen">Tilbake for å låse opp skjermen</string>
+    <string name="lifetouch_test_mode">Lifetouch\nTestmodus</string>
+    <string name="new_respiration_rate">Bruk ny\nRespirasjons-\nAlgoritme</string>
+    <string name="test_server_link">Test\nKobling</string>
+    <string name="back">Tilbake</string>
+    <string name="next">Neste</string>
+    <string name="lock">Lås</string>
+    <string name="once_finished_adding_devices_press_connect">Trykk Koble til når du er ferdig med å legge til apparater</string>
+    <string name="once_finished_adding_devices_press_device_settings">Trykk Enhetsinnstillinger når du er ferdig med å legge til apparater</string>
+    <string name="scan_server_ip_address_qr_code_or_press_back_to_return_to_previous_page">Skann QR-kode for serveradresse eller trykk Tilbake for å gå tilbake til forrige side</string>
+    <string name="set_screen_brightness">Sett lysstyrke for skjerm</string>
+    <string name="enable_night_mode"> Aktiver nattmodus</string>
+    <string name="empty_local_database">Tøm lokal database</string>
+    <string name="empty_local_database_including_ews_types">Tøm lokal database INKLUDERT EWS-typer</string>
+    <string name="get_wards_and_beds_from_server">Hent avdelinger og\nsenger fra server</string>
+    <string name="set_bed_details">Sett\nsengeinformasjon</string>
+    <string name="lifetouch_not_attached_to_patient">Lifetouch ikke festet til pasient</string>
+    <string name="bed_name">Sengenavn</string>
+    <string name="device_type">Apparattype</string>
+    <string name="serial_number">Serienummer</string>
+    <string name="ward_name">Avdelingsnavn</string>
+    <string name="check_device_status">Sjekk apparatstatus</string>
+    <string name="checking_with_server">Sjekker med server</string>
+    <string name="set_server_address">Sett serveradresse</string>
+    <string name="set_dummy_server">Set dummy \nServer details</string>
+    <string name="textZeroPercent">0%</string>
+    <string name="buttonUnitRadioOff">Enhet av</string>
+    <string name="fake_free_disk_space">100% ledig</string>
+    <string name="enter_wamp_server_port">Oppgi WAMP-port</string>
+    <string name="set_wamp_server_port">Sett WAMP-port</string>
+    <string name="wamp_streaming">WAMP-\nStrømming</string>
+    <string name="export_database_to_tablet_root">Eksporter database\ntil nettbrettrot</string>
+    <string name="poincare">Hjerterytme</string>
+    <string name="textLeadsOff">Ledninger av</string>
+    <string name="use_https">HTTPS</string>
+
+    <string name="patient_id_exist">Pasient-ID allerede brukt!\nPrøv en annen</string>
+    <string name="textPatientIdVerificationString">Vent litt, bekrefter pasient-ID</string>
+    <string name="textServerLinkTimeOut">Problem i serverkobling</string>
+
+    <string name="appendDateTime">Tilføy dato/klokkeslett</string>
+
+    <string name="PatientIdAddDateTime">Aktiver dato/klokkeslett\nPasient-ID-knapp</string>
+    <string name="start_patient_session">Start pasientøkt</string>
+    <string name="stop_patient_session">Stopp pasientøkt</string>
+    <string name="create_new_patient">Opprett ny pasient</string>
+
+    <string name="textTimeDummyStringSmall">12:00</string>
+
+    <string name="device_periodic_setup_mode">Periodisk\nOppsettsmodus</string>
+    <string name="textFingerOff">Finger av</string>
+
+    <string name="textViewLifetouchChangeSessionDisconnect">Vent litt…\nLifetouch kobler fra</string>
+
+    <string name="NtpTimeSync">Manuell\ntidssynkronisering</string>
+
+    <string name="time_drift_initial">XX.xxx</string>
+
+    <string name="mac_address">MAC-adresse</string>
+
+    <string name="showMacAddressOnDeviceStatusScreen">Vis MAC i\napparatstatus</string>
+
+    <string name="enableSetupMode">Aktiver Oppsettmodus</string>
+
+    <string name="dummy_measurement_unknown">\?\?\?</string>
+    <string name="dummy_measurement_timestamp_unknown">\?\?\?\?\?\?\?\?</string>
+
+    <string name="server_initiated"> Server Startet</string>
+
+    <string name="buttonTextQrCodeUnlockScreen">Trykk for å skanne QR-kode</string>
+
+    <string name="textEmptyDeviceListConnectedToPatientVitalsDisplay">Ingen apparater tilkoblet\nLegg til apparat(er)</string>
+
+    <string name="radioButton1minute">1 min-graf</string>
+    <string name="radioButton2minutes">2 min-graf</string>
+    <string name="radioButton3minutes">3 min-graf</string>
+    <string name="radioButton5minutes">5 min-graf</string>
+    <string name="radioButton10minutes">10 min-graf</string>
+    <string name="radioButton15minutes">15 min-graf</string>
+
+    <string name="textDummyMinuteSecondTime">00:00</string>
+    <string name="String_Now">Nå</string>
+
+
+    <string name="stringExit">Avslutt</string>
+    <string name="stringExitDialog">Er du sikker på at du vil avslutte?</string>
+    <string name="stringYes">Ja</string>
+    <string name="stringNo">Nei</string>
+    <string name="string_ok">OK</string>
+
+    <string name="stringLogCat">Log Cat</string>
+    <string name="StringScrollLock">Scroll Lock</string>
+
+    <string name="StringTouchHere">Trykk her</string>
+    <string name="StringPressDoneWhenFinished">Trykk Utført når du er ferdig</string>
+    <string name="StringEnableAnimation">Aktiver\nanimasjon</string>
+
+    <string name="lifetemp_not_attached_to_patient">Lifetemp ikke festet til pasient</string>
+
+    <string name="String_Press_next_to_continue">Trykk Neste for å fortsette</string>
+
+    <string name="enable_csv_output">Enable\nCSV Output</string>
+
+    <string name="text_connecting">Kobler til…</string>
+    <string name="text_stop_this_session">Start økt på nytt</string>
+    <string name="string_restart_session_dialog">Er du sikker på at du vil starte økten igjen?\nAlle tilkoblede apparater fjernes!</string>
+    <string name="string_connecting_wait_dialog">Apparater tilkobles\nVent litt…</string>
+
+
+    <string name="stringJsonArraySize">JSON\nstørrelse</string>
+
+    <string name="connection_event_disconnected">Koblingshendelse\nFrakoblet</string>
+    <string name="lifetemp_leads_off">Ledninger av</string>
+    <string name="lifetouch_leads_off">Lifetouch\nledninger av</string>
+    <string name="pulse_ox_off_finger">Pulsoks\nfinger AV</string>
+    <string name="spoof_early_warning_scores">Forfalsk tidlig\nvarsling-skår</string>
+
+    <string name="number_of_measurements_per_tick">Målinger per avmerking</string>
+
+    <string name="text_device_disconnected">Forsøker å\nkoble til igjen</string>
+
+    <string name="fake_battery_voltage">----mV</string>
+
+    <string name="textView_EndNowGettingPendingData">Avslutt\nNå</string>
+    <string name="string_remove_disconnected_devices_dialog">Apparater er utenfor gatewayens rekkevidde. Frakobling nå betyr at alle lagrede data på Lifetouch/Lifetemp går tapt.\nEr du sikker?</string>
+    <string name="string_waitForLifetouchPendingHeartBeat">Vent litt. Laster ned lagrede hjerterytmer</string>
+    <string name="string_waitForLifetempDisconnection">Vent litt. Kobler fra Lifetemp</string>
+    <string name="string_WarningPendingHeartBeatButRemoveLifetouchDialog">Lifetouch har hjerterytmer som venter på å bli lastet ned. Frakobling nå betyr at disse lagrede hjerterytmene går tapt.\nEr du sikker?</string>
+    <string name="string_WarningPendingHeartBeatButRemoveLifetouchTextView">Lifetouch ikke tilkoblet gateway.\nFrakobling nå betyr at disse lagrede hjerterytmene går tapt.</string>
+
+    <string name="setup_mode_length">Oppsettmoduslengde</string>
+
+    <string name="string_lifetemp_disconnecting">Kobler fra Lifetemp.\nVent litt…</string>
+
+    <string name="string_waitForLifetempPendingMeasurement">Vennligst vent. Nedlasting lagret Temperaturmålinger</string>
+
+    <string name="string_WarningPendingDataDownloading">Enheten har data som venter på nedlasting. Hvis du kobler fra nå vil disse lagrede dataene gå tapt.\nEr du sikker?</string>
+    <string name="string_WarningPendingTemperatureButRemoveLifetempTextView">Lifetemp er ikke koblet til Gateway.\nHvis du kobler fra nå vil disse lagrede temperaturene gå tapt.</string>
+    <string name="string_WarningPendingMeasurementButRemoveDevicesTextView">Enheten er ikke koblet til Gateway.\nHvis du kobler fra nå vil disse lagrede målingene gå tapt.</string>
+
+    <string name="continuous_setup_mode">Kontinuerlige Oppsettmodus</string>
+
+    <string name="filler_text_one">---%</string>
+    <string name="filler_text_two">----</string>
+
+    <string name="number_of_invalid_intermediate_measurements_before_marking_as_invalid">Antall ugyldige\nmellomliggende SpO2-målinger\nfør markering som ugyldig</string>
+
+    <string name="use_webservice_authentication">Bruk autentisering</string>
+
+    <string name="textViewLifetempChangeSessionDisconnect">Vent litt…\nLifetemp kobler fra</string>
+
+    <string name="textManualVitalSignEntry">Manuell oppføring\nav vitale tegn</string>
+
+    <string name="select_the_vital_sign_to_enter">Velg vitalt tegn å oppgi</string>
+
+    <string name="decimal_point">.</string>
+
+    <string name="number_zero">0</string>
+
+    <string name="number_one">1</string>
+
+    <string name="number_two">2</string>
+
+    <string name="number_three">3</string>
+
+    <string name="number_four">4</string>
+
+    <string name="number_five">5</string>
+
+    <string name="number_six">6</string>
+
+    <string name="number_seven">7</string>
+
+    <string name="number_eight">8</string>
+
+    <string name="number_nine">9</string>
+
+    <string name="delete">SLETT</string>
+
+    <string name="enter">Oppgi</string>
+    <string name="cancel">Avbryt</string>
+    <string name="confirm">Bekreft</string>
+    <string name="last_measurement">Siste måling</string>
+    <string name="manually_entered_vital_signs">Manuelt oppgitte vitale tegn</string>
+    <string name="view_manually_entered_vital_signs">Se manuelt oppgitte vitale tegn</string>
+    <string name="enable_manually_entered_vital_signs">Enable Manually\nEntered Vital Signs</string>
+    <string name="please_wait">Vent litt…</string>
+    <string name="device_already_in_use_according_to_server">Apparat allerede i bruk i henhold til server</string>
+    <string name="problem_checking_server__please_try_again_later">Problem med å sjekke server. Prøv igjen senere</string>
+    <string name="fw_equals">FW = </string>
+    <string name="percent_symbol_free">% ledig</string>
+    <string name="mv">mV</string>
+    <string name="percent_symbol">%</string>
+    <string name="enable_early_warning_scores">Enable Early Warning Scores</string>
+
+    <string name="PTT_string">PTT</string>
+    <string name="Dummy_PTT_time">XXXX ms</string>
+    <string name="Dummy_PTT_timeStamp">XX:XX:XX</string>
+    <string name="pulse_transit_time">Transittid for puls</string>
+    <string name="ppt">PTT</string>
+    <string name="pulse_transmit_time">Sendetid for puls</string>
+    <string name="enable_pulse_transmit_time">Enable Pulse Transmit Time</string>
+    <string name="alert">Varsel</string>
+    <string name="responds_to_voice">Reagerer på tale</string>
+    <string name="responds_to_pain">Reagerer på smerte</string>
+    <string name="unresponsive">Uresponsiv</string>
+
+    <string name="dummyEwsReading">--</string>
+    <string name="stringEarlyWarningScoreMeasurementSlash"> / </string>
+    <string name="stringEarlyWarningScoreType">Tidlig varsling-\nskår type</string>
+    <string name="stringEarlyWarningScoreTypeNotReceived">Terskler \nikke mottatt</string>
+    <string name="stringEarlyWarningScore">EWS</string>
+    <string name="addEarlyWarningScoreDevice">Legg til</string>
+    <string name="use_webservice_encryption">Bruk kryptering</string>
+
+    <string name="supplemental_oxygen_none">Ingen</string>
+    <string name="supplemental_oxygen_low">Lav</string>
+    <string name="supplemental_oxygen_high">Høy</string>
+
+    <string name="supplemental_oxygen_less_four_litres__less_50_percent">&lt;4/l min, &lt;50%</string>
+    <string name="supplemental_oxygen_greater_equal_four_litres__greater_equal_50_percent">&#8805;4/l min, &#8805;50%</string>
+
+    <string name="supplemental_oxygen_less_four_litres__less_50_percent_cr">&lt;4/l min,\n&lt;50%</string>
+    <string name="supplemental_oxygen_greater_equal_four_litres__greater_equal_50_percent_cr">&#8805;4/l min,\n&#8805;50%</string>
+
+    <string name="no">Nei</string>
+    <string name="yes">Ja</string>
+
+    <string name="measurement_no_longer_valid">Tidsutkoblet</string>
+
+    <string name="gateway_not_responding_for_over_thirty_seconds">Ikke svar fra Gateway på over 30 sekunder. \nØnsker du å starte Gateway på nytt?</string>
+    <string name="restart_gateway_app">Omstart</string>
+    <string name="last_gateway_ping_was_received_at">Siste Gateway-ping ble mottatt:</string>
+
+    <string name="display_patient_orientation">Enable\nPatient Orientation</string>
+    <string name="show_numbers_on_battery_indicator">Show numbers on\nbattery indicator</string>
+    <string name="run_devices_in_test_mode">Run devices in test mode</string>
+
+    <string name="get_types_from_server">Hent typer fra server</string>
+
+    <string name="early_warning_scoring_types">Tidlig varsling-\nskår typer</string>
+    <string name="device_info">Apparatinfo</string>
+    <string name="end_patient_session">Avslutt pasientøkt</string>
+    <string name="dismiss">Avvis</string>
+    <string name="four_dashes">----</string>
+    <string name="dummy_measurement">Dummy Measurement</string>
+    <string name="space_dash_space"> - </string>
+    <string name="session_status">Øktstatus</string>
+    <string name="patient_details">Pasientinformasjon</string>
+    <string name="start_device_session">Start apparatøkt</string>
+    <string name="end_device_session">Avslutt apparatøkt</string>
+    <string name="connection_events">Tilkoblingshendelser</string>
+    <string name="active_session">Aktiv økt</string>
+    <string name="historical_session">Historisk økt</string>
+    <string name="heart_rates">Puls</string>
+    <string name="heart_beats">Hjerterytme</string>
+    <string name="respiration_rates">Respirasjonsfrekvenser</string>
+    <string name="setup_mode_samples">Pppsettmodusprøver</string>
+    <string name="raw_accelerometer_mode_samples">>Raw Accelerometer moduseksempler</string>
+    <string name="battery_measurements">Batterimålinger</string>
+    <string name="patient_orientation">Pasientorientering</string>
+    <string name="temperature_measurements">Temperaturmålinger</string>
+    <string name="nonin_wrist_ox_spo2_measurements">SpO2-målinger</string>
+    <string name="nonin_wrist_ox_intermediate_measurements">Mellomliggende målinger</string>
+    <string name="blood_pressure_measurements">Blodtrykksmålinger</string>
+
+    <string name="manually_entered_heart_rate">Puls</string>
+    <string name="multiline_manually_entered_heart_rate">Manuelt\noppgitt\npuls</string>
+
+    <string name="manually_entered_respiration_rate">Respirasjonsfrekvens</string>
+    <string name="multiline_manually_entered_respiration_rate">Manuelt\noppgitt\nrespirasjonsfrekvens</string>
+
+    <string name="manually_entered_temperatures">Temperaturer</string>
+    <string name="multiline_manually_entered_temperatures">Manuelt\noppgitte\ntemperaturer</string>
+
+    <string name="manually_entered_spo2_measurements">SpO2-målinger</string>
+    <string name="multiline_manually_entered_spo2_measurements">Manuelt\noppgitte\nSpO2-målinger</string>
+
+    <string name="manually_entered_blood_pressures">Blodtrykk</string>
+    <string name="multiline_manually_entered_blood_pressures">Manuelt\noppgitte\nblodtrykk</string>
+
+    <string name="manually_entered_consciousness_levels">Bevissthetsnivåer</string>
+    <string name="multiline_manually_entered_consciousness_levels">Manuelt\noppgitte\nbevissthetsnivåer</string>
+
+    <string name="manually_entered_supplemental_oxygen_levels">Nivåer for tilleggsoksygen</string>
+    <string name="multiline_manually_entered_supplemental_oxygen_levels">Manuelt\noppgitte\nnivåer for\ntilleggsoksygen</string>
+
+    <string name="early_warning_scores">Tidlig varsling-score</string>
+    <string name="dummy_id">Markør-ID : </string>
+    <string name="real_id">Virkelig ID : </string>
+    <string name="slash">/</string>
+    <string name="early_warning_score_types_placeholder">asdf</string>
+    <string name="dummy_footer_measurement_timestamp">Fri 12:00</string>
+    <string name="dummy_number_of_heart_beats_pending">10000</string>
+    <string name="dummy_keypad_measurement">123.4</string>
+    <string name="set_server_port">Sett serverport</string>
+    <string name="enter_server_port">Oppgi serverport</string>
+
+    <string name="seconds">sekunder</string>
+    <string name="minute">minutt</string>
+    <string name="minutes">minutter</string>
+
+    <string name="blood_pressure_as_systolic_slash_diastolic">Blodtrykk som «Systolisk/diastolisk»</string>
+    <string name="bpm">s/m</string>
+    <string name="breath_per_min">åndedrag/min</string>
+
+    <string name="nonin_disconnected">Nonin frakoblet</string>
+    <string name="leads_off_detetect_for_more_than_ten_minutes">Ledninger av oppdaget i mer enn 10 min</string>
+
+    <string name="wifi_enabled_status">Wi-Fi aktivert</string>
+    <string name="wifi_connected_to_ssid">Tilkoblet SSID</string>
+    <string name="wifi_SSID">Wifi SSID</string>
+    <string name="wifi_IP_address">IP-adresse</string>
+    <string name="wifi_signal_level">Signalnivå</string>
+    <string name="wifi_connection_status">Forbindelsesstatus</string>
+    <string name="wifi_BSSID">Wifi BSSID</string>
+    <string name="wifi_failure_reason">Tilkoblingsproblem </string>
+
+    <string name="button_wifi_reconnect_string">Koble til igjen </string>
+    <string name="button_wifi_dismiss_string">Avvis </string>
+
+    <string name="string_total_wifi_level">/5 </string>
+
+    <string name="not_set_yet">IKKE INNSTILT ENNÅ</string>
+    <string name="wifi_failure_reason_none">Ingen</string>
+    <string name="wifi_failure_reason_NotConfigured">Wi-Fi ikke konfigurert</string>
+    <string name="wifi_failure_reason_AuthenticationError">Autentiseringsfeil</string>
+    <string name="wifi_failure_reason_UnknownSSID">Kan IKKE koble til SSID</string>
+    <string name="wifi_failure_reason_Unknown">Ukjent</string>
+    <string name="wifi_disabled_in_admin_page">Gateway-admin deaktiverte Wi-Fi</string>
+
+    <string name="stringWifiDisableCheckbox">Aktiver Wi-Fi\ntilkobling på nytt automatisk</string>
+
+    <string name="please_enter_the_heart_rate">Angi puls</string>
+    <string name="please_enter_the_respiration_rate">Angi respirasjonsfrekvens</string>
+    <string name="please_enter_the_temperature">Angi temperatur</string>
+    <string name="please_enter_the_spo2">Angi SpO2</string>
+    <string name="please_enter_the_blood_pressure">Angi det systolisk/diastoliske blodtrykket</string>
+    <string name="please_enter_the_consciousness_level">Angi bevissthetsnivå</string>
+    <string name="please_enter_the_supplemental_oxygen">Angi tilleggsoksygen</string>
+
+    <string name="enter_the_measurement_time_by_moving_the_green_dot">Angi målingstidspunkt ved å flytte grønn prikk</string>
+
+    <string name="are_you_sure_set_server_address">Er du sikker på at du vil endre serveradresse? \nHvis du velger Ja, vil det tømme den lokale databasen</string>
+    <string name="are_you_sure_set_server_port">Er du sikker på at du vil endre serverport? \nHvis du velger Ja, vil det tømme den lokale databasen</string>
+    
+    <string name="today">I dag</string>
+    <string name="multi_day">Multidag</string>
+
+    <string name="setup_mode">Oppsett\nModus</string>
+    <string name="detached">Løsnet</string>
+
+    <string name="stringLongTermMeasurementTimeoutLength">Langtidsmålinger\ntidsavbrudd</string>
+
+    <string name="enabledUnpluggedOverlay">Aktivert frakoblet overlegg</string>
+
+    <string name="resetZoom">Tilbakestill zoom</string>
+    <string name="backfill_session">Tilbakefyllingsøkt</string>
+    <string name="number_of_hours_to_backfill">Antall timer\nfor tilbakefylling</string>
+
+    <string name="stringDataNonSyncable">Ikke synkroniserbar</string>
+    <string name="stringDataFailedToSend">Feilet</string>
+    <string name="stringDataPending">Ventende</string>
+
+    <string name="delete_old_exported_databases">Slett eksporterte\ndatabaser</string>
+
+    <string name="manufacturing_mode">Manufacturing Mode</string>
+    <string name="back_camera">Back Camera</string>
+    <string name="simulate_user_qr_code">Simulate\nQR Code</string>
+    <string name="lifetemp_measurement_interval">Lifetemp\nMeasurement\nInterval</string>
+    <string name="patient_orientation_measurement_interval">Patient Orientation\nMeasurement\nInterval</string>
+
+    <string name="manual_vitals_only">Vitale tegn kun manuelt</string>
+    <string name="or_press_manual_vitals_only">Eller trykk på knappen nedenfor for å opprette en\nmanuelt oppgitt økt for kun vitale tegn.\nSensorer kan legges til senere via Endre økt-innstillinger</string>
+
+    <string name="get_patient_name_from_server">Get Patient Name from Server</string>
+
+    <string name="starting_patient_name_lookup">Starter pasientnavnoppslag</string>
+    <string name="request_sent_to_hospital_server">Forespørsel sendt til sykehusserver</string>
+    <string name="server_returned_an_error">Server returnerte en feil</string>
+    <string name="retry_or_press_next_to_skip_patient_name_lookup">Prøv igjen eller trykk på Neste for å hoppe over pasientnavnoppslag</string>
+    <string name="server_timed_out">Server tidsutkoblet</string>
+    <!--<string name="patient_name_received">Patient Name received</string>-->
+    <string name="patient_id_not_found">Pasient-ID ikke funnet</string>
+    <string name="first_name">Fornavn</string>
+    <string name="last_name">Etternavn</string>
+    <string name="date_of_birth">Fødselsdato</string>
+    <string name="gender">Kjønn</string>
+
+    <string name="male">Mann</string>
+    <string name="female">Kvinne</string>
+
+    <string name="lot_number">Lottnummer</string>
+    <string name="manufacture_date">Tilvirkingsdato</string>
+    <string name="expiration_date">Utløpsdato</string>
+
+    <string name="text_end_session_time_picker">Angi tidspunktet da økten ble avsluttet ved å flytte den grønne prikken</string>
+
+    <string name="simple_heart_rate">Simple Heart Rate</string>
+
+    <string name="custom_error_activity_message_line_one">Beklager!</string>
+    <string name="custom_error_activity_message_line_two">Det har oppstått en feil som har forårsaket at Patient Gateway (UI) sluttet å virke.</string>
+
+    <string name="custom_error_activity_dummy_timestamp">21 Dec 2016 18:24:32</string>
+    <string name="restart">Omstart</string>
+
+    <string name="gsm_mode_only">GSM Mode Only</string>
+
+    <string name="enable_developer_popup">Enable \nDeveloper\nPopup</string>
+    <string name="show_ip_address_on_wifi_popup">Show IP\nAddress on\nWifi popup</string>
+
+    <string name="poor_signal">Dårlig signal</string>
+    <string name="unable_to_detect_heartbeats">Kunne ikke avdekke hjerteslag</string>
+    <string name="check_electrodes">Sjekk elektroder</string>
+
+    <string name="percentage_of_poor_signal_heart_beats_before_marking_as_invalid">Prosentandel av dårlig\nsignal for hjrteslag før\nmarking som invalid</string>
+
+    <string name="options">Osjoner</string>
+    <string name="motion_mode">Bevegelses\nModus</string>
+
+    <string name="usa_mode">USA Mode</string>
+    <string name="lifetouch_activity_level">Lifetouch Activity Level</string>
+
+    <string name="measurements_every">Målinger hver</string>
+    <string name="no_measurements">Ingen målinger</string>
+
+    <string name="get_data">Hent data</string>
+    <string name="program_plan">Program\nPlan</string>
+
+    <string name="connecting">Kobler til</string>
+    <string name="syncing">Synkroniserer</string>
+    <string name="getting_system_data">Henter systemdata</string>
+    <string name="getting_user_data">Henter brukerdata</string>
+    <string name="disconnecting">Kobler fra</string>
+    <string name="programming_plan">Programmeringsplan</string>
+
+    <string name="press_the_top_two_buttons_until_pc_appears">Trykk på de to knappene til \'PC --\' vises</string>
+    <string name="measurements_will_be_uploaded_automatically">Målinger lastes opp automatisk</string>
+
+    <string name="welcome_to_the_isansys_patient_gateway">Velkommen til Isansys pasient-systemport</string>
+    <string name="exit_patient_gateway_to_setup_wifi">Få ut av pasient-systemporten\nfor å konfigurere WiFi</string>
+    <string name="start_installation_wizard">Start\ninstallasjonsveiviseren</string>
+    <string name="patient_gateway_setup_wizard">Konfigurasjonsveiviser for pasient-systemport</string>
+    <string name="restart_installation_wizard">Start\ninstallasjons-\nveiviseren på nytt</string>
+    <string name="force_installation_complete">Tving\nInstallasjon\nfullført</string>
+    <string name="scan_installation_qr_code">Skann installasjonens QR-kode</string>
+    <string name="lifeguard_server_address">Lifeguard-serveradresse</string>
+    <string name="lifeguard_server_port">Lifeguard-serverport</string>
+    <string name="lifeguard_server_wamp_port">Lifeguard-serverens WAMP-port</string>
+    <string name="lifeguard_server_link_test">Test av Lifeguard-serverens lenke</string>
+    <string name="getting_wards_and_beds">Henter avdelinger og seng</string>
+    <string name="select_a_ward_and_bed">Velg en avdeling og seng</string>
+    <string name="selected_ward_and_bed">Valgt avdeling og seng</string>
+    <string name="press_to_confirm">Trykk for å bekrefte</string>
+    <string name="wamp_link_test">WAMP-lenketest</string>
+    <string name="synchronizing_time">Synkroniserer tid</string>
+    <string name="getting_ews_thresholds">Henter EWS-terskler</string>
+    <string name="getting_gateway_configuration">Henter systemportkonfigurasjon</string>
+    <string name="setup_complete">Oppsett fullført</string>
+    <string name="start_using_patient_gateway">Begynn å bruke pasient-systemport</string>
+
+    <string name="no_response_from_lifeguard_server_please_check_address_and_port_correct">" Ingen respons fra Lifeguard-serveren.Sjekk at adressen og porten er korrekte."</string>
+    <string name="cannot_connect_to_wamp_server_please_check_port_accessible">Kan ikke koble til WAMP-server.Sjekk at porten er tilgjengelig.</string>
+    <string name="cannot_connect_to_ntp_server_please_check_port_accessible">Kan ikke koble til NTP-server.Sjekk at porten er tilgjengelig.</string>
+    <string name="cannot_connect_to_ntp_server_ntp_sync_failed">Kan ikke koble til NTP-server.Klokkesynkronisering mislyktes</string>
+    <string name="authentication_failure">Autentisering mislyktes</string>
+
+    <string name="device_settings">Enhetsinnstillinger</string>
+
+    <string name="firmware_updating">Maskinvareoppdatering</string>
+    <string name="check_for_updated_firmware">Se etter\noppdatert\nmaskinvare</string>
+    <string name="checking_for_updated_firmware">Ser etter oppdatert maskinvare</string>
+
+    <string name="setup_mode_log">Konfigurere moduslogg</string>
+
+    <string name="audit_trail">Audit Trail</string>
+
+    <string name="annotation">Merknader </string>
+    <string name="enter_the_annotation_time_by_moving_the_green_dot">Angi merknadestidspunkt ved å flytte grønn prikk</string>
+    <string name="please_type_annotation_here">Tast inn merknaden her</string>
+    <string name="annotations">Merknader</string>
+
+    <string name="location_services_off">Lokasjonstjenester er slått av, BLE fungerer ikke.\nSlå lokasjonstjenester av.</string>
+    <string name="manually_entered_annotations">Tilføyelser</string>
+    <string name="please_enter_the_annotation">Angi tilføyelsen</string>
+    <string name="you_must_end_the_session_first">Du må avslutte den nåværende økten</string>
+    <string name="please_press_get_data">Trykk på \"Hent data\"</string>
+    <string name="please_press_program_plan">Trykk på \"Programplan\"</string>
+    <string name="confusion">Konfusjon</string>
+    <string name="get_config_from_server">Hent konfigurasjon\nfra server</string>
+    <string name="get_server_configurable_text">Hent konfigurerbar\ntekst fra server</string>
+    <string name="manually_entered_capillary_refill_time">Manuelt inntastet kapillær fyllingstid</string>
+    <string name="multiline_manually_entered_capillary_refill_time">Manuelt inntastet kapillær fyllingstid</string>
+    <string name="manually_entered_respiration_distress">Manuelt inntastet åndenød</string>
+    <string name="multiline_manually_entered_respiration_distress">Manuelt inntastet åndenød</string>
+    <string name="manually_entered_family_or_nurse_concern">Manuelt inntastet familie- eller sykepleieranliggende</string>
+    <string name="multiline_manually_entered_family_or_nurse_concern">Manuelt inntastet familie- eller sykepleieranliggende</string>
+    <string name="please_select_the_capillary_refill_time">Velg den kapillære fyllingstid</string>
+    <string name="please_select_the_respiration_distress_level">Velg nivå for åndenød</string>
+    <string name="please_select_if_there_is_family_or_nurse_concern">Velg hvis det er et familie- sykepleieranliggende</string>
+    <string name="enter_the_observation_set_time_by_moving_the_green_dot">Angi innstilt observasjonstidspunkt ved å flytte grønn prikk</string>
+    <string name="enable_auto_log_file_upload">Aktiverer opplasting av automatisk loggfil</string>
+    <string name="getting_server_configurable_text">Hent konfigurerbar tekst fra server</string>
+    <string name="every">hver</string>
+    <string name="capillary_refill_time">Kapillær fyllingstid</string>
+    <string name="less_or_equal_two_seconds">≤2 sekunder</string>
+    <string name="more_than_or_equal_three_seconds">≤3 sekunder</string>
+    <string name="respiration_distress">Åndenød</string>
+    <string name="none">Ingen</string>
+    <string name="mild">Mild</string>
+    <string name="moderate">Moderat</string>
+    <string name="severe">Alvorlig</string>
+    <string name="nasal_flaring">Nasal fakling</string>
+    <string name="intercostal_recession">Interkostal resesjon</string>
+    <string name="head_bobbing">Hoderykninger</string>
+    <string name="subcostal_recession">Subkostal resesjon</string>
+    <string name="inspiratory_or_expiratory_noises">Inspiratoriske eller ekspiratoriske lyder</string>
+    <string name="tracheal_tug">Trakeal rykning</string>
+    <string name="sternal_recession">Sternal resesjon</string>
+    <string name="exhaustion">Utmattelse</string>
+    <string name="impending_respiratory_arrest">Nær forestående åndedrettsstans</string>
+    <string name="family_or_nurse_concern">Familie- eller sykepleieanliggende</string>
+    <string name="enter_the_family_or_nurse_concern_time_by_moving_the_green_dot">Angi tid for familie- eller sykepleieanliggende ved å flytte grønn prikk</string>
+    <string name="please_type_the_concern_here">Skriv inn anliggende her</string>
+    <string name="concern">Anliggende</string>
+    <string name="select_how_long_to_use_this_measurement_in_the_early_warning_score">Velg hvor lenge denne målingen skal brukes i tidlig varslingsscore</string>
+
+    <string name="three_seconds">3 sekunder</string>
+    <string name="five_seconds">5 sekunder</string>
+    <string name="ten_seconds">10 sekunder</string>
+    <string name="twenty_seconds">20 sekunder</string>
+    <string name="thirty_seconds">30 sekunder</string>
+    <string name="one_minute">1 minutt</string>
+    <string name="two_minutes">2 minutter</string>
+    <string name="three_minutes">3 minutter</string>
+    <string name="five_minutes">5 minutter</string>
+    <string name="six_minutes">6 minutter</string>
+    <string name="ten_minutes">10 minutter</string>
+    <string name="twelve_minutes">12 minutter</string>
+    <string name="fifteen_minutes">15 minutter</string>
+    <string name="twenty_minutes">20 minutter</string>
+    <string name="thirty_minutes">30 minutter</string>
+    <string name="sixty_minutes">60 minutter</string>
+    <string name="ninty_minutes">90 minutter</string>
+    <string name="one_hundred_twenty_minutes">120 minutter</string>
+
+    <string name="text1Hour">1 time</string>
+    <string name="text2Hours">2 timer</string>
+    <string name="text3Hours">3 timer</string>
+    <string name="text4Hours">4 timer</string>
+    <string name="text6Hours">6 timer</string>
+    <string name="text8Hours">8 timer</string>
+    <string name="text12Hours">12 timer</string>
+    <string name="text24Hours">24 timer</string>
+
+-    <string name="one_hour">Én time</string>
+    <string name="two_hours">To timer</string>
+    <string name="four_hours">Fire timer</string>
+    <string name="eight_hours">Åtte timer</string>
+    <string name="twelve_hours">Tolv timer</string>
+
+    <string name="select_annotation_entry_mode">Velg modus for å legge inn merknad</string>
+    <string name="select_the_annotation_conditions">Velg tilstand(er)</string>
+    <string name="select_the_annotation_actions">Velg handlingen(e)</string>
+    <string name="select_the_annotation_outcomes">Velg resultatet(ene)</string>
+    <string name="autoAddEarlyWarningScores">Legg til EWS automatisk</string>
+    <string name="confirm_vital_sign_details">Bekreft opplysninger om vitale tegn</string>
+    <string name="confirm_annotation_details">Bekreft opplysninger om merknader</string>
+    <string name="keyboard">Tastatur</string>
+    <string name="predefined">Forhåndsdefinert</string>
+    <string name="hide_keyboard">Skjul tastaturet</string>
+    <string name="conditions">Tilstand(er)</string>
+    <string name="actions">Handling(er)</string>
+    <string name="outcomes"> Resultat(er)</string>
+    <string name="hold_qr_code_so_it_fits_in_the_smaller_lighter_square_above">Hold QR-koden slik at den passer inn i den lille lyse firkanten over</string>
+    <string name="press_manual_vitals_only">Eller trykk på knappen nedenfor for å opprette en sesjon kun for manuelt registrerte vitale tegn. Sensorer kan legges til senere via Endre økte sesjonsinnstillinger</string>
+    <string name="observation_time"> Observasjonstid</string>
+    <string name="validity_time">Gyldighetstid</string>
+    <string name="predefined_annotations">Forhåndsdefinerte kommentarer</string>
+    <string name="invalid_number">Feil nummer</string>
+
+    <string name="system">System</string>
+
+    <string name="recycling_popup_text">Sett Lifetouch / Lifetemp sensorer i Isansys gjenbruksboks</string>
+    <string name="recycling_popup_button">Ferdig</string>
+    <string name="update_must_be_installed">Oppdateringen må installeres før en pasientøkt innledes</string>
+    <string name="enter_update_mode">Angi oppdateringsmodus</string>
+    <string name="software_updates_complete">Programvareoppdateringer</string>
+    <string name="software_updates_in_progress">Programvareoppdateringer fullført</string>
+    <string name="user_interface">Brukergrensesnitt</string>
+    <string name="logger_app">Loggerapplikasjon</string>
+    <string name="patient_gateway">Patient Gateway</string>
+    <string name="stringDisplayTimeoutLength">Skjerm\ntimeout</string>
+    <string name="use_display_timeout_on_chart_page">Bruk tidsavbrudd på skjermen på grafsiden</string>
+    <string name="no_timeout">Intet tidsavbrudd</string>
+
+    // New translations required
+    <string name="textForaIr20">Fora</string>
+    <string name="textThermometer">Thermometer</string>
+    <string name="textSearchingForThermometer">Søker etter termometer</string>
+    <string name="textThermometerNotFound">Termometer IKKE funnet</string>
+    <string name="textThermometerConnected">Termometer tilkoblet</string>
+    <string name="remove_thermometer">Fjern termometer</string>
+    <string name="add_thermometer">Legg til termometer</string>
+    <string name="enable">Aktiver</string>
+    <string name="custom_error_activity_message_line_send_to_isansys">Ta et bilde av denne skjermen og send det med e-post til support@isansys.com</string>
+    <string name="textPulseOximeter">Pulsoksimeter</string>
+    <string name="textPleaseTypeHere">Skriv her</string>
+    <string name="textSearchingForPulseOximeter">Søker etter pulsoksimeter</string>
+    <string name="textThermometerFound">Termometer funnet</string>
+    <string name="textPulseOximeterFound">Pulsoksimeter funnet</string>
+    <string name="textTherometerPairing">Termometer pares</string>
+    <string name="textPulseOximeterPairing">Pulsoksimeter pares</string>
+    <string name="textThermometerPairingFailed">Termometerenhet kunne IKKE pares</string>
+    <string name="textPulseOximeterPairingFailed">Pulsoksimeterenhet kunne IKKE pares</string>
+    <string name="textPulseOximeterNotFound">Pulsoksimeter IKKE funnet</string>
+    <string name="textPulseOximeterPairedNowConnecting">Pulsoksimeter paret. Tilkoblet.</string>
+    <string name="textPulseOximeterConnected">Pulsoksimeter tilkoblet</string>
+    <string name="please_type_in_a_unique_patient_identifier">Skriv inn en unik pasientidentifikasjon</string>
+    <string name="please_select_the_threshold_category">Velg terskelkategori</string>
+    <string name="pulse_oximeter_not_attached_to_patient">Pulsoksimeter ikke festet til pasient</string>
+    <string name="access_notification_policy_permission">Retningslinjer for tilgangsvarsling</string>
+    <string name="overlay_permission">Overleggtillatelse</string>
+    <string name="install_packages_permission">Installer pakker</string>
+    <string name="needed_for_video_conferencing">Kreves for videokonferanser</string>
+    <string name="audio">Lyd</string>
+    <string name="video">Video</string>
+    <string name="incoming_call_from_hospital">Innkommende anrop fra sykehus</string>
+    <string name="press_to_end_call">Trykk for å avslutte samtalen</string>
+    <string name="missed_call">Tapt anrop</string>
+    <string name="failed_call">Noe gikk galt med anropet</string>
+    <string name="please_wait_connecting">Vent litt. Kobler til…</string>
+    <string name="in_waiting_room">Kobler til…</string>
+    <string name="bluetooth_error_text">Bluetooth-feil. Enhet må skannes på nytt</string>
+    <string name="show_temperature_in_fahrenheit">Vis temperatur i Fahrenheit</string>
+    <string name="video_call">Videoanrop</string>
+    <string name="schedule_video_call">Arranger videoanrop</string>
+    <string name="call_contacts">Ring til kontakt(er)</string>
+    <string name="select_contact_to_start_video_call">Velg kontakt(er) å starte videoanrop til</string>
+    <string name="calling_hospital">Ringer sykehus</string>
+    <string name="no_answer_try_again_later">Ikke svar. Prøv igjen senere</string>
+    <string name="start_video_call">Start videoanrop</string>
+    <string name="press_for_two_seconds">Trykk og hold i 2 sekunder</string>
+    <string name="device_not_in_use">Enheten er IKKE i bruk</string>
+    <string name="device_is_in_use">Enheten ER i bruk</string>
+    <string name="mqtt_link_test">Test av MQTT-lenke</string>
+    <string name="cannot_connect_to_mqtt_server_please_check_port_accessible">Kan ikke koble til MQTT Server. Sørg for at porten er tilgjengelig</string>
+    <string name="enter_mqtt_server_port">Oppgi MQTT-port</string>
+    <string name="set_mqtt_server_port">Sett MQTT-port</string>
+    <string name="update_install_failed_onscreen_text">Noe gikk galt med oppdateringen. Prøv igjen</string>
+    <string name="no_contacts_have_been_setup">Ingen kontakter er blitt satt opp</string>
+    <string name="android_permissions">Android-tillatelser</string>
+    <string name="answer_call">Besvar anrop</string>
+    <string name="decline_call">Avvis anrop</string>
+    <string name="enable_video_calls">Aktiver videoanrop</string>
+    <string name="end_call">Avslutt samtale</string>
+    <string name="lifeguard_server_mqtt_port">Lifeguard Server MQTT-port</string>
+    <string name="write_external_storage_permission">Skriv eksternlager</string>
+
+    <string name="correct">Riktig</string>
+    <string name="needed_for_general_system_usage">Nødvendig for generell systembruk</string>
+    <string name="needed_to_scan_qr_codes">Nødvendig for å skanne QR-koder</string>
+    <string name="please_enter_the_patients_case_id">Vennligst tast inn pasientens saksid</string>string>
+    <string name="real_time_server_link">Sanntids-\nserverkobling</string>
+    <string name="record_audio_permission">Tillatelse til å ta lydopptak</string>
+    <string name="camera_permission">Kameratillatelse</string>
+    <string name="spo2_spot_measurements">SpO2-punktmålinger</string>
+    <string name="sync_data_to_server">Synkroniser data\ntil server</string>
+    <string name="use_case_id">Bruk saksid</string>
+    <string name="write_system_settings">Skriv inn systeminnstillinger</string>
+    <string name="wrong">Feil</string>
+
+</resources>

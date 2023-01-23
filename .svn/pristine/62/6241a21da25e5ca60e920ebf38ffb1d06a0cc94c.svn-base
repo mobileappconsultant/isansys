@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Patient Gateway</string>
+    <string name="service_name">Mats Service Name</string>
+    <string name="not_set_yet">IKKE INNSTILT ENNÅ</string>
+
+    <string name="local_database_reset_not_including_ews_thresholds">Lokal database tilbakestilt (inkluderer IKKE EWS-terskler)</string>
+    <string name="local_database_reset_including_ews_thresholds">Lokal database tilbakestilt (inkluderer EWS-terskler)</string>
+
+    <string name="starting_database_export_this_might_take_a_few_seconds">Starter databaseeksport. Dette kan ta noen sekunder!</string>
+    <string name="database_exported_to">Database eksportert til </string>
+    <string name="cannot_find_database_not_exported_to">Kan ikke finne DB – ikke eksportert : </string>
+
+    <string name="starting_database_import_this_might_take_a_few_seconds">Starter databaseimport. Dette kan ta noen sekunder!</string>
+    <string name="database_imported">Database importert</string>
+
+    <string name="problem_found_please_make_a_note_of_the_time_and_tell_isansys">Problem funnet. Noter klokekslettet og gi beksjed til Isansys</string>
+
+    <string name="custom_error_activity_message_line_one">Beklager!</string>
+    <string name="custom_error_activity_message_line_two">Det har oppstått en feil som har forårsaket at Patient Gateway (PG) sluttet å virke.</string>
+
+    <string name="custom_error_activity_dummy_timestamp">21 Dec 2016 18:24:32</string>
+    <string name="restart">Omstart</string>
+    <string name="xx">xx</string>
+    <string name="custom_error_activity_message_line_send_to_isansys">Ta et bilde av denne skjermen og send det med e-post til support@isansys.com</string>
+    <string name="build_version">Byggversjon</string>
+    <string name="android_permissions">Android-tillatelser</string>
+    <string name="fine_location">Fin plassering</string>
+    <string name="background_location">Bakgrunnsplassering</string>
+    <string name="write_external_storage">Skriv eksternlager</string>
+    <string name="nearby_permission_text">Koble til enheter i nærheten</string>
+    <string name="android_version">Android-versjon</string>
+
+</resources>

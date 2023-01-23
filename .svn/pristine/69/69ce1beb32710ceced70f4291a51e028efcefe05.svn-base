@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="3dp">
+
+        <TextView
+            android:id="@+id/labelSetServerAddress"
+            android:layout_width="@dimen/admin_page_server_connection_setting_label_width"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/textSetServerAddress"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editServerAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:hint="@string/textEnterServerAddress"
+            android:inputType="textNoSuggestions|textVisiblePassword"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/buttonSetServer"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_blue"
+            android:gravity="center|center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/set_server_address"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:id="@+id/labelSetServerPort"
+            android:layout_width="@dimen/admin_page_server_connection_setting_label_width"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical|end"
+            android:text="@string/set_server_port"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editServerPort"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:hint="@string/enter_server_port"
+            android:inputType="textNoSuggestions|textVisiblePassword"
+            android:maxLength="50"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/buttonSetServerPort"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_blue"
+            android:gravity="center|center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/set_server_port"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="3dp">
+
+        <Space
+            android:layout_width="@dimen/admin_page_server_connection_setting_label_width"
+            android:layout_height="match_parent" />
+
+        <CheckBox
+            android:id="@+id/checkBoxUseWebServiceAuthentication"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@drawable/checkbox"
+            android:text="@string/use_webservice_authentication" />
+
+        <CheckBox
+            android:id="@+id/checkBoxUseWebServiceEncryption"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@drawable/checkbox"
+            android:text="@string/use_webservice_encryption" />
+
+        <CheckBox
+            android:id="@+id/checkBoxUseHttps"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@drawable/checkbox"
+            android:text="@string/use_https" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutTestServerLink"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/buttonTestServerLink"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/button_blue"
+                android:gravity="center|center_vertical"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="@string/test_server_link"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutAdminServerPingStatus"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:background="@color/black">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutAdminServerPingStatusColour"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/green">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="3dp">
+
+        <TextView
+            android:id="@+id/labelSetRealTimeServerPort"
+            android:layout_width="@dimen/admin_page_server_connection_setting_label_width"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/set_wamp_server_port"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editRealTimeServerPort"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:hint="@string/enter_wamp_server_port"
+            android:inputType="textNoSuggestions|textVisiblePassword"
+            android:maxLength="50"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/buttonSetRealTimeServerPort"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_blue"
+            android:gravity="center|center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/set_wamp_server_port"
+            android:textColor="@color/white" />
+
+        <CheckBox
+            android:id="@+id/checkBoxEnableRealTimeLink"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:button="@drawable/checkbox"
+            android:text="@string/real_time_server_link"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="3dp">
+
+        <TextView
+            android:id="@+id/labelSetBedID"
+            android:layout_width="@dimen/admin_page_server_connection_setting_label_width"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="@string/textSetBedID"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonGetWardsAndBedsFromServer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_blue"
+            android:gravity="center|center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/get_wards_and_beds_from_server"
+            android:textColor="@color/white" />
+
+        <Spinner
+            android:id="@+id/spinnerWardList"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <Spinner
+            android:id="@+id/spinnerBedList"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/buttonSetBedDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_blue"
+            android:gravity="center|center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/set_bed_details"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textAdminModeGatewaysAssignedBedId"
+            android:layout_width="150dp"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/dummy_bed_id_to_check_layout_size"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="3dp">
+
+        <Button
+            android:id="@+id/buttonGetDefaultEarlyWarningScoringTypesFromServer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_blue"
+            android:gravity="center|center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/get_types_from_server"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutGetDefaultEarlyWaringScoreTypesFromServer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ProgressBar
+                android:id="@+id/progressBarGetUpdatedDeviceFirmware"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textReceivedDefaultEarlyWarningScoringTypes"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/early_warning_score_types_placeholder"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/buttonGetGatewayConfigFromServer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_blue"
+            android:gravity="center|center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/get_config_from_server"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="15dp"
+            android:gravity="center">
+
+            <View
+                android:id="@+id/viewReceivedGatewayConfig"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/circle_yellow" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonGetServerConfigurableTextFromServer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_blue"
+            android:gravity="center|center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/get_server_configurable_text"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="15dp"
+            android:gravity="center">
+
+            <View
+                android:id="@+id/viewReceivedServerConfigurableTextFromServer"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/circle_yellow" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonCheckForUpdatedFirmware"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_blue"
+            android:gravity="center|center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/check_for_updated_firmware"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutGettingUpdatesFromServer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="0.7"
+            android:gravity="center_vertical">
+
+            <ProgressBar
+                android:id="@+id/progressBarGettingUpdatesFromServer"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textReceivedUpdateFirmwareVersions"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="0.7"
+            android:gravity="center_vertical"
+            android:text="@string/early_warning_score_types_placeholder"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="3dp">
+
+        <Button
+            android:id="@+id/buttonGetViewableWebpagesFromServer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_blue"
+            android:gravity="center|center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/get_web_pages_from_server"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="15dp"
+            android:gravity="center">
+
+            <View
+                android:id="@+id/viewReceivedWebpageFromServer"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/circle_yellow" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="3dp">
+
+        <Button
+            android:id="@+id/buttonEmptyLocalDatabase"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/button_blue"
+            android:gravity="center|center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/empty_local_database"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/buttonDeleteEarlyWarningScoreThresholdSets"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/button_blue"
+            android:gravity="center|center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/empty_local_database_including_ews_types"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/buttonExportLocalDatabase"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_blue"
+            android:gravity="center|center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/export_database_to_tablet_root"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/buttonDeleteOldExportedDatabases"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/button_blue"
+            android:gravity="center|center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/delete_old_exported_databases"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/ButtonNTPSync"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/button_blue"
+            android:gravity="center|center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/NtpTimeSync"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textViewTimeDriftValue"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/time_drift_initial"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="3dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutServerSyncAndRealTimeLink"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/checkBoxServerDataSyncEnabled"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@drawable/checkbox"
+                android:text="@string/sync_data_to_server"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/ButtonLogCat"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/button_blue"
+                android:gravity="center|center_vertical"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="@string/stringLogCat"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/buttonChangeWifi"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/button_blue"
+                android:contentDescription="@null"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/wifi_four" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutAdminRestartInstallationWizard"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttonForceInstallationComplete"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/button_red"
+                android:gravity="center|center_vertical"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="@string/force_installation_complete"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/buttonRestartInstallationWizard"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/button_blue"
+                android:gravity="center|center_vertical"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="@string/restart_installation_wizard"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

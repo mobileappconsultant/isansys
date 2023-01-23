@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/normalMode"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0FFFFFF"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <CheckedTextView
+            android:id="@+id/checkBoxLifetouchOptionsSetupMode"
+            android:drawableTop="@drawable/button_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setup_mode"
+            android:textSize="34sp"
+            android:textAlignment="center"
+            android:button="@drawable/button_radio"
+            android:clickable="true"
+            android:focusable="true"
+            />
+
+        <CheckedTextView
+            android:id="@+id/checkBoxLifetouchOptionsSetupModeDisabled"
+            android:visibility="gone"
+            android:drawableTop="@drawable/button_radio_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setup_mode"
+            android:textSize="34sp"
+            android:textAlignment="center"
+            android:button="@drawable/button_radio_grey"
+            android:clickable="true"
+            android:focusable="true"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        >
+
+        <CheckedTextView
+            android:id="@+id/checkBoxLifetouchOptionsHeartRatePoincare"
+            android:drawableTop="@drawable/button_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/poincare"
+            android:textSize="34sp"
+            android:textAlignment="center"
+            android:button="@drawable/button_radio"
+            android:clickable="true"
+            android:focusable="true"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <CheckedTextView
+            android:id="@+id/checkBoxLifetouchOptionsRawAccelerometerMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/button_radio"
+            android:clickable="true"
+            android:drawableTop="@drawable/button_radio"
+            android:focusable="true"
+            android:text="@string/motion_mode"
+            android:textAlignment="center"
+            android:textSize="34sp" />
+
+        <CheckedTextView
+            android:id="@+id/checkBoxLifetouchOptionsRawAccelerometerModeDisabled"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/button_radio_grey"
+            android:clickable="true"
+            android:drawableTop="@drawable/button_radio_grey"
+            android:focusable="true"
+            android:text="@string/motion_mode"
+            android:textAlignment="center"
+            android:textSize="34sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
