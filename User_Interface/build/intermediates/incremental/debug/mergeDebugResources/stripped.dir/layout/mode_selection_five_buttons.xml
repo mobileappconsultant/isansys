@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    android:gravity="center"
+	android:orientation="vertical"
+    >
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="horizontal"
+		android:layout_weight="1"
+		android:baselineAligned="false">
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center" >
+
+			<Button
+				android:id="@+id/buttonBigButtonOne"
+				android:layout_width="300dp"
+				android:layout_height="300dp"
+				android:text="@string/textStartMonitoringAPatient"
+				android:textColor="@color/white"
+				android:textSize="36sp"
+				android:textStyle="bold"
+				android:background="@drawable/button_blue"
+				/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center" >
+
+			<Button
+				android:id="@+id/buttonBigButtonTwo"
+				android:layout_width="300dp"
+				android:layout_height="300dp"
+				android:text="@string/textChangeSessionSettings"
+				android:textColor="@color/white"
+				android:textSize="36sp"
+				android:textStyle="bold"
+				android:background="@drawable/button_blue"
+				/>
+		</LinearLayout>
+		
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/buttonBigButtonThree"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:text="@string/textCheckDeviceStatus"
+                android:textColor="@color/white"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:background="@drawable/button_blue"
+                />
+        </LinearLayout>		
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/linearLayoutManualVitalSignSelectionRowTwo"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_marginTop="-50dp"
+		android:orientation="horizontal"
+		android:layout_weight="1.7"
+		android:baselineAligned="false">
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="end|center_vertical">
+
+			<Button
+				android:id="@+id/buttonBigButtonFour"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="50dp"
+                android:text="@string/textManualVitalSignEntry"
+                android:textColor="@color/white"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:background="@drawable/button_blue"
+				/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="start|center_vertical">
+
+			<Button
+				android:id="@+id/buttonBigButtonFive"
+				android:layout_width="300dp"
+				android:layout_height="200dp"
+				android:layout_marginStart="50dp"
+				android:text="@string/view_manually_entered_vital_signs"
+				android:textColor="@color/white"
+				android:textSize="36sp"
+				android:textStyle="bold"
+				android:background="@drawable/button_blue"
+				/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout >

@@ -1,0 +1,167 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@drawable/bg_white_round"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.7"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="top|start"
+            android:gravity="top|start"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:text="@string/poincare"/>
+
+            <Spinner
+                android:id="@+id/spinnerDaySelection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|start"
+                android:layout_marginTop="20dp"
+                android:gravity="top" />
+
+            <Spinner
+                android:id="@+id/spinnerHoursSelection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|start"
+                android:layout_marginTop="50dp"
+                android:gravity="top" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom">
+
+                <Button
+                    android:id="@+id/buttonDismissPoincare"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="36sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_blue"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/button_wifi_dismiss_string" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <com.isansys.pse_isansysportal.SquareLayout
+            android:id="@+id/linear_layout_poincare_chart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radioGroupGraphTimeSelection"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:gravity="start">
+
+                <RadioButton
+                    android:id="@+id/checkBox1MinuteGraph"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_button_selector"
+                    android:text="@string/radioButton1minute"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/checkBox2MinutesGraph"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_button_selector"
+                    android:text="@string/radioButton2minutes"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/checkBox3MinutesGraph"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_button_selector"
+                    android:text="@string/radioButton3minutes"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/checkBox5MinutesGraph"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_button_selector"
+                    android:text="@string/radioButton5minutes"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/checkBox10MinutesGraph"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_button_selector"
+                    android:checked="true"
+                    android:text="@string/radioButton10minutes"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/checkBox15MinutesGraph"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_button_selector"
+                    android:checked="true"
+                    android:text="@string/radioButton15minutes"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <me.bendik.simplerangeview.SimpleRangeView
+            android:id="@+id/rangeView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+</LinearLayout>

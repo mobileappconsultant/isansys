@@ -1,0 +1,258 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.isansys.patientgateway"
+4    android:versionCode="10400"
+5    android:versionName="10400" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml
+10
+11    <!--
+12    Declare this required feature if you want to make the app available to BLE-capable
+13    devices only.  If you want to make your app available to devices that don't support BLE,
+14    you should omit this in the manifest.  Instead, determine BLE capability by using
+15    PackageManager.hasSystemFeature(FEATURE_BLUETOOTH_LE)
+16    -->
+17    <uses-feature
+17-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:11:5-89
+18        android:name="android.hardware.bluetooth_le"
+18-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:11:19-63
+19        android:required="true" />
+19-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:11:64-87
+20
+21    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+21-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:13:6-82
+21-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:13:23-79
+22    <!-- Todo -> Sam's changes comment for debug purpose -->
+23    <!-- <uses-permission android:name="android.permission.BLUETOOTH"/> -->
+24    <!-- <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/> -->
+25    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+25-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:17:5-78
+25-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:17:22-76
+26    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+26-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:18:5-80
+26-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:18:22-78
+27    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+27-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:19:5-79
+27-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:19:22-77
+28    <uses-permission android:name="android.permission.INTERNET" />
+28-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:20:5-66
+28-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:20:22-64
+29    <uses-permission android:name="android.permission.READ_LOGS" />
+29-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:21:5-67
+29-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:21:22-65
+30    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+30-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:22:5-78
+30-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:22:22-76
+31    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+31-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:23:5-75
+31-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:23:22-73
+32    <uses-permission android:name="android.permission.WAKE_LOCK" />
+32-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:24:5-68
+32-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:24:22-65
+33    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+33-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:25:5-76
+33-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:25:22-73
+34    <!-- TODO -> Sam's changes comment for debug purpose -->
+35    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+35-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:27:5-81
+35-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:27:22-78
+36    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+36-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:28:5-79
+36-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:28:22-76
+37    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+37-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:29:5-77
+37-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:29:22-74
+38    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+38-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:30:5-85
+38-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:30:22-82
+39    <!-- Request legacy Bluetooth permissions on older devices. -->
+40
+41
+42    <!-- Todo -> Sams changes testing new implementation -->
+43
+44    <uses-feature android:name="android.software.companion_device_setup" />
+44-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:35:5-75
+44-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:35:19-73
+45
+46    <uses-permission
+46-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:36:5-37:38
+47        android:name="android.permission.BLUETOOTH"
+47-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:36:22-65
+48        android:maxSdkVersion="30" />
+48-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:37:9-35
+49    <uses-permission
+49-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:38:5-39:38
+50        android:name="android.permission.BLUETOOTH_ADMIN"
+50-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:38:22-71
+51        android:maxSdkVersion="30" />
+51-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:39:9-35
+52    <uses-permission
+52-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:40:5-41:31
+53        android:name="android.permission.BLUETOOTH_SCAN"
+53-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:40:22-70
+54        android:usesPermissionFlags="neverForLocation" />
+54-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:40:71-117
+55    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+55-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:42:5-78
+55-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:42:22-75
+56    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+56-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:43:5-76
+56-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:43:22-73
+57
+58    <queries>
+58-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:46:5-48:15
+59        <package android:name="com.isansys.pse_isansysportal" />
+59-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:47:9-65
+59-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:47:18-62
+60    </queries>
+61
+62    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+62-->[com.github.hannesa2:paho.mqtt.android:3.5.1] /Users/frontendlabs/.gradle/caches/transforms-3/e214a8d21a0f6381ec260bac8120ecd4/transformed/jetified-paho.mqtt.android-3.5.1/AndroidManifest.xml:11:5-79
+62-->[com.github.hannesa2:paho.mqtt.android:3.5.1] /Users/frontendlabs/.gradle/caches/transforms-3/e214a8d21a0f6381ec260bac8120ecd4/transformed/jetified-paho.mqtt.android-3.5.1/AndroidManifest.xml:11:22-76
+63
+64    <permission
+64-->[androidx.core:core:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/84e426f82aa1a2b92e015577237d6171/transformed/core-1.10.0-alpha01/AndroidManifest.xml:22:5-24:47
+65        android:name="com.isansys.patientgateway.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+65-->[androidx.core:core:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/84e426f82aa1a2b92e015577237d6171/transformed/core-1.10.0-alpha01/AndroidManifest.xml:23:9-81
+66        android:protectionLevel="signature" />
+66-->[androidx.core:core:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/84e426f82aa1a2b92e015577237d6171/transformed/core-1.10.0-alpha01/AndroidManifest.xml:24:9-44
+67
+68    <uses-permission android:name="com.isansys.patientgateway.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+68-->[androidx.core:core:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/84e426f82aa1a2b92e015577237d6171/transformed/core-1.10.0-alpha01/AndroidManifest.xml:26:5-97
+68-->[androidx.core:core:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/84e426f82aa1a2b92e015577237d6171/transformed/core-1.10.0-alpha01/AndroidManifest.xml:26:22-94
+69
+70    <application
+70-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:50:5-120:19
+71        android:name="com.isansys.patientgateway.GatewayApplication"
+71-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:51:9-43
+72        android:allowBackup="false"
+72-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:52:9-36
+73        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+73-->[androidx.core:core:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/84e426f82aa1a2b92e015577237d6171/transformed/core-1.10.0-alpha01/AndroidManifest.xml:28:18-86
+74        android:debuggable="true"
+75        android:extractNativeLibs="false"
+76        android:icon="@drawable/ic_launcher"
+76-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:53:9-45
+77        android:label="@string/app_name"
+77-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:54:9-41
+78        android:largeHeap="true"
+78-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:58:3-27
+79        android:requestLegacyExternalStorage="true"
+79-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:56:9-52
+80        android:testOnly="true"
+81        android:theme="@style/AppTheme"
+81-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:55:9-40
+82        android:usesCleartextTraffic="true" >
+82-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:57:9-44
+83
+84        <!-- <uses-library android:name="com.android.future.usb.accessory" /> -->
+85
+86        <service
+86-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:62:9-69:19
+87            android:name="com.isansys.patientgateway.PatientGatewayService"
+87-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:63:13-50
+88            android:configChanges="keyboardHidden|orientation"
+88-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:67:13-63
+89            android:icon="@drawable/ic_launcher"
+89-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:64:13-49
+90            android:label="@string/service_name"
+90-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:65:13-49
+91            android:screenOrientation="landscape" >
+91-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:68:13-50
+92        </service>
+93
+94        <activity
+94-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:71:9-89:20
+95            android:name="com.isansys.patientgateway.MainActivity"
+95-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:72:13-67
+96            android:exported="true"
+96-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:73:13-36
+97            android:label="@string/app_name" >
+97-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:74:13-45
+98            <intent-filter>
+98-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:76:13-79:29
+99                <action android:name="android.intent.action.MAIN" />
+99-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:77:17-69
+99-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:77:25-66
+100
+101                <category android:name="android.intent.category.LAUNCHER" />
+101-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:78:17-77
+101-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:78:27-74
+102            </intent-filter>
+103            <intent-filter>
+103-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:81:13-83:29
+104                <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
+104-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:82:17-93
+104-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:82:25-90
+105            </intent-filter>
+106
+107            <meta-data
+107-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:85:13-88:19
+108                android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
+108-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:86:17-82
+109                android:resource="@xml/accessory_filter" />
+109-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:87:17-57
+110        </activity>
+111        <activity
+111-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:91:9-95:20
+112            android:name="com.isansys.patientgateway.CustomErrorActivity"
+112-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:92:13-74
+113            android:label="@string/app_name"
+113-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:93:13-45
+114            android:process=":error_activity" >
+114-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:94:13-46
+115        </activity>
+116
+117        <service android:name="com.isansys.patientgateway.bluetooth.SpO2.NoninWristOx" />
+117-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:97:9-99:15
+117-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:98:13-82
+118        <service android:name="com.isansys.patientgateway.bluetooth.bloodPressure.AnD_UA767" />
+118-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:101:9-103:15
+118-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:102:13-88
+119        <service android:name="com.isansys.patientgateway.bluetooth.temperature.Fora_Ir20" />
+119-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:105:6-107:15
+119-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:106:13-86
+120        <service android:name="com.isansys.patientgateway.PatientGatewayLogcatCaptureService" />
+120-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:109:9-111:15
+120-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:110:13-63
+121        <service android:name="org.eclipse.paho.android.service.MqttService" />
+121-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:113:9-80
+121-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:113:18-77
+122
+123        <provider
+123-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:115:3-119:17
+124            android:name="com.isansys.patientgateway.database.contentprovider.IsansysPatientGatewayContentProvider"
+124-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:116:9-112
+125            android:authorities="com.isansys.patientgateway.database.contentprovider"
+125-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:118:9-82
+126            android:exported="true" >
+126-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:117:9-32
+127        </provider>
+128
+129        <activity
+129-->[:CustomActivityOnCrash] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/CustomActivityOnCrash/library/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:9-28:65
+130            android:name="cat.ereza.customactivityoncrash.activity.DefaultErrorActivity"
+130-->[:CustomActivityOnCrash] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/CustomActivityOnCrash/library/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-89
+131            android:process=":error_activity"
+131-->[:CustomActivityOnCrash] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/CustomActivityOnCrash/library/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-46
+132            android:theme="@style/CustomActivityOnCrashTheme" />
+132-->[:CustomActivityOnCrash] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/CustomActivityOnCrash/library/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-62
+133
+134        <service android:name="info.mqtt.android.service.MqttService" />
+134-->[com.github.hannesa2:paho.mqtt.android:3.5.1] /Users/frontendlabs/.gradle/caches/transforms-3/e214a8d21a0f6381ec260bac8120ecd4/transformed/jetified-paho.mqtt.android-3.5.1/AndroidManifest.xml:15:9-73
+134-->[com.github.hannesa2:paho.mqtt.android:3.5.1] /Users/frontendlabs/.gradle/caches/transforms-3/e214a8d21a0f6381ec260bac8120ecd4/transformed/jetified-paho.mqtt.android-3.5.1/AndroidManifest.xml:15:18-70
+135        <service
+135-->[androidx.room:room-runtime:2.4.3] /Users/frontendlabs/.gradle/caches/transforms-3/81267469e9d28761bab1d52a0c8bc717/transformed/room-runtime-2.4.3/AndroidManifest.xml:25:9-28:40
+136            android:name="androidx.room.MultiInstanceInvalidationService"
+136-->[androidx.room:room-runtime:2.4.3] /Users/frontendlabs/.gradle/caches/transforms-3/81267469e9d28761bab1d52a0c8bc717/transformed/room-runtime-2.4.3/AndroidManifest.xml:26:13-74
+137            android:directBootAware="true"
+137-->[androidx.room:room-runtime:2.4.3] /Users/frontendlabs/.gradle/caches/transforms-3/81267469e9d28761bab1d52a0c8bc717/transformed/room-runtime-2.4.3/AndroidManifest.xml:27:13-43
+138            android:exported="false" />
+138-->[androidx.room:room-runtime:2.4.3] /Users/frontendlabs/.gradle/caches/transforms-3/81267469e9d28761bab1d52a0c8bc717/transformed/room-runtime-2.4.3/AndroidManifest.xml:28:13-37
+139    </application>
+140
+141</manifest>

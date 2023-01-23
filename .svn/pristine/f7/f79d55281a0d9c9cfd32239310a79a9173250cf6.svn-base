@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="black">#FF000000</color>
+	<color name="white">#FFFFFFFF</color>
+	<color name="orange">#FFFFA500</color>
+    <color name="light_yellow">#D5B400</color>
+	<color name="yellow">#FFFFFF00</color>
+	<color name="gray">#FF808080</color>
+	<color name="background_grey">#FF606060</color>
+	<color name="blue">#FF1C86EE</color>
+	<color name="green">#FF55AE3A</color>
+	<color name="red">#FFFF1100</color>
+
+	<color name="manually_entered_graph_background_colour">#FF808080</color>			<!-- Grey -->
+
+	<color name="pop_up_server_sync_headers_background_colour">#c0c0c0</color>
+	<color name="pop_up_server_sync_active_session_background_colour">#ffffff</color>   <!-- white -->
+	<color name="pop_up_server_sync_historical_session_background_colour">#fff0f0f0</color>   <!-- shade of grey -->
+
+
+	<color name="progress_bar_colour">#FF4099FF</color>
+	<color name="progress_bar_background_colour">#ffd6d6d6</color>
+
+	<color name="early_warning_color_score__green">#55AE3A</color>                      <!-- Green -->
+    <color name="early_warning_color_score__yellow">#F5E218</color>                     <!-- Yellow -->
+    <color name="early_warning_color_score__orange">#ffa500</color>                     <!-- Orange -->
+    <color name="early_warning_color_score__red">#FF1000</color>                        <!-- Red -->
+	
+	<color name="graph_background_colour">#FFFFFF</color>                               <!-- White -->
+	
+    <color name="early_warning_text__white">#FFFFFFFF</color>                           <!-- white -->
+    <color name="early_warning_text__black">#FF000000</color>                           <!-- black -->
+
+	<color name="transparent_color">#00000000</color>
+
+	<color name="alphared">#A0FF0000</color>
+
+</resources>

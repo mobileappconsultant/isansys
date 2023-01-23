@@ -1,0 +1,1222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PSE Isansys Portal</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="textSetupMode">Setup\nMode</string>
+    <string name="textServerControl">Server\nControl</string>
+    <string name="textPeriodicSetupMode">Periodic\nSetup\nMode</string>
+
+    <string name="textTimeDummyString">12:00:00</string>
+
+    <string name="textPatient">Patient</string>
+    <string name="text0to1Years">0&#8211;1 years</string>
+    <string name="text1to5Years">1&#8211;5 years</string>
+    <string name="text5to12Years">5&#8211;12 years</string>
+    <string name="textGreater12Years">>12 years</string>
+    <string name="textAdult">Adult</string>
+
+    <string name="textConnect">Connect</string>
+    <string name="textDisconnect" translatable="false">Disconnect</string>
+
+    <string name="textDefaultHumanReadableDeviceId">---</string>
+    <string name="textThreeDashes">---</string>
+
+    <string name="textLifetouch">Lifetouch</string>
+    <string name="textLifetemp">Lifetemp</string>
+    <string name="textThermometer">Thermometer</string>
+    <string name="textNonin">Nonin</string>
+    <string name="textNoninBle" translatable="false">Nonin BLE</string>
+    <string name="textNoninWristOx">Nonin\nWristOx</string>
+    <string name="textNoninWristOxSingleLine">Nonin WristOx</string>
+
+    <string name="textPulseOximeter">Pulse Oximeter</string>
+
+    <string name="textUA767">UA767</string>
+    <string name="textBloodPressure">Blood\nPressure</string>
+    <string name="textBloodPressureSingleLine">Blood Pressure</string>
+
+    <string name="textForaIr20">Fora</string>
+
+    <string name="textDefaultDummyTimestamp">hh:mm:ss dd-mon-year</string>
+
+    <string name="textWaitingForData">Waiting for data</string>
+    <string name="textDeviceRemoved">Device Removed</string>
+    <string name="textDownloadingPreviousData">Downloading Data</string>
+    <string name="textHeartRate">Heart Rate\n(bpm)</string>
+    <string name="textDefaultDummyHeartRate">---</string>
+
+    <string name="textRespirationRateBreathMin">(breath/min)</string>
+    <string name="textDefaultDummyRespirationRate">--</string>
+
+    <string name="textDummyPulseOxReading">--</string>
+
+    <string name="textTempDegreesC">Temperature</string>
+    <string name="textDummyTemperatureReading">--</string>
+
+    <string name="textBloodPressureLabel">Blood Pressure</string>
+    <string name="textSystolic">Systolic</string>
+    <string name="textDiastolic">Diastolic</string>
+
+    <string name="textSpO2Percent">SpO2</string>
+
+    <string name="textUnlockScreen">Unlock\nScreen</string>
+    <string name="textLockScreen">Lock\nScreen</string>
+    <string name="textCheckDeviceStatus">Check Device Status</string>
+    <string name="textChangeSessionSettings">Change Session Settings</string>
+    <string name="textChangeSessionSettingsMultiLine">Change\nSession\nSettings</string>
+
+    <string name="textStartMonitoring">"Start Monitoring"</string>
+
+    <string name="textNext">Next</string>
+    <string name="textStartMonitoringAPatient">Start Monitoring a Patient</string>
+    <string name="textStopMonitoringCurrentPatient">"Stop Monitoring\nCurrent Patient"</string>
+    <string name="textPatientVitalsDisplay">Patient Vitals Display</string>
+
+    <string name="textAreYouSure">"Are you sure?"</string>
+    <string name="textEndSession">"End Session"</string>
+    <string name="textTransferSession">"Transfer Session"</string>
+    <string name="textTransferSessionDisabled">"Transfer Session\n(Disabled)"</string>
+
+    <string name="textPleaseTypeHere">Please type here</string>
+
+    <string name="textWaitingForOtherDeviceToFinishConnection">Waiting for other device to finish connection</string>
+
+    <string name="textSearchingForLifetouch">Searching for Lifetouch</string>
+    <string name="textSearchingForThermometer">Searching for Thermometer</string>
+    <string name="textSearchingForPulseOximeter">Searching for Pulse Oximeter</string>
+    <string name="textSearchingForBloodPressure">Searching for Blood Pressure device</string>
+    <string name="textSearchingForScales">Searching for Weight Scales</string>  <!-- NEW needs translation -->
+
+    <string name="textThermometerFound">Thermometer found</string>
+    <string name="textPulseOximeterFound">Pulse Oximeter found</string>
+    <string name="textBloodPressureFound">Blood Pressure device found</string>
+
+    <string name="textTherometerPairing">Thermometer pairing</string>
+    <string name="textPulseOximeterPairing">Pulse Oximeter pairing</string>
+    <string name="textBloodPressurePairing">Blood Pressure pairing</string>
+
+    <string name="textThermometerPairingFailed">Thermometer device pairing FAILED</string>
+    <string name="textPulseOximeterPairingFailed">Pulse Oximeter device pairing FAILED</string>
+    <string name="textBloodPressurePairingFailed">Blood Pressure device pairing FAILED</string>
+
+    <string name="textLifetouchNotFound">Lifetouch NOT found</string>
+    <string name="textThermometerNotFound">Thermometer NOT found</string>
+    <string name="textPulseOximeterNotFound">Pulse Oximeter NOT found</string>
+    <string name="textBloodPressureNotFound">Blood Pressure NOT found</string>
+    <string name="textScalesNotFound">Weight Scales NOT found</string>  <!-- NEW needs translation -->
+
+    <string name="textPulseOximeterPairedNowConnecting">Pulse Oximeter paired. Connected.</string>
+
+    <string name="textLifetouchFoundWaitingForGatt">Lifetouch found, waiting for GATT Connection.......</string>
+    <string name="textLifetempFoundWaitingForGatt">Lifetemp found, waiting for GATT Connection.......</string>
+
+    <string name="textLifetouchConnected">Lifetouch connected.</string>
+    <!--<string name="textLifetempConnected">Lifetemp connected.</string>-->
+    <string name="textThermometerConnected">Thermometer connected.</string> <!-- NEW because of Fora, will need translation -->
+    <string name="textPulseOximeterConnected">Pulse Oximeter connected</string>
+    <string name="textBloodPressureConnected">Blood Pressure connected</string>
+    <string name="textScalesConnected">Weight Scales connected</string>  <!-- NEW needs translation -->
+    <!--<string name="textForaIr20Connected">Fora IR20 connected.</string>--> <!-- NEW because of Fora, will need translation -->
+
+    <string name="textSetBedID">Set Bed ID</string>
+    <string name="textSetServerAddress">Set Server Address</string>
+    <string name="textEnterServerAddress">Enter Server Address</string>
+    <string name="textPatientGatewaySoftwareVersion">Gateway version : </string>
+    <string name="textUserInterfaceSoftwareVersion">UI version : </string>
+    <string name="textLoggerSoftwareVersion">Logger version : </string>
+    <string name="textGatewayName">Gateway Name : </string>
+
+
+    <string name="adjust_ews_thresholds">Adjust EWS Thresholds</string>
+
+    <string name="change_lifetemp_settings">Change Lifetemp Settings</string>
+    <string name="change_nonin_wrist_ox_settings">Change Nonin WristOx Settings</string>
+    <string name="change_blood_pressure_monitor_settings">Change Blood Pressure Monitor Settings</string>
+
+    <string name="remove_lifetouch">Remove Lifetouch</string>
+    <string name="remove_lifetemp">Remove Lifetemp</string>
+    <string name="remove_thermometer">Remove Thermometer</string> <!-- NEW because of Fora, will need translation -->
+    <string name="remove_pulse_oximeter">Remove Pulse Oximeter</string>
+    <string name="remove_nonin_wrist_ox" translatable="false">Remove Nonin WristOx</string>
+    <string name="remove_nonin_wrist_ox_ble" translatable="false">Remove Nonin WristOx BLE</string>
+    <string name="remove_blood_pressure_monitor">Remove Blood Pressure Monitor</string>
+    <string name="remove_weight_scale">Remove Weight Scale</string>
+    <string name="remove_early_warning_scores">Remove Early Warning Scores</string>
+
+    <string name="add_lifetouch">Add Lifetouch</string>
+    <string name="add_lifetemp">Add Lifetemp</string>
+    <string name="add_thermometer">Add Thermometer</string> <!-- NEW because of Fora, will need translation -->
+    <string name="add_pulse_oximeter">Add Pulse Oximeter</string>
+    <string name="add_nonin_wrist_ox" translatable="false">Add Nonin WristOx</string>
+    <string name="add_nonin_wrist_ox_ble" translatable="false">Add Pulse Oximeter</string>
+    <string name="add_blood_pressure">Add Blood Pressure Monitor</string>
+    <string name="add_weight_scale">Add Weight Scale</string>
+    <string name="add_early_warning_scores">Add Early Warning Scores</string>
+
+    <string name="textRawAccelerometerMode">Accelerometer Mode</string>
+
+    <string name="textSoftwareUpdateAvailable">Software Update Available</string>
+    <string name="textInstallSoftwareUpdateNow">Install Now</string>
+    <string name="textInstallSoftwareUpdateLater">Install Later</string>
+
+    <string name="textSearchAgain">Search\nAgain</string>
+
+    <string name="textContentDescriptionLogoPulseOx">textContentDescriptionLogoPulseOx</string>
+    <string name="scan_device_qr_codes">Scan Device QR Codes</string>
+    <string name="lifetouch">Lifetouch</string>
+    <string name="remove">Remove</string>
+    <string name="lifetemp">Lifetemp</string>
+    <string name="nonin_wrist_ox">Nonin WristOx</string>
+    <string name="blood_pressure">Blood Pressure</string>
+    <string name="six_dashes">------</string>
+    <string name="scan_server_address_qr_code">Scan Server Address\nQR code</string>
+    <string name="server_link">Server Link</string>
+    <string name="heart_rate">Heart Rate</string>
+    <string name="respiration_rate">Respiration Rate</string>
+    <string name="respiratory_rate">Respiratory Rate</string>
+    <string name="temperature">Temperature</string>
+    <string name="spo2">SpO2</string>
+    <string name="systolic_blood_pressure">Systolic\nBlood Pressure</string>
+    <string name="consciousness_level">Consciousness Level</string>
+    <string name="supplemental_oxygen">Supplemental Oxygen</string>
+
+    <string name="please_type_in_a_unique_patient_identifier">Please type in a unique Patient Identifier</string>
+    <string name="please_enter_the_patients_case_id">Please enter the Patients Case ID</string>
+    <string name="dummy_bed_id_to_check_layout_size">BED ID</string>
+    <string name="dummy_bed_name_to_check_layout_size">Test Bed Name to check size</string>
+    <string name="dummy_ward_name_to_check_layout_size">Test Ward Name To check size</string>
+    <string name="dummy_patient_id_to_check_layout_size">Patient :   -----</string>
+    <string name="please_select_the_threshold_category">Please select the threshold category</string>
+    <string name="selected_early_warning_score_thresholds_below">Selected Early Warning Score thresholds below</string>
+    <string name="early_warning_score_thresholds_below">Early Warning Score thresholds below</string>
+
+    <string name="age_range_0_to_1_years_early_warning_score_thresholds_below">0&#8211;1 years Early Warning Score thresholds below</string>
+    <string name="age_range_1_to_5_years_early_warning_score_thresholds_below">1&#8211;5 years Early Warning Score thresholds below</string>
+    <string name="age_range_5_to_12_years_early_warning_score_thresholds_below">5&#8211;12 years Early Warning Score thresholds below</string>
+    <string name="age_range_12_plus_years_early_warning_score_thresholds_below">12 years+ Early Warning Score thresholds below</string>
+    <string name="age_range_adult_early_warning_score_thresholds_below">Adult Early Warning Score thresholds below</string>
+    <!--<string name="please_scan_id_code_to_access_patient_gateway">Please scan ID code to access\nPatient Gateway</string>-->
+    <string name="please_scan_general_user_qr_code_to_access_patient_gateway">Please scan General User QR code\n to access Patient Gateway</string>
+    <string name="press_button_to_scan_qr_code">Press the button to Scan QR code</string>
+    <string name="hold_qr_code_so_it_fits_in_the_smaller_lighter_square_on_the_left">Hold QR code so it fits in the\nsmall lighter square on the left\n</string>
+    <string name="gateway_not_configured_yet_please_scan_admin_qr_code_to_access_setup_page">Gateway not configured yet.\nPlease scan Admin QR code to access Setup page</string>
+    <string name="thresholds_not_received_yet_please_scan_admin_qr_code_to_access_setup_page">Early Warning Score thresholds not received yet.\nPlease scan Admin QR code to access Setup page</string>
+    <string name="back_to_unlock_screen">Back to Unlock Screen</string>
+    <string name="lifetouch_test_mode">Lifetouch\nTest Mode</string>
+    <string name="new_respiration_rate">Use new\nRespiration\nAlgorithm</string>
+    <string name="test_server_link">Test Link</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="lock">Lock</string>
+    <string name="once_finished_adding_devices_press_connect">Once finished adding devices, press Connect</string>
+    <string name="once_finished_adding_devices_press_device_settings">Once finished adding devices, press Device Settings</string>
+    <string name="scan_server_ip_address_qr_code_or_press_back_to_return_to_previous_page">Scan Server IP Address QR Code or press Back to return to previous page</string>
+    <string name="set_screen_brightness">Set Screen Brightness</string>
+    <string name="enable_night_mode"> Enable Night Mode</string>
+    <string name="empty_local_database">Empty Local Database</string>
+    <string name="empty_local_database_including_ews_types">Empty Local Database\nINCLUDING EWS Types</string>
+    <string name="get_wards_and_beds_from_server">Get Wards and Beds\nfrom Server</string>
+    <string name="set_bed_details">Set Bed Details</string>
+    <string name="lifetouch_not_attached_to_patient">Lifetouch not attached to Patient</string>
+    <string name="bed_name">Bed Name</string>
+    <string name="device_type">Device Type</string>
+    <string name="serial_number">Serial Number</string>
+    <string name="ward_name">Ward Name</string>
+    <string name="check_device_status">Check Device Status</string>
+    <string name="checking_with_server">Checking with Server</string>
+    <string name="set_server_address">Set Server address</string>
+    <string name="set_dummy_server">Set dummy \nServer details</string>
+    <string name="textZeroPercent">0%</string>
+    <string name="buttonUnitRadioOff">Unit Off</string>
+    <string name="fake_free_disk_space">100% free</string>
+    <string name="enter_wamp_server_port">Enter WAMP Port</string>
+    <string name="set_wamp_server_port">Set WAMP Port</string>
+    <string name="wamp_streaming">WAMP\nStreaming</string>
+    <string name="export_database_to_tablet_root">Export Database\nto Tablet Root</string>
+    <string name="poincare">Heart Rhythm</string>
+    <string name="pulse_oximeter_not_attached_to_patient">Pulse Oximeter not attached to Patient</string>
+    <string name="textLeadsOff">Leads Off</string>
+    <string name="use_https">HTTPS</string>
+
+    <string name="patient_id_exist">Patient ID already used !\nPlease try another</string>
+    <string name="textPatientIdVerificationString">Please Wait, Verifying Patient ID</string>
+    <string name="textServerLinkTimeOut">Problem in Server Link</string>
+
+    <string name="appendDateTime">Append Date Time</string>
+
+    <string name="patient_name_lookup">Patient Name Lookup</string>
+    <string name="PatientIdAddDateTime">Enable DateTime\nPatient ID button</string>
+    <string name="start_patient_session">Start Patient Session</string>
+    <string name="stop_patient_session">Stop Patient Session</string>
+    <string name="create_new_patient">Create New Patient</string>
+
+    <string name="textTimeDummyStringSmall">12:00</string>
+
+    <string name="device_periodic_setup_mode">Periodic\nSetup Mode</string>
+    <string name="textFingerOff">Finger Off</string>
+
+    <string name="textViewLifetouchChangeSessionDisconnect">Please Wait....\nLifetouch Disconnecting</string>
+
+    <string name="NtpTimeSync">Manual Time Sync</string>
+
+    <string name="time_drift_initial">XX.xxx</string>
+
+    <string name="mac_address">MAC address</string>
+
+    <string name="showMacAddressOnDeviceStatusScreen">Show MAC on\nDevice Status</string>
+
+    <string name="enableSetupMode">Enable Setup Mode</string>
+
+    <string name="dummy_measurement_unknown">\?\?\?</string>
+    <string name="dummy_measurement_timestamp_unknown">\?\?\?\?\?\?\?\?</string>
+
+    <string name="server_initiated"> Server Initiated</string>
+
+    <string name="buttonTextQrCodeUnlockScreen">Touch to Scan QR Code</string>
+
+    <string name="textEmptyDeviceListConnectedToPatientVitalsDisplay">No Devices Connected\nPlease Add Device(s)</string>
+
+    <string name="radioButton1minute">1 mins Graph</string>
+    <string name="radioButton2minutes">2 mins Graph</string>
+    <string name="radioButton3minutes">3 mins Graph</string>
+    <string name="radioButton5minutes">5 mins Graph</string>
+    <string name="radioButton10minutes">10 mins Graph</string>
+    <string name="radioButton15minutes">15 mins Graph</string>
+
+    <string name="textDummyMinuteSecondTime">00:00</string>
+    <string name="String_Now">Now</string>
+
+
+    <string name="stringExit">Exit</string>
+    <string name="stringExitPatientGateway">Exit Patient Gateway. This WILL STOP monitoring the patient!!</string>
+    <string name="stringExitDialog">Are you sure you want to exit?</string>
+    <string name="stringYes">Yes</string>
+    <string name="stringNo">No</string>
+    <string name="string_ok">OK</string>
+
+    <string name="stringLogCat">Log Cat</string>
+    <string name="StringScrollLock">Scroll Lock</string>
+
+    <string name="StringTouchHere">Touch Here</string>
+    <string name="StringPressDoneWhenFinished">Press Done when finished</string>
+    <string name="StringEnableAnimation">Enable\nAnimation</string>
+
+    <string name="lifetemp_not_attached_to_patient">Lifetemp not attached to Patient</string>
+
+    <string name="String_Press_next_to_continue">Press Next to Continue</string>
+
+    <string name="enable_csv_output">Enable\nCSV Output</string>
+
+    <string name="text_connecting">Connecting...</string>
+    <string name="text_stop_this_session">Restart Session</string>
+    <string name="string_restart_session_dialog">Are you sure you want to restart the session?\nAll connected devices are removed !!!</string>
+    <string name="string_connecting_wait_dialog">Devices are Connecting\nPlease wait......</string>
+
+
+    <string name="stringJsonArraySize">JSON Size</string>
+
+    <string-array name="json_size_array">
+        <item>@string/five_hundred</item>
+        <item>@string/one_thousand</item>
+        <item>@string/two_thousand</item>
+    </string-array>
+
+    <string name="connection_event_disconnected">Connection Event\nDisconnected</string>
+    <string name="lifetemp_leads_off">Leads Off</string>
+    <string name="lifetouch_leads_off">Lifetouch\nLeads Off</string>
+    <string name="pulse_ox_off_finger">Pulse Ox\nOFF Finger</string>
+    <string name="spoof_early_warning_scores">Spoof Early\nWarning Scores</string>
+
+    <string name="number_of_measurements_per_tick">Measurements per Tick</string>
+
+    <string name="text_device_disconnected">Attempting to\nReconnect</string>
+
+    <string name="fake_battery_voltage">----mV</string>
+    <string name="fake_battery_temperature" translatable="false">----°C</string>
+
+    <string name="textView_EndNowGettingPendingData">End\nNow</string>
+    <string name="string_remove_disconnected_devices_dialog">Devices are out of range of the Gateway. Disconnecting now will mean any stored data on Lifetouch/Lifetemp is lost.\nAre you sure?</string>
+    <string name="string_waitForLifetouchPendingHeartBeat">Please wait. Downloading saved Heart Beats</string>
+
+    <string name="string_waitForLifetempDisconnection">Please wait. Disconnecting Lifetemp</string>
+
+    <string name="string_WarningPendingHeartBeatButRemoveLifetouchDialog">Lifetouch has Heart Beats waiting to be downloaded. Disconnecting now will mean these stored Heart Beats are lost.\nAre you sure?</string>
+    <string name="string_WarningPendingHeartBeatButRemoveLifetouchTextView">Lifetouch not connected to Gateway.\nDisconnecting now will mean these stored Heart Beats are lost.</string>
+
+    <string name="setup_mode_length">Setup Mode Length</string>
+
+    <string name="string_lifetemp_disconnecting">Disconnecting Lifetemp\nPlease Wait...</string>
+
+    <string name="string_waitForLifetempPendingMeasurement">Please wait. Downloading saved Temperature measurements</string>
+
+    <string name="string_WarningPendingDataDownloading">Device has data waiting to be downloaded. Disconnecting now will mean these stored data are lost.\nAre you sure?</string>
+    <string name="string_WarningPendingTemperatureButRemoveLifetempTextView">Lifetemp not connected to Gateway.\nDisconnecting now will mean these stored Temperatures are lost.</string>
+    <string name="string_WarningPendingMeasurementButRemoveDevicesTextView">Device not connected to Gateway.\nDisconnecting now will mean these stored measurements are lost.</string>
+
+    <string name="continuous_setup_mode">Continuous Setup Mode</string>
+
+    <string-array name="setup_mode_length">
+        <item>@string/continuous_setup_mode</item>
+        <item>@string/ten_seconds</item>
+        <item>@string/twenty_seconds</item>
+        <item>@string/thirty_seconds</item>
+        <item>@string/one_minute</item>
+        <item>@string/two_minutes</item>
+        <item>@string/three_minutes</item>
+        <item>@string/five_minutes</item>
+        <item>@string/ten_minutes</item>
+        <item>@string/twenty_minutes</item>
+        <item>@string/thirty_minutes</item>
+        <item>@string/sixty_minutes</item>
+        <item>@string/one_hundred_twenty_minutes</item>
+    </string-array>
+
+    <string-array name="periodic_mode_length">
+        <item>@string/ten_seconds</item>
+        <item>@string/twenty_seconds</item>
+        <item>@string/thirty_seconds</item>
+        <item>@string/one_minute</item>
+        <item>@string/two_minutes</item>
+        <item>@string/three_minutes</item>
+        <item>@string/five_minutes</item>
+        <item>@string/ten_minutes</item>
+        <item>@string/twenty_minutes</item>
+        <item>@string/thirty_minutes</item>
+        <item>@string/sixty_minutes</item>
+        <item>@string/one_hundred_twenty_minutes</item>
+    </string-array>
+
+    <string name="use_display_timeout_on_chart_page">Use display timeout on chart page</string>
+    <string name="no_timeout">No timeout</string>
+
+    <string-array name="display_timeout_array">
+        <item>@string/no_timeout</item>
+        <item>@string/thirty_seconds</item>
+        <item>@string/one_minute</item>
+        <item>@string/two_minutes</item>
+        <item>@string/three_minutes</item>
+        <item>@string/five_minutes</item>
+    </string-array>
+
+    <string name="filler_text_one">---%</string>
+    <string name="filler_text_two">----</string>
+
+    <string name="number_of_invalid_intermediate_measurements_before_marking_as_invalid">Number of Invalid SpO2 Intermediate Measurements before marking as invalid</string>
+    <string-array name="number_of_invalid_intermediate_measurements">
+        <item>@string/one</item>
+        <item>@string/two</item>
+        <item>@string/three</item>
+        <item>@string/four</item>
+        <item>@string/five</item>
+        <item>@string/six</item>
+        <item>@string/seven</item>
+        <item>@string/eight</item>
+        <item>@string/nine</item>
+        <item>@string/ten</item>
+        <item>@string/eleven</item>
+        <item>@string/twelve</item>
+        <item>@string/thirteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fifteen</item>
+        <item>@string/sixteen</item>
+        <item>@string/seventeen</item>
+        <item>@string/eighteen</item>
+        <item>@string/nineteen</item>
+        <item>@string/twenty</item>
+        <item>@string/twenty_one</item>
+        <item>@string/twenty_two</item>
+        <item>@string/twenty_three</item>
+        <item>@string/twenty_four</item>
+        <item>@string/twenty_five</item>
+        <item>@string/twenty_six</item>
+        <item>@string/twenty_seven</item>
+        <item>@string/twenty_eight</item>
+        <item>@string/twenty_nine</item>
+        <item>@string/thirty</item>
+        <item>@string/thirty_one</item>
+        <item>@string/thirty_two</item>
+        <item>@string/thirty_three</item>
+        <item>@string/thirty_four</item>
+        <item>@string/thirty_five</item>
+        <item>@string/thirty_six</item>
+        <item>@string/thirty_seven</item>
+        <item>@string/thirty_eight</item>
+        <item>@string/thirty_nine</item>
+        <item>@string/forty</item>
+        <item>@string/forty_one</item>
+        <item>@string/forty_two</item>
+        <item>@string/forty_three</item>
+        <item>@string/forty_four</item>
+        <item>@string/forty_five</item>
+        <item>@string/forty_six</item>
+        <item>@string/forty_seven</item>
+        <item>@string/forty_eight</item>
+        <item>@string/forty_nine</item>
+        <item>@string/fifty</item>
+        <item>@string/fifty_one</item>
+        <item>@string/fifty_two</item>
+        <item>@string/fifty_three</item>
+        <item>@string/fifty_four</item>
+        <item>@string/fifty_five</item>
+        <item>@string/fifty_six</item>
+        <item>@string/fifty_seven</item>
+        <item>@string/fifty_eight</item>
+        <item>@string/fifty_nine</item>
+    </string-array>
+
+    <string name="use_webservice_authentication">Use Authentication</string>
+
+    <string name="textViewLifetempChangeSessionDisconnect">Please Wait....\nLifetemp Disconnecting</string>
+
+    <string name="textManualVitalSignEntry">Manual Vital\nSign Entry</string>
+
+    <string name="select_the_vital_sign_to_enter">Select the Vital Sign to enter</string>
+
+    <string name="decimal_point">.</string>
+
+    <string name="number_zero">0</string>
+
+    <string name="number_one">1</string>
+
+    <string name="number_two">2</string>
+
+    <string name="number_three">3</string>
+
+    <string name="number_four">4</string>
+
+    <string name="number_five">5</string>
+
+    <string name="number_six">6</string>
+
+    <string name="number_seven">7</string>
+
+    <string name="number_eight">8</string>
+
+    <string name="number_nine">9</string>
+
+    <string name="delete">DELETE</string>
+
+    <string name="enter">Enter</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="last_measurement">Last measurement</string>
+    <string name="manually_entered_vital_signs">Manually Entered Vital Signs</string>
+    <string name="view_manually_entered_vital_signs">View Manually Entered Vital Signs</string>
+    <string name="enable_manually_entered_vital_signs">Enable Manually\nEntered Vital Signs</string>
+    <string name="please_wait">Please Wait....</string>
+    <string name="device_already_in_use_according_to_server">Device already in use according to Server</string>
+    <string name="problem_checking_server__please_try_again_later">Problem checking Server. Please try again later</string>
+    <string name="fw_equals">FW = </string>
+    <string name="percent_symbol_free">% free</string>
+    <string name="mv">mV</string>
+    <string name="percent_symbol">%</string>
+    <string name="degreesC" translatable="false">°C</string>
+    <string name="degreesF" translatable="false">°F</string>
+    <string name="enable_early_warning_scores">Enable Early\nWarning Scores</string>
+
+    <string name="PTT_string">PTT</string>
+    <string name="Dummy_PTT_time">XXXX ms</string>
+    <string name="Dummy_PTT_timeStamp">XX:XX:XX</string>
+    <string name="pulse_transit_time">Pulse Transit Time</string>
+    <string name="ppt">PTT</string>
+    <string name="pulse_transmit_time">Pulse Transmit Time</string>
+    <string name="enable_pulse_transmit_time">Enable Pulse\nTransmit Time</string>
+    <string name="alert">Alert</string>
+    <string name="confusion">Confusion</string>
+    <string name="responds_to_voice">Responds to Voice</string>
+    <string name="responds_to_pain">Responds to Pain</string>
+    <string name="unresponsive">Unresponsive</string>
+
+    <string name="dummyEwsReading">--</string>
+    <string name="stringEarlyWarningScoreMeasurementSlash"> / </string>
+    <string name="stringEarlyWarningScoreType">Early Warning\nScore Type</string>
+    <string name="stringEarlyWarningScoreTypeNotReceived">Thresholds\nNot Received</string>
+    <string name="stringEarlyWarningScore">EWS</string>
+    <string name="addEarlyWarningScoreDevice">Add</string>
+    <string name="use_webservice_encryption">Use Encryption</string>
+
+    <string name="supplemental_oxygen_none">None</string>
+    <string name="supplemental_oxygen_low">Low</string>
+    <string name="supplemental_oxygen_high">High</string>
+
+    <string name="supplemental_oxygen_less_four_litres__less_50_percent">&lt;4/l min, &lt;50%</string>
+    <string name="supplemental_oxygen_greater_equal_four_litres__greater_equal_50_percent">&#8805;4/l min, &#8805;50%</string>
+
+    <string name="supplemental_oxygen_less_four_litres__less_50_percent_cr">&lt;4/l min,\n&lt;50%</string>
+    <string name="supplemental_oxygen_greater_equal_four_litres__greater_equal_50_percent_cr">&#8805;4/l min,\n&#8805;50%</string>
+
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+
+    <string name="measurement_no_longer_valid">Timed out</string>
+
+    <string name="gateway_not_responding_for_over_thirty_seconds">Gateway not responding for over 30 seconds.\n Do you wish to restart the gateway?</string>
+    <string name="restart_gateway_app">Restart</string>
+    <string name="last_gateway_ping_was_received_at">Last Gateway ping was received:</string>
+
+    <string name="display_patient_orientation">Enable\nPatient Orientation</string>
+    <string name="show_numbers_on_battery_indicator">Show numbers on\nbattery indicator</string>
+    <string name="run_devices_in_test_mode">Run devices in test mode</string>
+
+    <string name="get_types_from_server">Get Types from Server</string>
+    <string name="get_config_from_server">Get Configuration\nfrom Server</string>
+    <string name="get_server_configurable_text">Get Server\nConfigurable Text</string>
+
+    <string name="early_warning_scoring_types">Early Warning\nScoring Types</string>
+    <string name="device_info">Device Info</string>
+    <string name="end_patient_session">End Patient Session</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="four_dashes">----</string>
+    <string name="dummy_measurement">Dummy Measurement</string>
+    <string name="space_dash_space"> - </string>
+    <string name="session_status">Session Status</string>
+    <string name="patient_details">Patient Details</string>
+    <string name="start_device_session">Start Device Session</string>
+    <string name="end_device_session">End Device Session</string>
+    <string name="connection_events">Connection Events</string>
+    <string name="active_session">Active Session</string>
+    <string name="historical_session">Historical Session</string>
+    <string name="heart_rates">Heart Rates</string>
+    <string name="heart_beats">Heart Beats</string>
+    <string name="respiration_rates">Respiration Rates</string>
+    <string name="setup_mode_samples">Setup Mode Samples</string>
+    <string name="raw_accelerometer_mode_samples">Raw Accelerometer</string>
+    <string name="battery_measurements">Battery Measurements</string>
+    <string name="patient_orientation">Patient Orientation</string>
+    <string name="temperature_measurements">Temperatures</string>
+    <string name="nonin_wrist_ox_spo2_measurements">SpO2</string>
+    <string name="nonin_wrist_ox_intermediate_measurements">Intermediate</string>
+    <string name="blood_pressure_measurements">Measurements</string>
+    <string name="weight_scale_measurements">Weight</string>  <!-- NEW  needs translation -->
+
+    <string name="manually_entered_heart_rate">Heart Rate</string>
+    <string name="multiline_manually_entered_heart_rate">Manually\nEntered\nHeart\nRate</string>
+
+    <string name="manually_entered_respiration_rate">Respiration Rate</string>
+    <string name="multiline_manually_entered_respiration_rate">Manually\nEntered\nRespiration\nRate</string>
+
+    <string name="manually_entered_temperatures">Temperatures</string>
+    <string name="multiline_manually_entered_temperatures">Manually\nEntered\nTemperatures</string>
+
+    <string name="manually_entered_spo2_measurements">SpO2 Measurements</string>
+    <string name="multiline_manually_entered_spo2_measurements">Manually\nEntered\nSpO2\nMeasurements</string>
+
+    <string name="manually_entered_blood_pressures">Blood Pressures</string>
+    <string name="multiline_manually_entered_blood_pressures">Manually\nEntered\nBlood\nPressures</string>
+
+    <string name="manually_entered_consciousness_levels">Consciousness Levels</string>
+    <string name="multiline_manually_entered_consciousness_levels">Manually\nEntered\nConsciousness\nLevels</string>
+
+    <string name="manually_entered_supplemental_oxygen_levels">Supplemental Oxygen Levels</string>
+    <string name="multiline_manually_entered_supplemental_oxygen_levels">Manually\nEntered\nSupplemental\nOxygen\nLevels</string>
+
+    <string name="manually_entered_annotations">Annotations</string>
+
+    <string name="manually_entered_capillary_refill_time">Capillary Refill Time</string>
+    <string name="multiline_manually_entered_capillary_refill_time">Manually\nEntered\nCapillary\nRefill\nTime</string>
+
+    <string name="manually_entered_respiration_distress">Respiration Distress</string>
+    <string name="multiline_manually_entered_respiration_distress">Manually\nEntered\nRespiration\nDistress</string>
+
+    <string name="manually_entered_family_or_nurse_concern">Family or Nurse Concern</string>
+    <string name="multiline_manually_entered_family_or_nurse_concern">Manually\nEntered\nFamily or\nNurse\nConcern</string>
+
+    <string name="manually_entered_weight">Weight</string>
+    <string name="multiline_manually_entered_weight">Manually\nEntered\nWeight</string>
+
+    <string name="early_warning_scores">Early Warning Scores</string>
+    <string name="dummy_id">Dummy ID : </string>
+    <string name="real_id">Real ID : </string>
+    <string name="slash">/</string>
+    <string name="early_warning_score_types_placeholder">asdf</string>
+    <string name="dummy_footer_measurement_timestamp">Fri 12:00</string>
+    <string name="dummy_number_of_heart_beats_pending">10000</string>
+    <string name="dummy_keypad_measurement">123.4</string>
+    <string name="set_server_port">Set Server Port</string>
+    <string name="enter_server_port">Enter Server Port</string>
+    <string name="blank_string" translatable="false"></string>
+    <string name="full_stop" translatable="false">.</string>
+    <string name="three_blank_lines_string" translatable="false">x\ny\n\zn</string>
+
+    <string name="seconds">seconds</string>
+    <string name="minute">minute</string>
+    <string name="minutes">minutes</string>
+
+    <string name="blood_pressure_as_systolic_slash_diastolic">Blood Pressure as \'Systolic/Diastolic\'</string>
+    <string name="bpm">bpm</string>
+    <string name="breath_per_min">breath/min</string>
+
+    <string name="nonin_disconnected">Nonin disconnected</string>
+    <string name="leads_off_detetect_for_more_than_ten_minutes">Leads-off detected more than 10 mins</string>
+
+    <string name="wifi_enabled_status">Wifi Enabled</string>
+    <string name="wifi_connected_to_ssid">Connected to SSID</string>
+    <string name="wifi_SSID">Wifi SSID</string>
+    <string name="wifi_IP_address">IP Address</string>
+    <string name="wifi_signal_level">Signal Level</string>
+    <string name="wifi_connection_status">Connection Status</string>
+    <string name="wifi_BSSID">Wifi BSSID</string>
+    <string name="wifi_failure_reason">Connection Problem </string>
+
+    <string name="button_wifi_reconnect_string">Reconnect </string>
+    <string name="button_wifi_dismiss_string">Dismiss </string>
+
+    <string name="string_total_wifi_level">/5 </string>
+
+    <string name="not_set_yet">NOT SET YET</string>
+    <string name="wifi_failure_reason_none">None</string>
+    <string name="wifi_failure_reason_NotConfigured">Wifi not configured</string>
+    <string name="wifi_failure_reason_AuthenticationError">Authentication Error</string>
+    <string name="wifi_failure_reason_UnknownSSID">Can NOT Connect to SSID</string>
+    <string name="wifi_failure_reason_Unknown">Unknown</string>
+    <string name="wifi_disabled_in_admin_page">Gateway Admin Disabled Wifi</string>
+
+    <string name="stringWifiDisableCheckbox">Enable Wifi\nAuto Reconnect</string>
+
+    <string name="please_enter_the_heart_rate">Please enter the Heart Rate</string>
+    <string name="please_enter_the_respiration_rate">Please enter the Respiration Rate</string>
+    <string name="please_enter_the_temperature">Please enter the Temperature</string>
+    <string name="please_enter_the_spo2">Please enter the SpO2</string>
+    <string name="please_enter_the_blood_pressure">Please enter the Systolic/Diastolic Blood Pressure</string>
+    <string name="please_enter_the_consciousness_level">Please enter the Consciousness Level</string>
+    <string name="please_enter_the_supplemental_oxygen">Please enter the Supplemental Oxygen</string>
+    <string name="please_enter_the_annotation">Please enter the Annotation</string>
+    <string name="please_select_the_capillary_refill_time">Please select the Capillary Refill Time</string>
+    <string name="please_select_the_respiration_distress_level">Please select the Respiration Distress Level</string>
+    <string name="please_select_if_there_is_family_or_nurse_concern">Please select if there is a Family/Nurse concern</string>
+
+    <string name="enter_the_measurement_time_by_moving_the_green_dot">Enter the Measurement Time by moving the green dot</string>
+    <string name="enter_the_observation_set_time_by_moving_the_green_dot">Enter the Observation Set Time by moving the green dot</string>
+
+    <string name="are_you_sure_set_server_address">Are you sure you want to change server address?\nIf you select Yes it will empty the local database</string>
+    <string name="are_you_sure_set_server_port">Are you sure you want to change server port?\nIf you select Yes it will empty the local database</string>
+    <string name="you_must_end_the_session_first">You must end the current session first</string>
+    <string name="invalid_number">Invalid number</string>
+
+    <string name="today">Today</string>
+    <string name="multi_day">Multi day</string>
+
+    <string name="setup_mode">Setup Mode</string>
+    <string name="detached">Detached</string>
+
+    <string name="stringLongTermMeasurementTimeoutLength">Long-term measurements timeout</string>
+
+    <string name="stringDisplayTimeoutLength">Display timeout</string>
+
+    <string name="enabledUnpluggedOverlay">Enable Unplugged Overlay</string>
+    <string name="enableLT3KHzSetupMode">Enable LT3 KHz Setup Mode</string>
+
+    <string name="resetZoom">Reset Zoom</string>
+    <string name="backfill_session">Backfill Session</string>
+    <string name="number_of_hours_to_backfill">Number of hours\nto backfill</string>
+
+    <string name="stringDataNonSyncable">Non Syncable</string>
+    <string name="stringDataFailedToSend">Failed</string>
+    <string name="stringDataPending">Pending</string>
+
+    <string name="delete_old_exported_databases">Delete Exported\nDatabases</string>
+
+    <string name="manufacturing_mode">Manufacturing Mode</string>
+    <string name="back_camera">Back Camera</string>
+    <string name="simulate_user_qr_code">Simulate\nQR Code</string>
+    <string name="lifetemp_measurement_interval">Lifetemp\nMeasurement\nInterval</string>
+    <string name="patient_orientation_measurement_interval">Patient Orientation\nMeasurement\nInterval</string>
+
+    <string-array name="measurement_interval_selection">
+        <item>@string/three_seconds</item>
+        <item>@string/five_seconds</item>
+        <item>@string/ten_seconds</item>
+        <item>@string/twenty_seconds</item>
+        <item>@string/thirty_seconds</item>
+        <item>@string/one_minute</item>
+        <item>@string/two_minutes</item>
+        <item>@string/three_minutes</item>
+        <item>@string/five_minutes</item>
+        <item>@string/ten_minutes</item>
+    </string-array>
+
+    <string name="manual_vitals_only">Manual Vitals Only</string>
+    <string name="or_press_manual_vitals_only">Or press the button below to create a\nManually Entered Vital Signs only session.\nSensors can be added later via Change Session Settings</string>
+
+    <string name="get_patient_name_from_server">Get Patient Name from Server</string>
+
+    <string name="starting_patient_name_lookup">Starting Patient Name lookup</string>
+    <string name="request_sent_to_hospital_server">Request sent to\nHospital Server</string>
+    <string name="server_returned_an_error">Server returned an error</string>
+    <string name="retry_or_press_next_to_skip_patient_name_lookup">Retry or press Next to skip Patient Name lookup</string>
+    <string name="server_timed_out">Server timed out</string>
+    <string name="patient_id_not_found">Patient ID not found</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="gender">Gender</string>
+
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <string name="lot_number">Lot Number</string>
+    <string name="manufacture_date">Manufacture Date</string>
+    <string name="expiration_date">Expiration Date</string>
+
+    <string name="text_end_session_time_picker">Enter the time the session ended by moving the green dot</string>
+
+    <string name="simple_heart_rate">Simple Heart Rate</string>
+
+    <string name="custom_error_activity_message_line_one">Sorry about this!</string>
+    <string name="custom_error_activity_message_line_two">An error has occurred which has caused the Patient Gateway (UI) to stop working.</string>
+    <string name="custom_error_activity_message_line_send_to_isansys">Please take a photo of this screen and email to support@isansys.com</string>
+
+    <string name="custom_error_activity_dummy_timestamp">21 Dec 2016 18:24:32</string>
+    <string name="restart">Restart</string>
+
+    <string name="gsm_mode_only">GSM Mode Only</string>
+
+    <string name="enable_developer_popup">Enable \nDeveloper\nPopup</string>
+    <string name="show_ip_address_on_wifi_popup">Show IP\nAddress on\nWifi popup</string>
+
+    <string name="poor_signal">Poor Signal</string>
+    <string name="unable_to_detect_heartbeats">Unable to detect Heartbeats</string>
+    <string name="check_electrodes">Check Electrodes</string>
+
+    <string name="percentage_of_poor_signal_heart_beats_before_marking_as_invalid">Percentage of Poor Signal Heart Beats before marking as invalid</string>
+
+    <string-array name="percentages">
+        <item>@string/ten</item>
+        <item>@string/twenty</item>
+        <item>@string/thirty</item>
+        <item>@string/forty</item>
+        <item>@string/fifty</item>
+        <item>@string/sixty</item>
+        <item>@string/seventy</item>
+        <item>@string/eighty</item>
+        <item>@string/ninety</item>
+        <item>@string/one_hundred</item>
+    </string-array>
+
+    <string name="options">Options</string>
+    <string name="motion_mode">Motion Mode</string>
+
+    <string name="usa_mode">USA Mode</string>
+    <string name="lifetouch_activity_level">Lifetouch Activity Level</string>
+
+    <string name="enable_auto_resume" translatable="false">Enable Session\nAuto Resume</string>
+
+    <string name="enable_auto_log_file_upload">Enable Auto\nLog File\nUpload</string>
+
+    <string-array name="array_freqPeriodActive">
+        <item>-</item>
+        <item>@string/five_minutes</item>
+        <item>@string/six_minutes</item>
+        <item>@string/ten_minutes</item>
+        <item>@string/twelve_minutes</item>
+        <item>@string/fifteen_minutes</item>
+        <item>@string/twenty_minutes</item>
+        <item>@string/thirty_minutes</item>
+        <item>@string/sixty_minutes</item>
+    </string-array>
+
+    <integer-array name="array_freqPeriodActiveValues">
+        <item>0</item>
+        <item>5</item>
+        <item>6</item>
+        <item>10</item>
+        <item>12</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>60</item>
+    </integer-array>
+
+    <string-array name="array_freqPeriodPassive">
+        <item>-</item>
+        <item>@string/fifteen_minutes</item>
+        <item>@string/twenty_minutes</item>
+        <item>@string/thirty_minutes</item>
+        <item>@string/sixty_minutes</item>
+    </string-array>
+
+    <integer-array name="array_freqPeriodPassiveValues">
+        <item>0</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>60</item>
+    </integer-array>
+
+    <string name="measurements_every">Measurements every</string>
+    <string name="no_measurements">No measurements</string>
+
+    <string name="get_data">Get Data</string>
+    <string name="program_plan">Program\nPlan</string>
+
+    <string name="connecting">Connecting</string>
+    <string name="syncing">Syncing</string>
+    <string name="getting_system_data">Getting System Data</string>
+    <string name="getting_user_data">Getting User Data</string>
+    <string name="disconnecting">Disconnecting</string>
+    <string name="programming_plan">Programming Plan</string>
+
+    <string name="press_the_top_two_buttons_until_pc_appears">Press the top two buttons until \'PC --\' appears</string>
+    <string name="measurements_will_be_uploaded_automatically">Measurements will be uploaded automatically</string>
+
+    <string name="please_press_get_data">Please press \"Get Data\"</string>
+    <string name="please_press_program_plan">Please press \"Program Plan\"</string>
+
+    <string name="welcome_to_the_isansys_patient_gateway">Welcome to the Isansys Patient Gateway</string>
+    <string name="exit_patient_gateway_to_setup_wifi">Exit Patient Gateway\nto setup WIFI</string>
+    <string name="start_installation_wizard">Start\nInstallation Wizard</string>
+    <string name="patient_gateway_setup_wizard">Patient Gateway Setup Wizard</string>
+    <string name="restart_installation_wizard">Restart Installation Wizard</string>
+    <string name="force_installation_complete">Force Installation Complete</string>
+    <string name="scan_installation_qr_code">Scan Installation QR code</string>
+    <string name="lifeguard_server_address">Lifeguard Server Address</string>
+    <string name="lifeguard_server_port">Lifeguard Server Port</string>
+    <string name="lifeguard_server_wamp_port">Lifeguard Server WAMP Port</string>
+    <string name="lifeguard_server_link_test">Lifeguard Server Link Test</string>
+    <string name="getting_wards_and_beds">Getting Wards and Beds</string>
+    <string name="select_a_ward_and_bed">Select a Ward and Bed</string>
+    <string name="selected_ward_and_bed">Selected Ward and Bed</string>
+    <string name="press_to_confirm">Press to Confirm</string>
+    <string name="wamp_link_test">WAMP Link Test</string>
+    <string name="synchronizing_time">Synchronizing Time</string>
+    <string name="getting_ews_thresholds">Getting EWS Thresholds</string>
+    <string name="getting_gateway_configuration">Getting Gateway Configuration</string>
+    <string name="getting_server_configurable_text">Getting Server Configurable Text</string>
+    <string name="setup_complete">Setup Complete</string>
+    <string name="start_using_patient_gateway">Start using Patient Gateway</string>
+
+    <string name="no_response_from_lifeguard_server_please_check_address_and_port_correct">"No response from Lifeguard Server. Please check address and port correct"</string>
+    <string name="cannot_connect_to_wamp_server_please_check_port_accessible">Cannot connect to WAMP Server. Please ensure Port accessible</string>
+    <string name="cannot_connect_to_ntp_server_please_check_port_accessible">Cannot connect to NTP Server. Please ensure Port accessible</string>
+    <string name="cannot_connect_to_ntp_server_ntp_sync_failed">Cannot connect to NTP Server. Clock Synchronization failed</string>
+    <string name="authentication_failure">Authentication Failure</string>
+
+    <string name="device_settings">Device Settings</string>
+
+    <string name="firmware_updating">Firmware updating</string>
+    <string name="check_for_updated_firmware">Check for\nUpdated Firmware</string>
+    <string name="checking_for_updated_firmware">Checking for Updated Firmware</string>
+    <string name="getting_web_pages">Getting Web Pages</string>
+
+    <string name="setup_mode_log">Setup Mode Log</string>
+
+    <string name="audit_trail">Audit Trail</string>
+
+
+    <string name="annotation">Annotation</string>
+    <string name="enter_the_annotation_time_by_moving_the_green_dot">Enter the Annotation Time by moving the green dot</string>
+    <string name="please_type_annotation_here">Please type the Annotation here</string>
+    <string name="annotations">Annotations</string>
+
+    <string name="location_services_off">Location Services are turned off, BLE will not function.\nPlease turn location services on.</string>
+
+    <string name="every">every</string>
+
+    <string name="capillary_refill_time">Capillary Refill Time</string>
+    <string name="less_or_equal_two_seconds">&#8804;2 seconds</string>
+    <string name="more_than_or_equal_three_seconds">&#8805;3 seconds</string>
+
+    <string name="respiration_distress">Respiration Distress</string>
+    <string name="none">None</string>
+    <string name="mild">Mild</string>
+    <string name="moderate">Moderate</string>
+    <string name="severe">Severe</string>
+
+    <string name="nasal_flaring">Nasal flaring</string>
+    <string name="intercostal_recession">Intercostal recession</string>
+
+    <string name="head_bobbing">Head bobbing</string>
+    <string name="subcostal_recession">Subcostal recession</string>
+    <string name="inspiratory_or_expiratory_noises">Inspiratory or expiratory noises</string>
+    <string name="tracheal_tug">Tracheal tug</string>
+
+    <string name="sternal_recession">Sternal recession</string>
+    <string name="exhaustion">Exhaustion</string>
+    <string name="impending_respiratory_arrest">Impending respiratory arrest</string>
+
+    <string name="family_or_nurse_concern">Family or Nurse Concern</string>
+    <string name="enter_the_family_or_nurse_concern_time_by_moving_the_green_dot">Enter the Family/Nurse Concern Time by moving the green dot</string>
+    <string name="please_type_the_concern_here">Please type the Concern here</string>
+    <string name="concern">Concern</string>
+
+    <string name="dummy_measurement_for_patient_vitals_display" translatable="false">--</string>
+
+    <string name="select_how_long_to_use_this_measurement_in_the_early_warning_score">Select how long to use this measurement in the Early Warning Score</string>
+
+
+    <string name="select_annotation_entry_mode">Select Annotation Entry Mode</string>
+    <string name="select_the_annotation_conditions">Select the Condition(s)</string>
+    <string name="select_the_annotation_actions">Select the Action(s)</string>
+    <string name="select_the_annotation_outcomes">Select the Outcome(s)</string>
+
+    <string name="autoAddEarlyWarningScores">Auto Add EWS</string>
+
+    <string name="confirm_vital_sign_details">Confirm Vital Sign details</string>
+    <string name="confirm_annotation_details">Confirm Annotation details</string>
+    <string name="keyboard">Keyboard</string>
+    <string name="predefined">Predefined</string>
+    <string name="hide_keyboard">Hide Keyboard</string>
+    <string name="conditions">Condition(s)</string>
+    <string name="actions">Action(s)</string>
+    <string name="outcomes">Outcome(s)</string>
+
+    <string name="hold_qr_code_so_it_fits_in_the_smaller_lighter_square_above">Hold QR code so it fits in the small lighter square above</string>
+    <string name="press_manual_vitals_only">Or press the button below to create a Manually Entered Vital Signs only session. Sensors can be added later via Change Session Settings</string>
+
+    <string name="observation_time">Observation Time</string>
+    <string name="validity_time">Validity Time</string>
+
+    <string name="dfu" translatable="false">DFU</string>
+    <string name="gateway_gtin" translatable="false">GTIN : 5060488680007</string>
+
+    <string name="predefined_annotations">Predefined Annotations</string>
+
+    <string name="system">System</string>
+
+    <string name="recycling_popup_text">Please put the Lifetouch/Lifetemp sensors in the Isansys recycling box</string>
+    <string name="recycling_popup_button">Done</string>
+
+    <string name="update_must_be_installed">The update must be installed before starting a Patient Session</string>
+    <string name="enter_update_mode">Enter Update Mode</string>
+    <string name="software_updates_in_progress">Software Updates</string>
+    <string name="software_updates_complete">Software Updates Complete</string>
+    <string name="patient_gateway">Patient Gateway</string>string>
+    <string name="user_interface">User Interface</string>string>
+    <string name="logger_app">Logger App</string>string>
+    <string name="right_arrow" translatable="false">→</string>
+    <string name="write_system_settings">Write System Settings</string>
+    <string name="enable">Enable</string>
+    <string name="camera_permission">Camera Permission</string>
+    <string name="record_audio_permission">Record Audio Permission</string>
+    <string name="write_external_storage_permission">Write External Storage</string>
+    <string name="access_notification_policy_permission">Access Notification Policy</string>
+    <string name="overlay_permission">Overlay Permission</string>
+    <string name="install_packages_permission">Install Packages</string>
+    <string name="android_permissions">Android Permissions</string>
+    <string name="needed_for_general_system_usage">Needed for general system usage</string>
+    <string name="needed_to_scan_qr_codes">Needed to scan QR codes</string>
+    <string name="sync_data_to_server">Sync data\nto server</string>
+    <string name="real_time_server_link">Real Time\nServer Link</string>
+    <string name="spo2_spot_measurements">SpO2 Spot Measurements</string>
+
+    <string name="check_packaging" translatable="false">Check Packaging</string>
+    <string name="scan_sensor_barcode" translatable="false">Scan Sensor Barcode</string>
+    <string name="scan_packaging_barcode" translatable="false">Scan Packaging Barcode</string>
+    <string name="barcodes_match" translatable="false">Barcodes match</string>
+    <string name="barcodes_do_not_match" translatable="false">Barcodes DO NOT match</string>
+    <string name="sensor_barcode" translatable="false">Sensor Barcode</string>
+    <string name="packaging_barcode" translatable="false">Packaging Barcode</string>
+
+    <string name="needed_for_video_conferencing">Needed for video conferencing</string>
+    <string name="end_call">End Call</string>
+    <string name="audio">Audio</string>
+    <string name="video">Video</string>
+    <string name="answer_call">Answer Call</string>
+    <string name="decline_call">Decline Call</string>
+    <string name="incoming_call_from_hospital">Incoming call from Hospital</string>
+    <string name="press_to_end_call">Press to End call</string>
+    <string name="missed_call">Missed call</string>
+    <string name="failed_call">Something went wrong with the call</string>
+    <string name="please_wait_connecting">Please wait. Connecting....</string>
+    <string name="in_waiting_room">Connecting....</string>
+    <string name="bluetooth_error_text">Bluetooth Error\n Device re-scan required</string>
+
+    <string name="enable_video_calls">Enable\nVideo Calls</string>
+    <string name="show_temperature_in_fahrenheit">Show Temperature\nin Fahrenheit</string>
+    <string name="show_weight_in_lbs">Show Weight\nin lbs</string>
+    <string name="kilogram_measurement_unit_preceded_by_space"> Kg</string>  <!-- NEW needs translation -->
+    <string name="pounds_measurement_unit_preceded_by_space"> lb</string>  <!-- NEW needs translation -->
+    <string name="video_call">Video Call</string>
+    <string name="schedule_video_call">Schedule video call</string>
+    <string name="call_contacts">Call Contact(s)</string>
+    <string name="select_contact_to_start_video_call">Select Contact(s) to start video call</string>
+    <string name="calling_hospital">Calling Hospital</string>
+    <string name="no_answer_try_again_later">No answer. Please try again later</string>
+    <string name="start_video_call">Start Video Call</string>
+    <string name="press_for_two_seconds">Press for 2 seconds</string>
+
+    <string name="device_not_in_use">Device NOT in use</string>
+    <string name="device_is_in_use">Device IS in use</string>
+
+    <string name="connection_type_wamp" translatable="false">WAMP</string>
+    <string name="connection_type_mqtt" translatable="false">MQTT</string>
+    <string-array name="real_time_client_type_array">
+        <item> @string/connection_type_wamp </item>
+        <item> @string/connection_type_mqtt </item>
+    </string-array>
+
+    <string name="mqtt_link_test">MQTT Link Test</string>
+    <string name="lifeguard_server_mqtt_port">Lifeguard Server MQTT Port</string>
+    <string name="cannot_connect_to_mqtt_server_please_check_port_accessible">Cannot connect to MQTT Server. Please ensure Port accessible</string>
+    <string name="enter_mqtt_server_port">Enter MQTT Port</string>
+    <string name="set_mqtt_server_port">Set MQTT Port</string>
+
+    <string name="one" translatable="false">1</string>
+    <string name="two" translatable="false">2</string>
+    <string name="three" translatable="false">3</string>
+    <string name="four" translatable="false">4</string>
+    <string name="five" translatable="false">5</string>
+    <string name="six" translatable="false">6</string>
+    <string name="seven" translatable="false">7</string>
+    <string name="eight" translatable="false">8</string>
+    <string name="nine" translatable="false">9</string>
+    <string name="ten" translatable="false">10</string>
+    <string name="eleven" translatable="false">11</string>
+    <string name="twelve" translatable="false">12</string>
+    <string name="thirteen" translatable="false">13</string>
+    <string name="fourteen" translatable="false">14</string>
+    <string name="fifteen" translatable="false">15</string>
+    <string name="sixteen" translatable="false">16</string>
+    <string name="seventeen" translatable="false">17</string>
+    <string name="eighteen" translatable="false">18</string>
+    <string name="nineteen" translatable="false">19</string>
+    <string name="twenty" translatable="false">20</string>
+    <string name="twenty_one" translatable="false">21</string>
+    <string name="twenty_two" translatable="false">22</string>
+    <string name="twenty_three" translatable="false">23</string>
+    <string name="twenty_four" translatable="false">24</string>
+    <string name="twenty_five" translatable="false">25</string>
+    <string name="twenty_six" translatable="false">26</string>
+    <string name="twenty_seven" translatable="false">27</string>
+    <string name="twenty_eight" translatable="false">28</string>
+    <string name="twenty_nine" translatable="false">29</string>
+    <string name="thirty" translatable="false">30</string>
+    <string name="thirty_one" translatable="false">31</string>
+    <string name="thirty_two" translatable="false">32</string>
+    <string name="thirty_three" translatable="false">33</string>
+    <string name="thirty_four" translatable="false">34</string>
+    <string name="thirty_five" translatable="false">35</string>
+    <string name="thirty_six" translatable="false">36</string>
+    <string name="thirty_seven" translatable="false">37</string>
+    <string name="thirty_eight" translatable="false">38</string>
+    <string name="thirty_nine" translatable="false">39</string>
+    <string name="forty" translatable="false">40</string>
+    <string name="forty_one" translatable="false">41</string>
+    <string name="forty_two" translatable="false">42</string>
+    <string name="forty_three" translatable="false">43</string>
+    <string name="forty_four" translatable="false">44</string>
+    <string name="forty_five" translatable="false">45</string>
+    <string name="forty_six" translatable="false">46</string>
+    <string name="forty_seven" translatable="false">47</string>
+    <string name="forty_eight" translatable="false">48</string>
+    <string name="forty_nine" translatable="false">49</string>
+    <string name="fifty" translatable="false">50</string>
+    <string name="fifty_one" translatable="false">51</string>
+    <string name="fifty_two" translatable="false">52</string>
+    <string name="fifty_three" translatable="false">53</string>
+    <string name="fifty_four" translatable="false">54</string>
+    <string name="fifty_five" translatable="false">55</string>
+    <string name="fifty_six" translatable="false">56</string>
+    <string name="fifty_seven" translatable="false">57</string>
+    <string name="fifty_eight" translatable="false">58</string>
+    <string name="fifty_nine" translatable="false">59</string>
+
+    <string name="sixty" translatable="false">60</string>
+    <string name="seventy" translatable="false">70</string>
+    <string name="eighty" translatable="false">80</string>
+    <string name="ninety" translatable="false">90</string>
+    <string name="one_hundred" translatable="false">100</string>
+
+    <string name="five_hundred" translatable="false">500</string>
+    <string name="one_thousand" translatable="false">1000</string>
+    <string name="two_thousand" translatable="false">2000</string>
+
+    <string name="three_seconds">3 seconds</string>
+    <string name="five_seconds">5 seconds</string>
+    <string name="ten_seconds">10 seconds</string>
+    <string name="twenty_seconds">20 seconds</string>
+    <string name="thirty_seconds">30 seconds</string>
+    <string name="one_minute">1 minute</string>
+    <string name="two_minutes">2 minutes</string>
+    <string name="three_minutes">3 minutes</string>
+    <string name="five_minutes">5 minutes</string>
+    <string name="six_minutes">6 minutes</string>
+    <string name="ten_minutes">10 minutes</string>
+    <string name="twelve_minutes">12 minutes</string>
+    <string name="fifteen_minutes">15 minutes</string>
+    <string name="twenty_minutes">20 minutes</string>
+    <string name="thirty_minutes">30 minutes</string>
+    <string name="sixty_minutes">60 minutes</string>
+    <string name="ninty_minutes">90 minutes</string>
+    <string name="one_hundred_twenty_minutes">120 minutes</string>
+
+    <string name="text1Hour">1 hour</string>
+    <string name="text2Hours">2 hours</string>
+    <string name="text3Hours">3 hours</string>
+    <string name="text4Hours">4 hours</string>
+    <string name="text6Hours">6 hours</string>
+    <string name="text8Hours">8 hours</string>
+    <string name="text12Hours">12 hours</string>
+    <string name="text24Hours">24 hours</string>
+
+    <string name="one_hour">One hour</string>
+    <string name="two_hours">Two hours</string>
+    <string name="four_hours">Four hours</string>
+    <string name="eight_hours">Eight hours</string>
+    <string name="twelve_hours">Twelve hours</string>
+
+    <string name="update_install_failed_onscreen_text">Something went wrong with the update. Please try again</string>
+    <string name="no_contacts_have_been_setup">No contacts have been setup</string>
+    <string name="correct">Correct</string>
+    <string name="wrong">Wrong</string>
+    <string name="use_case_id">Use Case ID</string>
+    <string name="os" translatable="false">OS :</string>
+    <string name="caution_investigational_software_limited_by_federal_or_united_states_law_to_investigational_use">CAUTION - Investigational software. Limited by Federal (or United States) law to investigational use</string>
+    <string name="caution_exclusively_for_investigational_use_only">CAUTION: Exclusively for\ninvestigational use only</string>
+
+    <string name="import_database" translatable="false">Import\ndatabase</string>
+    <string name="enable_wifi_logging" translatable="false">Enable Wifi Logging</string>
+    <string name="enable_gsm_logging" translatable="false">Enable GSM logging</string>
+    <string name="enable_server_logging" translatable="false">Enable Server logging</string>
+    <string name="enable_database_logging" translatable="false">Enable Database logging</string>
+    <string name="enable_battery_logging" translatable="false">Enable Battery logging</string>
+
+    <string name="weight">Weight</string>
+    <string name="weightScale">Weight\nScale</string>
+    <string name="weightScaleSingleLine">Weight Scale</string>
+    <string name="please_enter_the_weight">Please enter the Weight</string>
+    <string name="weight_scale">Weight scale</string>
+    <string name="searching_for_weight_scale">Searching for weight scale</string>
+    <string name="server_connection_settings">Server Connection Settings</string>
+    <string name="gateway_settings">Gateway Settings</string>
+    <string name="description_setup_mode_length">Select how long Setup Mode runs for</string>
+    <string name="description_periodic_setup_mode">Automatically start Setup Mode every X minutes and run for Y minutes/seconds</string>
+    <string name="description_poor_signal">Poor Signal</string>
+    <string name="description_long_term_measurement_timeout">How long to include manually triggered readings in Early Warning Score calculations</string>
+    <string name="description_display_timeout">How long before auto locking the screen</string>
+    <string name="invalid_spo2_measurements">Invalid SpO2 Measurements</string>
+    <string name="description_spo2_spot_measurements">Calculate the SpO2 even if Pulse Oximeter only worn for a few seconds rather than requiring an entire minute of data</string>
+    <string name="description_dfu">Auto update the sensor firmware (if needed)</string>
+    <string name="description_predefined_annotations">Include Predefine Annotation options. These can be customised on the Lifeguard Server. See Isansys for details</string>
+    <string name="description_auto_add_ews">Auto enable the Early Warning Score algorithm</string>
+    <string name="description_unplugged_overlay">Show an onscreen reminder when the Patient Gateway is unplugged from its charger</string>
+    <string name="gsm">GSM</string>
+    <string name="description_gsm">Use mobile data only. Do not try and connect to WIFI</string>
+    <string name="description_patient_name_lookup">Use only after talking to Isansys. Requires additional software on Lifeguard Server.</string>
+
+    <string name="view_webpages">View Webpages</string>
+    <string name="select_a_webpage">Select a webpage</string>
+    <string name="problem_loading_webpage">Problem loading webpage</string>
+    <string name="enable_view_web_pages">Enable View Web Pages</string>
+    <string name="get_web_pages_from_server">Get Webpage\nfrom Server</string>
+
+    <string name="press_enter_on_keyboard_when_finished">Press Enter on keyboard when finished</string>
+    <string name="auto_lock_the_screen_when_on_the_chart_page">Auto lock the screen when on the chart page</string>
+    <string name="third_party_temperature">Third Party Temperature</string>
+    <string name="below_is_not_included_in_the_early_warning_score_calculations_but_state_how_long_to_display_the_measurement_for">Below is NOT included in the Early Warning Score calculations, but state how long to display the measurement for</string>
+
+    <string name="remove_this_sensors_measurements_from_future_ews_calculations">Remove this sensors measurement from future EWS calculations?</string>
+    <string name="remove_sensor_from_ews_line_one">Remove means the EWS algorithm will continue calculating Early Warning Scores without this sensors measurements in future.</string>
+    <string name="remove_sensor_from_ews_line_two">Keep means no more Early Warning Scores will be generated until a replacement sensor is added to the session.</string>
+
+    <string name="keep">Keep</string>
+
+    <string name="urine_output">Urine Output</string>
+    <string name="urine_output_with_units">Urine Output\n(ml)</string>
+    <string name="please_enter_the_urine_output">Please enter the Urine Output</string>
+
+    <string name="multiline_manually_entered_urine_output">Manually\nEntered\nUrine\nOutput</string>
+
+</resources>

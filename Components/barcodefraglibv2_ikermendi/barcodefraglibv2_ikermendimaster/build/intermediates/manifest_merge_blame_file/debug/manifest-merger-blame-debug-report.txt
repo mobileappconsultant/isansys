@@ -1,0 +1,63 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.abhi.barcode.frag.libv2"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="19" />
+9-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:7:5-65
+11-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:7:22-62
+12    <uses-permission android:name="android.permission.VIBRATE" />
+12-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:8:5-66
+12-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:8:22-63
+13    <uses-permission android:name="android.permission.FLASHLIGHT" />
+13-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:9:5-69
+13-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:9:22-66
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:10:5-81
+14-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:10:22-78
+15
+16    <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+17    <uses-feature
+17-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:13:5-15:36
+18        android:name="android.hardware.camera"
+18-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:14:9-47
+19        android:required="false" />
+19-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:15:9-33
+20    <uses-feature
+20-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:16:5-18:36
+21        android:name="android.hardware.camera.front"
+21-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:17:9-53
+22        android:required="false" />
+22-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:18:9-33
+23    <!-- TODO replace above two with next line after Android 4.2 -->
+24    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+25    <uses-feature
+25-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:21:5-23:36
+26        android:name="android.hardware.camera.autofocus"
+26-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:22:9-57
+27        android:required="false" />
+27-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:23:9-33
+28    <uses-feature
+28-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:24:5-26:36
+29        android:name="android.hardware.camera.flash"
+29-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:25:9-53
+30        android:required="false" />
+30-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:26:9-33
+31    <uses-feature android:name="android.hardware.screen.landscape" />
+31-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:27:5-70
+31-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:27:19-67
+32    <uses-feature
+32-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:28:5-30:36
+33        android:name="android.hardware.wifi"
+33-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:29:9-45
+34        android:required="false" />
+34-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:30:9-33
+35
+36</manifest>

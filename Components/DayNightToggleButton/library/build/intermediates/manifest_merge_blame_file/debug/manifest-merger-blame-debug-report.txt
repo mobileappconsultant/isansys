@@ -1,0 +1,21 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.silencedut.daynighttogglebutton" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="19"
+6-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/DayNightToggleButton/library/src/main/AndroidManifest.xml
+7        android:targetSdkVersion="23" />
+7-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/DayNightToggleButton/library/src/main/AndroidManifest.xml
+8
+9    <application
+9-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/DayNightToggleButton/library/src/main/AndroidManifest.xml:4:5-7:19
+10        android:allowBackup="false"
+10-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/DayNightToggleButton/library/src/main/AndroidManifest.xml:4:18-45
+11        android:label="@string/app_name"
+11-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/DayNightToggleButton/library/src/main/AndroidManifest.xml:5:9-41
+12        android:supportsRtl="true" >
+12-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/DayNightToggleButton/library/src/main/AndroidManifest.xml:6:9-35
+13    </application>
+14
+15</manifest>

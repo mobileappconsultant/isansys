@@ -1,0 +1,57 @@
+<resources>
+    <dimen name="graph_labels">10sp</dimen>
+    <dimen name="full_screen_graph_labels">14sp</dimen>
+    <dimen name="device_connection__progress_bar_height">90dp</dimen>
+    <dimen name="device_connection__Logo_height">100dp</dimen>
+    <dimen name="patient_id_normal_size_text">50sp</dimen>
+    <dimen name="digital_clock_text_size_90sp">90sp</dimen>
+    <dimen name="digital_clock_text_size_100sp">100sp</dimen>
+    <dimen name="seekBar_textView_margin">15dp</dimen>
+    <dimen name="Patient_Id_size_forty_sp">40sp</dimen>
+    <dimen name="keypad_margin_left">15dp</dimen>
+    <dimen name="keypad_margin_top">10dp</dimen>
+	<dimen name="clock_stroke_width">2dp</dimen>
+
+    <dimen name="default_footer_button_text_size">10sp</dimen>
+    <dimen name="smaller_footer_button_text_size">8sp</dimen>
+    <dimen name="server_sync_popup_blank_weight">9</dimen>
+    <dimen name="server_sync_popup_measurement_padding_start">10dp</dimen>
+
+    <dimen name="unlock_page_out_of_range_image_height">80dp</dimen>
+    <dimen name="unlock_page_out_of_range_image_width">80dp</dimen>
+
+    <dimen name="patient_vitals_display_out_of_range_image_height">60dp</dimen>
+    <dimen name="patient_vitals_display_out_of_range_image_width">60dp</dimen>
+
+    <dimen name="permissions_page_permission_name">32sp</dimen>
+    <dimen name="permissions_page_permission_reason">20sp</dimen>
+
+    <dimen name="qr_unlock_page__gap_between_device_info_display">4dp</dimen>
+    <dimen name="qr_unlock_page__padding_at_top_of_sensor_name">10dp</dimen>
+
+    <dimen name="change_session_settings_row_height">104dp</dimen>
+
+    <dimen name="admin_page_description_width">250dp</dimen>
+    <dimen name="admin_page_radio_button_width">180dp</dimen>
+    <dimen name="admin_page_spinner_width">140dp</dimen>
+    <dimen name="admin_page_description_padding_end">20dp</dimen>
+
+    <dimen name="admin_page_server_connection_setting_label_width">250dp</dimen>
+
+    <dimen name="admin_page_gateway_settings_weight_left_column">1</dimen>
+    <dimen name="admin_page_gateway_settings_weight_middle_column">1.1</dimen>
+    <dimen name="admin_page_gateway_settings_weight_right_column">1</dimen>
+    
+    <dimen name="webpage_viewer_button_width">50dp</dimen>
+    <dimen name="webpage_viewer_button_height">50dp</dimen>
+
+    <dimen name="webpage_onscreen_button_height">50dp</dimen>
+    <dimen name="webpage_onscreen_button_text_size">24sp</dimen>
+
+    <dimen name="installation_wizard_progress_bar_height">60dp</dimen>
+    <dimen name="installation_wizard_progress_bar_width">60dp</dimen>
+
+    <dimen name="installation_wizard_view_indicator_height">30dp</dimen>
+    <dimen name="installation_wizard_view_indicator_width">30dp</dimen>
+
+</resources>

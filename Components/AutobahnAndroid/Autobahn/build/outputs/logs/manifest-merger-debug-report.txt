@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/AutobahnAndroid/Autobahn/AndroidManifest.xml:2:1-4:3
+INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/AutobahnAndroid/Autobahn/AndroidManifest.xml:2:1-4:3
+INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/AutobahnAndroid/Autobahn/AndroidManifest.xml:2:1-4:3
+	package
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/AutobahnAndroid/Autobahn/AndroidManifest.xml:3:7-36
+		INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/AutobahnAndroid/Autobahn/AndroidManifest.xml
+		INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/AutobahnAndroid/Autobahn/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/AutobahnAndroid/Autobahn/AndroidManifest.xml:2:11-69
+uses-sdk
+INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/AutobahnAndroid/Autobahn/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/AutobahnAndroid/Autobahn/AndroidManifest.xml
+INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/AutobahnAndroid/Autobahn/AndroidManifest.xml
+INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/AutobahnAndroid/Autobahn/AndroidManifest.xml
+INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/AutobahnAndroid/Autobahn/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/AutobahnAndroid/Autobahn/AndroidManifest.xml
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/AutobahnAndroid/Autobahn/AndroidManifest.xml
+		INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/AutobahnAndroid/Autobahn/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/AutobahnAndroid/Autobahn/AndroidManifest.xml
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/AutobahnAndroid/Autobahn/AndroidManifest.xml
+		INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/AutobahnAndroid/Autobahn/AndroidManifest.xml

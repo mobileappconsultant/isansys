@@ -1,0 +1,255 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.isansys.pse_isansysportal"
+4    android:versionCode="10400"
+5    android:versionName="10400" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+11-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:5:5-76
+11-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:5:22-73
+12    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+12-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:5:5-76
+12-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:5:22-73
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:7:5-65
+13-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:7:22-62
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:8:5-81
+14-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:8:22-78
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:9:5-67
+15-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:9:22-64
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+16-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:10:5-80
+16-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:10:22-77
+17    <uses-permission android:name="android.permission.VIBRATE" />
+17-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:11:5-66
+17-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:11:22-63
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:12:5-79
+18-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:12:22-76
+19    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+19-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:13:5-76
+19-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:13:22-73
+20    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+20-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:14:5-73
+20-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:14:22-70
+21    <uses-permission android:name="android.permission.BLUETOOTH" />
+21-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:15:5-68
+21-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:15:22-65
+22    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+22-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:16:5-74
+22-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:16:22-71
+23    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+23-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:17:5-78
+23-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:17:22-75
+24    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+24-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:18:5-77
+24-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:18:22-74
+25    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+25-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:19:5-71
+25-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:19:22-68
+26    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+26-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:20:5-85
+26-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:20:22-82
+27    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+27-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:21:5-80
+27-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:21:22-77
+28    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+28-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:22:5-83
+28-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:22:22-80
+29    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+29-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:23:5-82
+29-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:23:22-79
+30
+31    <queries>
+31-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:25:5-27:15
+32        <package android:name="com.isansys.patientgateway" />
+32-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:26:9-62
+32-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:26:18-59
+33    </queries>
+34
+35    <uses-permission android:name="android.permission.FLASHLIGHT" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+35-->[:barcodefraglibv2_ikermendimaster] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-69
+35-->[:barcodefraglibv2_ikermendimaster] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:22-66
+36    <uses-feature
+36-->[:barcodefraglibv2_ikermendimaster] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:5-19:36
+37        android:name="android.hardware.camera"
+37-->[:barcodefraglibv2_ikermendimaster] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-47
+38        android:required="false" />
+38-->[:barcodefraglibv2_ikermendimaster] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-33
+39    <uses-feature
+39-->[:barcodefraglibv2_ikermendimaster] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:5-22:36
+40        android:name="android.hardware.camera.front"
+40-->[:barcodefraglibv2_ikermendimaster] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:9-53
+41        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+41-->[:barcodefraglibv2_ikermendimaster] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/build/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-33
+42    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+43    <uses-feature
+43-->[:barcodefraglibv2_ikermendimaster] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:5-27:36
+44        android:name="android.hardware.camera.autofocus"
+44-->[:barcodefraglibv2_ikermendimaster] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:9-57
+45        android:required="false" />
+45-->[:barcodefraglibv2_ikermendimaster] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:9-33
+46    <uses-feature
+46-->[:barcodefraglibv2_ikermendimaster] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:5-30:36
+47        android:name="android.hardware.camera.flash"
+47-->[:barcodefraglibv2_ikermendimaster] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/build/intermediates/merged_manifest/debug/AndroidManifest.xml:29:9-53
+48        android:required="false" />
+48-->[:barcodefraglibv2_ikermendimaster] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:9-33
+49    <uses-feature android:name="android.hardware.screen.landscape" />
+49-->[:barcodefraglibv2_ikermendimaster] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/build/intermediates/merged_manifest/debug/AndroidManifest.xml:31:5-70
+49-->[:barcodefraglibv2_ikermendimaster] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/build/intermediates/merged_manifest/debug/AndroidManifest.xml:31:19-67
+50    <uses-feature
+50-->[:barcodefraglibv2_ikermendimaster] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/build/intermediates/merged_manifest/debug/AndroidManifest.xml:32:5-34:36
+51        android:name="android.hardware.wifi"
+51-->[:barcodefraglibv2_ikermendimaster] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/build/intermediates/merged_manifest/debug/AndroidManifest.xml:33:9-45
+52        android:required="false" />
+52-->[:barcodefraglibv2_ikermendimaster] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/build/intermediates/merged_manifest/debug/AndroidManifest.xml:34:9-33
+53
+54    <permission
+54-->[androidx.core:core:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/84e426f82aa1a2b92e015577237d6171/transformed/core-1.10.0-alpha01/AndroidManifest.xml:22:5-24:47
+55        android:name="com.isansys.pse_isansysportal.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+55-->[androidx.core:core:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/84e426f82aa1a2b92e015577237d6171/transformed/core-1.10.0-alpha01/AndroidManifest.xml:23:9-81
+56        android:protectionLevel="signature" />
+56-->[androidx.core:core:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/84e426f82aa1a2b92e015577237d6171/transformed/core-1.10.0-alpha01/AndroidManifest.xml:24:9-44
+57
+58    <uses-permission android:name="com.isansys.pse_isansysportal.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+58-->[androidx.core:core:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/84e426f82aa1a2b92e015577237d6171/transformed/core-1.10.0-alpha01/AndroidManifest.xml:26:5-97
+58-->[androidx.core:core:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/84e426f82aa1a2b92e015577237d6171/transformed/core-1.10.0-alpha01/AndroidManifest.xml:26:22-94
+59
+60    <application
+60-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:29:5-72:19
+61        android:name="com.isansys.PortalApplication"
+61-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:30:9-53
+62        android:allowBackup="false"
+62-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:31:9-36
+63        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+63-->[androidx.core:core:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/84e426f82aa1a2b92e015577237d6171/transformed/core-1.10.0-alpha01/AndroidManifest.xml:28:18-86
+64        android:debuggable="true"
+65        android:extractNativeLibs="false"
+66        android:icon="@drawable/ic_launcher"
+66-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:32:9-45
+67        android:label="@string/app_name"
+67-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:33:9-41
+68        android:largeHeap="true"
+68-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:34:9-33
+69        android:requestLegacyExternalStorage="true"
+69-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:35:9-52
+70        android:supportsRtl="true"
+70-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:36:9-35
+71        android:testOnly="true"
+72        android:theme="@style/AppTheme"
+72-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:37:9-40
+73        android:usesCleartextTraffic="true" >
+73-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:38:9-44
+74        <activity
+74-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:41:9-55:20
+75            android:name="com.isansys.pse_isansysportal.MainActivity"
+75-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:42:13-70
+76            android:exported="true"
+76-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:43:13-36
+77            android:label="@string/app_name"
+77-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:44:13-45
+78            android:launchMode="singleInstance"
+78-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:45:13-48
+79            android:screenOrientation="sensorLandscape"
+79-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:46:13-56
+80            android:windowSoftInputMode="stateAlwaysHidden|adjustNothing" >
+80-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:47:13-74
+81            <intent-filter>
+81-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:48:13-54:29
+82                <action android:name="android.intent.action.MAIN" />
+82-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:49:17-69
+82-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:49:25-66
+83
+84                <category android:name="android.intent.category.LAUNCHER" />
+84-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:51:17-77
+84-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:51:27-74
+85
+86                <action android:name="com.isansys.updaterReply.intent" />
+86-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:53:17-74
+86-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:53:25-71
+87            </intent-filter>
+88        </activity>
+89        <activity
+89-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:56:9-59:49
+90            android:name="com.isansys.pse_isansysportal.CustomErrorActivity"
+90-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:57:13-77
+91            android:label="@string/app_name"
+91-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:58:13-45
+92            android:process=":error_activity" />
+92-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:59:13-46
+93
+94        <receiver
+94-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:61:9-69:20
+95            android:name="com.permissions.PermissionsReceiver"
+95-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:62:13-63
+96            android:enabled="true"
+96-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:63:13-35
+97            android:exported="true" >
+97-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:64:13-36
+98            <intent-filter>
+98-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:65:13-67:29
+99                <action android:name="android.settings.action.MANAGE_UNKNOWN_APP_SOURCES_PERMISSION_GRANTED" />
+99-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:66:15-110
+99-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:66:23-107
+100            </intent-filter>
+101        </receiver>
+102
+103        <service android:name="com.isansys.pse_isansysportal.IsansysPortalLogcatCaptureService" />
+103-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:71:9-70
+103-->/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/AndroidManifest.xml:71:18-67
+104
+105        <activity
+105-->[:CustomActivityOnCrash] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/CustomActivityOnCrash/library/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:9-28:65
+106            android:name="cat.ereza.customactivityoncrash.activity.DefaultErrorActivity"
+106-->[:CustomActivityOnCrash] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/CustomActivityOnCrash/library/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-89
+107            android:process=":error_activity"
+107-->[:CustomActivityOnCrash] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/CustomActivityOnCrash/library/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-46
+108            android:theme="@style/CustomActivityOnCrashTheme" />
+108-->[:CustomActivityOnCrash] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/CustomActivityOnCrash/library/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-62
+109
+110        <uses-library
+110-->[androidx.window:window:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/cd54619909e80a62498bc5d4feb78705/transformed/jetified-window-1.0.0/AndroidManifest.xml:25:9-27:40
+111            android:name="androidx.window.extensions"
+111-->[androidx.window:window:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/cd54619909e80a62498bc5d4feb78705/transformed/jetified-window-1.0.0/AndroidManifest.xml:26:13-54
+112            android:required="false" />
+112-->[androidx.window:window:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/cd54619909e80a62498bc5d4feb78705/transformed/jetified-window-1.0.0/AndroidManifest.xml:27:13-37
+113        <uses-library
+113-->[androidx.window:window:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/cd54619909e80a62498bc5d4feb78705/transformed/jetified-window-1.0.0/AndroidManifest.xml:28:9-30:40
+114            android:name="androidx.window.sidecar"
+114-->[androidx.window:window:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/cd54619909e80a62498bc5d4feb78705/transformed/jetified-window-1.0.0/AndroidManifest.xml:29:13-51
+115            android:required="false" />
+115-->[androidx.window:window:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/cd54619909e80a62498bc5d4feb78705/transformed/jetified-window-1.0.0/AndroidManifest.xml:30:13-37
+116
+117        <provider
+117-->[androidx.emoji2:emoji2:1.2.0] /Users/frontendlabs/.gradle/caches/transforms-3/afc66049df4b4c7ef5b572a7befe5e96/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+118            android:name="androidx.startup.InitializationProvider"
+118-->[androidx.emoji2:emoji2:1.2.0] /Users/frontendlabs/.gradle/caches/transforms-3/afc66049df4b4c7ef5b572a7befe5e96/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+119            android:authorities="com.isansys.pse_isansysportal.androidx-startup"
+119-->[androidx.emoji2:emoji2:1.2.0] /Users/frontendlabs/.gradle/caches/transforms-3/afc66049df4b4c7ef5b572a7befe5e96/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+120            android:exported="false" >
+120-->[androidx.emoji2:emoji2:1.2.0] /Users/frontendlabs/.gradle/caches/transforms-3/afc66049df4b4c7ef5b572a7befe5e96/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+121            <meta-data
+121-->[androidx.emoji2:emoji2:1.2.0] /Users/frontendlabs/.gradle/caches/transforms-3/afc66049df4b4c7ef5b572a7befe5e96/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+122                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+122-->[androidx.emoji2:emoji2:1.2.0] /Users/frontendlabs/.gradle/caches/transforms-3/afc66049df4b4c7ef5b572a7befe5e96/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+123                android:value="androidx.startup" />
+123-->[androidx.emoji2:emoji2:1.2.0] /Users/frontendlabs/.gradle/caches/transforms-3/afc66049df4b4c7ef5b572a7befe5e96/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+124            <meta-data
+124-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/frontendlabs/.gradle/caches/transforms-3/7454ba8de86f6b247a7c4ebdb135d3e7/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+125                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+125-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/frontendlabs/.gradle/caches/transforms-3/7454ba8de86f6b247a7c4ebdb135d3e7/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+126                android:value="androidx.startup" />
+126-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/frontendlabs/.gradle/caches/transforms-3/7454ba8de86f6b247a7c4ebdb135d3e7/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+127        </provider>
+128    </application>
+129
+130</manifest>

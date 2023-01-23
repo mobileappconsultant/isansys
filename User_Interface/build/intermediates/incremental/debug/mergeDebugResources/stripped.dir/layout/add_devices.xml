@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false">
+    
+    <LinearLayout
+        android:id="@+id/qr_bar_code"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayoutNoCameraControls"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:id="@+id/buttonTestAddLifetouch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:text="Add Lifetouch 1728"
+                android:background="@drawable/button_blue"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+    </LinearLayout> 
+    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/scan_device_qr_codes"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+             
+        <TextView
+            android:id="@+id/textAddDevicesPageHelp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/hold_qr_code_so_it_fits_in_the_smaller_lighter_square_on_the_left"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:shrinkColumns="*"
+            android:stretchColumns="0,1,3" 
+            >
+            <!-- Column 2 is the Circle to show if device is not assigned to another patient on the Server -->
+            
+            <TableRow android:layout_marginBottom="5dp">
+                <TextView
+                    android:id="@+id/textViewLifetouch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lifetouch"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewLifetouchHumanReadableSerialNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:text="@string/six_dashes"
+                    android:layout_weight="1.2"
+                    android:gravity="center"
+                    />
+
+                <View
+                    android:id="@+id/viewLifetouchGoodToUse"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/circle_red" />
+    
+                <Button
+                    android:id="@+id/buttonRemoveLifetouch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:text="@string/remove"
+                    android:background="@drawable/button_blue"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowLifetouchLotNumber"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:text="@string/lot_number"
+                    android:layout_weight="1"
+                    android:gravity="top|end"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewLifetouchLotNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:text="@string/six_dashes"
+                    android:layout_weight="1"
+                    android:gravity="top|center"
+                    />
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+            </TableRow>
+
+            <TableRow android:id="@+id/tableRowLifetouchManufactureDate"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:text="@string/manufacture_date"
+                    android:layout_weight="1"
+                    android:gravity="top|end"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewLifetouchManufactureDate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:text="@string/six_dashes"
+                    android:layout_weight="1"
+                    android:gravity="top|center"
+                    />
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+            </TableRow>
+
+            <TableRow android:id="@+id/tableRowLifetouchExpirationDate"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:text="@string/expiration_date"
+                    android:layout_weight="1"
+                    android:gravity="top|end"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewLifetouchExpirationDate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:text="@string/six_dashes"
+                    android:layout_weight="1"
+                    android:gravity="top|center"
+                    />
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="5dp">
+                <TextView
+                    android:id="@+id/textViewThermometer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textThermometer"
+                    android:textSize="24sp"
+                    android:textStyle="bold" 
+                    android:layout_weight="1"
+                    />
+                
+                <TextView
+                    android:id="@+id/textViewAddDevicesThermometerHumanReadableSerialNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:text="@string/six_dashes"
+                    android:gravity="center"
+                    android:layout_weight="1.2"
+                    />
+                
+                <View 
+                    android:id="@+id/viewThermometerGoodToUse"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/circle_red"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_gravity="center_vertical"
+                    />              
+                
+                <Button
+                    android:id="@+id/buttonRemoveThermometer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:text="@string/remove"
+                    android:background="@drawable/button_blue"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowThermometerLotNumber"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:text="@string/lot_number"
+                    android:layout_weight="1"
+                    android:gravity="top|end"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewThermometerLotNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:text="@string/six_dashes"
+                    android:layout_weight="1"
+                    android:gravity="top|center"
+                    />
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+            </TableRow>
+
+            <TableRow android:id="@+id/tableRowThermometerManufactureDate"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:text="@string/manufacture_date"
+                    android:layout_weight="1"
+                    android:gravity="top|end"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewThermometerManufactureDate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:text="@string/six_dashes"
+                    android:layout_weight="1"
+                    android:gravity="top|center"
+                    />
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+            </TableRow>
+
+            <TableRow android:id="@+id/tableRowThermometerExpirationDate"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:text="@string/expiration_date"
+                    android:layout_weight="1"
+                    android:gravity="top|end"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewThermometerExpirationDate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:text="@string/six_dashes"
+                    android:layout_weight="1"
+                    android:gravity="top|center"
+                    />
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="5dp">
+                <TextView
+                    android:id="@+id/textViewPulseOximeter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textPulseOximeter"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1" 
+                    />
+
+                <TextView
+                    android:id="@+id/textViewPulseOximeterHumanReadableSerialNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/six_dashes"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1.2"
+                    />
+
+                <View
+                    android:id="@+id/viewPulseOximeterGoodToUse"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/circle_red"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <Button
+                    android:id="@+id/buttonRemovePulseOximeter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_blue"
+                    android:text="@string/remove"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    />
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="5dp">
+                <TextView
+                    android:id="@+id/textViewBloodPressure"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/blood_pressure"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    />
+                
+                <TextView
+                    android:id="@+id/textViewBloodPressureHumanReadableSerialNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:text="@string/six_dashes"
+                    android:gravity="center"
+                    android:layout_weight="1.2"
+                    />
+                
+                <View 
+                    android:id="@+id/viewBloodPressureGoodToUse"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/circle_red"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_gravity="center_vertical"
+                    />              
+                                
+                <Button
+                    android:id="@+id/buttonRemoveBloodPressure"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:text="@string/remove"
+                    android:background="@drawable/button_blue"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    />            
+            </TableRow>
+
+            <!-- Weight -->
+            <TableRow android:layout_marginBottom="5dp">
+                <TextView
+                    android:id="@+id/textViewScales"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Weight Scales"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewScalesHumanReadableSerialNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:text="@string/six_dashes"
+                    android:gravity="center"
+                    android:layout_weight="1.2"
+                    />
+
+                <View
+                    android:id="@+id/viewScalesGoodToUse"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/circle_red"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <Button
+                    android:id="@+id/buttonRemoveScales"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:text="@string/remove"
+                    android:background="@drawable/button_blue"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    />
+            </TableRow>
+            <!-- Weight -->
+
+            <TableRow
+                android:id="@+id/tableRowEarlyWarningScores"
+                >
+                <TextView
+                    android:id="@+id/textViewEarlyWarningScores"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stringEarlyWarningScore"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    />
+
+                <Button
+                    android:id="@+id/buttonAddEarlyWarningScore"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:text="@string/addEarlyWarningScoreDevice"
+                    android:background="@drawable/button_blue"
+                    android:textColor="@color/white"
+                    android:layout_weight="1.2"
+                    />
+
+                <Button
+                    android:id="@+id/buttonGrayedOutAddEarlyWarningScore"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:text="@string/addEarlyWarningScoreDevice"
+                    android:background="@drawable/button_gray"
+                    android:textColor="@color/white"
+                    android:layout_weight="1.2"
+                    android:visibility="gone"
+                    />
+
+                <Button
+                    android:id="@+id/buttonRemoveEarlyWarningScore"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_blue"
+                    android:text="@string/remove"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="40dp" />
+
+                <Button
+                    android:id="@+id/buttonGrayedOutRemoveEarlyWarningScore"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:text="@string/remove"
+                    android:background="@drawable/button_gray"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:layout_marginStart="40dp"
+                    />
+            </TableRow>
+
+        </TableLayout>
+        
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutManualVitalsOnly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/or_press_manual_vitals_only"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <Button
+                android:id="@+id/buttonManualVitalsOnly"
+                android:layout_width="300dp"
+                android:layout_height="90dp"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:text="@string/manual_vitals_only"
+                android:background="@drawable/button_blue"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutAddDevicesServerCheckAndInUseDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/linearLayoutAddDevicesServerCheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/textViewCheckDeviceStatusCheckingServer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/checking_with_server"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
+
+                <ProgressBar
+                    android:id="@+id/progressBarAddDevicesCheckDeviceStatusProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textViewAddDevicesDeviceWardNameLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ward_name"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewAddDevicesDeviceWardName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/six_dashes"
+                        android:textColor="@color/red"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textViewAddDevicesDeviceBedNameLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bed_name"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewAddDevicesDeviceBedName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/six_dashes"
+                        android:textColor="@color/red"
+                        android:textSize="24sp" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp" />
+
+                    <TextView
+                        android:id="@+id/textAddDevicesPageHelp2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/once_finished_adding_devices_press_connect"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageAddDevice_DownArrow"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="end|bottom"
+                        android:layout_weight="1"
+                        android:scaleType="fitEnd"
+                        android:contentDescription="@null"
+                        android:visibility="invisible"
+                        android:src="@drawable/arrow" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>     
+    
+</LinearLayout>

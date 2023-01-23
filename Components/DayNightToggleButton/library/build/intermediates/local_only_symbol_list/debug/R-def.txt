@@ -1,0 +1,11 @@
+R_DEF: Internal format may change without notice
+local
+attr? dnBackgroundCheckedColor
+attr? dnBackgroundUncheckedColor
+attr? dnDuration
+attr? dnToggleCheckedColor
+attr? dnTogglePadding
+attr? dnToggleUncheckedColor
+attr? dnToggleWithAnimate
+string app_name
+styleable DayNightToggleButton dnTogglePadding dnToggleUncheckedColor dnToggleCheckedColor dnBackgroundUncheckedColor dnBackgroundCheckedColor dnToggleWithAnimate dnDuration

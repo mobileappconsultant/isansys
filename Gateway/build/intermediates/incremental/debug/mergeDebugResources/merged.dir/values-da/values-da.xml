@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="android_permissions">Android-tilladelser</string>
+    <string name="android_version">Android-version</string>
+    <string name="app_name">Patient Gateway</string>
+    <string name="background_location">Baggrund placering</string>
+    <string name="build_version">Byggeversion</string>
+    <string msgid="881409763997275156" name="call_notification_answer_action">"Besvar"</string>
+    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"Video"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"Afvis"</string>
+    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"Læg på"</string>
+    <string msgid="6107532579223922871" name="call_notification_incoming_text">"Indgående opkald"</string>
+    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"Igangværende opkald"</string>
+    <string msgid="59049573811482460" name="call_notification_screening_text">"Et indgående opkald screenes"</string>
+    <string name="cannot_find_database_not_exported_to">Kan ikke finde DB – ikke eksporteret: </string>
+    <string name="custom_error_activity_dummy_timestamp">21 Dec 2016 18:24:32</string>
+    <string name="custom_error_activity_message_line_one">Beklager!</string>
+    <string name="custom_error_activity_message_line_send_to_isansys">Tag et foto af denne skærm og send det til support@isansys.com</string>
+    <string name="custom_error_activity_message_line_two">Der er opstået en fejl og Patient Gateway (PG) er holdt op med at fungere.</string>
+    <string name="database_exported_to">Database blev eksporteret til </string>
+    <string name="database_imported">Database blev importeret</string>
+    <string name="fine_location">Fin beliggenhed</string>
+    <string name="local_database_reset_including_ews_thresholds">Nulstilling af lokal database (omfatter EWS-tærskelværdier)</string>
+    <string name="local_database_reset_not_including_ews_thresholds">Nulstilling af lokal database (omfatter IKKE EWS-tærskelværdier)</string>
+    <string name="nearby_permission_text">Opret forbindelse til enheder i nærheden</string>
+    <string name="not_set_yet">ENDNU IKKE INDSTILLET</string>
+    <string name="problem_found_please_make_a_note_of_the_time_and_tell_isansys">Problemet blev fundet. Notér tidspunktet, og oplys det til Isansys</string>
+    <string name="restart">Genstart</string>
+    <string name="service_name">Mats Service Name</string>
+    <string name="starting_database_export_this_might_take_a_few_seconds">Starter eksport af database. Det kan tage et par sekunder!</string>
+    <string name="starting_database_import_this_might_take_a_few_seconds">Starter import af database. Det kan tage et par sekunder!</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="write_external_storage">Skriv ekstern lagring</string>
+    <string name="xx">xx</string>
+</resources>

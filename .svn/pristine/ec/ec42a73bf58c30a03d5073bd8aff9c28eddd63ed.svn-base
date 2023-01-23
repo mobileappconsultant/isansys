@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginBottom="5dp"
+    >
+
+    <RadioGroup
+        android:id="@+id/radioGroupPatientAge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="30dp"
+        >
+<!--
+        <RadioButton
+            android:id="@+id/radioButtonDummyDataPatientAgeRangeA"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@drawable/button_radio"
+            android:text="@string/text0to1Years"
+            android:textSize="30sp"
+            android:gravity="center"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButtonDummyDataPatientAgeRangeB"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@drawable/button_radio"
+            android:text="@string/text1to5Years"
+            android:textSize="30sp"
+            android:gravity="center"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButtonDummyDataPatientAgeRangeC"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@drawable/button_radio"
+            android:text="@string/text5to12Years"
+            android:textSize="30sp"
+            android:gravity="center"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButtonDummyDataPatientAgeRangeD"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@drawable/button_radio"
+            android:text="@string/textGreater12Years"
+            android:textSize="30sp"
+            android:gravity="center"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButtonDummyDataPatientAgeRangeE"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@drawable/button_radio"
+            android:text="@string/textAdult"
+            android:textSize="30sp"
+            android:gravity="center"
+            />
+-->
+    </RadioGroup>
+
+    <TableRow
+        android:id="@+id/tableRowPatientDetails"
+        android:layout_weight="1"
+        android:layout_margin="3dp">
+
+        <Button
+            android:id="@+id/buttonCreateNewPatient"
+            android:layout_width="250dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:text="@string/create_new_patient"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:id="@+id/textCreatedPatientName"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/textThreeDashes"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Spacer to make the layout height the same as the others -->
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/button_radio"
+            android:visibility="invisible"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/textViewDummyDataModeMeasurementPerTickDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/number_of_measurements_per_tick" />
+
+        <TextView
+            android:id="@+id/textViewDummyDataModeMeasurementPerTick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/one" />
+
+        <SeekBar
+            android:id="@+id/seekBarDummyDataModeMeasurementPerTick"
+            android:layout_width="225dp"
+            android:layout_height="fill_parent"
+            android:max="10"
+            android:visibility="visible" />
+
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/tableRowLifetouch"
+        android:layout_weight="1"
+        android:layout_margin="3dp">
+
+        <Button
+            android:id="@+id/buttonAddLifetouch"
+            android:layout_width="250dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:text="@string/add_lifetouch"
+            android:layout_marginEnd="10dp" />
+
+        <Button
+            android:id="@+id/buttonRemoveLifetouch"
+            android:layout_width="250dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:text="@string/remove_lifetouch"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:id="@+id/textHeartRateMeasurement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dummy_measurement_unknown"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textViewRespirationRateMeasurement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp"
+            android:text="@string/dummy_measurement_unknown"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textHeartAndRespirationRateMeasurementTimestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/dummy_measurement_timestamp_unknown"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/buttonLifetouchSimulateConnectionState"
+            android:layout_width="150dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:text="@string/textConnect"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBoxLifetouchLeadsOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/button_radio"
+            android:paddingStart="5dp"
+            android:text="@string/lifetouch_leads_off"
+            android:layout_gravity="start|center_vertical"
+            android:paddingEnd="5dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowLifetemp"
+        android:layout_weight="1"
+        android:layout_margin="3dp">
+
+        <Button
+            android:id="@+id/buttonAddLifetemp"
+            android:layout_width="250dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:text="@string/add_lifetemp"
+            android:layout_marginEnd="10dp" />
+
+        <Button
+            android:id="@+id/buttonRemoveLifetemp"
+            android:layout_width="250dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:text="@string/remove_lifetemp"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:id="@+id/textTemperatureMeasurement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dummy_measurement_unknown"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp"
+            android:text="@string/dummy_measurement_unknown"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textTemperatureMeasurementTimestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/dummy_measurement_timestamp_unknown"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/buttonLifetempSimulateConnectionState"
+            android:layout_width="150dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:text="@string/textConnect"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBoxLifetempLeadsOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/button_radio"
+            android:paddingStart="5dp"
+            android:text="@string/lifetemp_leads_off"
+            android:layout_gravity="start|center_vertical"
+            android:paddingEnd="5dp" />
+
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/tableRowPulseOx"
+        android:layout_weight="1"
+        android:layout_margin="3dp">
+
+        <Button
+            android:id="@+id/buttonAddPulseOx"
+            android:layout_width="250dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:text="@string/add_nonin_wrist_ox"
+            android:layout_marginEnd="10dp" />
+
+        <Button
+            android:id="@+id/buttonRemoveNoninWristOx"
+            android:layout_width="250dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:text="@string/remove_nonin_wrist_ox"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:id="@+id/textPulseOxMeasurement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dummy_measurement_unknown"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp"
+            android:text="@string/dummy_measurement_unknown"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textPulseOxMeasurementTimestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/dummy_measurement_timestamp_unknown"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/buttonNoninWristOxSimulateConnectionState"
+            android:layout_width="150dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:text="@string/textConnect"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBoxPulseOxFingerOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/button_radio"
+            android:text="@string/pulse_ox_off_finger"
+            android:layout_gravity="start|center_vertical"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowNoninWristOxBle"
+        android:layout_weight="1"
+        android:layout_margin="3dp">
+
+        <Button
+            android:id="@+id/buttonAddNoninWristOxBle"
+            android:layout_width="250dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:text="@string/add_nonin_wrist_ox_ble"
+            android:layout_marginEnd="10dp" />
+
+        <Button
+            android:id="@+id/buttonRemoveNoninWristOxBle"
+            android:layout_width="250dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:text="@string/remove_nonin_wrist_ox_ble"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:id="@+id/textNoninWristOxBleMeasurement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dummy_measurement_unknown"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textViewNoninWristOxBle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp"
+            android:text="@string/dummy_measurement_unknown"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textNoninWristOxBleMeasurementTimestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/dummy_measurement_timestamp_unknown"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/buttonNoninWristOxBleSimulateConnectionState"
+            android:layout_width="150dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:text="@string/textConnect"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBoxNoninWristOxBleFingerOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/button_radio"
+            android:text="@string/pulse_ox_off_finger"
+            android:layout_gravity="start|center_vertical"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowBloodPressure"
+        android:layout_weight="1"
+        android:layout_margin="3dp">
+
+        <Button
+            android:id="@+id/buttonAddBloodPressure"
+            android:layout_width="250dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:text="@string/add_blood_pressure"
+            android:layout_marginEnd="10dp" />
+
+        <Button
+            android:id="@+id/buttonRemoveBloodPressure"
+            android:layout_width="250dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:text="@string/remove_blood_pressure_monitor"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:id="@+id/textBloodPressureSystolicMeasurement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dummy_measurement_unknown"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textBloodPressureDiastolicMeasurement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp"
+            android:text="@string/dummy_measurement_unknown"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textBloodPressureMeasurementTimestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/dummy_measurement_timestamp_unknown"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/buttonBloodPressureSimulateConnectionState"
+            android:layout_width="150dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:text="@string/textConnect"
+            />
+
+        <!-- Spacer to make the layout height the same as the others -->
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/button_radio"
+            android:visibility="invisible"/>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowWeightScale"
+        android:layout_weight="1"
+        android:layout_margin="3dp">
+
+        <Button
+            android:id="@+id/buttonAddWeightScale"
+            android:layout_width="250dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:text="@string/add_weight_scale"
+            android:layout_marginEnd="10dp" />
+
+        <Button
+            android:id="@+id/buttonRemoveWeightScale"
+            android:layout_width="250dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:text="@string/remove_weight_scale"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:id="@+id/textWeightScaleWeightMeasurement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dummy_measurement_unknown"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp"
+            android:text="@string/dummy_measurement_unknown"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textWeightScaleWeightMeasurementTimestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/dummy_measurement_timestamp_unknown"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/buttonWeightScaleSimulateConnectionState"
+            android:layout_width="150dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:text="@string/textConnect"
+            />
+
+        <!-- Spacer to make the layout height the same as the others -->
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/button_radio"
+            android:visibility="invisible"/>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowEarlyWarningScores"
+        android:layout_weight="1"
+        android:layout_margin="3dp">
+
+        <Button
+            android:id="@+id/buttonAddDummyEarlyWarningScores"
+            android:layout_width="250dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:text="@string/add_early_warning_scores"
+            android:layout_marginEnd="10dp" />
+
+        <Button
+            android:id="@+id/buttonRemoveDummyEarlyWarningScores"
+            android:layout_width="250dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:text="@string/remove_early_warning_scores"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:id="@+id/textEarlyWarningScoresMeasurement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dummy_measurement_unknown"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textEarlyWarningScoresOutOf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp"
+            android:text="@string/dummy_measurement_unknown"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textEarlyWarningScoresMeasurementTimestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/dummy_measurement_timestamp_unknown"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <CheckBox
+            android:id="@+id/checkBoxSpoofEarlyWarningScores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/button_radio"
+            android:paddingStart="5dp"
+            android:text="@string/spoof_early_warning_scores"
+            android:layout_gravity="start|center_vertical"
+            android:paddingEnd="5dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowPatientSession"
+        android:layout_weight="1"
+        android:layout_margin="3dp">
+
+        <Button
+            android:id="@+id/buttonStartPatientSession"
+            android:layout_width="250dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:text="@string/start_patient_session"
+            android:layout_marginEnd="10dp" />
+
+        <Button
+            android:id="@+id/buttonStopPatientSession"
+            android:layout_width="250dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:text="@string/stop_patient_session"
+            android:layout_marginEnd="10dp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxSpoofBackfillSession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/button_radio"
+            android:paddingStart="5dp"
+            android:text="@string/backfill_session"
+            android:layout_gravity="start|center_vertical"
+            android:paddingEnd="5dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="2dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center" >
+
+            <TextView
+                android:id="@+id/textViewNumberOfHoursToBackfillDescription"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:text="@string/number_of_hours_to_backfill"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <TextView
+                android:id="@+id/textViewNumberOfHoursToBackfill"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="24sp"
+                android:text="@string/one"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seekBarNumberOfHoursToBackfill"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:max="30"
+            android:paddingStart="0dp"
+            android:paddingEnd="10dp" />
+
+    </TableRow>
+
+</TableLayout>

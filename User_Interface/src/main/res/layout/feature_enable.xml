@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="5dp"
+    android:layout_marginStart="5dp">
+
+    <TableRow
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
+
+        <CheckBox
+            android:id="@+id/checkBoxEnableManuallyEnteredVitalSigns"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginEnd="10dp"
+            android:button="@drawable/checkbox"
+            android:text="@string/enable_manually_entered_vital_signs"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxEnableCsvOutput"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginEnd="10dp"
+            android:button="@drawable/checkbox"
+            android:text="@string/enable_csv_output"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxShowNumbersOnBatteryIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginEnd="10dp"
+            android:button="@drawable/checkbox"
+            android:text="@string/show_numbers_on_battery_indicator"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxShowIpAddressOnWifiPopup"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginEnd="10dp"
+            android:button="@drawable/checkbox"
+            android:text="@string/show_ip_address_on_wifi_popup"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
+
+        <CheckBox
+            android:id="@+id/checkBoxRunDevicesInTestMode"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginEnd="10dp"
+            android:button="@drawable/checkbox"
+            android:text="@string/run_devices_in_test_mode"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxSimpleHeartRate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@drawable/checkbox"
+            android:text="@string/simple_heart_rate"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxEnableDeveloperPopup"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@drawable/checkbox"
+            android:text="@string/enable_developer_popup"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxEnableVideoCalls"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@drawable/checkbox"
+            android:text="@string/enable_video_calls"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxDisplayTemperatureInFahrenheit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@drawable/checkbox"
+            android:text="@string/show_temperature_in_fahrenheit"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxDisplayWeightInLbs"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@drawable/checkbox"
+            android:text="@string/show_weight_in_lbs"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
+
+        <CheckBox
+            android:id="@+id/checkBoxShowMacAddressOnDeviceStatusScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@drawable/checkbox"
+            android:text="@string/showMacAddressOnDeviceStatusScreen"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxUsaMode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@drawable/checkbox"
+            android:text="@string/usa_mode"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxShowLifetouchActivityLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@drawable/checkbox"
+            android:text="@string/lifetouch_activity_level"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxEnableAutoResume"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@drawable/checkbox"
+            android:text="@string/enable_auto_resume"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxEnableAutoLogFileUploadToServer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@drawable/checkbox"
+            android:text="@string/enable_auto_log_file_upload"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxEnableViewWebPages"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@drawable/checkbox"
+            android:text="@string/enable_view_web_pages"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/buttonSetDummyServer"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_blue"
+            android:gravity="center|center_vertical"
+            android:text="@string/set_dummy_server"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/buttonImportDatabase"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_blue"
+            android:gravity="center|center_vertical"
+            android:text="@string/import_database"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/buttonUnitRadioOff"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_blue"
+            android:gravity="center|center_vertical"
+            android:layout_marginStart="10dp"
+            android:text="@string/buttonUnitRadioOff"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/labelRealTimeClientType"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center"
+                android:text="@string/real_time_server_link"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerRealTimeClientType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:entries="@array/real_time_client_type_array" />
+        </LinearLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
+
+        <CheckBox
+            android:id="@+id/checkBoxEnableManufacturingMode"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginEnd="10dp"
+            android:button="@drawable/checkbox"
+            android:text="@string/manufacturing_mode"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxEnableBackCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginEnd="10dp"
+            android:button="@drawable/checkbox"
+            android:text="@string/back_camera"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/labelLifetempMeasurementInterval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center"
+                android:text="@string/lifetemp_measurement_interval"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerLifetempMeasurementInterval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/measurement_interval_selection" />
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkBoxDisplayPatientOrientation"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginEnd="10dp"
+            android:button="@drawable/checkbox"
+            android:text="@string/display_patient_orientation"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/labelPatientOrientationMeasurementInterval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center"
+                android:text="@string/patient_orientation_measurement_interval"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerPatientOrientationMeasurementInterval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/measurement_interval_selection" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/labelJsonArraySize"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center"
+                android:text="@string/stringJsonArraySize"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerJsonArraySize"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:entries="@array/json_size_array" />
+        </LinearLayout>
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
+
+        <CheckBox
+            android:id="@+id/checkBoxEnableWifiLogging"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginEnd="10dp"
+            android:button="@drawable/checkbox"
+            android:text="@string/enable_wifi_logging"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxEnableGsmLogging"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginEnd="10dp"
+            android:button="@drawable/checkbox"
+            android:text="@string/enable_gsm_logging"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxEnableDatabaseLogging"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginEnd="10dp"
+            android:button="@drawable/checkbox"
+            android:text="@string/enable_database_logging"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxEnableServerLogging"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginEnd="10dp"
+            android:button="@drawable/checkbox"
+            android:text="@string/enable_server_logging"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxEnableBatteryLogging"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginEnd="10dp"
+            android:button="@drawable/checkbox"
+            android:text="@string/enable_battery_logging"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </TableRow>
+
+</TableLayout>

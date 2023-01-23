@@ -1,0 +1,218 @@
+package com.isansys.ui.permissions_fragment
+
+import android.Manifest
+import android.content.Intent
+import android.os.Build
+import android.provider.Settings
+import android.util.Log
+import android.view.View
+import androidx.core.content.ContextCompat
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.Observer
+import androidx.lifecycle.lifecycleScope
+import com.data.local.SharedPref
+import com.isansys.pse_isansysportal.R
+import com.isansys.pse_isansysportal.databinding.AndroidPermissionsBinding
+import com.isansys.ui.common.BaseFragment
+import com.permissions.Permissions
+import com.permissions.PermissionsImpl
+import com.util.requestPermissionFromSettings
+import com.util.visibility
+import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import javax.inject.Inject
+
+@AndroidEntryPoint
+class FragmentPermissions : BaseFragment<AndroidPermissionsBinding>() {
+
+private val TAG = "PERMISSIONS"
+private  val viewModel: PermissionViewModel by viewModels()
+@Inject
+lateinit var permissions: Permissions
+@Inject
+lateinit var sharedPref: SharedPref
+override fun getViewBinding(): AndroidPermissionsBinding = AndroidPermissionsBinding.inflate(layoutInflater)
+
+
+override fun setUpViews() {
+super.setUpViews()
+if(Build.VERSION.SDK_INT == Build.VERSION_CODES.TIRAMISU){
+binding.tableWriteExternalStoragePermission.visibility = View.GONE
+}
+
+
+binding.buttonEnableCameraPermissions.setOnClickListener {
+requestPermissions(arrayOf(Manifest.permission.CAMERA), PermissionsImpl.CAMERA_PERMISSION_REQUEST_CODE)
+}
+binding.buttonEnableRecordAudioPermissions.setOnClickListener {
+requestPermissions(arrayOf(Manifest.permission.RECORD_AUDIO), PermissionsImpl.REQUEST_AUDIO_CODE)
+}
+
+binding.buttonEnableWriteExternalStoragePermissions.setOnClickListener {
+if(Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU){
+requestPermissions(arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE,
+Manifest.permission.READ_EXTERNAL_STORAGE), PermissionsImpl.WRITE_EXTERNAL_STORAGE_PERMISSION_REQUEST_CODE)
+}
+
+}
+binding.buttonEnableWriteSettingsPermissions.setOnClickListener {
+sharedPref.permission = "WRITE_SYSTEMS"
+checkSettings()
+requireContext().requestPermissionFromSettings(Settings.ACTION_MANAGE_WRITE_SETTINGS)
+}
+
+binding.buttonEnableOverlayPermissions.setOnClickListener {
+sharedPref.permission = "OVERLAY"
+checkSettings()
+requireContext().requestPermissionFromSettings(Settings.ACTION_MANAGE_OVERLAY_PERMISSION)
+
+}
+binding.buttonEnableAccessNotificationPolicyPermissions.setOnClickListener {
+sharedPref.permission = "ACCESS_NOTIFICATION"
+checkSettings()
+val intent = Intent(Settings.ACTION_NOTIFICATION_POLICY_ACCESS_SETTINGS)
+intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+requireContext().startActivity(intent)
+}
+binding.buttonEnableInstallPackagesPermissions.setOnClickListener {
+sharedPref.permission = "INSTALL_PACKAGE"
+checkSettings()
+val intent = Intent(Settings.ACTION_MANAGE_UNKNOWN_APP_SOURCES)
+intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+intent.flags = Intent.FLAG_ACTIVITY_MULTIPLE_TASK
+requireContext().startActivity(intent)
+
+}
+}
+override fun observeData() {
+super.observeData()
+
+val observeCameraPermission = Observer<Boolean>{
+showIndicator(binding.viewCameraPermission,it)
+binding.buttonEnableCameraPermissions.visibility(it)
+}
+
+val observeReadWritePermission = Observer<Boolean>{
+showIndicator(binding.viewWriteExternalStoragePermission,it)
+binding.buttonEnableWriteExternalStoragePermissions.visibility(it)
+}
+val observeOverlayPermission = Observer<Boolean>{
+showIndicator(binding.viewOverlayPermission,it)
+binding.buttonEnableOverlayPermissions.visibility(it)
+}
+
+val observeWriteSettingsPermission = Observer<Boolean>{
+showIndicator(binding.viewWriteSettingsPermission,it)
+binding.buttonEnableWriteSettingsPermissions.visibility(it)
+}
+
+val observeRecordAudioPermission = Observer<Boolean>{
+showIndicator(binding.viewRecordAudioPermission,it)
+binding.buttonEnableRecordAudioPermissions.visibility(it)
+}
+
+val observeAccessNotificationPermission = Observer<Boolean>{
+showIndicator(binding.viewAccessNotificationPolicyPermission,it)
+binding.buttonEnableAccessNotificationPolicyPermissions.visibility(it)
+}
+
+val observeInstallPackagePermission = Observer<Boolean>{
+showIndicator(binding.viewInstallPackagesPermission,it)
+binding.buttonEnableInstallPackagesPermissions.visibility(it)
+}
+
+
+// Attach observer
+viewModel.haveCamera.observe(requireActivity(),observeCameraPermission)
+viewModel.haveOverlay.observe(requireActivity(),observeOverlayPermission)
+viewModel.haveWriteSystemSetting.observe(requireActivity(),observeWriteSettingsPermission)
+viewModel.haveRecordAudio.observe(requireActivity(),observeRecordAudioPermission)
+viewModel.haveAccessNotification.observe(requireActivity(),observeAccessNotificationPermission)
+viewModel.haveInstallPackage.observe(requireActivity(),observeInstallPackagePermission)
+viewModel.haveReadWrite.observe(requireActivity(),observeReadWritePermission)
+}
+
+
+
+private fun showIndicator(indicator: View, success: Boolean) {
+indicator.visibility = View.VISIBLE
+if(success) {
+indicator.background =
+ContextCompat.getDrawable(requireContext(), R.drawable.circle_green)
+} else {
+indicator.background =
+ContextCompat.getDrawable(requireContext(), R.drawable.circle_red)
+}
+}
+
+override fun onRequestPermissionsResult(
+requestCode: Int,
+permissions: Array<out String>,
+grantResults: IntArray
+) {
+super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+when(requestCode){
+PermissionsImpl.CAMERA_PERMISSION_REQUEST_CODE -> {viewModel.isHaveCamera()}
+PermissionsImpl.REQUEST_AUDIO_CODE -> {viewModel.isHaveRecordAudio()}
+PermissionsImpl.WRITE_EXTERNAL_STORAGE_PERMISSION_REQUEST_CODE->{viewModel.isHaveReadWrite()}
+}
+}
+
+
+
+override fun onResume() {
+super.onResume()
+viewModel.isHaveWriteSystemSetting()
+viewModel.isHaveAccessNotification()
+viewModel.isHaveInstallPackage()
+viewModel.isHaveOverlay()
+}
+
+
+private fun checkSettings() {
+lifecycleScope.launch {
+while(true) {
+when(sharedPref.permission){
+"OVERLAY" -> {
+if(permissions.haveOverlay()){
+startActivity(Intent(requireActivity(), com.isansys.pse_isansysportal.MainActivity::class.java))
+sharedPref.permission = ""
+}
+}
+"WRITE_SYSTEMS" -> {
+if(permissions.haveWriteSystemSetting()){
+startActivity(Intent(requireActivity(), com.isansys.pse_isansysportal.MainActivity::class.java))
+sharedPref.permission = ""
+}
+}
+
+"INSTALL_PACKAGE" -> {
+if(permissions.haveInstallPackage()){
+startActivity(Intent(requireActivity(), com.isansys.pse_isansysportal.MainActivity::class.java))
+sharedPref.permission = ""
+}
+}
+
+"ACCESS_NOTIFICATION" -> {
+if(permissions.haveAccessNotification()) {
+startActivity(Intent(requireActivity(), com.isansys.pse_isansysportal.MainActivity::class.java))
+sharedPref.permission = ""
+}
+}
+
+else ->{Log.d(TAG,"ghchhgv")} }
+
+delay(1000)
+}
+
+}
+}
+
+
+
+}
+
+
+
+

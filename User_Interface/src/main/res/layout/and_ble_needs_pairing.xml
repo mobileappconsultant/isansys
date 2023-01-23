@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/leads_off_red_border"
+    >
+
+    <com.isansys.pse_isansysportal.AutoResizeTextView
+        android:id="@+id/autoSizeTextViewAndBleNeedsPairing"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:ellipsize="none"
+        android:maxLines="3"
+        android:text="@string/textBloodPressurePairingFailed"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:layout_marginVertical="22dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginRight="22dp"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginVertical="22dp"
+        android:layout_marginHorizontal="22dp"
+        >
+
+        <Button
+            android:id="@+id/beginReconnectionForPairing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:text="@string/button_wifi_reconnect_string"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+</LinearLayout>

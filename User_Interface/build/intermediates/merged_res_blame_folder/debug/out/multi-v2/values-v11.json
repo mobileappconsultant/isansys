@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.isansys.pse_isansysportal.User_Interface-mergeDebugResources-53:/values-v11/values-v11.xml",
+            "map": [
+                {
+                    "source": "/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/res/values-v11/styles.xml",
+                    "from": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "182",
+                        "endLines": "8",
+                        "endColumns": "12",
+                        "endOffsets": "316"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "138"
+                    }
+                }
+            ]
+        }
+    ]
+}

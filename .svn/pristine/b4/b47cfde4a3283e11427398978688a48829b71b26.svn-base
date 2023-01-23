@@ -1,0 +1,31 @@
+apply plugin: 'com.android.library'
+apply plugin: 'org.jetbrains.kotlin.android'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion '30.0.3'
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 19
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    // MK - this has to match the version of the other components that include the 
+    // support lib, otherwise you get an error about multiple dex files
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    api files('libs/core.jar')
+    implementation 'androidx.core:core-ktx:+'
+}

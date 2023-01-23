@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayoutPopupIncomingVideoCall"
+    android:orientation="vertical"
+    android:layout_width="1220dp"
+    android:layout_height="750dp"
+    android:padding="40dp"
+    android:background="@drawable/bg_white_round">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutVideoCallIcon"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageVideoCall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/video_chat"
+            android:contentDescription="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutIncomingCallTextAndButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewMeetingText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/incoming_call_from_hospital"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/buttonStartVideoCall"
+            android:layout_width="fill_parent"
+            android:layout_height="90dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_green"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:text="@string/answer_call" />
+
+        <Button
+            android:id="@+id/buttonRejectCall"
+            android:layout_width="fill_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/button_red"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:text="@string/decline_call" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutOutgoingCallTextAndButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewOutgoingCallText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/calling_hospital"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/buttonOutgoingCallCancelRequest"
+            android:layout_width="fill_parent"
+            android:layout_height="90dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:text="@string/cancel" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMissedOrDeclinedCall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewMissedOrDeclinedCallText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/missed_call"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/buttonOkay"
+            android:layout_width="fill_parent"
+            android:layout_height="90dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:text="@string/string_ok" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutFailedCall"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageInfo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/info"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/textViewFailedCallText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="@string/failed_call"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/buttonFailedCallOkay"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_blue"
+                android:textColor="@color/white"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:text="@string/string_ok" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutVideoCallStarted"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutWaitingForMeetingToStart"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical|center|center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/labelPleaseWaitConnecting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/please_wait_connecting"
+                android:textColor="@color/black"
+                android:textSize="60sp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutInWaitingRoom"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical|center|center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/labelInWaitingRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/in_waiting_room"
+                android:textColor="@color/black"
+                android:textSize="60sp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/meetingVideoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridLayout
+                android:id="@+id/views_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="2"
+                android:rowCount="2"
+                android:orientation="horizontal"
+                android:background="@color/background_grey">
+            </GridLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutSelfView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|end"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp">
+
+                <org.webrtc.SurfaceViewRenderer
+                    android:id="@+id/local_gl_surface_view"
+                    android:layout_width="195dp"
+                    android:layout_height="150dp"
+                    android:visibility="visible" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutEndCall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center|center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutToggleMicrophone"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/button_blue"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginEnd="30dp"
+                android:baselineAligned="false">
+
+                <ImageView
+                    android:id="@+id/imageMicrophone"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/microphone_white"
+                    android:contentDescription="@null" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutToggleVideo"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/button_blue"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginEnd="30dp"
+                android:baselineAligned="false">
+
+                <ImageView
+                    android:id="@+id/imageCamera"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/video_white"
+                    android:contentDescription="@null" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonEndCall"
+                android:layout_width="400dp"
+                android:layout_height="90dp"
+                android:background="@drawable/button_blue"
+                android:text="@string/press_to_end_call"
+                android:textColor="@color/white"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutEndCallConfirm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center|center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonEndCallYes"
+                android:layout_width="300dp"
+                android:layout_height="90dp"
+                android:background="@drawable/button_blue"
+                android:layout_marginEnd="30dp"
+                android:text="@string/end_call"
+                android:textColor="@color/white"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/buttonEndCallNo"
+                android:layout_width="300dp"
+                android:layout_height="90dp"
+                android:background="@drawable/button_blue"
+                android:text="@string/back"
+                android:textColor="@color/white"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

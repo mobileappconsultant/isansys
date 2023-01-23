@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/linear_layout__device_connection__lifetouch"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:layout_marginEnd="10dp"
+	android:orientation="horizontal">
+    
+    <ImageView
+        android:id="@+id/logo_lifetouch"
+        android:layout_width="145dp"
+        android:layout_height="@dimen/device_connection__Logo_height"
+        android:background="@null"
+        android:contentDescription="@string/textContentDescriptionLogoPulseOx"
+        android:gravity="center"
+        android:maxHeight="50dp"
+        android:src="@drawable/logo_lifetouch" />
+        
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+	    
+		<TextView
+		    android:id="@+id/textViewLifetouch"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:text="@string/textLifetouch"
+		    android:textSize="25sp"
+		    />
+		
+		<TextView
+		    android:id="@+id/textViewDeviceConnectionLifetouchHumanReadableSerialNumber"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:text="@string/textDefaultHumanReadableDeviceId"
+		    android:textSize="25sp" />
+
+	</LinearLayout>
+	
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginStart="0dp"
+	        android:orientation="horizontal" >
+
+			<com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+				android:id="@+id/progressBarLifetouchConnection"
+				android:layout_width="0dp"
+				android:layout_height="@dimen/device_connection__progress_bar_height"
+				android:layout_weight="1"
+				app:rcMax="100"
+				app:rcProgress="0"
+				app:rcRadius="10dp"
+				/>
+
+		    <Button
+		        android:id="@+id/buttonLifetouchCancelSearchOrSearchAgain"
+		        android:layout_width="100dp"
+		        android:layout_height="match_parent"
+		        android:layout_marginStart="10dp"
+		        android:background="@drawable/button_blue"
+		        android:text="@string/textSearchAgain"
+		        android:textColor="@color/white" />
+
+		</LinearLayout>
+    
+        <TextView
+            android:id="@+id/textViewLifetouchSearchStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textSearchingForLifetouch"
+            />
+    
+    </LinearLayout>
+    
+</LinearLayout>

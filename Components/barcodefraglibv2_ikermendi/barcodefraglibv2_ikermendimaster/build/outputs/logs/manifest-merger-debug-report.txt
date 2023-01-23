@@ -1,0 +1,79 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:2:1-31:12
+	package
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:3:5-42
+		INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml
+		INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:5:5-30
+	xmlns:android
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:4:5-28
+uses-permission#android.permission.CAMERA
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:7:5-65
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:7:22-62
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:8:5-66
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:8:22-63
+uses-permission#android.permission.FLASHLIGHT
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:9:5-69
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:9:22-66
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:10:22-78
+uses-feature#android.hardware.camera
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:13:5-15:36
+	android:required
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:15:9-33
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:14:9-47
+uses-feature#android.hardware.camera.front
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:16:5-18:36
+	android:required
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:18:9-33
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:17:9-53
+uses-feature#android.hardware.camera.autofocus
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:21:5-23:36
+	android:required
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:23:9-33
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:22:9-57
+uses-feature#android.hardware.camera.flash
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:24:5-26:36
+	android:required
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:26:9-33
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:25:9-53
+uses-feature#android.hardware.screen.landscape
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:27:5-70
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:27:19-67
+uses-feature#android.hardware.wifi
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:28:5-30:36
+	android:required
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:30:9-33
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml:29:9-45
+uses-sdk
+INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml
+INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml
+INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml
+INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml
+		INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml
+		INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/barcodefraglibv2_ikermendi/barcodefraglibv2_ikermendimaster/src/main/AndroidManifest.xml

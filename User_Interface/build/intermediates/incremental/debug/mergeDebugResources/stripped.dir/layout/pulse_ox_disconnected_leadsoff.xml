@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pulse_ox_disconnected_lead_off"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/leads_off_red_border"
+    >
+
+    <com.isansys.pse_isansysportal.AutoResizeTextView
+        android:id="@+id/autoSizeTextViewPulseOxDiconnectedLeadsOff"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:ellipsize="none"
+        android:maxLines="3"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textStyle="bold"
+        android:text="@string/nonin_disconnected"
+        />
+
+        <!-- textSize is MAX size. AutoResizeTextView class will scale the size down if required -->
+        <!-- The padding is due to the class not knowing about the red borders on Leads Off pages -->
+
+</LinearLayout>

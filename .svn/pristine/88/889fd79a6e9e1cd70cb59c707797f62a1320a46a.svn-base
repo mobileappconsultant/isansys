@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/barCodeActivity_QrUnlock"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    >
+    
+    <LinearLayout
+        android:id="@+id/qr_bar_code"
+        android:layout_width="630dp"
+        android:layout_height="630dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/buttonUnlockQrCodeScanScreen"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="50dp"
+            android:layout_weight="0.15"
+            android:background="@drawable/button_blue"
+            android:text="@string/buttonTextQrCodeUnlockScreen"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonSimulateAdminQrCode"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="0.15"
+            android:background="@drawable/button_blue"
+            android:text="Simulate Admin QR Code"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonSimulateGeneralQrCode"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="0.15"
+            android:background="@drawable/button_blue"
+            android:text="Simulate General QR Code"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    
+    <TableLayout
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent"
+        android:stretchColumns="*"
+        android:shrinkColumns="*"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        >
+        
+        <TableRow>
+            <TextView
+                android:id="@+id/textPleaseScanIdQrCode"
+                android:text="@string/please_scan_general_user_qr_code_to_access_patient_gateway"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="36sp"
+                android:layout_weight="3"
+                />
+        </TableRow>
+        
+        <TableRow>
+            <TextView 
+                android:id="@+id/textQrCodeUnlockPageHelp"
+                android:text="@string/hold_qr_code_so_it_fits_in_the_smaller_lighter_square_on_the_left"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_weight="3"
+                />
+        </TableRow>
+
+        <TableRow android:id="@+id/tableRowStartVideoCall">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutStartVideoCall"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:background="@drawable/button_blue"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="70dp"
+                android:layout_marginBottom="20dp"
+                android:paddingTop="40dp"
+                android:paddingBottom="40dp"
+                android:baselineAligned="false">
+
+                <ImageView
+                    android:id="@+id/imageVideoCall"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/video_chat_white"
+                    android:contentDescription="@null" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/textStartVideoCall"
+                        android:text="@string/start_video_call"
+                        android:textStyle="bold"
+                        android:textSize="32sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/textLongPress"
+                        android:text="@string/press_for_two_seconds"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowSoftwareUpdatePending"
+            android:visibility="gone"
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_height="185dp"
+                    android:layout_width="140dp"
+                    android:background="@drawable/rounded_corner_dummy_data_mode"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/textSoftwareUpdatePending"
+                        android:text="@string/textSoftwareUpdateAvailable"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow android:id="@+id/tableRowManuallyEnteredOnlySession">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_height="185dp"
+                    android:layout_width="140dp"
+                    android:background="@drawable/rounded_corner_grey"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/textManualVitalsOnlySession"
+                        android:text="@string/manual_vitals_only"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow android:id="@+id/tableRowSensorDeviceInfo">
+            <!-- Using a fixed height here, as otherwise when different things are shown on the Linear Layouts, it extends the height. 224dp is 320px -->
+            <LinearLayout 
+                android:id="@+id/linearLayoutLockScreenDeviceInfo"
+                android:layout_width="match_parent"
+                android:layout_height="224dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="0dp"
+                android:baselineAligned="false">
+            
+                <LinearLayout
+                    android:id="@+id/linearLayoutLockScreenDeviceInfoLifetouch"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/qr_unlock_page__gap_between_device_info_display"
+                    android:background="@drawable/rounded_corner_green"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                     
+                    <TextView 
+                        android:id="@+id/textLifetouchLabel"
+                        android:text="@string/textLifetouch"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/qr_unlock_page__padding_at_top_of_sensor_name"
+                        />
+            
+                    <TextView
+                        android:id="@+id/textLifetouchHumanReadableDeviceId"
+                        android:text="@string/six_dashes"
+                        android:textStyle="normal"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutLockScreenDeviceInfoLifetouchShowWhenConnected"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:id="@+id/heartbeat"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:maxHeight="50dp"
+                            android:src="@drawable/heart_current_data"
+                            android:contentDescription="@null"
+                            />
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutLockScreenDeviceRedBorderStatusLifetouch"
+                            android:layout_height="40dp"
+                            android:layout_width="fill_parent"
+                            android:background="@drawable/red_border_status"
+                            android:gravity="center"
+                            android:maxHeight="50dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/textLifetouchRedBorderStatus"
+                                android:text="XX"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:textColor="@color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/imageBatteryLifetouch"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:maxHeight="50dp"
+                            android:src="@drawable/battery_50_percent"
+                            android:contentDescription="@null"
+                            />
+
+                        <TextView
+                            android:id="@+id/textLifetouchBatteryPercentage"
+                            android:text="@string/textZeroPercent"
+                            android:textStyle="normal"
+                            android:textSize="12sp"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutLockScreenDeviceInfoLifetouchShowWhenNotConnected"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageLifetouchOutOfRange"
+                            android:layout_width="@dimen/unlock_page_out_of_range_image_width"
+                            android:layout_height="@dimen/unlock_page_out_of_range_image_height"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:src="@drawable/out_of_range_white"
+                            android:contentDescription="@null"
+                            />
+
+                        <!--
+                        <TextView
+                            android:id="@+id/textUnlockScreenLifetouchAttemptingToReconnect"
+                            android:text="@string/text_device_disconnected"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            />
+                        -->
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutLockScreenDeviceInfoLifetouchShowWhenRemoved"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:src="@drawable/removed"
+                            android:contentDescription="@null"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+               
+                <LinearLayout
+                    android:id="@+id/linearLayoutLockScreenDeviceInfoLifetemp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/qr_unlock_page__gap_between_device_info_display"
+                    android:background="@drawable/rounded_corner_green"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    
+                    <TextView 
+                        android:id="@+id/textLifetempLabel"
+                        android:text="@string/textThermometer"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/qr_unlock_page__padding_at_top_of_sensor_name"
+                        />
+            
+                    <TextView
+                        android:id="@+id/textLifetempHumanReadableDeviceId"
+                        android:text="@string/six_dashes"
+                        android:textStyle="normal"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutLockScreenDeviceInfoThermometerShowWhenConnected"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+                        <!-- Invisible but used for spacing. Gets hidden if linearLayoutLockScreenDeviceRedBorderStatusLifetemp is shown -->
+                        <ImageView
+                            android:id="@+id/imageSpaceFillerLifetemp"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:visibility="invisible"
+                            android:contentDescription="@null"
+                            />
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutLockScreenDeviceRedBorderStatusLifetemp"
+                            android:layout_height="40dp"
+                            android:layout_width="fill_parent"
+                            android:background="@drawable/red_border_status"
+                            android:gravity="center"
+                            android:maxHeight="50dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/textLifetempRedBorderStatus"
+                                android:text="XX"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:textColor="@color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/imageBatteryLifetemp"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:maxHeight="50dp"
+                            android:src="@drawable/battery_50_percent"
+                            android:contentDescription="@null"
+                            />
+
+                        <TextView
+                            android:id="@+id/textLifetempBatteryPercentage"
+                            android:text="@string/textZeroPercent"
+                            android:textStyle="normal"
+                            android:textSize="12sp"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutLockScreenDeviceInfoThermometerShowWhenNotConnected"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:id="@+id/imageThermometerOutOfRange"
+                            android:layout_width="@dimen/unlock_page_out_of_range_image_width"
+                            android:layout_height="@dimen/unlock_page_out_of_range_image_height"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:src="@drawable/out_of_range_white"
+                            android:contentDescription="@null"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutLockScreenDeviceInfoThermometerShowWhenRemoved"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:src="@drawable/removed"
+                            android:contentDescription="@null"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+                                
+                <LinearLayout
+                    android:id="@+id/linearLayoutLockScreenDeviceInfoNoninWristOx"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/qr_unlock_page__gap_between_device_info_display"
+                    android:background="@drawable/rounded_corner_green"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+        
+                    <TextView 
+                        android:id="@+id/textNoninWristOxLabel"
+                        android:text="@string/textNonin"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/qr_unlock_page__padding_at_top_of_sensor_name"
+                        />
+                    
+                    <TextView
+                        android:id="@+id/textNoninWristOxHumanReadableDeviceId"
+                        android:text="@string/six_dashes"
+                        android:textStyle="normal"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutLockScreenDeviceInfoPulseOxShowWhenConnected"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+                        <!-- Invisible but used for spacing. Gets hidden if linearLayoutLockScreenDeviceRedBorderStatusNonin is shown -->
+                        <ImageView
+                            android:id="@+id/imageSpaceFillerNonin"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:visibility="invisible"
+                            android:contentDescription="@null"
+                            />
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutLockScreenDeviceRedBorderStatusNonin"
+                            android:layout_height="40dp"
+                            android:layout_width="fill_parent"
+                            android:background="@drawable/red_border_status"
+                            android:gravity="center"
+                            android:maxHeight="50dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/textNoninRedBorderStatus"
+                                android:text="XX"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:textColor="@color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/imageBatteryNoninWristOx"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:maxHeight="50dp"
+                            android:src="@drawable/battery_50_percent"
+                            android:contentDescription="@null"
+                            />
+
+                        <!-- Blank to make indicator layout same as other indicators -->
+                        <TextView
+                            android:text="@string/three_blank_lines_string"
+                            android:textStyle="normal"
+                            android:textSize="12sp"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutLockScreenDeviceInfoPulseOxShowWhenNotConnected"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:id="@+id/imagePulseOxOutOfRange"
+                            android:layout_width="@dimen/unlock_page_out_of_range_image_width"
+                            android:layout_height="@dimen/unlock_page_out_of_range_image_height"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:src="@drawable/out_of_range_white"
+                            android:contentDescription="@null"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutLockScreenDeviceInfoPulseOxShowWhenRemoved"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:src="@drawable/removed"
+                            android:contentDescription="@null"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutLockScreenDeviceInfoBloodPressure"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/qr_unlock_page__gap_between_device_info_display"
+                    android:background="@drawable/rounded_corner_green"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/textBloodPressure"
+                        android:text="@string/textBloodPressureSingleLine"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/qr_unlock_page__padding_at_top_of_sensor_name"
+                        />
+
+                    <TextView
+                        android:id="@+id/textBloodPressureHumanReadableDeviceId"
+                        android:text="@string/six_dashes"
+                        android:textStyle="normal"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutLockScreenDeviceInfoBloodPressureShowWhenConnected"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+                        <!-- Invisible but used for spacing -->
+                        <ImageView
+                            android:id="@+id/imageSpaceFillerBloodPressure"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:visibility="invisible"
+                            android:contentDescription="@null"
+                            />
+
+                        <!-- Filler to match other indicators -->
+                        <LinearLayout
+                            android:id="@+id/linearLayoutLockScreenDeviceRedBorderStatusBloodPressure"
+                            android:layout_height="40dp"
+                            android:layout_width="fill_parent"
+                            android:background="@drawable/red_border_status"
+                            android:maxHeight="50dp"
+                            android:visibility="invisible"
+                            >
+
+                            <TextView
+                                android:text="XX"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:textColor="@color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/imageBatteryBloodPressure"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:maxHeight="50dp"
+                            android:src="@drawable/battery_50_percent"
+                            android:contentDescription="@null"
+                            />
+
+                        <TextView
+                            android:text="@string/three_blank_lines_string"
+                            android:textStyle="normal"
+                            android:textSize="12sp"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutLockScreenDeviceInfoBloodPressureShowWhenNotConnected"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:id="@+id/imageBloodPressureOutOfRange"
+                            android:layout_width="@dimen/unlock_page_out_of_range_image_width"
+                            android:layout_height="@dimen/unlock_page_out_of_range_image_height"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:src="@drawable/out_of_range_white"
+                            android:contentDescription="@null"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutLockScreenDeviceInfoBloodPressureShowWhenRemoved"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:src="@drawable/removed"
+                            android:contentDescription="@null"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutLockScreenDeviceInfoWeightScale"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/qr_unlock_page__gap_between_device_info_display"
+                    android:background="@drawable/rounded_corner_green"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/textWeightScale"
+                        android:text="@string/weightScaleSingleLine"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/qr_unlock_page__padding_at_top_of_sensor_name"
+                        />
+
+                    <TextView
+                        android:id="@+id/textWeightScaleHumanReadableDeviceId"
+                        android:text="@string/six_dashes"
+                        android:textStyle="normal"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutLockScreenDeviceInfoWeightScaleShowWhenConnected"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+                        <!-- Invisible but used for spacing -->
+                        <ImageView
+                            android:id="@+id/imageSpaceFillerWeightScale"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:visibility="invisible"
+                            android:contentDescription="@null"
+                            />
+
+                        <!-- Filler to match other indicators -->
+                        <LinearLayout
+                            android:id="@+id/linearLayoutLockScreenDeviceRedBorderStatusWeightScale"
+                            android:layout_height="40dp"
+                            android:layout_width="fill_parent"
+                            android:background="@drawable/red_border_status"
+                            android:maxHeight="50dp"
+                            android:visibility="invisible"
+                            >
+
+                            <TextView
+                                android:text="XX"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:textColor="@color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/imageBatteryWeightScale"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:maxHeight="50dp"
+                            android:contentDescription="@null"
+                            android:visibility="invisible"
+                            />
+
+                        <TextView
+                            android:text="@string/three_blank_lines_string"
+                            android:textStyle="normal"
+                            android:textSize="12sp"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutLockScreenDeviceInfoWeightScaleShowWhenNotConnected"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:id="@+id/imageWeightScaleOutOfRange"
+                            android:layout_width="@dimen/unlock_page_out_of_range_image_width"
+                            android:layout_height="@dimen/unlock_page_out_of_range_image_height"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:src="@drawable/out_of_range_white"
+                            android:contentDescription="@null"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutLockScreenDeviceInfoWeightScaleShowWhenRemoved"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:src="@drawable/removed"
+                            android:contentDescription="@null"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>                
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

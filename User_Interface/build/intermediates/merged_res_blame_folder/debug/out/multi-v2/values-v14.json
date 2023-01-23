@@ -1,0 +1,45 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.isansys.pse_isansysportal.User_Interface-mergeDebugResources-53:/values-v14/values-v14.xml",
+            "map": [
+                {
+                    "source": "/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/CustomActivityOnCrash/library/build/intermediates/packaged_res/debug/values-v14/values-v14.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "100",
+                        "endColumns": "120",
+                        "endOffsets": "216"
+                    },
+                    "to": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "202",
+                        "endColumns": "120",
+                        "endOffsets": "318"
+                    }
+                },
+                {
+                    "source": "/Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/User_Interface/src/main/res/values-v14/styles.xml",
+                    "from": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "225",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "373"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "100",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "197"
+                    }
+                }
+            ]
+        }
+    ]
+}

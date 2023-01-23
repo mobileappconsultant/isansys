@@ -1,0 +1,436 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:2:1-122:12
+INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:2:1-122:12
+INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:2:1-122:12
+INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:2:1-122:12
+MERGED from [:CustomActivityOnCrash] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/CustomActivityOnCrash/library/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:1-31:12
+MERGED from [:AutobahnAndroid] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/AutobahnAndroid/Autobahn/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:Common] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/Common/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [com.github.hannesa2:paho.mqtt.android:3.5.1] /Users/frontendlabs/.gradle/caches/transforms-3/e214a8d21a0f6381ec260bac8120ecd4/transformed/jetified-paho.mqtt.android-3.5.1/AndroidManifest.xml:2:1-18:12
+MERGED from [no.nordicsemi.android:mcumgr-ble:1.4.0] /Users/frontendlabs/.gradle/caches/transforms-3/7f99537afe02a7a42ee17e9b62109d27/transformed/jetified-mcumgr-ble-1.4.0/AndroidManifest.xml:2:1-26:12
+MERGED from [com.github.AppDevNext.Logcat:LogcatCoreLib:2.11.3] /Users/frontendlabs/.gradle/caches/transforms-3/6be61dd95a45dba7b33faa6f7954b9ab/transformed/jetified-LogcatCoreLib-2.11.3/AndroidManifest.xml:2:1-12:12
+MERGED from [no.nordicsemi.android:mcumgr-core:1.4.0] /Users/frontendlabs/.gradle/caches/transforms-3/7b743a9f0c4b928dedda496be2330e31/transformed/jetified-mcumgr-core-1.4.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.5.0] /Users/frontendlabs/.gradle/caches/transforms-3/0873a7a48f027aefa8a31f644a0a6084/transformed/jetified-lifecycle-runtime-ktx-2.5.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.5.0] /Users/frontendlabs/.gradle/caches/transforms-3/1d07505c8a6052f016ccc51a8d39ad62/transformed/jetified-lifecycle-livedata-ktx-2.5.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/da49be756dd43bf98279643040716faa/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/42eb64e2d691ba9830ed777b94b32eab/transformed/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/9f8d68166302ad6c5d35d16ff559231e/transformed/fragment-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/2564d8adb53b2432adfce6ddae3e3b65/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/5cd6577535b3b268e2dbc97344484fd6/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/673ebbcff4e83149d421b62cc8e15884/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/bf7673dcddbecbc6edce1f76e3bf1a63/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/e05128e58408e6f852cf52ebc2e9f488/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/4fdd25d686507e4106987ad45dfdda66/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/a4e6cbe4cf3b687091a6ce8079196a2f/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/86e8b669c1811db30594df33dbd664e6/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/9c3e45a50a6d6074ebd92fe01ff04aae/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/d5f68208edc5c6aca03b8806e61a7d2a/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/84e426f82aa1a2b92e015577237d6171/transformed/core-1.10.0-alpha01/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.core:core-ktx:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/fe1e71c09680026a7bfd4f58d64396e1/transformed/jetified-core-ktx-1.10.0-alpha01/AndroidManifest.xml:2:1-7:12
+MERGED from [no.nordicsemi.android:ble:2.5.1] /Users/frontendlabs/.gradle/caches/transforms-3/9d7cda936a030ed2245b47cb2ac681ff/transformed/jetified-ble-2.5.1/AndroidManifest.xml:2:1-16:12
+MERGED from [androidx.room:room-runtime:2.4.3] /Users/frontendlabs/.gradle/caches/transforms-3/81267469e9d28761bab1d52a0c8bc717/transformed/room-runtime-2.4.3/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.sqlite:sqlite-framework:2.2.0] /Users/frontendlabs/.gradle/caches/transforms-3/0d299f72e91071f89b246ef445a3fa95/transformed/sqlite-framework-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite:2.2.0] /Users/frontendlabs/.gradle/caches/transforms-3/95351fe7cb477a5dda08804c96f3ca69/transformed/sqlite-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/05b3d8540b51d58986f33942fbc6c164/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/c49dd6ad246bc603fadcde2f234b46f8/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/ecea886a50df951c55c63c997f0842fc/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/71e1d2ea659f1ee95bd8188a971ec0ae/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/989d59265582fb584e365c6a6bd10c0d/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/4ad92a8b9a7cb042c54b30bd1427bc09/transformed/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/frontendlabs/.gradle/caches/transforms-3/fc750809f14fed8a5d1ec433677681cc/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.0] /Users/frontendlabs/.gradle/caches/transforms-3/e176b6caaa1f2c90378831e21bef6db3/transformed/lifecycle-runtime-2.5.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.5.0] /Users/frontendlabs/.gradle/caches/transforms-3/4d85eb5e6495956622a25af5a5757ebe/transformed/lifecycle-livedata-2.5.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.5.0] /Users/frontendlabs/.gradle/caches/transforms-3/61c9e004eb3ff9fe864799b92393c1a2/transformed/jetified-lifecycle-livedata-core-ktx-2.5.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.0] /Users/frontendlabs/.gradle/caches/transforms-3/11e4b9ea575436d5b6996e6efd0cd6a2/transformed/lifecycle-livedata-core-2.5.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/frontendlabs/.gradle/caches/transforms-3/86164dab1cc453c72418fb0c7d54910f/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.tony19:logback-android:2.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/c2744ae21dc4c54d7c609e6f43be2786/transformed/jetified-logback-android-2.0.0/AndroidManifest.xml:2:1-11:12
+MERGED from [com.jakewharton.timber:timber:5.0.1] /Users/frontendlabs/.gradle/caches/transforms-3/19cddaaf5898cf0baf1a2ab2afb08fb6/transformed/jetified-timber-5.0.1/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/frontendlabs/.gradle/caches/transforms-3/0c565887079a355edb248fcb882cafed/transformed/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:2:1-122:12
+INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:2:1-122:12
+INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:2:1-122:12
+	package
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:4:5-41
+		INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml
+		INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:2:1-122:12
+		INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:2:1-122:12
+		INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:2:11-69
+uses-feature#android.hardware.bluetooth_le
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:11:5-89
+	android:required
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:11:64-87
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:11:19-63
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:13:6-82
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:13:23-79
+uses-permission#android.permission.BLUETOOTH_PRIVILEGED
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:17:5-78
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:17:22-76
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:18:5-80
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:18:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:19:5-79
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:19:22-77
+uses-permission#android.permission.INTERNET
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:20:5-66
+MERGED from [com.github.hannesa2:paho.mqtt.android:3.5.1] /Users/frontendlabs/.gradle/caches/transforms-3/e214a8d21a0f6381ec260bac8120ecd4/transformed/jetified-paho.mqtt.android-3.5.1/AndroidManifest.xml:10:5-67
+MERGED from [com.github.hannesa2:paho.mqtt.android:3.5.1] /Users/frontendlabs/.gradle/caches/transforms-3/e214a8d21a0f6381ec260bac8120ecd4/transformed/jetified-paho.mqtt.android-3.5.1/AndroidManifest.xml:10:5-67
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:20:22-64
+uses-permission#android.permission.READ_LOGS
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:21:22-65
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:22:5-78
+MERGED from [com.github.hannesa2:paho.mqtt.android:3.5.1] /Users/frontendlabs/.gradle/caches/transforms-3/e214a8d21a0f6381ec260bac8120ecd4/transformed/jetified-paho.mqtt.android-3.5.1/AndroidManifest.xml:9:5-79
+MERGED from [com.github.hannesa2:paho.mqtt.android:3.5.1] /Users/frontendlabs/.gradle/caches/transforms-3/e214a8d21a0f6381ec260bac8120ecd4/transformed/jetified-paho.mqtt.android-3.5.1/AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:22:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:23:5-75
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:23:22-73
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:24:5-68
+MERGED from [com.github.hannesa2:paho.mqtt.android:3.5.1] /Users/frontendlabs/.gradle/caches/transforms-3/e214a8d21a0f6381ec260bac8120ecd4/transformed/jetified-paho.mqtt.android-3.5.1/AndroidManifest.xml:12:5-68
+MERGED from [com.github.hannesa2:paho.mqtt.android:3.5.1] /Users/frontendlabs/.gradle/caches/transforms-3/e214a8d21a0f6381ec260bac8120ecd4/transformed/jetified-paho.mqtt.android-3.5.1/AndroidManifest.xml:12:5-68
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:24:22-65
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:25:5-76
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:25:22-73
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:27:5-81
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:27:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:28:5-79
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:28:22-76
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:29:5-77
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:29:22-74
+uses-permission#android.permission.ACCESS_BACKGROUND_LOCATION
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:30:5-85
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:30:22-82
+uses-feature#android.software.companion_device_setup
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:35:5-75
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:35:19-73
+uses-permission#android.permission.BLUETOOTH
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:36:5-37:38
+MERGED from [no.nordicsemi.android:mcumgr-ble:1.4.0] /Users/frontendlabs/.gradle/caches/transforms-3/7f99537afe02a7a42ee17e9b62109d27/transformed/jetified-mcumgr-ble-1.4.0/AndroidManifest.xml:13:5-15:38
+MERGED from [no.nordicsemi.android:mcumgr-ble:1.4.0] /Users/frontendlabs/.gradle/caches/transforms-3/7f99537afe02a7a42ee17e9b62109d27/transformed/jetified-mcumgr-ble-1.4.0/AndroidManifest.xml:13:5-15:38
+MERGED from [no.nordicsemi.android:ble:2.5.1] /Users/frontendlabs/.gradle/caches/transforms-3/9d7cda936a030ed2245b47cb2ac681ff/transformed/jetified-ble-2.5.1/AndroidManifest.xml:12:5-14:38
+MERGED from [no.nordicsemi.android:ble:2.5.1] /Users/frontendlabs/.gradle/caches/transforms-3/9d7cda936a030ed2245b47cb2ac681ff/transformed/jetified-ble-2.5.1/AndroidManifest.xml:12:5-14:38
+	android:maxSdkVersion
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:37:9-35
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:36:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:38:5-39:38
+	android:maxSdkVersion
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:39:9-35
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:38:22-71
+uses-permission#android.permission.BLUETOOTH_SCAN
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:40:5-41:31
+	android:usesPermissionFlags
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:40:71-117
+	tools:targetApi
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:41:9-28
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:40:22-70
+uses-permission#android.permission.BLUETOOTH_ADVERTISE
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:42:5-78
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:42:22-75
+uses-permission#android.permission.BLUETOOTH_CONNECT
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:43:5-76
+MERGED from [no.nordicsemi.android:mcumgr-ble:1.4.0] /Users/frontendlabs/.gradle/caches/transforms-3/7f99537afe02a7a42ee17e9b62109d27/transformed/jetified-mcumgr-ble-1.4.0/AndroidManifest.xml:24:5-76
+MERGED from [no.nordicsemi.android:mcumgr-ble:1.4.0] /Users/frontendlabs/.gradle/caches/transforms-3/7f99537afe02a7a42ee17e9b62109d27/transformed/jetified-mcumgr-ble-1.4.0/AndroidManifest.xml:24:5-76
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:43:22-73
+queries
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:46:5-48:15
+package#com.isansys.pse_isansysportal
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:47:9-65
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:47:18-62
+application
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:50:5-120:19
+MERGED from [:CustomActivityOnCrash] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/CustomActivityOnCrash/library/build/intermediates/merged_manifest/debug/AndroidManifest.xml:24:5-29:19
+MERGED from [:CustomActivityOnCrash] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/CustomActivityOnCrash/library/build/intermediates/merged_manifest/debug/AndroidManifest.xml:24:5-29:19
+MERGED from [com.github.hannesa2:paho.mqtt.android:3.5.1] /Users/frontendlabs/.gradle/caches/transforms-3/e214a8d21a0f6381ec260bac8120ecd4/transformed/jetified-paho.mqtt.android-3.5.1/AndroidManifest.xml:14:5-16:19
+MERGED from [com.github.hannesa2:paho.mqtt.android:3.5.1] /Users/frontendlabs/.gradle/caches/transforms-3/e214a8d21a0f6381ec260bac8120ecd4/transformed/jetified-paho.mqtt.android-3.5.1/AndroidManifest.xml:14:5-16:19
+MERGED from [com.github.AppDevNext.Logcat:LogcatCoreLib:2.11.3] /Users/frontendlabs/.gradle/caches/transforms-3/6be61dd95a45dba7b33faa6f7954b9ab/transformed/jetified-LogcatCoreLib-2.11.3/AndroidManifest.xml:9:5-10:19
+MERGED from [com.github.AppDevNext.Logcat:LogcatCoreLib:2.11.3] /Users/frontendlabs/.gradle/caches/transforms-3/6be61dd95a45dba7b33faa6f7954b9ab/transformed/jetified-LogcatCoreLib-2.11.3/AndroidManifest.xml:9:5-10:19
+MERGED from [androidx.core:core:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/84e426f82aa1a2b92e015577237d6171/transformed/core-1.10.0-alpha01/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/84e426f82aa1a2b92e015577237d6171/transformed/core-1.10.0-alpha01/AndroidManifest.xml:28:5-89
+MERGED from [androidx.room:room-runtime:2.4.3] /Users/frontendlabs/.gradle/caches/transforms-3/81267469e9d28761bab1d52a0c8bc717/transformed/room-runtime-2.4.3/AndroidManifest.xml:24:5-29:19
+MERGED from [androidx.room:room-runtime:2.4.3] /Users/frontendlabs/.gradle/caches/transforms-3/81267469e9d28761bab1d52a0c8bc717/transformed/room-runtime-2.4.3/AndroidManifest.xml:24:5-29:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/frontendlabs/.gradle/caches/transforms-3/fc750809f14fed8a5d1ec433677681cc/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/frontendlabs/.gradle/caches/transforms-3/fc750809f14fed8a5d1ec433677681cc/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [com.jakewharton.timber:timber:5.0.1] /Users/frontendlabs/.gradle/caches/transforms-3/19cddaaf5898cf0baf1a2ab2afb08fb6/transformed/jetified-timber-5.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.jakewharton.timber:timber:5.0.1] /Users/frontendlabs/.gradle/caches/transforms-3/19cddaaf5898cf0baf1a2ab2afb08fb6/transformed/jetified-timber-5.0.1/AndroidManifest.xml:7:5-20
+	android:requestLegacyExternalStorage
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:56:9-52
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/84e426f82aa1a2b92e015577237d6171/transformed/core-1.10.0-alpha01/AndroidManifest.xml:28:18-86
+	android:label
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:54:9-41
+	android:largeHeap
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:58:3-27
+	android:icon
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:53:9-45
+	android:allowBackup
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:52:9-36
+	android:theme
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:55:9-40
+	android:usesCleartextTraffic
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:57:9-44
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:51:9-43
+service#com.isansys.patientgateway.PatientGatewayService
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:62:9-69:19
+	android:screenOrientation
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:68:13-50
+	android:label
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:65:13-49
+	android:configChanges
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:67:13-63
+	android:icon
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:64:13-49
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:63:13-50
+activity#com.isansys.patientgateway.MainActivity
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:71:9-89:20
+	android:label
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:74:13-45
+	android:exported
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:73:13-36
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:72:13-67
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:76:13-79:29
+action#android.intent.action.MAIN
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:77:17-69
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:77:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:78:17-77
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:78:27-74
+intent-filter#action:name:android.hardware.usb.action.USB_ACCESSORY_ATTACHED
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:81:13-83:29
+action#android.hardware.usb.action.USB_ACCESSORY_ATTACHED
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:82:17-93
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:82:25-90
+meta-data#android.hardware.usb.action.USB_ACCESSORY_ATTACHED
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:85:13-88:19
+	android:resource
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:87:17-57
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:86:17-82
+activity#com.isansys.patientgateway.CustomErrorActivity
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:91:9-95:20
+	android:process
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:94:13-46
+	android:label
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:93:13-45
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:92:13-74
+service#com.isansys.patientgateway.bluetooth.SpO2.NoninWristOx
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:97:9-99:15
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:98:13-82
+service#com.isansys.patientgateway.bluetooth.bloodPressure.AnD_UA767
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:101:9-103:15
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:102:13-88
+service#com.isansys.patientgateway.bluetooth.temperature.Fora_Ir20
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:105:6-107:15
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:106:13-86
+service#com.isansys.patientgateway.PatientGatewayLogcatCaptureService
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:109:9-111:15
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:110:13-63
+service#org.eclipse.paho.android.service.MqttService
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:113:9-80
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:113:18-77
+provider#com.isansys.patientgateway.database.contentprovider.IsansysPatientGatewayContentProvider
+ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:115:3-119:17
+	android:authorities
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:118:9-82
+	android:exported
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:117:9-32
+	android:name
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml:116:9-112
+uses-sdk
+INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml
+INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml
+MERGED from [:CustomActivityOnCrash] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/CustomActivityOnCrash/library/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:5-22:41
+MERGED from [:CustomActivityOnCrash] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/CustomActivityOnCrash/library/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:5-22:41
+MERGED from [:AutobahnAndroid] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/AutobahnAndroid/Autobahn/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:AutobahnAndroid] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/AutobahnAndroid/Autobahn/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:Common] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/Common/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:Common] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/Common/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.hannesa2:paho.mqtt.android:3.5.1] /Users/frontendlabs/.gradle/caches/transforms-3/e214a8d21a0f6381ec260bac8120ecd4/transformed/jetified-paho.mqtt.android-3.5.1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.hannesa2:paho.mqtt.android:3.5.1] /Users/frontendlabs/.gradle/caches/transforms-3/e214a8d21a0f6381ec260bac8120ecd4/transformed/jetified-paho.mqtt.android-3.5.1/AndroidManifest.xml:5:5-7:41
+MERGED from [no.nordicsemi.android:mcumgr-ble:1.4.0] /Users/frontendlabs/.gradle/caches/transforms-3/7f99537afe02a7a42ee17e9b62109d27/transformed/jetified-mcumgr-ble-1.4.0/AndroidManifest.xml:5:5-7:41
+MERGED from [no.nordicsemi.android:mcumgr-ble:1.4.0] /Users/frontendlabs/.gradle/caches/transforms-3/7f99537afe02a7a42ee17e9b62109d27/transformed/jetified-mcumgr-ble-1.4.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.AppDevNext.Logcat:LogcatCoreLib:2.11.3] /Users/frontendlabs/.gradle/caches/transforms-3/6be61dd95a45dba7b33faa6f7954b9ab/transformed/jetified-LogcatCoreLib-2.11.3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.AppDevNext.Logcat:LogcatCoreLib:2.11.3] /Users/frontendlabs/.gradle/caches/transforms-3/6be61dd95a45dba7b33faa6f7954b9ab/transformed/jetified-LogcatCoreLib-2.11.3/AndroidManifest.xml:5:5-7:41
+MERGED from [no.nordicsemi.android:mcumgr-core:1.4.0] /Users/frontendlabs/.gradle/caches/transforms-3/7b743a9f0c4b928dedda496be2330e31/transformed/jetified-mcumgr-core-1.4.0/AndroidManifest.xml:5:5-7:41
+MERGED from [no.nordicsemi.android:mcumgr-core:1.4.0] /Users/frontendlabs/.gradle/caches/transforms-3/7b743a9f0c4b928dedda496be2330e31/transformed/jetified-mcumgr-core-1.4.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.5.0] /Users/frontendlabs/.gradle/caches/transforms-3/0873a7a48f027aefa8a31f644a0a6084/transformed/jetified-lifecycle-runtime-ktx-2.5.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.5.0] /Users/frontendlabs/.gradle/caches/transforms-3/0873a7a48f027aefa8a31f644a0a6084/transformed/jetified-lifecycle-runtime-ktx-2.5.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.5.0] /Users/frontendlabs/.gradle/caches/transforms-3/1d07505c8a6052f016ccc51a8d39ad62/transformed/jetified-lifecycle-livedata-ktx-2.5.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.5.0] /Users/frontendlabs/.gradle/caches/transforms-3/1d07505c8a6052f016ccc51a8d39ad62/transformed/jetified-lifecycle-livedata-ktx-2.5.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/da49be756dd43bf98279643040716faa/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/da49be756dd43bf98279643040716faa/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/42eb64e2d691ba9830ed777b94b32eab/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/42eb64e2d691ba9830ed777b94b32eab/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/9f8d68166302ad6c5d35d16ff559231e/transformed/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/9f8d68166302ad6c5d35d16ff559231e/transformed/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/2564d8adb53b2432adfce6ddae3e3b65/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/2564d8adb53b2432adfce6ddae3e3b65/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/5cd6577535b3b268e2dbc97344484fd6/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/5cd6577535b3b268e2dbc97344484fd6/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/673ebbcff4e83149d421b62cc8e15884/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/673ebbcff4e83149d421b62cc8e15884/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/bf7673dcddbecbc6edce1f76e3bf1a63/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/bf7673dcddbecbc6edce1f76e3bf1a63/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/e05128e58408e6f852cf52ebc2e9f488/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/e05128e58408e6f852cf52ebc2e9f488/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/4fdd25d686507e4106987ad45dfdda66/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/4fdd25d686507e4106987ad45dfdda66/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/a4e6cbe4cf3b687091a6ce8079196a2f/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/a4e6cbe4cf3b687091a6ce8079196a2f/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/86e8b669c1811db30594df33dbd664e6/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/86e8b669c1811db30594df33dbd664e6/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/9c3e45a50a6d6074ebd92fe01ff04aae/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/9c3e45a50a6d6074ebd92fe01ff04aae/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/d5f68208edc5c6aca03b8806e61a7d2a/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/d5f68208edc5c6aca03b8806e61a7d2a/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/84e426f82aa1a2b92e015577237d6171/transformed/core-1.10.0-alpha01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/84e426f82aa1a2b92e015577237d6171/transformed/core-1.10.0-alpha01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/fe1e71c09680026a7bfd4f58d64396e1/transformed/jetified-core-ktx-1.10.0-alpha01/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/fe1e71c09680026a7bfd4f58d64396e1/transformed/jetified-core-ktx-1.10.0-alpha01/AndroidManifest.xml:5:5-44
+MERGED from [no.nordicsemi.android:ble:2.5.1] /Users/frontendlabs/.gradle/caches/transforms-3/9d7cda936a030ed2245b47cb2ac681ff/transformed/jetified-ble-2.5.1/AndroidManifest.xml:8:5-10:41
+MERGED from [no.nordicsemi.android:ble:2.5.1] /Users/frontendlabs/.gradle/caches/transforms-3/9d7cda936a030ed2245b47cb2ac681ff/transformed/jetified-ble-2.5.1/AndroidManifest.xml:8:5-10:41
+MERGED from [androidx.room:room-runtime:2.4.3] /Users/frontendlabs/.gradle/caches/transforms-3/81267469e9d28761bab1d52a0c8bc717/transformed/room-runtime-2.4.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.4.3] /Users/frontendlabs/.gradle/caches/transforms-3/81267469e9d28761bab1d52a0c8bc717/transformed/room-runtime-2.4.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.2.0] /Users/frontendlabs/.gradle/caches/transforms-3/0d299f72e91071f89b246ef445a3fa95/transformed/sqlite-framework-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.2.0] /Users/frontendlabs/.gradle/caches/transforms-3/0d299f72e91071f89b246ef445a3fa95/transformed/sqlite-framework-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.2.0] /Users/frontendlabs/.gradle/caches/transforms-3/95351fe7cb477a5dda08804c96f3ca69/transformed/sqlite-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.2.0] /Users/frontendlabs/.gradle/caches/transforms-3/95351fe7cb477a5dda08804c96f3ca69/transformed/sqlite-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/05b3d8540b51d58986f33942fbc6c164/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/05b3d8540b51d58986f33942fbc6c164/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/c49dd6ad246bc603fadcde2f234b46f8/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/c49dd6ad246bc603fadcde2f234b46f8/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/ecea886a50df951c55c63c997f0842fc/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/ecea886a50df951c55c63c997f0842fc/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/71e1d2ea659f1ee95bd8188a971ec0ae/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/71e1d2ea659f1ee95bd8188a971ec0ae/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/989d59265582fb584e365c6a6bd10c0d/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/989d59265582fb584e365c6a6bd10c0d/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/4ad92a8b9a7cb042c54b30bd1427bc09/transformed/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/4ad92a8b9a7cb042c54b30bd1427bc09/transformed/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/frontendlabs/.gradle/caches/transforms-3/fc750809f14fed8a5d1ec433677681cc/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/frontendlabs/.gradle/caches/transforms-3/fc750809f14fed8a5d1ec433677681cc/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.0] /Users/frontendlabs/.gradle/caches/transforms-3/e176b6caaa1f2c90378831e21bef6db3/transformed/lifecycle-runtime-2.5.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.0] /Users/frontendlabs/.gradle/caches/transforms-3/e176b6caaa1f2c90378831e21bef6db3/transformed/lifecycle-runtime-2.5.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.5.0] /Users/frontendlabs/.gradle/caches/transforms-3/4d85eb5e6495956622a25af5a5757ebe/transformed/lifecycle-livedata-2.5.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.5.0] /Users/frontendlabs/.gradle/caches/transforms-3/4d85eb5e6495956622a25af5a5757ebe/transformed/lifecycle-livedata-2.5.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.5.0] /Users/frontendlabs/.gradle/caches/transforms-3/61c9e004eb3ff9fe864799b92393c1a2/transformed/jetified-lifecycle-livedata-core-ktx-2.5.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.5.0] /Users/frontendlabs/.gradle/caches/transforms-3/61c9e004eb3ff9fe864799b92393c1a2/transformed/jetified-lifecycle-livedata-core-ktx-2.5.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.0] /Users/frontendlabs/.gradle/caches/transforms-3/11e4b9ea575436d5b6996e6efd0cd6a2/transformed/lifecycle-livedata-core-2.5.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.0] /Users/frontendlabs/.gradle/caches/transforms-3/11e4b9ea575436d5b6996e6efd0cd6a2/transformed/lifecycle-livedata-core-2.5.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/frontendlabs/.gradle/caches/transforms-3/86164dab1cc453c72418fb0c7d54910f/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/frontendlabs/.gradle/caches/transforms-3/86164dab1cc453c72418fb0c7d54910f/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.tony19:logback-android:2.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/c2744ae21dc4c54d7c609e6f43be2786/transformed/jetified-logback-android-2.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.tony19:logback-android:2.0.0] /Users/frontendlabs/.gradle/caches/transforms-3/c2744ae21dc4c54d7c609e6f43be2786/transformed/jetified-logback-android-2.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.jakewharton.timber:timber:5.0.1] /Users/frontendlabs/.gradle/caches/transforms-3/19cddaaf5898cf0baf1a2ab2afb08fb6/transformed/jetified-timber-5.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.jakewharton.timber:timber:5.0.1] /Users/frontendlabs/.gradle/caches/transforms-3/19cddaaf5898cf0baf1a2ab2afb08fb6/transformed/jetified-timber-5.0.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/frontendlabs/.gradle/caches/transforms-3/0c565887079a355edb248fcb882cafed/transformed/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/frontendlabs/.gradle/caches/transforms-3/0c565887079a355edb248fcb882cafed/transformed/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml
+INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml
+		INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml
+		ADDED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml
+		INJECTED from /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Gateway/src/main/AndroidManifest.xml
+activity#cat.ereza.customactivityoncrash.activity.DefaultErrorActivity
+ADDED from [:CustomActivityOnCrash] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/CustomActivityOnCrash/library/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:9-28:65
+	android:process
+		ADDED from [:CustomActivityOnCrash] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/CustomActivityOnCrash/library/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-46
+	android:theme
+		ADDED from [:CustomActivityOnCrash] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/CustomActivityOnCrash/library/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-62
+	android:name
+		ADDED from [:CustomActivityOnCrash] /Users/frontendlabs/StudioProjects/gateway_android/branches/android_13_permissions_refactor/Components/CustomActivityOnCrash/library/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-89
+uses-permission#android.permission.SCHEDULE_EXACT_ALARM
+ADDED from [com.github.hannesa2:paho.mqtt.android:3.5.1] /Users/frontendlabs/.gradle/caches/transforms-3/e214a8d21a0f6381ec260bac8120ecd4/transformed/jetified-paho.mqtt.android-3.5.1/AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from [com.github.hannesa2:paho.mqtt.android:3.5.1] /Users/frontendlabs/.gradle/caches/transforms-3/e214a8d21a0f6381ec260bac8120ecd4/transformed/jetified-paho.mqtt.android-3.5.1/AndroidManifest.xml:11:22-76
+service#info.mqtt.android.service.MqttService
+ADDED from [com.github.hannesa2:paho.mqtt.android:3.5.1] /Users/frontendlabs/.gradle/caches/transforms-3/e214a8d21a0f6381ec260bac8120ecd4/transformed/jetified-paho.mqtt.android-3.5.1/AndroidManifest.xml:15:9-73
+	android:name
+		ADDED from [com.github.hannesa2:paho.mqtt.android:3.5.1] /Users/frontendlabs/.gradle/caches/transforms-3/e214a8d21a0f6381ec260bac8120ecd4/transformed/jetified-paho.mqtt.android-3.5.1/AndroidManifest.xml:15:18-70
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/84e426f82aa1a2b92e015577237d6171/transformed/core-1.10.0-alpha01/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/84e426f82aa1a2b92e015577237d6171/transformed/core-1.10.0-alpha01/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/84e426f82aa1a2b92e015577237d6171/transformed/core-1.10.0-alpha01/AndroidManifest.xml:23:9-81
+permission#com.isansys.patientgateway.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/84e426f82aa1a2b92e015577237d6171/transformed/core-1.10.0-alpha01/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/84e426f82aa1a2b92e015577237d6171/transformed/core-1.10.0-alpha01/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/84e426f82aa1a2b92e015577237d6171/transformed/core-1.10.0-alpha01/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/84e426f82aa1a2b92e015577237d6171/transformed/core-1.10.0-alpha01/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/84e426f82aa1a2b92e015577237d6171/transformed/core-1.10.0-alpha01/AndroidManifest.xml:26:22-94
+uses-permission#com.isansys.patientgateway.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/84e426f82aa1a2b92e015577237d6171/transformed/core-1.10.0-alpha01/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.10.0-alpha01] /Users/frontendlabs/.gradle/caches/transforms-3/84e426f82aa1a2b92e015577237d6171/transformed/core-1.10.0-alpha01/AndroidManifest.xml:26:22-94
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.4.3] /Users/frontendlabs/.gradle/caches/transforms-3/81267469e9d28761bab1d52a0c8bc717/transformed/room-runtime-2.4.3/AndroidManifest.xml:25:9-28:40
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.4.3] /Users/frontendlabs/.gradle/caches/transforms-3/81267469e9d28761bab1d52a0c8bc717/transformed/room-runtime-2.4.3/AndroidManifest.xml:28:13-37
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.4.3] /Users/frontendlabs/.gradle/caches/transforms-3/81267469e9d28761bab1d52a0c8bc717/transformed/room-runtime-2.4.3/AndroidManifest.xml:27:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.4.3] /Users/frontendlabs/.gradle/caches/transforms-3/81267469e9d28761bab1d52a0c8bc717/transformed/room-runtime-2.4.3/AndroidManifest.xml:26:13-74

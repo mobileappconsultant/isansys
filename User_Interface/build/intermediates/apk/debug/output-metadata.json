@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.isansys.pse_isansysportal",
+  "variantName": "debug",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 10400,
+      "versionName": "10400",
+      "outputFile": "User_Interface-debug.apk"
+    }
+  ],
+  "elementType": "File"
+}

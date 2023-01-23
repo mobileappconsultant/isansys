@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.isansys.patientgateway"
+    >
+
+    <!-- Declare this required feature if you want to make the app available to BLE-capable
+    devices only.  If you want to make your app available to devices that don't support BLE,
+    you should omit this in the manifest.  Instead, determine BLE capability by using
+    PackageManager.hasSystemFeature(FEATURE_BLUETOOTH_LE) -->
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+        
+     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!--Todo -> Sam's changes comment for debug purpose     -->
+<!--    <uses-permission android:name="android.permission.BLUETOOTH"/>-->
+<!--    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>-->
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- TODO -> Sam's changes comment for debug purpose    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <!-- Request legacy Bluetooth permissions on older devices. -->
+
+   <!--Todo -> Sams changes testing new implementation-->
+
+    <uses-feature android:name="android.software.companion_device_setup"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"
+        android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" android:usesPermissionFlags="neverForLocation"
+        tools:targetApi="s" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+
+
+    <queries>
+        <package android:name="com.isansys.pse_isansysportal" />
+    </queries>
+
+    <application
+        android:name=".GatewayApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:requestLegacyExternalStorage="true"
+        android:usesCleartextTraffic="true"
+		android:largeHeap="true">
+
+<!--        <uses-library android:name="com.android.future.usb.accessory" />-->
+        
+        <service
+            android:name=".PatientGatewayService"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/service_name"
+
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="landscape" >
+        </service>
+
+        <activity
+            android:name="com.isansys.patientgateway.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
+                android:resource="@xml/accessory_filter"
+                />
+        </activity>
+
+        <activity
+            android:name="com.isansys.patientgateway.CustomErrorActivity"
+            android:label="@string/app_name"
+            android:process=":error_activity">
+        </activity>
+        
+        <service
+            android:name="com.isansys.patientgateway.bluetooth.SpO2.NoninWristOx"
+            />
+
+        <service
+            android:name="com.isansys.patientgateway.bluetooth.bloodPressure.AnD_UA767"
+            />
+
+	    <service
+            android:name="com.isansys.patientgateway.bluetooth.temperature.Fora_Ir20"
+            />
+	    
+        <service
+            android:name=".PatientGatewayLogcatCaptureService"
+            />
+
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
+		
+		<provider
+      		android:name="com.isansys.patientgateway.database.contentprovider.IsansysPatientGatewayContentProvider"
+      		android:exported="true"
+      		android:authorities="com.isansys.patientgateway.database.contentprovider" >
+   		</provider>
+    </application>
+
+</manifest>

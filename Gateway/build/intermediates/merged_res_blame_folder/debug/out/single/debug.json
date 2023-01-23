@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "com.isansys.patientgateway.Gateway-merged_res-24:/layout_activity_main.xml.flat",
+        "source": "com.isansys.patientgateway.Gateway-main-26:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.isansys.patientgateway.Gateway-merged_res-24:/drawable-xhdpi_ic_launcher.png.flat",
+        "source": "com.isansys.patientgateway.Gateway-main-26:/drawable-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.isansys.patientgateway.Gateway-merged_res-24:/drawable_customactivityoncrash_error_image.png.flat",
+        "source": "com.isansys.patientgateway.Gateway-main-26:/drawable/customactivityoncrash_error_image.png"
+    },
+    {
+        "merged": "com.isansys.patientgateway.Gateway-merged_res-24:/drawable_button_blue.xml.flat",
+        "source": "com.isansys.patientgateway.Gateway-main-26:/drawable/button_blue.xml"
+    },
+    {
+        "merged": "com.isansys.patientgateway.Gateway-merged_res-24:/drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "com.isansys.patientgateway.Gateway-main-26:/drawable-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.isansys.patientgateway.Gateway-merged_res-24:/drawable_circle_yellow.xml.flat",
+        "source": "com.isansys.patientgateway.Gateway-main-26:/drawable/circle_yellow.xml"
+    },
+    {
+        "merged": "com.isansys.patientgateway.Gateway-merged_res-24:/drawable-mdpi_ic_launcher.png.flat",
+        "source": "com.isansys.patientgateway.Gateway-main-26:/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.isansys.patientgateway.Gateway-merged_res-24:/drawable_circle_green.xml.flat",
+        "source": "com.isansys.patientgateway.Gateway-main-26:/drawable/circle_green.xml"
+    },
+    {
+        "merged": "com.isansys.patientgateway.Gateway-merged_res-24:/drawable-hdpi_ic_launcher.png.flat",
+        "source": "com.isansys.patientgateway.Gateway-main-26:/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.isansys.patientgateway.Gateway-merged_res-24:/xml_accessory_filter.xml.flat",
+        "source": "com.isansys.patientgateway.Gateway-main-26:/xml/accessory_filter.xml"
+    },
+    {
+        "merged": "com.isansys.patientgateway.Gateway-merged_res-24:/drawable_isansys_logo.png.flat",
+        "source": "com.isansys.patientgateway.Gateway-main-26:/drawable/isansys_logo.png"
+    },
+    {
+        "merged": "com.isansys.patientgateway.Gateway-merged_res-24:/layout_activity_custom_error.xml.flat",
+        "source": "com.isansys.patientgateway.Gateway-main-26:/layout/activity_custom_error.xml"
+    },
+    {
+        "merged": "com.isansys.patientgateway.Gateway-merged_res-24:/drawable_circle_red.xml.flat",
+        "source": "com.isansys.patientgateway.Gateway-main-26:/drawable/circle_red.xml"
+    }
+]
