@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/apple/android_13_permissions_refactor/Components/Common/src/main/AndroidManifest.xml:2:1-4:3
+INJECTED from /Users/apple/android_13_permissions_refactor/Components/Common/src/main/AndroidManifest.xml:2:1-4:3
+INJECTED from /Users/apple/android_13_permissions_refactor/Components/Common/src/main/AndroidManifest.xml:2:1-4:3
+	package
+		ADDED from /Users/apple/android_13_permissions_refactor/Components/Common/src/main/AndroidManifest.xml:3:11-39
+		INJECTED from /Users/apple/android_13_permissions_refactor/Components/Common/src/main/AndroidManifest.xml
+		INJECTED from /Users/apple/android_13_permissions_refactor/Components/Common/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/apple/android_13_permissions_refactor/Components/Common/src/main/AndroidManifest.xml:2:11-69
+uses-sdk
+INJECTED from /Users/apple/android_13_permissions_refactor/Components/Common/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/apple/android_13_permissions_refactor/Components/Common/src/main/AndroidManifest.xml
+INJECTED from /Users/apple/android_13_permissions_refactor/Components/Common/src/main/AndroidManifest.xml
+INJECTED from /Users/apple/android_13_permissions_refactor/Components/Common/src/main/AndroidManifest.xml
+INJECTED from /Users/apple/android_13_permissions_refactor/Components/Common/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/apple/android_13_permissions_refactor/Components/Common/src/main/AndroidManifest.xml
+		ADDED from /Users/apple/android_13_permissions_refactor/Components/Common/src/main/AndroidManifest.xml
+		INJECTED from /Users/apple/android_13_permissions_refactor/Components/Common/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/apple/android_13_permissions_refactor/Components/Common/src/main/AndroidManifest.xml
+		ADDED from /Users/apple/android_13_permissions_refactor/Components/Common/src/main/AndroidManifest.xml
+		INJECTED from /Users/apple/android_13_permissions_refactor/Components/Common/src/main/AndroidManifest.xml

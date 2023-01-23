@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    >
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        
+        <TextView
+            android:id="@+id/textGatewayNotConfiguredYet"
+            android:text="@string/gateway_not_configured_yet_please_scan_admin_qr_code_to_access_setup_page"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            />
+        
+    </TableRow>
+        
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        
+        <Button
+            android:id="@+id/buttonBackToUnlockScreen"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="@string/back_to_unlock_screen"
+            android:textColor="@color/white"
+            android:background="@drawable/button_blue"
+            />
+
+    </TableRow>
+
+</TableLayout>

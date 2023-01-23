@@ -1,0 +1,1146 @@
+[
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_pulse_ox_normal_mode.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/pulse_ox_normal_mode.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_radio_on_pressed.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/radio_on_pressed.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_pop_up_historical_setup_mode_viewer.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/pop_up_historical_setup_mode_viewer.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_orientation_front_t.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/orientation_front_t.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_leads_off_red_border.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/leads_off_red_border.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_battery_empty.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/battery_empty.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_graph_raw_accelerometer_mode.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/graph_raw_accelerometer_mode.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_activity_level_slow_run.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/activity_level_slow_run.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_dummy_data_mode.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/dummy_data_mode.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_manual_vital_signs_entry__respiration_distress.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/manual_vital_signs_entry__respiration_distress.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_observation_manual_vital_sign_button_for_selection.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/observation_manual_vital_sign_button_for_selection.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_progress.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/progress.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_lifetemp_not_attached.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/lifetemp_not_attached.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_setup_mode.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/setup_mode.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_wifi_two.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/wifi_two.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_logo.jpg.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/logo.jpg"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_orientation_front.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/orientation_front.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_log_item.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/log_item.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/anim_scale_animation.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/anim/scale_animation.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_logcat_with_input_selection.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/logcat_with_input_selection.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_lifetouch_normal_mode_heart_rate.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/lifetouch_normal_mode_heart_rate.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_arrow_left_white.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/arrow_left_white.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_annotation_list.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/annotation_list.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_error_image.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/error_image.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_device_connection__weight_scale.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/device_connection__weight_scale.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_manual_vital_sign_names_for_listview.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/manual_vital_sign_names_for_listview.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_wamp.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/wamp.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_reload_white.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/reload_white.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_case_id_entry.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/case_id_entry.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_observation_display_button_selection.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/observation_display_button_selection.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_annotation_text_entry_view.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/annotation_text_entry_view.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_webpage_selection.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/webpage_selection.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_patient_vitals_display__lifetouch_options.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/patient_vitals_display__lifetouch_options.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_battery_almost_empty.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/battery_almost_empty.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_pop_up_webpage.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/pop_up_webpage.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_wifi_none.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/wifi_none.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_progress_fill.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/progress_fill.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_isansys_logo.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/isansys_logo.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_circle_yellow.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/circle_yellow.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_mode_selection_four_buttons.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/mode_selection_four_buttons.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_wifi_four.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/wifi_four.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_main.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/main.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_check_packaging.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/check_packaging.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_pop_up_wifi_status.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/pop_up_wifi_status.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_small_checkbox_off.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/small_checkbox_off.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_gateway_not_responding.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/gateway_not_responding.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_radio_off_grey.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/radio_off_grey.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_isansys_text.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/isansys_text.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_small_checkbox.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/small_checkbox.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_change_session_settings__early_warning_scores.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/change_session_settings__early_warning_scores.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_heart_high_activity.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/heart_high_activity.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_manual_vital_signs_display_all.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/manual_vital_signs_display_all.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_time_picker.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/time_picker.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_manual_vital_signs_confirmation.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/manual_vital_signs_confirmation.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_button_red.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/button_red.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_temperature_graph.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/temperature_graph.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_gateway_not_configured_yet.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/gateway_not_configured_yet.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_age_range_5_to_12.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/age_range_5_to_12.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_admin_mode_gateway_settings.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/admin_mode_gateway_settings.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_admin_mode_server_connection.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/admin_mode_server_connection.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_vital_sign_circle_orange.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/vital_sign_circle_orange.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_setup_mode_blob_31x25.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/setup_mode_blob_31x25.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_reload.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/reload.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_checkbox.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/checkbox.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_manual_vital_signs_entry__consciousness_level.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/manual_vital_signs_entry__consciousness_level.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_update_mode.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/update_mode.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_arrow_left.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/arrow_left.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable-hdpi_ic_launcher.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_gsm_1.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/gsm_1.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_annotations.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/annotations.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_radio_on.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/radio_on.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_mode_selection_three_buttons_one_plus_two.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/mode_selection_three_buttons_one_plus_two.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_icon_meeting_video_mute.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/icon_meeting_video_mute.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_manual_vital_signs_display_individual.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/manual_vital_signs_display_individual.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_busy.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/busy.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_info.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/info.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_footer.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/footer.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_graph_manually_entered.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/graph_manually_entered.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_background_fill.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/background_fill.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_video.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/video.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_button_yellow.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/button_yellow.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_rounded_corner_green.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/rounded_corner_green.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_mode_selection_six_buttons.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/mode_selection_six_buttons.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_logo_weight_scale.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/logo_weight_scale.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_icon_meeting_video.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/icon_meeting_video.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_logcat_display.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/logcat_display.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_manual_vital_signs.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/manual_vital_signs.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_up_pointing_arrow.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/up_pointing_arrow.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_software_update_available.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/software_update_available.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_video_white.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/video_white.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_battery_charging.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/battery_charging.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_manual_vital_signs_entry__select_vital_sign_arrow.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/manual_vital_signs_entry__select_vital_sign_arrow.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_removed.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/removed.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_vital_sign_circle_yellow.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/vital_sign_circle_yellow.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_pop_up_recycling_reminder.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/pop_up_recycling_reminder.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_header.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/header.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_circle_blue.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/circle_blue.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_annotation_confirmation.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/annotation_confirmation.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_pop_up_annotation_viewer.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/pop_up_annotation_viewer.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_checkbox_on.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/checkbox_on.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_vital_sign_validity_time_selection.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/vital_sign_validity_time_selection.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_activity_level_still.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/activity_level_still.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/raw_phone_ringing.wav.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/raw/phone_ringing.wav"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_circle_red.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/circle_red.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_wifi_one.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/wifi_one.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_button_orange.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/button_orange.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_annotation_button_for_selection.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/annotation_button_for_selection.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_logo_lifetemp.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/logo_lifetemp.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_mode_selection_one_plus_two_buttons.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/mode_selection_one_plus_two_buttons.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_manual_vital_signs_entry__capillary_refill_time.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/manual_vital_signs_entry__capillary_refill_time.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_battery_50_percent.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/battery_50_percent.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_device_connection__lifetemp.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/device_connection__lifetemp.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_gsm_0.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/gsm_0.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_check_device_status.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/check_device_status.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/anim_signal_strength_blink_animation.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/anim/signal_strength_blink_animation.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_peer_video.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/peer_video.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_every_patient.jpg.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/every_patient.jpg"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_lifetouch_normal_mode.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/lifetouch_normal_mode.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_web.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/web.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_red_border_status.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/red_border_status.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_mode_selection_five_buttons.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/mode_selection_five_buttons.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_age_range_12_to_adult.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/age_range_12_to_adult.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_pop_up_patient_name.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/pop_up_patient_name.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_battery_full.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/battery_full.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_device_connection__pulse_ox.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/device_connection__pulse_ox.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_device_connection__blood_pressure.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/device_connection__blood_pressure.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_magnifier.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/magnifier.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_heart_current_data.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/heart_current_data.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_annotation_actions.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/annotation_actions.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_video_call_contact_button_for_selection.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/video_call_contact_button_for_selection.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_left_pointing_arrow.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/left_pointing_arrow.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_logo_pulse_ox.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/logo_pulse_ox.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_icon_meeting_audio.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/icon_meeting_audio.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_age_range_adult.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/age_range_adult.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_button_radio.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/button_radio.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_device_connection__lifetouch.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/device_connection__lifetouch.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_list_time_and_text.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/list_time_and_text.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_pop_up_poincare.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/pop_up_poincare.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_pop_up_developer_menu.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/pop_up_developer_menu.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_out_of_range_white.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/out_of_range_white.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_and_ble_needs_pairing.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/and_ble_needs_pairing.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_empty_patient_gateway_vitals_display_page.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/empty_patient_gateway_vitals_display_page.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_activity_custom_error.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/activity_custom_error.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_mute.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/mute.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_wizard.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/wizard.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_orientation_right.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/orientation_right.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_gsm_5.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/gsm_5.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_video_bg.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/video_bg.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_graph_weight.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/graph_weight.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_progress_bar_poincare_getting_previous_data.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/progress_bar_poincare_getting_previous_data.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_observation_display_row_for_confirmation.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/observation_display_row_for_confirmation.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_webpage_button_for_selection.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/webpage_button_for_selection.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_change_session_settings.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/change_session_settings.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_day_or_night_white.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/day_or_night_white.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable-xhdpi_ic_launcher.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_radio_button_selector.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/radio_button_selector.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_rounded_corner_red.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/rounded_corner_red.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_radio_off.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/radio_off.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_brightness.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/brightness.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_observation_set_time.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/observation_set_time.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_vital_sign_circle_green.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/vital_sign_circle_green.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_age_range_1_to_5.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/age_range_1_to_5.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_blue_rounded_border_edittext.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/blue_rounded_border_edittext.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_admin_mode.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/admin_mode.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_out_of_range.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/out_of_range.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_cancel.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/cancel.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/navigation_navigation_graph.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/navigation/navigation_graph.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_bg_white_round.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/bg_white_round.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_orientation_left.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/orientation_left.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_end_session.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/end_session.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_video_call_contacts_selection.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/video_call_contacts_selection.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_observation_display_measurement_selection.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/observation_display_measurement_selection.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_button_blue.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/button_blue.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_orientation_back_t.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/orientation_back_t.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_wifi_three.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/wifi_three.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_battery_75_percent.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/battery_75_percent.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_radio_on_grey.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/radio_on_grey.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_annotation_outcomes.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/annotation_outcomes.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_retry.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/retry.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_pulseox_not_attached.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/pulseox_not_attached.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_disk.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/disk.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_logo_blood_pressure.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/logo_blood_pressure.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/anim_scale_down_animation.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/anim/scale_down_animation.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_arrow_right_white.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/arrow_right_white.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_lifetouch_not_attached.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/lifetouch_not_attached.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_heart_medium_activity.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/heart_medium_activity.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_annotation_conditions.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/annotation_conditions.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_manual_vital_signs_entry__supplemental_oxygen_level.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/manual_vital_signs_entry__supplemental_oxygen_level.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_pop_up_incoming_video_call.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/pop_up_incoming_video_call.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_installation_progress.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/installation_progress.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_screensaver.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/screensaver.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_heart_low_activity.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/heart_low_activity.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_server.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/server.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_circle_grey.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/circle_grey.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_age_range_0_to_1.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/age_range_0_to_1.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_device_connection.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/device_connection.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_smallest_checkbox_on.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/smallest_checkbox_on.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_rounded_corner_dummy_data_mode.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/rounded_corner_dummy_data_mode.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_orientation_upright.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/orientation_upright.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_gsm_4.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/gsm_4.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_android_permissions.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/android_permissions.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_microphone_white.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/microphone_white.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_orientation_up_right_t.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/orientation_up_right_t.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_lifetouch_poor_signal.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/lifetouch_poor_signal.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_recycling_box.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/recycling_box.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_blank.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/blank.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_annotation_type.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/annotation_type.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_radio_off_pressed.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/radio_off_pressed.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_patient_vitals_display.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/patient_vitals_display.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_checkbox_disabled.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/checkbox_disabled.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_activity_level_fast_run.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/activity_level_fast_run.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_no_video.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/no_video.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_thumb.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/thumb.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_medical_records.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/medical_records.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_arrow.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/arrow.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_radio_off_pressed_grey.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/radio_off_pressed_grey.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_radio_on_pressed_grey.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/radio_on_pressed_grey.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_progressbar_normal.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/progressbar_normal.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_lifetouch_normal_mode_respiration_rate.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/lifetouch_normal_mode_respiration_rate.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_blood_pressure_graph.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/blood_pressure_graph.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_mode_selection_three_buttons.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/mode_selection_three_buttons.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_day_or_night.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/day_or_night.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_vital_sign_circle_red.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/vital_sign_circle_red.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_battery_25_percent.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/battery_25_percent.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_qr_code_server_address_entry.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/qr_code_server_address_entry.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_gsm_2.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/gsm_2.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/anim_translation_animation.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/anim/translation_animation.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_patient_details_age_range_2.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/patient_details_age_range_2.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_checkbox_off.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/checkbox_off.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_pulse_ox_disconnected_leadsoff.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/pulse_ox_disconnected_leadsoff.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_orientation_unknown_t.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/orientation_unknown_t.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_video_chat_white.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/video_chat_white.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_pop_up_server_sync_status.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/pop_up_server_sync_status.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_patient_details.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/patient_details.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_activity_main.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_video_chat.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/video_chat.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_gsm_3.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/gsm_3.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_installation_welcome.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/installation_welcome.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_change_session_settings__blood_pressure.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/change_session_settings__blood_pressure.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_qr_code_unlock.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/qr_code_unlock.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_no_video_white.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/no_video_white.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable-mdpi_ic_launcher.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_circle_orange.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/circle_orange.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_button_radio_grey.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/button_radio_grey.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_orientation_left_side_t.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/orientation_left_side_t.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_feature_enable.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/feature_enable.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_manual_vital_sign_for_listview.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/manual_vital_sign_for_listview.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_icon_meeting_noaudio.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/icon_meeting_noaudio.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_logo_lifetouch.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/logo_lifetouch.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_bluebp05.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/bluebp05.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_button_gray.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/button_gray.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_mute_white.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/mute_white.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_observation_display_button_for_selection.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/observation_display_button_for_selection.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_error.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/error.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_button_green.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/button_green.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_manual_vital_signs_entry__keypad.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/manual_vital_signs_entry__keypad.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_orientation_upside_down_t.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/orientation_upside_down_t.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_early_warning_score_graph.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/early_warning_score_graph.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_add_devices.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/add_devices.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_circle_green.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/circle_green.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_video_call_mode_selection.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/video_call_mode_selection.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_change_session_settings__pulse_ox.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/change_session_settings__pulse_ox.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_annotation_time.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/annotation_time.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_rounded_corner.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/rounded_corner.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_microphone.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/microphone.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_small_checkbox_on.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/small_checkbox_on.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_orientation_back.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/orientation_back.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_end_session_time_picker.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/end_session_time_picker.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_change_session_settings__lifetouch.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/change_session_settings__lifetouch.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_icon_meeting_audio_mute.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/icon_meeting_audio_mute.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_arrow_right.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/arrow_right.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_change_session_settings__weight_scale.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/change_session_settings__weight_scale.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_charger.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/charger.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_battery_almost_full.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/battery_almost_full.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_pop_up_remove_from_ews.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/pop_up_remove_from_ews.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_rounded_corner_grey.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/rounded_corner_grey.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_manual_vital_signs_entry__family_or_nurse_concern.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/manual_vital_signs_entry__family_or_nurse_concern.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_mode_selection_two_buttons.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/mode_selection_two_buttons.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_orientation_right_side_t.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/orientation_right_side_t.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_pop_up_bluetooth_error.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/pop_up_bluetooth_error.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_vital_sign_validity_time_button.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/vital_sign_validity_time_button.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/drawable_orientation_upside_down.png.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/drawable/orientation_upside_down.png"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_view_progress_window.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/view_progress_window.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_change_session_settings__lifetemp.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/change_session_settings__lifetemp.xml"
+    },
+    {
+        "merged": "com.isansys.pse_isansysportal.User_Interface-merged_res-55:/layout_list_historical_setup_mode_times.xml.flat",
+        "source": "com.isansys.pse_isansysportal.User_Interface-main-57:/layout/list_historical_setup_mode_times.xml"
+    }
+]

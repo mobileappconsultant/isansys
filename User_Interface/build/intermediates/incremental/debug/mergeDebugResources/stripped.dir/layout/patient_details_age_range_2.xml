@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/startSessionSettingsActivity"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="start"
+    android:layout_margin="10dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayoutPatientDetailsAgeRangeTextExplaining"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        >
+
+        <TextView
+            android:id="@+id/textPleaseSelectPatientAgeRange"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/please_select_the_threshold_category"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    
+     <LinearLayout
+         android:id="@+id/linearLayoutPictureAgeRange"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:baselineAligned="false"
+         android:orientation="horizontal"
+		 android:layout_marginStart="30dp"
+         >
+
+        <LinearLayout
+			android:id="@+id/linearLayoutPatientAgeRangeA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imagePatientAgeRangeA"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+				android:background="@null"
+                android:gravity="center"
+                android:maxHeight="50dp"
+                android:src="@drawable/age_range_0_to_1"
+                android:contentDescription="@null"/>
+        </LinearLayout>
+<!--
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" 
+            >
+
+            <ImageView
+                android:id="@+id/imagePatientAgeRangeB"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:gravity="center"
+                android:maxHeight="50dp"
+                android:src="@drawable/age_range_1_to_5"
+                android:contentDescription="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal" 
+            >
+
+            <ImageView
+                android:id="@+id/imagePatientAgeRangeC"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:gravity="center"
+                android:maxHeight="50dp"
+                android:src="@drawable/age_range_5_to_12"
+                android:contentDescription="@null"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal" 
+            >
+
+            <ImageView
+                android:id="@+id/imagePatientAgeRangeD"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:gravity="center"
+                android:maxHeight="50dp"
+                android:src="@drawable/age_range_12_to_adult" 
+                android:contentDescription="@null"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal" 
+            >
+
+            <ImageView
+                android:id="@+id/imagePatientAgeRangeE"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:gravity="center"
+                android:maxHeight="50dp"
+                android:src="@drawable/age_range_adult"
+                android:contentDescription="@null" />
+        </LinearLayout>
+-->
+    </LinearLayout>
+
+    <RadioGroup
+       android:id="@+id/radioGroupPatientAge"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginStart="30dp"
+       >
+<!--
+       <RadioButton
+           android:id="@+id/radioButtonPatientAgeRangeA"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:button="@drawable/button_radio"
+           android:text="@string/text0to1Years"
+           android:textSize="30sp"
+           android:gravity="center"
+           />
+
+       <RadioButton
+           android:id="@+id/radioButtonPatientAgeRangeB"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:button="@drawable/button_radio"
+           android:text="@string/text1to5Years"
+           android:textSize="30sp"
+           android:gravity="center"
+           />
+
+       <RadioButton
+           android:id="@+id/radioButtonPatientAgeRangeC"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:button="@drawable/button_radio"
+           android:text="@string/text5to12Years"
+           android:textSize="30sp"
+           android:gravity="center"
+           />
+
+       <RadioButton
+           android:id="@+id/radioButtonPatientAgeRangeD"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:button="@drawable/button_radio"
+           android:text="@string/textGreater12Years"
+           android:textSize="30sp"
+           android:gravity="center"
+           />
+
+       <RadioButton
+           android:id="@+id/radioButtonPatientAgeRangeE"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:button="@drawable/button_radio"
+           android:text="@string/textAdult"
+           android:textSize="30sp"
+           android:gravity="center"
+           />
+-->
+    </RadioGroup>
+
+
+    <LinearLayout
+            android:id="@+id/linearLayoutAgeRangeDisplay"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            >    
+            
+        <TextView
+		       android:id="@+id/textTextExplainingWhatRadioButtonsDo"
+		       android:layout_width="fill_parent"
+		       android:layout_height="wrap_content"
+		       android:text="@string/selected_early_warning_score_thresholds_below"
+		       android:textSize="30sp"
+		       android:textStyle="bold"
+		       android:layout_marginStart="30dp"
+               />
+	            
+	    <LinearLayout
+	            android:id="@+id/linearLayoutThresholds"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:orientation="horizontal"
+	            android:layout_marginStart="30dp"
+	            >    
+	            
+	            <LinearLayout
+	                android:id="@+id/linearLayoutThresholdLevelsDescriptions"
+	                android:layout_width="wrap_content"
+	                android:layout_height="fill_parent"
+	                android:baselineAligned="false"
+	                android:orientation="vertical" 
+	                >
+	            
+	                <TextView
+		                android:id="@+id/textThresholdDescriptionHeartRate"
+		                android:layout_width="wrap_content"
+		                android:layout_height="0dp"
+		                android:text="@string/heart_rate"
+		                android:layout_weight="1"
+		                android:textSize="25sp" />
+	                
+	                <TextView
+	                    android:id="@+id/textThresholdDescriptionRespirationRate"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="0dp"
+	                    android:text="@string/respiration_rate"
+	                    android:layout_weight="1"
+	                    android:textSize="25sp" />
+	                
+	                <TextView
+	                    android:id="@+id/textThresholdDescriptionTemperature"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="0dp"
+	                    android:text="@string/temperature"
+	                    android:layout_weight="1"
+	                    android:textSize="25sp" />
+	                
+	                <TextView
+	                    android:id="@+id/textThresholdDescriptionSpO2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="0dp"
+	                    android:text="@string/spo2"
+	                    android:layout_weight="1"
+	                    android:textSize="25sp" />
+	                
+	                <TextView
+	                    android:id="@+id/textThresholdDescriptionBloodPressure"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="0dp"
+	                    android:text="@string/systolic_blood_pressure"
+	                    android:layout_weight="1"
+	                    android:textSize="25sp" />
+	                
+	            </LinearLayout>
+	        
+	            <LinearLayout
+	                android:id="@+id/linearLayoutThresholdLevels"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:baselineAligned="false"
+	                android:paddingStart="5dp"
+					android:paddingEnd="0dp"
+	                android:orientation="vertical" 
+	                >
+	                
+	                <LinearLayout
+	                    android:id="@+id/linearLayoutThresholdLevelLifetouchHeartRate"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="0dp"
+	                    android:baselineAligned="false"
+	                    android:orientation="vertical" 
+	                    android:layout_weight="1"
+	                    >
+	                          
+	                    <com.ajit.customseekbar.CustomSeekBar
+	                        android:id="@+id/seekBarLifetouchHeartRate"
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="fill_parent"
+	                        />
+	                    
+	                </LinearLayout>
+	                
+	                <LinearLayout
+	                    android:id="@+id/linearLayoutThresholdLevelLifetouchRespirationRate"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="0dp"
+	                    android:baselineAligned="false"
+	                    android:orientation="vertical" 
+	                    android:layout_weight="1"
+	                    >
+	                         
+	                    <com.ajit.customseekbar.CustomSeekBar
+	                        android:id="@+id/seekBarLifetouchRespirationRate"
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="fill_parent"
+	                        />
+	                    
+	                </LinearLayout>             
+	                
+	                <LinearLayout
+	                    android:id="@+id/linearLayoutThresholdLevelLifetemp"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="0dp"
+	                    android:baselineAligned="false"
+	                    android:orientation="vertical" 
+	                    android:layout_weight="1"
+	                    >
+	                         
+	                    <com.ajit.customseekbar.CustomSeekBar
+	                        android:id="@+id/seekBarLifetemp"
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="fill_parent"
+	                        />
+	                    
+	                </LinearLayout>
+	                
+	                <LinearLayout
+	                    android:id="@+id/linearLayoutThresholdLevelPulseOx"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="0dp"
+	                    android:baselineAligned="false"
+	                    android:orientation="vertical" 
+	                    android:layout_weight="1"
+	                    >
+	                         
+	                    <com.ajit.customseekbar.CustomSeekBar
+	                        android:id="@+id/seekBarPulseOx"
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="fill_parent"
+	                        />
+	                    
+	                </LinearLayout>
+	                
+	                <LinearLayout
+	                    android:id="@+id/linearLayoutThresholdLevelBloodPressure"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="0dp"
+	                    android:baselineAligned="false"
+	                    android:orientation="vertical" 
+	                    android:layout_weight="1"
+	                    >
+	                         
+	                    <com.ajit.customseekbar.CustomSeekBar
+	                        android:id="@+id/seekBarBloodPressure"
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="fill_parent"
+	                        />
+	                    
+	                </LinearLayout>                 
+	                 
+	        </LinearLayout>
+	    </LinearLayout>
+	</LinearLayout>
+</LinearLayout>
+	

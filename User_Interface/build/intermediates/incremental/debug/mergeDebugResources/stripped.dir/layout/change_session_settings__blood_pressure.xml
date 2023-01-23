@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_layout__change_session_settings__blood_pressure"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    >
+
+    <ImageView
+        android:id="@+id/logo_blood_pressure"
+        android:layout_width="145dp"
+        android:layout_height="@dimen/change_session_settings_row_height"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:gravity="center"
+        android:src="@drawable/logo_blood_pressure" />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textViewBloodPressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/textBloodPressureSingleLine"
+            android:textSize="30sp"
+            />
+
+        <TextView
+            android:id="@+id/textViewDeviceSpecificSettingsBloodPressureHumanReadableSerialNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/textDefaultHumanReadableDeviceId" 
+            android:textSize="30sp"
+            />
+
+        <TextView
+            android:id="@+id/textViewChangeSessionSettingsBloodPressureFirmwareVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/textDefaultHumanReadableDeviceId"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/buttonAddBloodPressure"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/button_blue"
+            android:text="@string/add_blood_pressure"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        >
+
+        <Button
+            android:id="@+id/buttonRemoveBloodPressure"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/button_blue"
+            android:text="@string/remove_blood_pressure_monitor"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="invisible"
+        >
+
+        <Button
+            android:id="@+id/buttonChangeBloodPressureSettings"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/button_blue"
+            android:text="@string/change_blood_pressure_monitor_settings"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        >
+
+        <Button
+            android:id="@+id/buttonAdjustBloodPressureEarlyWarningScoreThresholds"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/adjust_ews_thresholds"
+            android:background="@drawable/button_blue"
+        />
+    </LinearLayout>
+
+</LinearLayout>

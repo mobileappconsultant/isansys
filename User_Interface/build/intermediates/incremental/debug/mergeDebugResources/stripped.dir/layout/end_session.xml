@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center_vertical|center_horizontal|center"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal|center"
+        android:layout_weight="0.1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textAreYouSure"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal|center"
+            android:gravity="center"
+            android:text="@string/textAreYouSure"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_deviceMeasurementsPending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="0.01"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutProgressBarAndTextViewDeviceMeasurementPending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:orientation="vertical" >
+
+                <ProgressBar
+                    android:id="@+id/progressBarPendingHeartBeatEndDevice"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="900dp"
+                    android:layout_height="40dp"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progressbar_normal" />
+
+                <TextView
+                    android:id="@+id/textViewDeviceDisconnectionStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_weight="0.5"
+                    android:text="@string/string_waitForLifetouchPendingHeartBeat"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_warningDevicePendingMeasurement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:text="@string/string_WarningPendingMeasurementButRemoveDevicesTextView"
+                android:textSize="30sp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/buttonCancelLifetouchPendingHeartBeatTransfer"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/button_blue"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:text="@string/textView_EndNowGettingPendingData"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="0.6"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonEndSession"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center_vertical|center_horizontal|center"
+            android:layout_margin="15dp"
+            android:background="@drawable/button_blue"
+            android:text="@string/textEndSession"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/buttonTransferSession"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center_vertical|center_horizontal|center"
+            android:layout_margin="15dp"
+            android:background="@drawable/button_blue"
+            android:text="@string/textTransferSession"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

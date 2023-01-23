@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="930dp"
+    android:layout_height="280dp"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_white_round"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayoutLookupStatus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:orientation="horizontal"
+        android:layout_margin="30dp"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center|center_horizontal"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/textViewPatientIdLookupStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/starting_patient_name_lookup"
+                android:gravity="center_horizontal|start"
+                android:textSize="@dimen/Patient_Id_size_forty_sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center|center_horizontal"
+            android:orientation="horizontal"
+            >
+
+            <ProgressBar
+                android:id="@+id/serverResponseWaitingProgressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutBackAndCaseIdButtons"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_vertical|center|center_horizontal"
+                android:orientation="vertical"
+                >
+
+                <Button
+                    android:id="@+id/buttonGoBackToEditing"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_blue"
+                    android:padding="20dp"
+                    android:textColor="@color/white"
+                    android:textSize="36sp"
+                    android:textStyle="bold"
+                    android:text="@string/back" />
+
+                <Button
+                    android:id="@+id/buttonUseCaseId"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_blue"
+                    android:padding="20dp"
+                    android:textColor="@color/white"
+                    android:textSize="36sp"
+                    android:textStyle="bold"
+                    android:text="@string/use_case_id" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutShowPatientDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:orientation="horizontal"
+        android:layout_margin="30dp"
+        android:baselineAligned="false">
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center|center_horizontal"
+            >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:text="@string/first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewPopupFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/blue"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical|start"
+                    android:layout_marginStart="25dp"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:text="@string/last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewPopupLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/blue"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical|start"
+                    android:layout_marginStart="25dp"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:text="@string/date_of_birth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewPopupDateOfBirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/blue"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical|start"
+                    android:layout_marginStart="25dp"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:text="@string/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewPopupGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/four_dashes"
+                    android:textColor="@color/blue"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical|start"
+                    android:layout_marginStart="25dp"
+                    />
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center|center_horizontal"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:id="@+id/buttonCorrectPatientDetails"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_green"
+                android:textColor="@color/white"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:text="@string/correct" />
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"/>
+
+            <Button
+                android:id="@+id/buttonIncorrectPatientDetails"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_red"
+                android:textColor="@color/white"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:text="@string/wrong" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    >
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        
+        <TextView
+            android:id="@+id/textGatewayNotResponding"
+            android:text="@string/gateway_not_responding_for_over_thirty_seconds"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            />
+    </TableRow>
+        
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        
+        <TextView
+            android:id="@+id/textLastGatewayPingWasReceivedAt"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/last_gateway_ping_was_received_at"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+    
+    </TableRow>
+        
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/textLastGatewayPingTime"
+            android:text="@string/six_dashes"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            />
+        
+    </TableRow>
+        
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        
+        <Button
+            android:id="@+id/buttonRestartGatewayApp"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="@string/restart_gateway_app"
+            android:textColor="@color/white"
+            android:background="@drawable/button_blue"
+            />
+
+    </TableRow>
+
+</TableLayout>
